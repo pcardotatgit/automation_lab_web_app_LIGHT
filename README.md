@@ -117,7 +117,7 @@ And then move to the next step : Activate the virtual environment.
 
     venv\Scripts\activate  
 
-## Step 5. Install needed python modules
+## Step 5. Install required python modules
 
 You can install them with the following 2 commands one after the other ( Windows / Mac / Linux ):
 
@@ -170,20 +170,21 @@ Authorize this
 
 Your browser should open on the login page.
 
-username is : admin
-password is : password
+username is : **admin**
 
-***Notice :*** username/password is a possible improvement for this application. It is not the case so far, but the application is ready for this.
+password is : **password**
+
+***Notice :*** The application is ready to manage users and their password.  Bu we don't need this for this lab
 
 # Your Challenge
 
-The principle of this lab is to create a workflow in the workflow editor.
+The principle of this lab is to create an automation workflow which executes a complex set of tasks that are needed to block a Threat.
 
-Student have to follow the lab guide. 
+As a Student, you have to follow the lab guide. 
 
-API keys shared with students are fakes keys, only valid for the simulator.
+API keys shared with students are faked keys that only valid for the simulator.
 
-This workflow is a serie of steps, put one after the other which execute every atomic operation needed to achieve the final goal.
+An automation workflow is a serie of steps, put one after the other which execute every atomic operation needed to achieve the final goal.
 
 Generally speaking you to... find the correct API call to send to the targeted Security Solution, Search in the Web Application the step which had been prepared for this call. Then customize it by selecting the correct inputs, and selecting the correct output.
 
