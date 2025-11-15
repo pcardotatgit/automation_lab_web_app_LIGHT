@@ -1,4 +1,4 @@
-# automation lab web app_LIGHT
+# Automation Lab Web App LIGHT version
 
 This package is a light version of the ***automation Lab Web App*** which contains only the files needed to run the Lab.
 
@@ -45,13 +45,17 @@ You must start with a machine that already has python installed. This project wa
 
 For anyone who don't want to waste time.
 
-Download the project into a working directory into your laptop. Unzip the dowloaded file and open a terminal console into the project root directory. Then
+Download the project into a working directory into your laptop. Unzip the dowloaded file and open a terminal console into the project root directory. 
+
+I created a few bacth files that avoid me to type the full CLI commands. Then we just have to run these batch files one after the other.
+
+So ...:
 
 - type a
 - then type b
 - then type c
 
-***Notice :*** I came accros several times to the situation where this c.bat ( which does a pip install -r requirements.txt ) fails.
+**Notice :** I came accros several times to the situation where this c.bat ( which does a pip install -r requirements.txt ) fails.
 
 Then we have to install the modules one by one as shown bellow
     
