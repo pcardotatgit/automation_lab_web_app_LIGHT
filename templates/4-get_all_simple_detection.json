@@ -1,0 +1,24 @@
+{
+    "version": "v1.2.0",
+    "metadata": {
+        "links": {
+            "self": "https://api.amp.cisco.com/v1/file_lists/simple_custom_detections"
+        },
+        "results": {
+            "total": 1,
+            "current_item_count": 1,
+            "index": 0,
+            "items_per_page": 500
+        }
+    },
+    "data": [
+        {
+            "name": "File Block-list",
+            "guid": "783198f5-cb0d-44c0-b50e-8a58f7e6be67",
+            "type": "simple_custom_detections",
+            "links": {
+                "file_list": "https://api.amp.cisco.com/v1/file_lists/783198f5-cb0d-44c0-b50e-8a58f7e6be67"
+            }
+        }
+    ]
+}

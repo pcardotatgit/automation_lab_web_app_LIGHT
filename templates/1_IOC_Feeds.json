@@ -1,0 +1,327 @@
+{
+    "api_version": 2,
+    "id": 5274731,
+    "request_id": "req-d5c9cd53-da0c-4964-a272-cb0058e53b46",
+    "data": {
+        "current_item_count": 35,
+        "index": 0,
+        "items": [
+            {
+                "severity": 90,
+                "sample_sha256": "86ea325b38a9895d2f537de04be5613fdfee4172b8f3da92c0702320ebe7904d",
+                "confidence": 95,
+                "domain": "xmr.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:37:21Z",
+                "sample_id": "0f3b8d825a0157db2dcc643f35a4856f"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "86ea325b38a9895d2f537de04be5613fdfee4172b8f3da92c0702320ebe7904d",
+                "confidence": 95,
+                "domain": "www.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:37:21Z",
+                "sample_id": "0f3b8d825a0157db2dcc643f35a4856f"
+            },
+            {
+                "severity": 95,
+                "sample_sha256": "1d06d30be63e31ab145c649aaa4fd0a961b9b2a0ddec35ea22c57c04be444b33",
+                "confidence": 100,
+                "domain": "249.5.55.69.zen.spamhaus.org",
+                "ioc": "zen-spamhaus-domain-contacted",
+                "timestamp": "2021-01-18T22:36:53Z",
+                "sample_id": "1408cf1af98ee1b71cf80b63224c9c28"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "2772b56f73ac816eb55f241523af0d58835d8236eb4432ad1a7397972334e064",
+                "confidence": 95,
+                "domain": "www.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:37:44Z",
+                "sample_id": "156f67a98eaa58a47d843bdb0c2b780b"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "2772b56f73ac816eb55f241523af0d58835d8236eb4432ad1a7397972334e064",
+                "confidence": 95,
+                "domain": "xmr.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:37:44Z",
+                "sample_id": "156f67a98eaa58a47d843bdb0c2b780b"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "c79f308b4918e737bb60f683e295c84fc4e1f4f326505e3195e118e4d98de456",
+                "confidence": 95,
+                "domain": "www.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:36:46Z",
+                "sample_id": "196999506c7448e4114fd82bfcc74948"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "c79f308b4918e737bb60f683e295c84fc4e1f4f326505e3195e118e4d98de456",
+                "confidence": 95,
+                "domain": "xmr.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:36:46Z",
+                "sample_id": "196999506c7448e4114fd82bfcc74948"
+            },
+            {
+                "severity": 95,
+                "sample_sha256": "7c9f743198f2ce329d386e6ccbc1a673bde2ee32c28906468a89d1872a75eefd",
+                "confidence": 100,
+                "domain": "249.5.55.69.zen.spamhaus.org",
+                "ioc": "zen-spamhaus-domain-contacted",
+                "timestamp": "2021-01-18T22:35:33Z",
+                "sample_id": "38b1fa41049c401b1d02bf62bcbc7325"
+            },
+            {
+                "severity": 95,
+                "sample_sha256": "d106f293c47d85cba5418d14d29d2199bbba93a71651d435d73162744df2d56f",
+                "confidence": 100,
+                "domain": "249.5.55.69.zen.spamhaus.org",
+                "ioc": "zen-spamhaus-domain-contacted",
+                "timestamp": "2021-01-18T22:38:54Z",
+                "sample_id": "3a6010ec23b0c591edc11c0ed86147a1"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "85cc392b2698ba27829ae7677bb17034c7307dc932b717864d64618bdcf3b0cf",
+                "confidence": 95,
+                "domain": "xmr.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:37:14Z",
+                "sample_id": "3b16fbb578fcd31152e603af9bae97ed"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "85cc392b2698ba27829ae7677bb17034c7307dc932b717864d64618bdcf3b0cf",
+                "confidence": 95,
+                "domain": "www.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:37:14Z",
+                "sample_id": "3b16fbb578fcd31152e603af9bae97ed"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "04c0749bd94f677369554810549773d75b759a978683bd0bf2d7cb52eaa5eb56",
+                "confidence": 95,
+                "domain": "www.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:36:01Z",
+                "sample_id": "3e63607c130aacafe6001b83ecf61c55"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "04c0749bd94f677369554810549773d75b759a978683bd0bf2d7cb52eaa5eb56",
+                "confidence": 95,
+                "domain": "xmr.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:36:01Z",
+                "sample_id": "3e63607c130aacafe6001b83ecf61c55"
+            },
+            {
+                "severity": 95,
+                "sample_sha256": "896b06e72c1f7e6342b20ce3dc8bd0df6931d2a15003aa65d9dd035f407a8568",
+                "confidence": 100,
+                "domain": "249.5.55.69.zen.spamhaus.org",
+                "ioc": "zen-spamhaus-domain-contacted",
+                "timestamp": "2021-01-18T22:36:32Z",
+                "sample_id": "3f7dbc61d07c8002c10af09d0485c5a3"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "b0abd552bb2ece37e188dc23011afd1f802e486d6a29e3baeb885bc2a4162e81",
+                "confidence": 95,
+                "domain": "www.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:35:40Z",
+                "sample_id": "4808b958e2d522e08cdaee61ed0755b1"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "b0abd552bb2ece37e188dc23011afd1f802e486d6a29e3baeb885bc2a4162e81",
+                "confidence": 95,
+                "domain": "xmr.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:35:40Z",
+                "sample_id": "4808b958e2d522e08cdaee61ed0755b1"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "0543b79fda2aa81734fa35628e17f2e73925f54a2f82d2ebd25e23e7205b124a",
+                "confidence": 95,
+                "domain": "www.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:36:24Z",
+                "sample_id": "58856957d687e2d4a2b9eea9e9b99ac2"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "0543b79fda2aa81734fa35628e17f2e73925f54a2f82d2ebd25e23e7205b124a",
+                "confidence": 95,
+                "domain": "xmr.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:36:24Z",
+                "sample_id": "58856957d687e2d4a2b9eea9e9b99ac2"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "605516d6beaab76d888a94d1f2350039d23b601439cb9573e59be9a228798ba3",
+                "confidence": 95,
+                "domain": "www.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:34:55Z",
+                "sample_id": "75e12fbebe8dc12de69f90f62b3bf5cb"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "605516d6beaab76d888a94d1f2350039d23b601439cb9573e59be9a228798ba3",
+                "confidence": 95,
+                "domain": "xmr.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:34:55Z",
+                "sample_id": "75e12fbebe8dc12de69f90f62b3bf5cb"
+            },
+            {
+                "severity": 95,
+                "sample_sha256": "f95ad0ec87e05c8e7837f1a26ce78dc52d01c4a670ae57926e53ed401c2a1da7",
+                "confidence": 100,
+                "domain": "249.5.55.69.zen.spamhaus.org",
+                "ioc": "zen-spamhaus-domain-contacted",
+                "timestamp": "2021-01-18T22:35:48Z",
+                "sample_id": "9acb9e0b719e1abe6b65bb070ab96b1f"
+            },
+            {
+                "severity": 95,
+                "sample_sha256": "545a500a812e3c59ae407b069f28a2c3379b534cd4ed291535059bcac2442008",
+                "confidence": 100,
+                "domain": "249.5.55.69.zen.spamhaus.org",
+                "ioc": "zen-spamhaus-domain-contacted",
+                "timestamp": "2021-01-18T22:36:33Z",
+                "sample_id": "aa5a6c38e5e80deca4d4b39ff9f558cc"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "9d730203e4205fc9e607e2bdf077e42f988e389bb16700f2e8ec3b9967efc887",
+                "confidence": 95,
+                "domain": "xmr.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:37:06Z",
+                "sample_id": "af28a345aeca161688400867b60ab5cd"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "9d730203e4205fc9e607e2bdf077e42f988e389bb16700f2e8ec3b9967efc887",
+                "confidence": 95,
+                "domain": "www.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:37:06Z",
+                "sample_id": "af28a345aeca161688400867b60ab5cd"
+            },
+            {
+                "severity": 95,
+                "sample_sha256": "0ed1c73d8fcb3028c1eed8c526f17ef965752bd641949b82d68c56b3264ebfd5",
+                "confidence": 100,
+                "domain": "249.5.55.69.zen.spamhaus.org",
+                "ioc": "zen-spamhaus-domain-contacted",
+                "timestamp": "2021-01-18T22:36:09Z",
+                "sample_id": "b867974399e40cfc348eefe0fcbe60d0"
+            },
+            {
+                "severity": 95,
+                "sample_sha256": "ff55fd81b093ea5d6c3747a46ad57c78145fd50037ccfd2fbeb5f4d862716e45",
+                "confidence": 100,
+                "domain": "249.5.55.69.zen.spamhaus.org",
+                "ioc": "zen-spamhaus-domain-contacted",
+                "timestamp": "2021-01-18T22:35:26Z",
+                "sample_id": "b8e60a54c266158e0c0cb55c8a79d513"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "e9c798ce2daa970573fc2b49f06e2c2831677d7175d5942866344ed17b8399fa",
+                "confidence": 95,
+                "domain": "www.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:35:18Z",
+                "sample_id": "b9e9c25d8fda3cb47b82d41d9f10c4cc"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "e9c798ce2daa970573fc2b49f06e2c2831677d7175d5942866344ed17b8399fa",
+                "confidence": 95,
+                "domain": "xmr.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:35:18Z",
+                "sample_id": "b9e9c25d8fda3cb47b82d41d9f10c4cc"
+            },
+            {
+                "severity": 95,
+                "sample_sha256": "4145c320e9c653415146c1b5a02c16bb3f17857ecefad83844c0e9a6f268e0f4",
+                "confidence": 100,
+                "domain": "249.5.55.69.zen.spamhaus.org",
+                "ioc": "zen-spamhaus-domain-contacted",
+                "timestamp": "2021-01-18T22:35:54Z",
+                "sample_id": "d4d082299831a303fce85f4cd64c1aec"
+            },
+            {
+                "severity": 95,
+                "sample_sha256": "8964ae5052295127ec96dcd3d64f7ddd0b7a0708c09bfa57128605e941a7cf62",
+                "confidence": 100,
+                "domain": "249.5.55.69.zen.spamhaus.org",
+                "ioc": "zen-spamhaus-domain-contacted",
+                "timestamp": "2021-01-18T22:36:16Z",
+                "sample_id": "e1702de29d4a8402cd4316cf3783a5e5"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "969efb93ad3a8d9b612217058b82bfb46aacb5a5614aabdb83f6e507a460b202",
+                "confidence": 95,
+                "domain": "www.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:37:37Z",
+                "sample_id": "f6e3f25a6e9b3100e38f7f4ba90cb576"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "969efb93ad3a8d9b612217058b82bfb46aacb5a5614aabdb83f6e507a460b202",
+                "confidence": 95,
+                "domain": "xmr.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:37:37Z",
+                "sample_id": "f6e3f25a6e9b3100e38f7f4ba90cb576"
+            },
+            {
+                "severity": 95,
+                "sample_sha256": "c9b320a08d5de90ba011906da4b124277b3832a45ea88ed008e78eba7caa333f",
+                "confidence": 100,
+                "domain": "249.5.55.69.zen.spamhaus.org",
+                "ioc": "zen-spamhaus-domain-contacted",
+                "timestamp": "2021-01-18T22:36:39Z",
+                "sample_id": "f9caffcc7caa14027f6c1e8630152a9c"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "2c46cca5f2f3a954c1bb625893baecb4e84119346530f2c1bd116e41c42b32c8",
+                "confidence": 95,
+                "domain": "xmr.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:37:29Z",
+                "sample_id": "fb647c3433d5fad46223d297fae11bc6"
+            },
+            {
+                "severity": 90,
+                "sample_sha256": "2c46cca5f2f3a954c1bb625893baecb4e84119346530f2c1bd116e41c42b32c8",
+                "confidence": 95,
+                "domain": "www.minercircle.com",
+                "ioc": "network-snort-pua",
+                "timestamp": "2021-01-18T22:37:29Z",
+                "sample_id": "fb647c3433d5fad46223d297fae11bc6"
+            }
+        ],
+        "items_per_page": 1000
+    }
+}

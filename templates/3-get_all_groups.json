@@ -1,0 +1,61 @@
+{
+    "version": "v1.2.0",
+    "metadata": {
+        "links": {
+            "self": "https://api.amp.cisco.com/v1/groups"
+        },
+        "results": {
+            "total": 5,
+            "current_item_count": 5,
+            "index": 0,
+            "items_per_page": 500
+        }
+    },
+    "data": [
+        {
+            "name": "Audit",
+            "description": "Audit Group for Cisco - osanniko",
+            "guid": "0f1462c5-2a2c-46b1-b1f3-a785ff73f98b",
+            "source": null,
+            "links": {
+                "group": "https://api.amp.cisco.com/v1/groups/0f1462c5-2a2c-46b1-b1f3-a785ff73f98b"
+            }
+        },
+        {
+            "name": "Domain Controller",
+            "description": "Domain Controller Group for Cisco - osanniko",
+            "guid": "60a24009-dd28-4466-8089-b83e69f3a049",
+            "source": null,
+            "links": {
+                "group": "https://api.amp.cisco.com/v1/groups/60a24009-dd28-4466-8089-b83e69f3a049"
+            }
+        },
+        {
+            "name": "Protect",
+            "description": "Protect Group for Cisco - osanniko",
+            "guid": "53dd2fcd-d9d0-4ca9-96e6-89b1038be448",
+            "source": null,
+            "links": {
+                "group": "https://api.amp.cisco.com/v1/groups/53dd2fcd-d9d0-4ca9-96e6-89b1038be448"
+            }
+        },
+        {
+            "name": "Server",
+            "description": "Server Group for Cisco - osanniko",
+            "guid": "cc80a26d-e037-4795-b405-1dd95f46cbad",
+            "source": null,
+            "links": {
+                "group": "https://api.amp.cisco.com/v1/groups/cc80a26d-e037-4795-b405-1dd95f46cbad"
+            }
+        },
+        {
+            "name": "Triage",
+            "description": "Triage Group for Cisco - osanniko",
+            "guid": "48e2eb37-df86-4823-9feb-1cb1cba09eb1",
+            "source": null,
+            "links": {
+                "group": "https://api.amp.cisco.com/v1/groups/48e2eb37-df86-4823-9feb-1cb1cba09eb1"
+            }
+        }
+    ]
+}

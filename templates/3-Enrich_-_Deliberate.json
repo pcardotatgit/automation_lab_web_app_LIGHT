@@ -1,0 +1,59 @@
+{
+    "data": [
+        {
+            "module": "AMP File Reputation",
+            "module_instance_id": "ddcf41a2-3ecb-43e8-b5b2-0e36ad2e16f3",
+            "module_type_id": "1898d0e8-45f7-550d-8ab5-915f064426dd",
+            "data": {
+                "verdicts": {
+                    "count": 1,
+                    "docs": [
+                        {
+                            "type": "verdict",
+                            "disposition": 2,
+                            "observable": {
+                                "value": "b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+                                "type": "sha256"
+                            },
+                            "disposition_name": "Malicious",
+                            "valid_time": {
+                                "start_time": "2021-04-14T09:51:58.405Z",
+                                "end_time": "2525-01-01T00:00:00.000Z"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "module": "VirusTotal",
+            "module_instance_id": "6c224e29-d19d-4fb4-948e-ee9cc0939f34",
+            "module_type_id": "4d98e8bb-e143-5966-8a24-c2707e6e6dd3",
+            "data": {}
+        },
+        {
+            "module": "Stealthwatch Cloud",
+            "module_instance_id": "d5db561a-a7c6-4dad-b590-0698767fe997",
+            "module_type_id": "b3874a82-1967-4f9c-a42a-47f1d61ab835",
+            "data": {}
+        }
+    ],
+    "errors": [
+        {
+            "module_instance_id": "918e8244-a50b-4fc7-b700-87d38575825b",
+            "module_type_id": "2c8b4134-c521-5be5-aaf8-af06e5e27cbb",
+            "code": "module-timeout",
+            "message": "There was a timeout in the 'CTIA Investigate' module",
+            "type": "warning",
+            "module": "Private Intelligence"
+        },
+        {
+            "module_instance_id": "b37ff2ee-0ca1-4dbc-936d-a35bf7d5e18f",
+            "module_type_id": "87563e81-ddc5-5f61-b4f8-dbe71252c922",
+            "code": "module-timeout",
+            "message": "There was a timeout in the 'CTIA Investigate' module",
+            "type": "warning",
+            "module": "AMP Global Intelligence"
+        }
+    ]
+}

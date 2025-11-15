@@ -1,0 +1,1272 @@
+{
+    "api_version": 2,
+    "id": 6883744,
+    "request_id": "req-88c8e2ab-54cc-4840-b8ed-4a13aca39251",
+    "data": {
+        "current_item_count": 140,
+        "index": 0,
+        "items": [
+            {
+                "timestamp": "2020-01-18T22:00:47Z",
+                "confidence": 100,
+                "sample_id": "006f3e1b2efb9393d7a7fe5bd3bc3b33",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "b0cfff72cb36c1ab6851c37d0ca7b2c1f145a228a12508d17fc4fd97e3b3404a",
+                "domain": "txblog.50cms.com"
+            },
+            {
+                "timestamp": "2020-01-18T21:57:06Z",
+                "confidence": 100,
+                "sample_id": "01827a315cec79a319de69cb3ee1cf7b",
+                "ioc": "pua-prepscram-traffic-detected",
+                "severity": 95,
+                "sample_sha256": "3386502158905a80e7436532e3b3a9f70c0ad0aef8a1d0428c4ca17cc1cd3624",
+                "domain": "d1ql3z8u1oo390.cloudfront.net"
+            },
+            {
+                "timestamp": "2020-01-18T22:00:00Z",
+                "confidence": 95,
+                "sample_id": "04ae579979be4a311a65de88875f1fa0",
+                "ioc": "network-snort-pua",
+                "severity": 90,
+                "sample_sha256": "ef210f74fd49f27bbf104c96b93c1269e92f7ce8a7869f2ccfda6455714b851e",
+                "domain": "pool.minexmr.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:01:30Z",
+                "confidence": 100,
+                "sample_id": "06119bff1444cff23659ef99eb18eda8",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "583329d3774a8b26cab05a93f978d48084776dd266fa0c9ca31644909a738a3c",
+                "domain": "www.bluedream.al"
+            },
+            {
+                "timestamp": "2020-01-18T21:40:25Z",
+                "confidence": 100,
+                "sample_id": "092facc53c78cd988f196228b58f0a94",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "7e3c138d96a1cfb32a3392ad08d2d399b8721cb9d3ffa4d45a001b1aa04865d5",
+                "domain": "www.bluedream.al"
+            },
+            {
+                "timestamp": "2020-01-18T22:10:32Z",
+                "confidence": 100,
+                "sample_id": "0a5a4937770a9bdf11d4dd887556faef",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "819f63528fa34c6a662eec1f961d035dbe3f0d5434e3d1368b30ae7523ff0ba9",
+                "domain": "www.bluedream.al"
+            },
+            {
+                "timestamp": "2020-01-18T22:01:27Z",
+                "confidence": 100,
+                "sample_id": "0c413511662b9e7bdfebb0ee6a6e4378",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cf36bf5241732a2868036adaed57f05cc4854dee49d3844edf2e3a4b7afbb02e",
+                "domain": "www.bluedream.al"
+            },
+            {
+                "timestamp": "2020-01-18T22:05:47Z",
+                "confidence": 100,
+                "sample_id": "0d455a38ae8e99edbd37053bb1d40d66",
+                "ioc": "pua-prepscram-traffic-detected",
+                "severity": 95,
+                "sample_sha256": "c6a5b0aa6e9a3b893fda40049868e86cd34df9933213756bb007c337ae3c2b3f",
+                "domain": "d1ql3z8u1oo390.cloudfront.net"
+            },
+            {
+                "timestamp": "2020-01-18T21:51:44Z",
+                "confidence": 95,
+                "sample_id": "0e8221844ff052f9c1c08006e3646a0f",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "ddf56f426cac22aa4f4d71c7e77320d5177fc825ec0070781730a6f464ab7d75",
+                "domain": "r.sz-guogeng.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:04:39Z",
+                "confidence": 100,
+                "sample_id": "0fe5cf0d772f42490a706ba719157bac",
+                "ioc": "pua-prepscram-traffic-detected",
+                "severity": 95,
+                "sample_sha256": "f76c89ec866ee08642a0f0e96cb28d942236af8431e20e6ed206974f1a8925cf",
+                "domain": "d1ql3z8u1oo390.cloudfront.net"
+            },
+            {
+                "timestamp": "2020-01-18T22:01:50Z",
+                "confidence": 100,
+                "sample_id": "12c98069bb907a925de25aabe89a795d",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "575f9fb6f75f8f2f20596f638a764a2635b212bd9c6552fa15c73c3c4a41c9c2",
+                "domain": "www.bluedream.al"
+            },
+            {
+                "timestamp": "2020-01-18T22:12:47Z",
+                "confidence": 100,
+                "sample_id": "137c489063a918cacea56485286c78a6",
+                "ioc": "pua-prepscram-traffic-detected",
+                "severity": 95,
+                "sample_sha256": "b9477274556593636c708ba722abd6a2f7a3790a899e827af99e4042a55bdd79",
+                "domain": "d1ql3z8u1oo390.cloudfront.net"
+            },
+            {
+                "timestamp": "2020-01-18T22:18:32Z",
+                "confidence": 95,
+                "sample_id": "14075cdd8f7126803e706aa9bf4ed42e",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "ef69ddf27437b36c660428e8c385cc09d0db0d248cb3a2ef2c5a7b51762aee01",
+                "domain": "globalbmis.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:18:32Z",
+                "confidence": 100,
+                "sample_id": "14075cdd8f7126803e706aa9bf4ed42e",
+                "ioc": "suspicious-user-agent",
+                "severity": 80,
+                "sample_sha256": "ef69ddf27437b36c660428e8c385cc09d0db0d248cb3a2ef2c5a7b51762aee01",
+                "domain": "globalbmis.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:01:43Z",
+                "confidence": 100,
+                "sample_id": "17e27ea801f5e92a82ca236c1e21a9cb",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "53ca429d52c795f6a7dc4a811e6d04e62418278c050cfe9d0359dc587fe85ec7",
+                "domain": "reports.pixelcarve.net"
+            },
+            {
+                "timestamp": "2020-01-18T22:14:54Z",
+                "confidence": 100,
+                "sample_id": "1808511816b8c63e0c9319031db6ccf5",
+                "ioc": "url-gate-php",
+                "severity": 100,
+                "sample_sha256": "b5266d990389873379e2addf35e390de8b6ca83f77c697f3283ae0410f23e9c3",
+                "domain": "windowsupdates.asd32.online"
+            },
+            {
+                "timestamp": "2020-01-18T22:22:14Z",
+                "confidence": 100,
+                "sample_id": "1b66666cfb45e75d7eba2f021632b672",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "e27905640be73977120b88a7d4a891a87c6414770c04b7134bb654619631776e",
+                "domain": "maphagroup.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:20:36Z",
+                "confidence": 100,
+                "sample_id": "1c2b86fe0be52ccd060b89ee975dea27",
+                "ioc": "malware-cryptowall-communications",
+                "severity": 100,
+                "sample_sha256": "f51678925077f4ecc84e51fce017320c409b029f084382102e4461bff14e1c4b",
+                "domain": "yenihayatintadi.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:20:36Z",
+                "confidence": 95,
+                "sample_id": "1c2b86fe0be52ccd060b89ee975dea27",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "f51678925077f4ecc84e51fce017320c409b029f084382102e4461bff14e1c4b",
+                "domain": "yenihayatintadi.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:20:36Z",
+                "confidence": 100,
+                "sample_id": "1c2b86fe0be52ccd060b89ee975dea27",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "f51678925077f4ecc84e51fce017320c409b029f084382102e4461bff14e1c4b",
+                "domain": "selstroy.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:20:36Z",
+                "confidence": 100,
+                "sample_id": "1c2b86fe0be52ccd060b89ee975dea27",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "f51678925077f4ecc84e51fce017320c409b029f084382102e4461bff14e1c4b",
+                "domain": "weddingsonthefrenchriviera.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:20:02Z",
+                "confidence": 100,
+                "sample_id": "1cbe06981e75a19d712d964f5c7c3d33",
+                "ioc": "network-protocol-mismatch-dns",
+                "severity": 85,
+                "sample_sha256": "ffef9b4754dbc20c5d1b889a7d196b2702c3d53cdc562694cf4396e0759a0c81",
+                "domain": "rp.gamepoer7.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:20:02Z",
+                "confidence": 100,
+                "sample_id": "1cbe06981e75a19d712d964f5c7c3d33",
+                "ioc": "network-protocol-mismatch-dns",
+                "severity": 85,
+                "sample_sha256": "ffef9b4754dbc20c5d1b889a7d196b2702c3d53cdc562694cf4396e0759a0c81",
+                "domain": "dns1-1.verifysign.org"
+            },
+            {
+                "timestamp": "2020-01-18T22:20:02Z",
+                "confidence": 100,
+                "sample_id": "1cbe06981e75a19d712d964f5c7c3d33",
+                "ioc": "network-protocol-mismatch-dns",
+                "severity": 85,
+                "sample_sha256": "ffef9b4754dbc20c5d1b889a7d196b2702c3d53cdc562694cf4396e0759a0c81",
+                "domain": "login.gamepoer7.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:38:16Z",
+                "confidence": 95,
+                "sample_id": "1cec8891a2239aa274c7bda872a5b04c",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "34efdb59dbbbd25bd735bc0c2845a57832efc40846c86b6e68d9dbacfd1d870c",
+                "domain": "rivejel.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:38:16Z",
+                "confidence": 100,
+                "sample_id": "1cec8891a2239aa274c7bda872a5b04c",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "34efdb59dbbbd25bd735bc0c2845a57832efc40846c86b6e68d9dbacfd1d870c",
+                "domain": "lzclient.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:38:16Z",
+                "confidence": 100,
+                "sample_id": "1cec8891a2239aa274c7bda872a5b04c",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "34efdb59dbbbd25bd735bc0c2845a57832efc40846c86b6e68d9dbacfd1d870c",
+                "domain": "citramineral.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:38:16Z",
+                "confidence": 100,
+                "sample_id": "1cec8891a2239aa274c7bda872a5b04c",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "34efdb59dbbbd25bd735bc0c2845a57832efc40846c86b6e68d9dbacfd1d870c",
+                "domain": "rajsima87.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:38:16Z",
+                "confidence": 100,
+                "sample_id": "1cec8891a2239aa274c7bda872a5b04c",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "34efdb59dbbbd25bd735bc0c2845a57832efc40846c86b6e68d9dbacfd1d870c",
+                "domain": "kenhdoanhnghiep.net"
+            },
+            {
+                "timestamp": "2020-01-18T22:27:03Z",
+                "confidence": 100,
+                "sample_id": "214c7bccd0abd0a1bb14605cde2c75b4",
+                "ioc": "malware-cryptowall-communications",
+                "severity": 100,
+                "sample_sha256": "12646c97749e03b444b4963186d38e3f973636b0fcc02c8921d54b94833e4a42",
+                "domain": "seizethetune.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:27:03Z",
+                "confidence": 95,
+                "sample_id": "214c7bccd0abd0a1bb14605cde2c75b4",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "12646c97749e03b444b4963186d38e3f973636b0fcc02c8921d54b94833e4a42",
+                "domain": "seizethetune.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:27:03Z",
+                "confidence": 100,
+                "sample_id": "214c7bccd0abd0a1bb14605cde2c75b4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "12646c97749e03b444b4963186d38e3f973636b0fcc02c8921d54b94833e4a42",
+                "domain": "seizethetune.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:27:03Z",
+                "confidence": 100,
+                "sample_id": "214c7bccd0abd0a1bb14605cde2c75b4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "12646c97749e03b444b4963186d38e3f973636b0fcc02c8921d54b94833e4a42",
+                "domain": "americancorner.udp.cl"
+            },
+            {
+                "timestamp": "2020-01-18T22:27:03Z",
+                "confidence": 100,
+                "sample_id": "214c7bccd0abd0a1bb14605cde2c75b4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "12646c97749e03b444b4963186d38e3f973636b0fcc02c8921d54b94833e4a42",
+                "domain": "refot.net"
+            },
+            {
+                "timestamp": "2020-01-18T22:27:03Z",
+                "confidence": 100,
+                "sample_id": "214c7bccd0abd0a1bb14605cde2c75b4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "12646c97749e03b444b4963186d38e3f973636b0fcc02c8921d54b94833e4a42",
+                "domain": "radio5fm.nl"
+            },
+            {
+                "timestamp": "2020-01-18T22:27:03Z",
+                "confidence": 100,
+                "sample_id": "214c7bccd0abd0a1bb14605cde2c75b4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "12646c97749e03b444b4963186d38e3f973636b0fcc02c8921d54b94833e4a42",
+                "domain": "selldom.eu"
+            },
+            {
+                "timestamp": "2020-01-18T22:27:03Z",
+                "confidence": 100,
+                "sample_id": "214c7bccd0abd0a1bb14605cde2c75b4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "12646c97749e03b444b4963186d38e3f973636b0fcc02c8921d54b94833e4a42",
+                "domain": "tusrecetas.net"
+            },
+            {
+                "timestamp": "2020-01-18T22:27:03Z",
+                "confidence": 100,
+                "sample_id": "214c7bccd0abd0a1bb14605cde2c75b4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "12646c97749e03b444b4963186d38e3f973636b0fcc02c8921d54b94833e4a42",
+                "domain": "ssac.org.hk"
+            },
+            {
+                "timestamp": "2020-01-18T22:01:16Z",
+                "confidence": 100,
+                "sample_id": "2380070b97b881a05498677a04232555",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "84acce7b21e26fc34fb74841b73c68d01ccf5e7a01ed9186232f519cb64b8a0c",
+                "domain": "www.bluedream.al"
+            },
+            {
+                "timestamp": "2020-01-18T22:34:54Z",
+                "confidence": 100,
+                "sample_id": "25fc2c642f1719e0071ce0de38ba1e45",
+                "ioc": "pua-prepscram-traffic-detected",
+                "severity": 95,
+                "sample_sha256": "3e59c52149738457dc07eb086adcedc6e6262e25619213c6eedf5adbe3164885",
+                "domain": "d1ql3z8u1oo390.cloudfront.net"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:10Z",
+                "confidence": 95,
+                "sample_id": "267f52ece1c9b0750cf88fe9348db483",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "genedillardart.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:10Z",
+                "confidence": 95,
+                "sample_id": "267f52ece1c9b0750cf88fe9348db483",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "dillardvideo.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:10Z",
+                "confidence": 100,
+                "sample_id": "267f52ece1c9b0750cf88fe9348db483",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "dillardvideo.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:10Z",
+                "confidence": 100,
+                "sample_id": "267f52ece1c9b0750cf88fe9348db483",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "genedillardart.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:10Z",
+                "confidence": 100,
+                "sample_id": "267f52ece1c9b0750cf88fe9348db483",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "aok123.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:10Z",
+                "confidence": 100,
+                "sample_id": "267f52ece1c9b0750cf88fe9348db483",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "www.aokvision.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:10Z",
+                "confidence": 100,
+                "sample_id": "267f52ece1c9b0750cf88fe9348db483",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "aokvision.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:10Z",
+                "confidence": 100,
+                "sample_id": "267f52ece1c9b0750cf88fe9348db483",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "diputacion.ardinova.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:33:43Z",
+                "confidence": 100,
+                "sample_id": "269d4d96ee1442186a6d204b2a4f426c",
+                "ioc": "pua-prepscram-traffic-detected",
+                "severity": 95,
+                "sample_sha256": "d0d578f25c78226be528605ad7cf43373daad218c75f4e067591b0d3228c9cb4",
+                "domain": "d1ql3z8u1oo390.cloudfront.net"
+            },
+            {
+                "timestamp": "2020-01-18T21:51:44Z",
+                "confidence": 95,
+                "sample_id": "269ebd18c71f8e8d972b4b3692a47ef3",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "ddf56f426cac22aa4f4d71c7e77320d5177fc825ec0070781730a6f464ab7d75",
+                "domain": "r.sz-guogeng.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:10:27Z",
+                "confidence": 100,
+                "sample_id": "26ed12bc9283e9801169bbd1cc34fc7d",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "e2db256a7da47e1d5fb3888a337aafbf8cbf12f35ddeb7ca1c276836ed70f417",
+                "domain": "www.bluedream.al"
+            },
+            {
+                "timestamp": "2020-01-18T22:21:13Z",
+                "confidence": 100,
+                "sample_id": "2889a0058465e2263e6624f1dca9dbb4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "0e39cbeaba78157cd7a5a39ffd5be85822efe198cf6c577bcf9c50ee1394664c",
+                "domain": "maphagroup.com"
+            },
+            {
+                "timestamp": "2020-01-18T21:42:43Z",
+                "confidence": 95,
+                "sample_id": "2bf5088f94cfa96425004d9824bb49ea",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "839100fe4ec402b6ea20be0f1b78873e05ef0fd25d2ee490954313d15e7696c1",
+                "domain": "pubjeuxinfos.info"
+            },
+            {
+                "timestamp": "2020-01-18T22:30:39Z",
+                "confidence": 100,
+                "sample_id": "2c8c0f9ae7ec4fa7d18bdbf9a719569f",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "4b9f1944e1e7fbf6041782d65a93a5b8279de9f89ee39ac6265fa16113a3099a",
+                "domain": "www.bluedream.al"
+            },
+            {
+                "timestamp": "2020-01-18T22:03:03Z",
+                "confidence": 95,
+                "sample_id": "2d4d37c471b7959c2518c3df038ea1ce",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "133a8d6803076873344c9636749d518449937cecd672a31903a83127b89fed37",
+                "domain": "api.blockcypher.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:30:36Z",
+                "confidence": 100,
+                "sample_id": "2e294f4e9e17cfa5dc8667b3e60815a7",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "06fea3f340ac4c2d374fe9be90b9d939580f0439aa8dcac1760e82f20e2409ff",
+                "domain": "oniongames.jp"
+            },
+            {
+                "timestamp": "2020-01-18T22:22:21Z",
+                "confidence": 100,
+                "sample_id": "2e6a346cc4dd2a89c10bdc068009f021",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "5ce1d5203cedd0d3a1e8b4f0d5c3db719e100dcb657ce33a686489a80b825583",
+                "domain": "maphagroup.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:01:33Z",
+                "confidence": 95,
+                "sample_id": "30105972833a6ca3726bf2483abd724f",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "8ef361b8d7003b3b91cc4ef7aeacc2244b204f712475d68c4477b764bfa05215",
+                "domain": "nakulsales.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:01:33Z",
+                "confidence": 100,
+                "sample_id": "30105972833a6ca3726bf2483abd724f",
+                "ioc": "suspicious-user-agent",
+                "severity": 80,
+                "sample_sha256": "8ef361b8d7003b3b91cc4ef7aeacc2244b204f712475d68c4477b764bfa05215",
+                "domain": "nakulsales.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:10:29Z",
+                "confidence": 100,
+                "sample_id": "3402c23c4bf6803a2ea07902f22d8bb8",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "7a5adea1a376b903d309e1852e7a263cec36c14e5d137f21a3928d2172d1d406",
+                "domain": "overwatchboostpro.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:22:04Z",
+                "confidence": 100,
+                "sample_id": "3824ff4b67c7d7d6a9a8af9ccbd88666",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "4606c91c31239262b282c555db0377a2ed33ff8d6844f135e68b3a7ae1ea4a0a",
+                "domain": "maphagroup.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:25:18Z",
+                "confidence": 95,
+                "sample_id": "3b35eafd4bafd47bc5f926d21bce5fed",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "b20d7268d85220b889c5860c8c7142f78ad233fd657e3a064decbab9825dd02f",
+                "domain": "dlg-configs.buzzrin.de"
+            },
+            {
+                "timestamp": "2020-01-18T22:25:18Z",
+                "confidence": 100,
+                "sample_id": "3b35eafd4bafd47bc5f926d21bce5fed",
+                "ioc": "pua-downloadguide-traffic-detected",
+                "severity": 95,
+                "sample_sha256": "b20d7268d85220b889c5860c8c7142f78ad233fd657e3a064decbab9825dd02f",
+                "domain": "dlg-configs.buzzrin.de"
+            },
+            {
+                "timestamp": "2020-01-18T22:25:18Z",
+                "confidence": 100,
+                "sample_id": "3b35eafd4bafd47bc5f926d21bce5fed",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "b20d7268d85220b889c5860c8c7142f78ad233fd657e3a064decbab9825dd02f",
+                "domain": "dlg-configs.buzzrin.de"
+            },
+            {
+                "timestamp": "2020-01-18T22:25:18Z",
+                "confidence": 95,
+                "sample_id": "3b35eafd4bafd47bc5f926d21bce5fed",
+                "ioc": "network-snort-pua",
+                "severity": 90,
+                "sample_sha256": "b20d7268d85220b889c5860c8c7142f78ad233fd657e3a064decbab9825dd02f",
+                "domain": "dlg-messages.buzzrin.de"
+            },
+            {
+                "timestamp": "2020-01-18T22:25:18Z",
+                "confidence": 100,
+                "sample_id": "3b35eafd4bafd47bc5f926d21bce5fed",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "b20d7268d85220b889c5860c8c7142f78ad233fd657e3a064decbab9825dd02f",
+                "domain": "dlg-messages.buzzrin.de"
+            },
+            {
+                "timestamp": "2020-01-18T22:07:54Z",
+                "confidence": 95,
+                "sample_id": "3c20417d07dd3b48573ffc62d70c2f3c",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "81b15ceddba940d246e7af7837e339231e167236b0d089c06f9aa779e75e71f9",
+                "domain": "dlg-configs.buzzrin.de"
+            },
+            {
+                "timestamp": "2020-01-18T22:07:54Z",
+                "confidence": 100,
+                "sample_id": "3c20417d07dd3b48573ffc62d70c2f3c",
+                "ioc": "pua-downloadguide-traffic-detected",
+                "severity": 95,
+                "sample_sha256": "81b15ceddba940d246e7af7837e339231e167236b0d089c06f9aa779e75e71f9",
+                "domain": "dlg-configs.buzzrin.de"
+            },
+            {
+                "timestamp": "2020-01-18T22:07:54Z",
+                "confidence": 100,
+                "sample_id": "3c20417d07dd3b48573ffc62d70c2f3c",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "81b15ceddba940d246e7af7837e339231e167236b0d089c06f9aa779e75e71f9",
+                "domain": "dlg-configs.buzzrin.de"
+            },
+            {
+                "timestamp": "2020-01-18T22:07:54Z",
+                "confidence": 100,
+                "sample_id": "3c20417d07dd3b48573ffc62d70c2f3c",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "81b15ceddba940d246e7af7837e339231e167236b0d089c06f9aa779e75e71f9",
+                "domain": "dlg-messages.buzzrin.de"
+            },
+            {
+                "timestamp": "2020-01-18T22:07:54Z",
+                "confidence": 95,
+                "sample_id": "3c20417d07dd3b48573ffc62d70c2f3c",
+                "ioc": "network-snort-pua",
+                "severity": 90,
+                "sample_sha256": "81b15ceddba940d246e7af7837e339231e167236b0d089c06f9aa779e75e71f9",
+                "domain": "dlg-messages.buzzrin.de"
+            },
+            {
+                "timestamp": "2020-01-18T22:26:47Z",
+                "confidence": 100,
+                "sample_id": "3ccf4716fae0b0d8b22bc3c848e228c4",
+                "ioc": "pua-prepscram-traffic-detected",
+                "severity": 95,
+                "sample_sha256": "d2561d42351d87ea8302456de361513b062d1c83c5e89d466351059d15d4310b",
+                "domain": "d1ql3z8u1oo390.cloudfront.net"
+            },
+            {
+                "timestamp": "2020-01-18T22:05:32Z",
+                "confidence": 100,
+                "sample_id": "3e78fbd4062189c1f1c5530125505ace",
+                "ioc": "malware-cryptowall-communications",
+                "severity": 100,
+                "sample_sha256": "c992c2851b3e31d8b46f8e5a158a71d559abad1124f9d6ba56c268f196dca7cc",
+                "domain": "topsectorenonderzoek.nl"
+            },
+            {
+                "timestamp": "2020-01-18T22:05:32Z",
+                "confidence": 95,
+                "sample_id": "3e78fbd4062189c1f1c5530125505ace",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "c992c2851b3e31d8b46f8e5a158a71d559abad1124f9d6ba56c268f196dca7cc",
+                "domain": "topsectorenonderzoek.nl"
+            },
+            {
+                "timestamp": "2020-01-18T22:05:32Z",
+                "confidence": 100,
+                "sample_id": "3e78fbd4062189c1f1c5530125505ace",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "c992c2851b3e31d8b46f8e5a158a71d559abad1124f9d6ba56c268f196dca7cc",
+                "domain": "selstroy.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:05:32Z",
+                "confidence": 100,
+                "sample_id": "3e78fbd4062189c1f1c5530125505ace",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "c992c2851b3e31d8b46f8e5a158a71d559abad1124f9d6ba56c268f196dca7cc",
+                "domain": "weddingsonthefrenchriviera.com"
+            },
+            {
+                "timestamp": "2020-01-18T21:51:47Z",
+                "confidence": 100,
+                "sample_id": "3f045fa98baaabef288d620bfa765b1a",
+                "ioc": "suspicious-user-agent",
+                "severity": 80,
+                "sample_sha256": "2d854cbb48c631e975b1747a4310af77a9bca6f7fde3dafa678f8b27707bd3f1",
+                "domain": "tinychinacdnweb.qiniu.com.w.kunlunno.com"
+            },
+            {
+                "timestamp": "2020-01-18T21:51:47Z",
+                "confidence": 100,
+                "sample_id": "3f045fa98baaabef288d620bfa765b1a",
+                "ioc": "suspicious-user-agent",
+                "severity": 80,
+                "sample_sha256": "2d854cbb48c631e975b1747a4310af77a9bca6f7fde3dafa678f8b27707bd3f1",
+                "domain": "cdn.boluobl.cn"
+            },
+            {
+                "timestamp": "2020-01-18T21:51:46Z",
+                "confidence": 100,
+                "sample_id": "3f1605a48ef2fcb158f5a998c8cfcc8e",
+                "ioc": "suspicious-user-agent",
+                "severity": 80,
+                "sample_sha256": "2d854cbb48c631e975b1747a4310af77a9bca6f7fde3dafa678f8b27707bd3f1",
+                "domain": "tinychinacdnweb.qiniu.com.w.kunlunno.com"
+            },
+            {
+                "timestamp": "2020-01-18T21:51:46Z",
+                "confidence": 100,
+                "sample_id": "3f1605a48ef2fcb158f5a998c8cfcc8e",
+                "ioc": "suspicious-user-agent",
+                "severity": 80,
+                "sample_sha256": "2d854cbb48c631e975b1747a4310af77a9bca6f7fde3dafa678f8b27707bd3f1",
+                "domain": "cdn.boluobl.cn"
+            },
+            {
+                "timestamp": "2020-01-18T22:03:24Z",
+                "confidence": 100,
+                "sample_id": "3f94435207e7c928cafe3a7e9f46e002",
+                "ioc": "pua-prepscram-traffic-detected",
+                "severity": 95,
+                "sample_sha256": "48ff49fcbbf3cd40c38fa205ad550b21dfe2e442131e589e58a09767f7ed1e53",
+                "domain": "d1ql3z8u1oo390.cloudfront.net"
+            },
+            {
+                "timestamp": "2020-01-18T22:01:52Z",
+                "confidence": 100,
+                "sample_id": "4801b4824d9247878ed92ce1523b38d0",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "930c28daa74fb0c10ea85f6d18bdba2f3cbe61ece5dabc28f7115592bb996c23",
+                "domain": "myevol.biz"
+            },
+            {
+                "timestamp": "2020-01-18T22:21:48Z",
+                "confidence": 100,
+                "sample_id": "4840f64f5a33b1b4349cf11c1d3b913f",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "0153a6e873152a077059449dc323b881be45499766080ac5cb111ab691ff984a",
+                "domain": "maphagroup.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:01:37Z",
+                "confidence": 95,
+                "sample_id": "484d663bde45f14e8610ecf290dc8d7e",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "00b6d636cd71c6e4bc7f732f584eb4aca5463d1596af5de80ad28f47ca833e2c",
+                "domain": "antikvarium.ro"
+            },
+            {
+                "timestamp": "2020-01-18T22:01:37Z",
+                "confidence": 100,
+                "sample_id": "484d663bde45f14e8610ecf290dc8d7e",
+                "ioc": "suspicious-user-agent",
+                "severity": 80,
+                "sample_sha256": "00b6d636cd71c6e4bc7f732f584eb4aca5463d1596af5de80ad28f47ca833e2c",
+                "domain": "antikvarium.ro"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:25Z",
+                "confidence": 100,
+                "sample_id": "489f3efdd18b6fa8285ff8c2ae777e4e",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "1bcce28a70a2c15c361b64fcfde31c258f060cd2cfc650053221d89e42c9796c",
+                "domain": "www.bluedream.al"
+            },
+            {
+                "timestamp": "2020-01-18T22:30:31Z",
+                "confidence": 100,
+                "sample_id": "4a17d4af79b6299719d90c38e272dbfd",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "a347dab519fddd474744f635befd295f18eb70934ba7e40645d0a780ceabe388",
+                "domain": "stlucieairways.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:10:28Z",
+                "confidence": 100,
+                "sample_id": "4ad519a4cabfb0e9c4a0f6a78f6fc3e6",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "37aad04248848fe1a5f612476ef8cbc22ca884f1e0fb839508a49829cfe3f8d7",
+                "domain": "www.bluedream.al"
+            },
+            {
+                "timestamp": "2020-01-18T22:22:40Z",
+                "confidence": 100,
+                "sample_id": "4d72fdf70d9f1d0e7b5cc097f2468792",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "08c520358c80a3d6558feeeec34ec9beaa8a24baed3552eb53378cab054d43d6",
+                "domain": "maphagroup.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:02:02Z",
+                "confidence": 100,
+                "sample_id": "50cf5e2e4e977b8108b57ce6faec1ed1",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "8be132351c738e3d1d996f794894767442d32e640c17efa0d0479653a7f03ae1",
+                "domain": "myphamsylic.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:22:53Z",
+                "confidence": 100,
+                "sample_id": "58ffcd887aec719fb5027ad5c7ec6395",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "8623013944f02d24a6cdf2d79457e07124380b29b94036de94fe1f73f7f3ccdc",
+                "domain": "maphagroup.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:22:41Z",
+                "confidence": 100,
+                "sample_id": "5a1cb6344fd7b6cac8ff00a0dfb8cce2",
+                "ioc": "pua-prepscram-traffic-detected",
+                "severity": 95,
+                "sample_sha256": "e7172bcb3b95576e6ad8e1aab10af9dbafcdd993680d051259ad33b5bafbf062",
+                "domain": "d1ql3z8u1oo390.cloudfront.net"
+            },
+            {
+                "timestamp": "2020-01-18T21:50:48Z",
+                "confidence": 95,
+                "sample_id": "5c50f5e2910afa5e6225a158087cb243",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "73f67a24133eafc1d2cf334b6f03fa58978adf63201fcb1bc05432503d7185e9",
+                "domain": "api.baizhu.cc"
+            },
+            {
+                "timestamp": "2020-01-18T22:05:31Z",
+                "confidence": 100,
+                "sample_id": "5e74c90e33b6b1d366a891449702788a",
+                "ioc": "malware-cryptowall-communications",
+                "severity": 100,
+                "sample_sha256": "c992c2851b3e31d8b46f8e5a158a71d559abad1124f9d6ba56c268f196dca7cc",
+                "domain": "iamrungnok.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:05:31Z",
+                "confidence": 95,
+                "sample_id": "5e74c90e33b6b1d366a891449702788a",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "c992c2851b3e31d8b46f8e5a158a71d559abad1124f9d6ba56c268f196dca7cc",
+                "domain": "iamrungnok.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:05:31Z",
+                "confidence": 100,
+                "sample_id": "5e74c90e33b6b1d366a891449702788a",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "c992c2851b3e31d8b46f8e5a158a71d559abad1124f9d6ba56c268f196dca7cc",
+                "domain": "selstroy.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:05:31Z",
+                "confidence": 100,
+                "sample_id": "5e74c90e33b6b1d366a891449702788a",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "c992c2851b3e31d8b46f8e5a158a71d559abad1124f9d6ba56c268f196dca7cc",
+                "domain": "weddingsonthefrenchriviera.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:01:17Z",
+                "confidence": 100,
+                "sample_id": "5f9de081af9f2db6f3a620fe42860ded",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "b7e2f5866328c13b945a0e763709c64c1f818ead3603ab2a491b833f79a53b63",
+                "domain": "www.bluedream.al"
+            },
+            {
+                "timestamp": "2020-01-18T22:33:14Z",
+                "confidence": 95,
+                "sample_id": "5fca4dacecbfd85b4f4de297a6fddef3",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "6071ad45eb30e885efe38ef4cea0808f218c3dcca53019af5fe8d9a73d77cd56",
+                "domain": "aatextiles.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:33:14Z",
+                "confidence": 100,
+                "sample_id": "5fca4dacecbfd85b4f4de297a6fddef3",
+                "ioc": "suspicious-user-agent",
+                "severity": 80,
+                "sample_sha256": "6071ad45eb30e885efe38ef4cea0808f218c3dcca53019af5fe8d9a73d77cd56",
+                "domain": "aatextiles.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:21:05Z",
+                "confidence": 100,
+                "sample_id": "5fd4bee167cc24f7c4a5517c4390b52d",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "b1f887706e65264d616c9e5892d629ec9a8cfbd749ca1f56f3bc1c65bd545344",
+                "domain": "maphagroup.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:16:12Z",
+                "confidence": 100,
+                "sample_id": "665f1ad373d78dcf78ee5e90c4779673",
+                "ioc": "pua-prepscram-traffic-detected",
+                "severity": 95,
+                "sample_sha256": "04e0c46d9e2d8a04fcbf3b07cbc22533a4a3b67471978bac3187b82cd5ab2164",
+                "domain": "d1ql3z8u1oo390.cloudfront.net"
+            },
+            {
+                "timestamp": "2020-01-18T22:20:26Z",
+                "confidence": 95,
+                "sample_id": "66d84b3aaa364b22bd8821d59a5d03c3",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "c6cc4b6fdae624ba249aad5de96d4a130fdc27333ef6b7e6a556374cc5f36b11",
+                "domain": "tgr.tecnoagenzia.eu"
+            },
+            {
+                "timestamp": "2020-01-18T22:05:47Z",
+                "confidence": 100,
+                "sample_id": "67ab75363a63daa5915762973a5dc4a3",
+                "ioc": "pua-prepscram-traffic-detected",
+                "severity": 95,
+                "sample_sha256": "c6a5b0aa6e9a3b893fda40049868e86cd34df9933213756bb007c337ae3c2b3f",
+                "domain": "d1ql3z8u1oo390.cloudfront.net"
+            },
+            {
+                "timestamp": "2020-01-18T22:22:12Z",
+                "confidence": 100,
+                "sample_id": "6862a25239dbebc0ab9da831cddb76e9",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "ba90d156badb57fdccc42da0f7b915d70267feb0888396d20485f56834552a3a",
+                "domain": "maphagroup.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:30:41Z",
+                "confidence": 100,
+                "sample_id": "687180d492d273a1b242517ea67d1b86",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "314d7a07147eb48b1cb6d9c3a084759dc652ed786bf7403c85627ecb1f9fa09a",
+                "domain": "www.bluedream.al"
+            },
+            {
+                "timestamp": "2020-01-18T22:21:02Z",
+                "confidence": 100,
+                "sample_id": "6bd7fb5ea0c3aa39858a065a351fe2a9",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "e6fefced27fe66e46b579d05126291fe334a246ea65a0dbdf6e5697103d2b7a0",
+                "domain": "store.chonmua.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:06:49Z",
+                "confidence": 100,
+                "sample_id": "6bedc4d1ab2e596a10871f697c5389f8",
+                "ioc": "pua-prepscram-traffic-detected",
+                "severity": 95,
+                "sample_sha256": "3e9fd537a90fde081806fb3b25cab2e334d2eaaaaff1187aabf702d0fb0d7831",
+                "domain": "d1ql3z8u1oo390.cloudfront.net"
+            },
+            {
+                "timestamp": "2020-01-18T22:21:57Z",
+                "confidence": 100,
+                "sample_id": "6da1f0f4cd269e294ac24b3c9845d7f1",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "9d3ffb31688ebf3490ce15501e791946a0eaf2972691c3a383a07e827ee76d6d",
+                "domain": "maphagroup.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:14:18Z",
+                "confidence": 95,
+                "sample_id": "6ec63108c15d49bcbadafadb33dc2a42",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "536aa4184d52178f90b1c7c56fee90ef55b78dd72c6fda0e7215a85fcb1b3c95",
+                "domain": "aatextiles.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:14:18Z",
+                "confidence": 100,
+                "sample_id": "6ec63108c15d49bcbadafadb33dc2a42",
+                "ioc": "suspicious-user-agent",
+                "severity": 80,
+                "sample_sha256": "536aa4184d52178f90b1c7c56fee90ef55b78dd72c6fda0e7215a85fcb1b3c95",
+                "domain": "aatextiles.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:02:22Z",
+                "confidence": 95,
+                "sample_id": "7026d9389b81b8f592e0fa39ca49c463",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "dcd27bdae572a4562e811a9a9927910e5863b6c75a063b4456392688efe9fdb3",
+                "domain": "api.blockcypher.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:11Z",
+                "confidence": 95,
+                "sample_id": "715a6cc554630d0020f50d995ab72ac1",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "almirot.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:11Z",
+                "confidence": 95,
+                "sample_id": "715a6cc554630d0020f50d995ab72ac1",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "enbuscade.org"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:11Z",
+                "confidence": 100,
+                "sample_id": "715a6cc554630d0020f50d995ab72ac1",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "dillardvideo.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:11Z",
+                "confidence": 100,
+                "sample_id": "715a6cc554630d0020f50d995ab72ac1",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "genedillardart.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:11Z",
+                "confidence": 100,
+                "sample_id": "715a6cc554630d0020f50d995ab72ac1",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "diputacion.ardinova.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:11Z",
+                "confidence": 100,
+                "sample_id": "715a6cc554630d0020f50d995ab72ac1",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "aokvision.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:11Z",
+                "confidence": 100,
+                "sample_id": "715a6cc554630d0020f50d995ab72ac1",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "www.aokvision.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:23:11Z",
+                "confidence": 100,
+                "sample_id": "715a6cc554630d0020f50d995ab72ac1",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "2b45fefeb8413feb6ee51e3ab254383b3eaa3fed58482d820bd55deea0706859",
+                "domain": "aok123.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:20:28Z",
+                "confidence": 100,
+                "sample_id": "72ff6e72660a874f348edf39ee450f54",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "fc53b302ce9644b904b67c58cf2cb35c62b7b9243fece3bf5a602eaa7f2fc097",
+                "domain": "baotintuc60.info"
+            },
+            {
+                "timestamp": "2020-01-18T22:22:03Z",
+                "confidence": 100,
+                "sample_id": "74a8d8d8081cf4cefbed8f49b201e535",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "1b2126ec2d1333f93d1ea7f170d5c6d60439d9bd44fb414d922f0141692d9c44",
+                "domain": "maphagroup.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:10:30Z",
+                "confidence": 100,
+                "sample_id": "7905e9aaefd0aef77d945aa27f1c6bb4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "f7df5caa26b228fa8571926cd30e658f7070d6f960ca2b3e2616ce06d9d2c4ad",
+                "domain": "www.bluedream.al"
+            },
+            {
+                "timestamp": "2020-01-18T22:01:28Z",
+                "confidence": 100,
+                "sample_id": "7cff5eed49894f3199d7d61f0a2aac37",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "ef32e8143dc2a658de52587c54be505cb61b616a655116886ed8b227a4aa9c11",
+                "domain": "www.bluedream.al"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 95,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "gacyhis.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 95,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-snort-malware",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "www.gacyhis.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 100,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "www.gacyhis.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 100,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "gacyhis.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 100,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "vowycac.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 100,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "www.vocyzit.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 100,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "vocyzit.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 100,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "www.gadyniw.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 100,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "gadyniw.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 100,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "gacyqob.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 100,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "gacyryw.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 100,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "qetyhyg.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 100,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "qedysov.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 100,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "pupybul.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 100,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "gatyfus.com"
+            },
+            {
+                "timestamp": "2020-01-18T22:11:21Z",
+                "confidence": 100,
+                "sample_id": "7ddebd82fd37a4910e5e4ad6be91b0e4",
+                "ioc": "network-dns-malicious-snort",
+                "severity": 95,
+                "sample_sha256": "cff5b92ff084e6c3595d44c8962c78e746dc122fbabc5cea1eb515b3bc1ba792",
+                "domain": "www.gatyfus.com"
+            }
+        ],
+        "items_per_page": 1000
+    }
+}

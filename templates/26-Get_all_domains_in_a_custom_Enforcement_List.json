@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "page": 1,
+        "limit": 200,
+        "prev": false,
+        "next": false
+    },
+    "data": [
+        {
+            "id": 30916,
+            "name": "internetbadguys.com",
+            "lastSeenAt": 1615485375
+        },
+        {
+            "id": 281329,
+            "name": "www.internetbadguys.com",
+            "lastSeenAt": 1615485956
+        },
+        {
+            "id": 4595407,
+            "name": "examplemalwaredomain.com",
+            "lastSeenAt": 1616668050
+        },
+        {
+            "id": 4674395,
+            "name": "examplebotnetdomain.com",
+            "lastSeenAt": 1616668050
+        },
+        {
+            "id": 25161401,
+            "name": "internetbadguys2.com",
+            "lastSeenAt": 1615485625
+        },
+        {
+            "id": 30557598,
+            "name": "retdemos.com",
+            "lastSeenAt": 1618393127
+        }
+    ]
+}

@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stix:STIX_Package xmlns:stix="http://stix.mitre.org/stix-1" id="stix:guid-bd84e3e4-0205-438b-9274-23426506001e" timestamp="2020-10-14T09:55:00.056Z" version="1.2" xmlns="http://xml/metadataSharing.xsd" xmlns:URIObj="http://cybox.mitre.org/objects#URIObject-2" xmlns:cybox="http://cybox.mitre.org/cybox-2" xmlns:cyboxCommon="http://cybox.mitre.org/common-2" xmlns:indicator="http://stix.mitre.org/Indicator-2" xmlns:stixCommon="http://stix.mitre.org/common-1">
+    <stix:STIX_Header>
+        <stix:Description>Threat Grid feed</stix:Description>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="stix:guid-fd03dd30-f276-4c22-9941-8fad8076ae5d" timestamp="2020-01-08T02:34:38Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cerber Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T02:34:38Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/api.blockcypher.com</indicator:Description>
+            <indicator:Observable id="stix:guid-047f40da-055f-46f6-9419-526f8ce2a410">
+                <cybox:Object id="stix:guid-3a9a0a52-3151-4030-a575-0cf26ea09444">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>api.blockcypher.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.058Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-4285888e-05eb-45ac-a25e-bff466ebd0d8" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/diamondglassbh.com</indicator:Description>
+            <indicator:Observable id="stix:guid-13f4882a-a359-4a7a-8495-2e26d65e6bb0">
+                <cybox:Object id="stix:guid-5969ef24-009d-46ee-91a6-160c0022b353">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>diamondglassbh.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.058Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-ca1d0bc2-2ebb-4371-b2fb-629ef1fdd8fb" timestamp="2020-01-08T09:47:25Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware TeslaCrypt Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T09:47:25Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/graysonacademy.com</indicator:Description>
+            <indicator:Observable id="stix:guid-4d024bca-3be8-4a36-81a2-a115ece05211">
+                <cybox:Object id="stix:guid-1059ac8a-5c71-48e0-978b-94446fde1442">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>graysonacademy.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.058Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-7058387b-cac1-4c31-a4c5-ffbd6291c16f" timestamp="2020-01-08T11:00:17Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T11:00:17Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/boropbabrab.ru</indicator:Description>
+            <indicator:Observable id="stix:guid-3a700272-86cd-4c2a-87ad-4d6198a63aa6">
+                <cybox:Object id="stix:guid-5ccd0359-41a1-4ac9-876f-f94091c34010">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>boropbabrab.ru</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.058Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-961a1d4d-4999-4cdb-8d4d-294b8f9a9c40" timestamp="2020-01-08T10:02:34Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware TeslaCrypt Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T10:02:34Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/surrogacyandadoption.com</indicator:Description>
+            <indicator:Observable id="stix:guid-03312f59-1b06-4da7-ad9b-a1b143faff27">
+                <cybox:Object id="stix:guid-ad9dbb51-69ec-415e-bece-925f45be3c71">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>surrogacyandadoption.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.058Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-6a6a4e76-0f19-4a08-8ce0-354c1d13fe83" timestamp="2020-01-08T09:47:25Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware TeslaCrypt Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T09:47:25Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/gjesdalbrass.no</indicator:Description>
+            <indicator:Observable id="stix:guid-29f783fd-b45c-4264-82a9-450453a68199">
+                <cybox:Object id="stix:guid-49413acf-248f-4bc6-ac19-37197c566b7b">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>gjesdalbrass.no</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-da7be9c3-eadd-44d3-b914-4d85a5f28d52" timestamp="2020-01-08T09:47:25Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware TeslaCrypt Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T09:47:25Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/homeopathischdierenarts.nl</indicator:Description>
+            <indicator:Observable id="stix:guid-5ecd8aab-1d71-4688-b913-03b4ddbf5143">
+                <cybox:Object id="stix:guid-432705f2-79b5-4c8e-b4fc-b85994b17153">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>homeopathischdierenarts.nl</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-5ea30552-a7eb-4fd1-924a-aaffcfb416ac" timestamp="2020-01-08T00:44:13Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T00:44:13Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/www.juergenblaetz.dewp-content</indicator:Description>
+            <indicator:Observable id="stix:guid-ac7294a8-fc89-47f1-b78d-8c4703461c04">
+                <cybox:Object id="stix:guid-3ce47675-d17f-4619-b2f6-62e18741981d">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>www.juergenblaetz.dewp-content</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-ca63ea34-d6e4-47d8-b528-ee2287764ff6" timestamp="2020-01-08T09:44:28Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T09:44:28Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/swinpintin.com</indicator:Description>
+            <indicator:Observable id="stix:guid-41757dce-7be1-4b27-a858-9ae1a97fe930">
+                <cybox:Object id="stix:guid-f1073fc8-d0d5-4591-8601-05ae112cdef4">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>swinpintin.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-7629caa5-2630-4544-b442-37a30da8c2fe" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/bellsupplyonline.com</indicator:Description>
+            <indicator:Observable id="stix:guid-ad8ec591-a1d4-4a00-bf66-cca44346ca1d">
+                <cybox:Object id="stix:guid-e0450d9e-b11d-4ed6-827c-d3dd8cd3aa00">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>bellsupplyonline.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-1319cfe3-f45e-4b62-9c8b-a059989c2456" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/solatect.com</indicator:Description>
+            <indicator:Observable id="stix:guid-04e0f2de-eecd-40a3-a36a-f40b6591c3aa">
+                <cybox:Object id="stix:guid-c9df1833-4e68-4521-a5f9-04e23eae2b42">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>solatect.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-1d9c5589-f15d-438f-bafb-aab7123292e8" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/master-krepezha.ru</indicator:Description>
+            <indicator:Observable id="stix:guid-0d47dccb-f675-469d-90e2-e3557c632888">
+                <cybox:Object id="stix:guid-99221df6-427c-453e-84a0-5d9471dbaf39">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>master-krepezha.ru</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-5fcc7b67-904d-44c3-8f40-33634a2c5b93" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/www.diamondglassbh.com</indicator:Description>
+            <indicator:Observable id="stix:guid-6d3671fa-96de-440c-823f-24ff3b0985d6">
+                <cybox:Object id="stix:guid-ac9d2c9b-17e5-46ac-a343-8b3732efb515">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>www.diamondglassbh.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-64bab918-d899-4653-ab9f-77dfe8906e65" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/dramaldental.com</indicator:Description>
+            <indicator:Observable id="stix:guid-9bdd696c-49b6-4b80-b2ce-4abad19a37d8">
+                <cybox:Object id="stix:guid-c94ebcd8-4199-405b-adff-db850193da55">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>dramaldental.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-40958e6d-489e-4085-91ac-def40146c211" timestamp="2020-01-08T10:02:34Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware TeslaCrypt Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T10:02:34Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/imagescroll.com</indicator:Description>
+            <indicator:Observable id="stix:guid-6a81b3db-f964-4ab9-8733-d1e972042ec0">
+                <cybox:Object id="stix:guid-d275b175-cd2b-4ad4-b233-4cc71476ff34">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>imagescroll.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-9f8bce5b-3334-40f3-a827-8d79a7ccdb30" timestamp="2020-01-08T00:44:13Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T00:44:13Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/wallflowersandrakes.com</indicator:Description>
+            <indicator:Observable id="stix:guid-a5ddec41-8e76-4c2e-b5f1-0d7cebb8cd8c">
+                <cybox:Object id="stix:guid-4739b770-c45d-426c-ab28-384b27c524c6">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>wallflowersandrakes.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-0b88150c-9396-48b3-89e7-09504df22356" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/visionbahrain.com</indicator:Description>
+            <indicator:Observable id="stix:guid-17d8f2fc-7e63-45ae-9ce0-2de2a445a4c2">
+                <cybox:Object id="stix:guid-1bc17501-0c69-4ea5-ba61-4aeb09bfd26a">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>visionbahrain.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-d7ab1f1f-244c-45df-ad75-df41a0d3278a" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/istekpatent.net</indicator:Description>
+            <indicator:Observable id="stix:guid-196c5138-4ac9-42b6-a7c5-3aa95f9895b6">
+                <cybox:Object id="stix:guid-e5c1bad1-938c-4914-ab61-175b8785dec1">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>istekpatent.net</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-580fbc12-0a28-452b-badc-91e723ebdfb7" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/ameencogroup.com</indicator:Description>
+            <indicator:Observable id="stix:guid-9363ecc2-78ba-4739-bc45-7a2d5b7360da">
+                <cybox:Object id="stix:guid-11949575-663b-48ef-8002-093f884ed85e">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>ameencogroup.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-55a0cbe0-de12-4bef-a2df-0b29180b869f" timestamp="2020-01-08T02:45:35Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware TeslaCrypt Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T02:45:35Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/www.informaticauno.net</indicator:Description>
+            <indicator:Observable id="stix:guid-2514364a-ad0a-4753-a4ea-ce7a24982a16">
+                <cybox:Object id="stix:guid-cd44c865-ecb1-47f0-a046-680361a92905">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>www.informaticauno.net</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.059Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-5f131129-ce23-4982-a891-94d670594e39" timestamp="2020-01-08T04:04:26Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T04:04:26Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/nemty10.hk</indicator:Description>
+            <indicator:Observable id="stix:guid-9866c62f-6fe3-48d8-b8d9-07ea8013a13f">
+                <cybox:Object id="stix:guid-4011e00e-4607-44e9-8e21-9054ac2275d0">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>nemty10.hk</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-30dfa9a6-e7c3-40dc-a2f6-fc1729d4a177" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/wswellproducts.com</indicator:Description>
+            <indicator:Observable id="stix:guid-5424908f-2d76-4734-830c-5f947dcc6c3d">
+                <cybox:Object id="stix:guid-29cf7d70-c218-47b4-b5d9-36af32b9814b">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>wswellproducts.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-5f6813cb-85b6-44c0-86bc-5f79d72ab398" timestamp="2020-01-08T18:54:59Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Gandcrab Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T18:54:59Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/ns1.wowservers.ru</indicator:Description>
+            <indicator:Observable id="stix:guid-e2f6a7aa-b7be-4eac-abd8-52e00b80a359">
+                <cybox:Object id="stix:guid-ef0cfd32-f04b-4635-9022-ccaee742d2e0">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>ns1.wowservers.ru</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-1de0b46b-cc4e-4354-a55d-4865e57de236" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/enccluster.info</indicator:Description>
+            <indicator:Observable id="stix:guid-d75f1e6d-1d83-4f17-bdaf-96e09bb1716e">
+                <cybox:Object id="stix:guid-a1a674cf-560e-4512-a531-aa196e1c1550">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>enccluster.info</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-8c5b073f-aefd-4132-8049-28df6b33e81a" timestamp="2020-01-08T02:45:35Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware TeslaCrypt Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T02:45:35Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/ahlanmedicalcentre.com</indicator:Description>
+            <indicator:Observable id="stix:guid-8f9c9405-c8f9-4517-bb17-07e19f1553b7">
+                <cybox:Object id="stix:guid-ae5c2cf6-c37c-494a-9d24-409005fa1d68">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>ahlanmedicalcentre.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-b19f8b2f-ebf5-4486-b0b0-f3bca6d36ce9" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/paynesenvironmental.com</indicator:Description>
+            <indicator:Observable id="stix:guid-bdd69f3f-2945-4eed-b61d-29b822c3682e">
+                <cybox:Object id="stix:guid-7f3da8d6-9245-4b0c-a321-6b91a7c1d20d">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>paynesenvironmental.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-a7ad6701-8277-4fca-8d6d-f295b987ef5e" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/coolnairbahrain.com</indicator:Description>
+            <indicator:Observable id="stix:guid-22f03e1e-0036-4049-b56d-982b6a6da282">
+                <cybox:Object id="stix:guid-663f38b9-e10d-4fdf-bbd9-da49abc9b77c">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>coolnairbahrain.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-67bec992-0da4-4f76-aed0-82dc2f3b924e" timestamp="2020-01-08T19:46:30Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Ramnit Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T19:46:30Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/www.cz404.com</indicator:Description>
+            <indicator:Observable id="stix:guid-c96879a9-a9ff-4941-be49-d4135c1bb390">
+                <cybox:Object id="stix:guid-a9b45a12-cf9f-401a-819b-d3874dd64549">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>www.cz404.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-3a303a71-7bf2-43d3-baf4-af54f0e7becb" timestamp="2020-01-08T02:34:38Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cerber Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T02:34:38Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/hjhqmbxyinislkkt.1j9r76.top</indicator:Description>
+            <indicator:Observable id="stix:guid-287cd997-3d99-4212-a823-c8d12bb45e73">
+                <cybox:Object id="stix:guid-c9fc9398-1259-4566-95d8-9dbd4ecf16b1">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>hjhqmbxyinislkkt.1j9r76.top</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-479ca280-9c04-4988-8f96-856beef80344" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/almartranslation.com</indicator:Description>
+            <indicator:Observable id="stix:guid-326abd90-8c37-4f27-b42b-229d1b9d74cb">
+                <cybox:Object id="stix:guid-7cec9bfb-cabb-434d-893b-ef3c17cfcfc5">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>almartranslation.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-f6435401-aaa6-49df-aae6-cb2b7c3abecd" timestamp="2020-01-08T10:02:34Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware TeslaCrypt Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T10:02:34Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/stacon.eu</indicator:Description>
+            <indicator:Observable id="stix:guid-4d074b1c-67b3-43f4-9523-d84ea1b58853">
+                <cybox:Object id="stix:guid-f3e064db-a85f-4a9b-9220-77844b6d01e7">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>stacon.eu</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-06996dab-abc9-45aa-90d3-b40671e61639" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/saryact.com</indicator:Description>
+            <indicator:Observable id="stix:guid-21c49a64-f5d1-4af3-b72c-0fb9b110f91b">
+                <cybox:Object id="stix:guid-a498e8b8-4885-4750-a63c-1acabd8f474b">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>saryact.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-2275581f-1349-4b94-a47f-fd291bbe466d" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/dev.netoria.pl</indicator:Description>
+            <indicator:Observable id="stix:guid-a7d2d8a4-4706-4d12-a104-a83710f25dbc">
+                <cybox:Object id="stix:guid-47cb9015-2db4-417a-b27d-9e8e7560b0d1">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>dev.netoria.pl</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-0a7b7966-17ed-44cb-a72f-739501a282d4" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/konrad.szalapak.eu</indicator:Description>
+            <indicator:Observable id="stix:guid-a69ea8fd-2036-4f3a-bf6d-14ed5631699a">
+                <cybox:Object id="stix:guid-e0790412-f22f-447f-9313-bf251d572c19">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>konrad.szalapak.eu</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-d509283a-b485-4f72-aa1b-1904ded727ef" timestamp="2020-01-08T00:07:24Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Wanacryptor Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T00:07:24Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/vvv.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com</indicator:Description>
+            <indicator:Observable id="stix:guid-1f7ef52f-9683-4eb3-bf8f-08c07634b9aa">
+                <cybox:Object id="stix:guid-b6e14819-c0eb-4b96-a682-dc5a66f82884">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>vvv.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.060Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-ff2bb03e-6495-42ad-a28e-117d1e90878e" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/chemes.eu</indicator:Description>
+            <indicator:Observable id="stix:guid-46842b2f-ab38-4a87-8ae8-e7e092123014">
+                <cybox:Object id="stix:guid-ba8d0722-9eab-4cd4-b2dd-e496159b3c24">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>chemes.eu</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-016654fe-180f-4cb1-b36a-65a256e3ebcf" timestamp="2020-01-08T02:45:35Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware TeslaCrypt Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T02:45:35Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/cam-itour.info</indicator:Description>
+            <indicator:Observable id="stix:guid-3923dec9-5aa5-48b8-930e-f645a34137a5">
+                <cybox:Object id="stix:guid-d29205be-c703-4861-86ed-3b3f91a911cf">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>cam-itour.info</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-e6b73a36-b0c1-4f30-ac60-54d47acc3f7f" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/www.technobyteits.com</indicator:Description>
+            <indicator:Observable id="stix:guid-c078ef01-6ecc-42a0-8e0c-9ef18fc5c7f0">
+                <cybox:Object id="stix:guid-e04b2512-a5cf-4b3d-a9dc-c47387c69585">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>www.technobyteits.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-c4d7f244-aee1-4590-b22d-b376f4c7cce6" timestamp="2020-01-08T09:44:28Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T09:44:28Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/nihnihnih.com</indicator:Description>
+            <indicator:Observable id="stix:guid-158ffb18-11ba-40b0-8b03-f5833d044f77">
+                <cybox:Object id="stix:guid-a9904b0d-2cf5-45cf-9149-e0f439e6a115">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>nihnihnih.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-18ea4be2-7516-47f2-bea1-5f819861d730" timestamp="2020-01-08T00:44:13Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T00:44:13Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/azerbaycanas.com</indicator:Description>
+            <indicator:Observable id="stix:guid-fa80a73c-2921-4462-9713-800e604d93c5">
+                <cybox:Object id="stix:guid-77b98d24-7f02-4a57-a956-5f43827fceb3">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>azerbaycanas.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-0938e25c-3b99-4b69-8aaf-2f07bebc0d04" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/amwajwatereqpt.com</indicator:Description>
+            <indicator:Observable id="stix:guid-2c5b1d59-9c62-4ed0-95d6-bd1b4f60f1ce">
+                <cybox:Object id="stix:guid-179f0260-d940-41f8-80e6-45b40e5def76">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>amwajwatereqpt.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-6f3f66a3-bf2a-4487-820c-d3addfea32a0" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/technobyteits.com</indicator:Description>
+            <indicator:Observable id="stix:guid-a480bd88-c2d4-414a-8c80-49c429ba097d">
+                <cybox:Object id="stix:guid-598d5299-9413-4075-ace5-da07e8a43869">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>technobyteits.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-90baf1ac-efea-4a53-96b1-2f0262a277ca" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/sport-mix.sk</indicator:Description>
+            <indicator:Observable id="stix:guid-d5bac4ef-80c4-4d74-904d-a617a06323be">
+                <cybox:Object id="stix:guid-0a1833df-3c7f-41c8-b717-da8282c2c069">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>sport-mix.sk</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-a6112fcc-6ea9-4625-90ba-786eed9f19b7" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/alamohcc.org</indicator:Description>
+            <indicator:Observable id="stix:guid-fc54cbf5-cc17-4e86-abb8-079587f82527">
+                <cybox:Object id="stix:guid-91bbb690-b2c1-4d83-9297-43f106218910">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>alamohcc.org</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-34627e04-3f2c-43e9-a2cd-3f53322c9b98" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/patricebaudin.com</indicator:Description>
+            <indicator:Observable id="stix:guid-4d591d17-450b-488b-bf6d-e4547c8263ff">
+                <cybox:Object id="stix:guid-ff0ec109-29c4-4e57-8e8e-b2bdf7b24771">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>patricebaudin.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-7471ee04-5cef-4cd6-bc2d-ac04e221528a" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/etcbahrain.com</indicator:Description>
+            <indicator:Observable id="stix:guid-ad4743f6-a0cb-403e-939a-2bef51c45ca7">
+                <cybox:Object id="stix:guid-ca5c831e-032b-48df-86ac-89451a168d2c">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>etcbahrain.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-d0a352c5-9c3a-4e68-a1da-b59cdbd5f9be" timestamp="2020-01-08T09:44:28Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T09:44:28Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/ugotkey.com</indicator:Description>
+            <indicator:Observable id="stix:guid-970336ba-528a-4a42-bbbc-a2935029c068">
+                <cybox:Object id="stix:guid-f6890cb6-5a8e-4be7-8646-4bea15451426">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>ugotkey.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-b9f6a75c-ee0f-48ca-994a-a32efbe5529b" timestamp="2020-01-08T02:45:35Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware TeslaCrypt Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T02:45:35Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/edge-institut.org</indicator:Description>
+            <indicator:Observable id="stix:guid-9bb0c44c-94f4-4896-980c-c6d8790f83a4">
+                <cybox:Object id="stix:guid-ededd517-1bc5-4e08-94c1-b61396ceeb1e">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>edge-institut.org</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-ca4d669b-13c7-43ff-a492-4355e0015422" timestamp="2020-01-08T09:44:28Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T09:44:28Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/craspatsp.com</indicator:Description>
+            <indicator:Observable id="stix:guid-32c09201-673c-4fd3-a24b-90ea18ae759c">
+                <cybox:Object id="stix:guid-6575e851-b00a-437d-b367-252042e8cf3d">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>craspatsp.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-9010a0f6-a868-4dc8-9c9f-f71a0ea0a4b8" timestamp="2020-01-08T11:00:17Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T11:00:17Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/rutithegde.ru</indicator:Description>
+            <indicator:Observable id="stix:guid-4c953aa1-4215-47c6-a1eb-df0fa4f84b52">
+                <cybox:Object id="stix:guid-62c8db8c-4a4e-4c47-92f8-606e459ca55e">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>rutithegde.ru</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.061Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-57356a9c-bdaf-4424-8fa6-69ecd2a6790c" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/quali-man.com</indicator:Description>
+            <indicator:Observable id="stix:guid-1bf9e200-3557-4a3d-97f6-38843bf6be49">
+                <cybox:Object id="stix:guid-0a2ab58b-7a74-4773-ac49-914bbe018d42">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>quali-man.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-ef7373d7-210c-4eae-a074-c03c8cdea187" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/kontinent-retro.ru</indicator:Description>
+            <indicator:Observable id="stix:guid-3dca7944-eb23-46a3-94a1-d8f6f08593b4">
+                <cybox:Object id="stix:guid-154c55ce-7612-4f81-9be8-3632ac8a82ec">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>kontinent-retro.ru</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-ed417079-2605-40b0-b075-9684e530a9e3" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/netoria.mydevil.net</indicator:Description>
+            <indicator:Observable id="stix:guid-1db14ff2-3140-4177-860d-2e8f5d422b53">
+                <cybox:Object id="stix:guid-9c9d83b4-c150-499a-8abb-ac0e00af7965">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>netoria.mydevil.net</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-8ed49c1b-b157-4c1b-99df-839c65401ed9" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/grencat.ru</indicator:Description>
+            <indicator:Observable id="stix:guid-87ebb0cc-74eb-4796-91fb-8484608f67a3">
+                <cybox:Object id="stix:guid-5ac0d499-d1d2-45da-9cc9-1de979c178ec">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>grencat.ru</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-bfbaf338-35f5-42d0-bbc1-65f9f8e822a3" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/malka-tex.ru</indicator:Description>
+            <indicator:Observable id="stix:guid-c78bfb61-f22c-405d-a09c-904252d1775d">
+                <cybox:Object id="stix:guid-65c88656-311d-42bd-9bc4-0038ab3c7c82">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>malka-tex.ru</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-b2ebdc05-5a53-4951-9d0a-9c5a623b821c" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/unimedicaven.com</indicator:Description>
+            <indicator:Observable id="stix:guid-2e1d7ada-e259-45a1-a711-8e99bdf036a3">
+                <cybox:Object id="stix:guid-b397c973-14a5-4dd5-ae66-395ec932684f">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>unimedicaven.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-f7377f07-93c2-4479-88a0-233c0c3e4f34" timestamp="2020-01-08T09:47:25Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware TeslaCrypt Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T09:47:25Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/crown.essaudio.pl</indicator:Description>
+            <indicator:Observable id="stix:guid-483d28c9-6993-4532-b19f-b35e4cd0b814">
+                <cybox:Object id="stix:guid-2ad04c2f-1f34-43aa-b5b1-f9efc065cbd8">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>crown.essaudio.pl</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-5829cd5c-be3f-4278-93a3-b08e4ef4accd" timestamp="2020-01-08T09:47:25Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware TeslaCrypt Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T09:47:25Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/gracelifechurchct.com</indicator:Description>
+            <indicator:Observable id="stix:guid-ee5139c8-d66e-451f-8371-1061fc23d2c8">
+                <cybox:Object id="stix:guid-a49f17b5-1ebf-4aac-a761-4c5e1a74f2e8">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>gracelifechurchct.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-836e3524-210c-4b19-b62d-59d4942d2957" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/laureensfamilyhair.com</indicator:Description>
+            <indicator:Observable id="stix:guid-f6f82bcd-c3e9-4347-bba5-247100bebfd6">
+                <cybox:Object id="stix:guid-654408e3-82b3-4c37-a8f7-374fd6d3b9af">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>laureensfamilyhair.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-295d5af5-2774-4774-8272-1b4bc1070761" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/mmcomposite.dk</indicator:Description>
+            <indicator:Observable id="stix:guid-d7787ce8-a771-45b3-abd4-d6ce4d9735f3">
+                <cybox:Object id="stix:guid-71737963-2e59-43a1-b180-03c9dd159fb6">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>mmcomposite.dk</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-9e828f0e-873c-468d-b91a-99e93294844a" timestamp="2020-01-08T10:02:34Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware TeslaCrypt Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T10:02:34Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/worldisonefamily.info</indicator:Description>
+            <indicator:Observable id="stix:guid-eb046f6f-0b76-45a3-a80b-499aa5aa3fdb">
+                <cybox:Object id="stix:guid-726472f2-e62d-40f6-8a91-df667bb8a3e4">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>worldisonefamily.info</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-8b6bc2d9-2a5f-448d-bff3-6783ed4b8d87" timestamp="2020-01-08T00:44:13Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T00:44:13Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/bonitabeachassociation.com</indicator:Description>
+            <indicator:Observable id="stix:guid-ef77196d-2ce8-4a30-a83a-12931313972d">
+                <cybox:Object id="stix:guid-75a5a495-7753-49c9-b2dd-7c7f2bce87ac">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>bonitabeachassociation.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-cb45388a-d35f-4efa-87a2-390b6b5682a2" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/besthairtransplantbangalore.com</indicator:Description>
+            <indicator:Observable id="stix:guid-5cb63d4f-c282-4a67-a173-a491295eb9e3">
+                <cybox:Object id="stix:guid-3a49ab9c-ff1f-4a82-bdaa-5500dff1909c">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>besthairtransplantbangalore.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-eaddcc99-b349-4940-a751-132460c6b73a" timestamp="2020-01-08T04:14:25Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T04:14:25Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/mamo434376.tk</indicator:Description>
+            <indicator:Observable id="stix:guid-8f6f9db9-386b-45fc-bdda-5d4d36a69750">
+                <cybox:Object id="stix:guid-e0017471-2241-4e14-96ac-0ecca2f7dadd">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>mamo434376.tk</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-622347f6-9a1f-4208-ac4d-a60352211127" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/formaprim.fr</indicator:Description>
+            <indicator:Observable id="stix:guid-d9dbcfd5-b7a5-44f2-a1a7-657b47a66f8f">
+                <cybox:Object id="stix:guid-f731102d-7513-4282-abfb-0a951a33dbda">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>formaprim.fr</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.062Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-0847916f-83cd-43e7-a503-00c7b9bb421b" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/coastalcarolinasports.com</indicator:Description>
+            <indicator:Observable id="stix:guid-b44d1271-d290-4b9d-b149-5ea0a31ec190">
+                <cybox:Object id="stix:guid-709851c5-8899-4aff-9fb3-15db50775b8e">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>coastalcarolinasports.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.063Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-93fc1fbe-2a66-42ba-bb05-2b772e361537" timestamp="2020-01-08T18:54:59Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Gandcrab Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T18:54:59Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/ns2.wowservers.ru</indicator:Description>
+            <indicator:Observable id="stix:guid-173b4fac-fb16-4a70-927f-ca9cb8df7b03">
+                <cybox:Object id="stix:guid-746735db-163c-48d9-ba7b-183b118c7a67">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>ns2.wowservers.ru</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.063Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-5add6197-136e-4a09-bfa8-c299310e63e1" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/austvoll.net</indicator:Description>
+            <indicator:Observable id="stix:guid-842cfa0e-4cc2-4248-8bac-8e9fde15460e">
+                <cybox:Object id="stix:guid-0cf2c8a2-3b53-4fa8-97cc-7095970f302f">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>austvoll.net</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.063Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-9710e55c-0b5c-4449-adaa-a8bbf556eaed" timestamp="2020-01-08T01:42:57Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T01:42:57Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/carolinaforestchildcare.com</indicator:Description>
+            <indicator:Observable id="stix:guid-8af2d335-a74d-46b1-bae0-738a5b6bd01c">
+                <cybox:Object id="stix:guid-c4eea7ba-d400-4d93-98c1-94a914293e1a">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>carolinaforestchildcare.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.063Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-1c255017-2d71-4832-9a71-79892e2e7ea3" timestamp="2020-01-08T10:02:34Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware TeslaCrypt Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T10:02:34Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/music.mbsaeger.com</indicator:Description>
+            <indicator:Observable id="stix:guid-61369458-2e78-48a4-9682-6c50d3114f81">
+                <cybox:Object id="stix:guid-ed6e9aee-317f-4450-8188-db9a48621e33">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>music.mbsaeger.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.063Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-a67d0545-1008-4dd3-8927-d58aee63330d" timestamp="2020-01-08T11:00:17Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T11:00:17Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/muchcocaugh.com</indicator:Description>
+            <indicator:Observable id="stix:guid-bbcd9c4e-1529-40cc-ac1f-a1959bc754bc">
+                <cybox:Object id="stix:guid-54198537-25fa-4132-bb46-9ee0d8e50df7">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>muchcocaugh.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.063Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="stix:guid-9dc4b313-7da8-401d-bcf8-1002811a967b" timestamp="2020-01-08T09:44:28Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="indicator:IndicatorType">
+            <indicator:Title>Ransomware Cryptowall Network Communications</indicator:Title>
+            <indicator:Description>This observable was seen at 2020-01-08T09:44:28Z. Domain details: https://panacea.threatgrid.com/feeds/ransomware-dns/domains/brosersposter.com</indicator:Description>
+            <indicator:Observable id="stix:guid-0ff4307b-67a4-4fd2-b21b-c196a279f87e">
+                <cybox:Object id="stix:guid-6284765e-a226-4cf7-a02c-6170af36a8c6">
+                    <cybox:Properties type="Domain Name" xsi:type="URIObj:URIObjectType">
+                        <URIObj:Value>brosersposter.com</URIObj:Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Producer>
+                <stixCommon:Identity>
+                    <stixCommon:Name>Threat Grid</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2020-10-14T09:55:00.063Z</cyboxCommon:Produced_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+    </stix:Indicators>
+</stix:STIX_Package>

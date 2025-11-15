@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "description": "Block this domain using Umbrella Enforcement API",
+            "id": "block",
+            "module": "Umbrella",
+            "module_instance_id": "4b7a22cb-09a2-4b35-9b62-199bb55329c6",
+            "module_type_id": "188d70f7-29d5-5069-9098-d83a3ec8e797",
+            "title": "Block this domain",
+            "url": "/respond/trigger/4b7a22cb-09a2-4b35-9b62-199bb55329c6/block?observable_type=domain&observable_value=retdemos.com"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<body style="background-color:black;">
+<center><h1 style="color:lime";>Your challenge</h1></center>
+<center><button onclick="typeWriter()">Click Me</button></center>
+<center><h2 id="demo" style="color:lime";></h2></center>
+<script>
+var i = 0;
+var txt = 'One of your user reported a Secure Endpoint Threat Detected alert on his laptop.                                         Your mission is to figure out what is this threat,                                    what is the scope of the attack.                                             Then you have to isolate every infected machines                                                  and you have to block every malicious objects.                                      Build an automation workflow which execute all these tasks automatically one after the other.                                                    Now go to the lab guide and follow the instructions';
+var speed = 50;
+function typeWriter() {
+if (i < txt.length) {
+document.getElementById("demo").innerHTML += txt.charAt(i);
+i++;
+setTimeout(typeWriter, speed);
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "columns": [
+        "name",
+        "environment_name",
+        "description",
+        "called_function",
+        "input_variables",
+        "output_variables",
+        "comment"
+    ],
+    "db_name": "functions",
+    "description": "Python Functions Library",
+    "table_name": "functions"
+}

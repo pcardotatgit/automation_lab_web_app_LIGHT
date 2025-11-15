@@ -1,0 +1,13 @@
+{
+    "columns": [
+        "workflow_name",
+        "step",
+        "step_name",
+        "input",
+        "output",
+        "comment"
+    ],
+    "db_name": "workflows",
+    "description": "manage automation workflows",
+    "table_name": "workflows"
+}

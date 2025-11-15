@@ -1,0 +1,30 @@
+{
+    "dga_score": 0.0,
+    "perplexity": 0.2471723015137364,
+    "entropy": 2.9219280948873623,
+    "securerank2": 0.0,
+    "pagerank": 0.0,
+    "asn_score": -0.03902391797379194,
+    "prefix_score": -0.6307543788406929,
+    "rip_score": -22.188608848642268,
+    "popularity": 0.0,
+    "fastflux": false,
+    "geodiversity": [
+        [
+            "US",
+            1.0
+        ]
+    ],
+    "geodiversity_normalized": [
+        [
+            "US",
+            1.0
+        ]
+    ],
+    "tld_geodiversity": [],
+    "geoscore": 0.0,
+    "ks_test": 0.0,
+    "attack": "",
+    "threat_type": "",
+    "found": true
+}

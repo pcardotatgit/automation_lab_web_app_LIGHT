@@ -1,0 +1,10 @@
+Automation Challenge,Step 01,Computers <=> Secure Endpoint Get Computers,None,CSE_result_of_get_computers,Get the full list of computers protected by Secure Endpoint
+Automation Challenge,Step 04,last events <=> Secure Endpoint Get Events,None,CSE_Events,retrieve last event from Secure Endpoint
+Automation Challenge,Step 02,Parse result <=> Secure Endpoint parse result of cse_get_computers,"CSE_result_of_get_computers,victim_hostname",GUID,
+Automation Challenge,Step 03,Threat Detected <=> parse_id_from_cse_get_event_type_api_call,input_for_CSE_Threat_Detected,CSE_Threat_Detected_event_type_ID,
+Automation Challenge,Step 05,CSE events for event ids <=> check last events in host for given event IDs,"CSE_Events,GUID,*event_id_list",CSE_host_events,
+Automation Challenge,Step 06,Get SHA256 <=> get_sha256_from_cse_event,CSE_host_events,CSE_malicious_file_sha256,
+Automation Challenge,Step 07,Malware Analytics <=> Malware Analytics Search Submission,CSE_malicious_file_sha256,Malware_Analytics_result_of_search_submission,
+Automation Challenge,Step 08,Get Sample ID <=> parse result of MA search submission,Malware_Analytics_result_of_search_submission,Malware_Analytics_sample_ID,
+Automation Challenge,Step 09,Malicious Domain <=> Malware Analytics Get Domains,Malware_Analytics_sample_ID,MA_result_of_get_domain,
+Automation Challenge,Step 10,Domain name & IP <=> parse result of MA Get Domains,MA_result_of_get_domain,domain,

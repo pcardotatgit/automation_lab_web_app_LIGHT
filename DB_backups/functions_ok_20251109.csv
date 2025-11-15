@@ -1,0 +1,11 @@
+Secure Endpoint parse result of cse_get_computers,Automation Challenge,Parse the JSON result of the CSE get Computer API call and output the GUID of the search hostname,parse_result_of_cse_get_computers,"$CSE_result_of_get_computers,$hostname",GUID,
+parse_id_from_cse_get_event_type_api_call,Automation Challenge,Send CSE Get Event type API call and parse ID for event name in input,cse_id_of_event_type_name,,,
+check last events in host for given event IDs,Automation Challenge,List every events which occurred on host for list of event IDs,cse_check_for_events_in_host,"CSE_Events,victim_hostname,*event_id_list",CSE_host_events,
+get_sha256_from_cse_event,Automation Challenge,get  sha256 and filename of the malicious file in the last CSE event on host,get_sha256_from_cse_event,,,
+parse result of MA search submission,Automation Challenge,Parse the result of Malware Analytic Search Submission and return sample ID,parse_result_of_ma_search_submission,,,
+Umbrella parse token from JSON result,Automation Challenge,Extract the Umbrella API token from the JSON result,parse_umbrella_result_for_token,,,
+parse result of MA Get Domains,Automation Challenge,parse the JSON result of the Malware Analytics Get Domains API call,parse_result_of_ma_get_domains,,,
+Parse Result of Get DNS Activity,Automation Challenge,Parse the JSON result of the Umbrella Get DNS Activity and return list of internal infected IPs,parse_result_of_dns_activity,,,
+Parse XDR token from JSON Result,Automation Challenge,Parse the XDR API Token from the JSON result,parse_xdr_result_for_token,,,same parser as umbrella token
+set observable_type to domain,Automation Challenge,set_observable_type_to_domain,set_observable_type_to_domain,,temp,
+update variables from json inputs,Automation Challenge,Update Variable from a JSON Input definition,update_variables_from_json_inputs,TEST,temp,

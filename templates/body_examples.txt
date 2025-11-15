@@ -1,0 +1,7 @@
+for sending messages to webex :
+{'roomId': DESTINATION_ROOM_ID,'markdown': message_out,'text': text_message_out}
+if you want to include one of the config parameters into the value, type its name with $+name at the location in the string where it must be
+positionned
+example : let's say we have the following variable in the config.txt file : orgID=:12345678
+To include the value : 123456 into the string then position the variable into the string loike here under
+{'roomId': DESTINATION_ROOM_ID,'markdown': message_out,'text': text_message_out,'organisation_id':'$orgID'}

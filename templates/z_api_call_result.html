@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<!-- description-->
+<html>
+<head>
+<title>AUTOMATION CHALLENGE</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="../static/assets/css/main.css" />
+<script>
+function popup_window( url, id, width, height )
+{
+//extract the url parameters if any, and pass them to the called html
+var tempvar=document.location.toString(); // fetch the URL string
+var passedparams = tempvar.lastIndexOf("?");
+if(passedparams > -1)
+url += tempvar.substring(passedparams);
+popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+popup.focus();
+}
+</script>
+</head>
+<body class="is-preload">
+<!-- Nav -->
+<nav id="nav">
+<li><a href="/">Back to main page</a></li>
+<li><a href="/logout">log Out</a></li>
+<li><a href="javascript:popup_window('/page_info?page={{page_name}}&route={{route}}','page_info',700,600);">:</a></li>
+</ul>
+</nav>
+<!-- Result-->
+<article id="Result" class="wrapper style4">
+<div class="container medium">
+<form method='get' action="javascript:popup_window('/dtree?filename=json_result.json***','page_info',700,600);">
+<div class="col-12">
+<ul class="actions">
+<a href="/go_run_workflow" class="button small scrolly">GO TO NEXT STEP</a>
+</ul>
+</div>
+<br>
+<header>
+<h3>Result of this API Call</h3>
+<a href="javascript:popup_window('/dtree?filename=json_result.json***','page_info',700,600);">Display result in tree graph</a><br>
+</header>
+<div class="row">
+<div class="col-12">
+<textarea id="api_call_result" name="api_call_result" rows="15" cols="100">{{message1}}</textarea>
+</div>
+</form>
+</div>
+<footer>
+<ul id="copyright">
+</ul>
+</footer>
+</div>
+</article>
+<!-- Scripts -->
+<script src="../static/assets/js/jquery.min.js"></script>
+<script src="../static/assets/js/jquery.scrolly.min.js"></script>
+<script src="../static/assets/js/browser.min.js"></script>
+<script src="../static/assets/js/breakpoints.min.js"></script>
+<script src="../static/assets/js/util.js"></script>
+<script src="../static/assets/js/main.js"></script>
+</body>
+</html>

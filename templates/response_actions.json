@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "description": "Add a single IP to the firewall IP blocking list",
+            "id": "02DHT5DT6CKL50tVu3sj7WKrOnp6GaYSt3J",
+            "module": "XDR Automation",
+            "module_instance_id": "9c99aefa-8b06-4df8-96f4-a89e3f2556ef",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "title": "W0024-ADD IP TO XDR IPv4 BLOCKING LIST",
+            "url": "/respond/trigger/9c99aefa-8b06-4df8-96f4-a89e3f2556ef/02DHT5DT6CKL50tVu3sj7WKrOnp6GaYSt3J?observable_type=ip&observable_value=52.148.86.91"
+        },
+        {
+            "description": "This workflow blocks the given IP address on a Cisco Meraki MX L3 outbound firewall. Supported observable: ip",
+            "id": "02KV9B0J15E6B6E9UVc07OQDuPagYtW9pdo",
+            "module": "XDR Automation",
+            "module_instance_id": "9c99aefa-8b06-4df8-96f4-a89e3f2556ef",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "title": "*W0077-Meraki - MX - L3 Outbound Firewall BLOCK",
+            "url": "/respond/trigger/9c99aefa-8b06-4df8-96f4-a89e3f2556ef/02KV9B0J15E6B6E9UVc07OQDuPagYtW9pdo?observable_type=ip&observable_value=52.148.86.91"
+        },
+        {
+            "description": "This workflow apply an endpoint quarantine thru ISE ANC Policy. supported observable types : ip address, mac address",
+            "id": "01YD3Z1A74H553WXOpHSOD0cJVN1fw1ik0T",
+            "module": "XDR Automationr",
+            "module_instance_id": "9c99aefa-64be-4a3d-884e-d4f14e60eebc",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "title": "Cisco ISE - ERS - ANC Policy - Apply to Endpoint",
+            "url": "/respond/trigger/9c99aefa-64be-4a3d-884e-d4f14e60eebc/01YD3Z1A74H553WXOpHSOD0cJVN1fw1ik0T?observable_type=ip&observable_value=52.148.86.91"
+        }
+    ]
+}

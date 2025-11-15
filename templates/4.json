@@ -1,0 +1,147 @@
+{
+    "api_version": 2,
+    "id": 877141,
+    "data": {
+        "index": 0,
+        "total": 1,
+        "took": 578,
+        "timed_out": false,
+        "items_per_page": 100,
+        "current_item_count": 1,
+        "items": [
+            {
+                "matches": {},
+                "score": 1000000,
+                "item": {
+                    "tags": [],
+                    "vm_runtime": 300,
+                    "md5": "b99e0a8c56f963246b6464b9fffbf7a2",
+                    "private": false,
+                    "organization_id": null,
+                    "state": "succ",
+                    "login": null,
+                    "sha1": "b024546a49bad1bd60fccef0a5d11b55f9a442c4",
+                    "sample": "4d1e71bf3fa1a98b23fb7cb6e3ab2ad6",
+                    "filename": "kwnefkw.exe",
+                    "analysis": {
+                        "behaviors": [
+                            {
+                                "name": "potential-registry-script-execution",
+                                "threat": 60,
+                                "title": "Possible Registry Script Execution"
+                            },
+                            {
+                                "name": "pe-dos-header-paragraphs",
+                                "threat": 3,
+                                "title": "PE DOS Header Size of the Header in Paragraphs Abnormal"
+                            },
+                            {
+                                "name": "pe-header-timestamp-null",
+                                "threat": 3,
+                                "title": "PE COFF Header Timestamp is Not Set"
+                            },
+                            {
+                                "name": "network-opendns-malicious",
+                                "threat": 81,
+                                "title": "Domain in Cisco Umbrella Block List"
+                            },
+                            {
+                                "name": "memory-execute-readwrite",
+                                "threat": 25,
+                                "title": "Potential Code Injection Detected"
+                            },
+                            {
+                                "name": "modified-executable",
+                                "threat": 60,
+                                "title": "Process Modified an Executable File"
+                            },
+                            {
+                                "name": "pe-dos-header-initialsp",
+                                "threat": 3,
+                                "title": "PE DOS Header Initial SP Value is Abnormal"
+                            },
+                            {
+                                "name": "pe-header-timestamp-prior",
+                                "threat": 3,
+                                "title": "PE COFF Header Timestamp is Set to Date Prior to 1999"
+                            },
+                            {
+                                "name": "pe-dos-header-relocations",
+                                "threat": 3,
+                                "title": "PE DOS Header Number of Relocations Was Abnormal"
+                            },
+                            {
+                                "name": "registry-autorun-key-modified",
+                                "threat": 48,
+                                "title": "Process Modified Autorun Registry Key Value"
+                            },
+                            {
+                                "name": "malware-trojan-poweliks",
+                                "threat": 100,
+                                "title": "Poweliks Detected"
+                            },
+                            {
+                                "name": "artifact-flagged-anomaly",
+                                "threat": 48,
+                                "title": "Static Analysis Flagged Artifact As Anomalous"
+                            }
+                        ],
+                        "threat_score": 100,
+                        "metadata": {
+                            "general_details": {
+                                "report_created": "2020-04-22T19:45:33Z",
+                                "sandbox_version": "pilot-d",
+                                "sandbox_id": "-"
+                            },
+                            "sandcastle_env": {
+                                "controlsubject": "-",
+                                "vm": "win7-x64",
+                                "vm_id": "4d1e71bf3fa1a98b23fb7cb6e3ab2ad6",
+                                "sample_executed": 1587584405,
+                                "analysis_end": "2020-04-22T19:45:33Z",
+                                "analysis_features": [],
+                                "analysis_start": "2020-04-22T19:39:19Z",
+                                "display_name": "Windows 7 64-bit",
+                                "run_time": 300,
+                                "sandcastle": "-",
+                                "current_os": "7601.18798.amd64fre.win7sp1_gdr.150316-1654"
+                            },
+                            "analyzed_file": {
+                                "md5": "b99e0a8c56f963246b6464b9fffbf7a2",
+                                "filename": "kwnefkw.exe",
+                                "sha1": "b024546a49bad1bd60fccef0a5d11b55f9a442c4",
+                                "sha256": "b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+                                "size": 4003840,
+                                "type": "exe",
+                                "magic": "PE32 executable (console) Intel 80386 (stripped to external PDB), for MS Windows"
+                            },
+                            "submitted_file": {
+                                "md5": "b99e0a8c56f963246b6464b9fffbf7a2",
+                                "filename": "kwnefkw.exe",
+                                "sha1": "b024546a49bad1bd60fccef0a5d11b55f9a442c4",
+                                "sha256": "b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+                                "size": 4003840,
+                                "type": "exe",
+                                "magic": "PE32 executable (console) Intel 80386 (stripped to external PDB), for MS Windows"
+                            },
+                            "malware_desc": [
+                                {
+                                    "md5": "b99e0a8c56f963246b6464b9fffbf7a2",
+                                    "filename": "kwnefkw.exe",
+                                    "sha1": "b024546a49bad1bd60fccef0a5d11b55f9a442c4",
+                                    "sha256": "b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+                                    "size": 4003840,
+                                    "type": "exe",
+                                    "magic": "PE32 executable (console) Intel 80386 (stripped to external PDB), for MS Windows"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "job_done",
+                    "submitted_at": "2020-04-22T19:39:17Z",
+                    "sha256": "b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967"
+                }
+            }
+        ]
+    }
+}

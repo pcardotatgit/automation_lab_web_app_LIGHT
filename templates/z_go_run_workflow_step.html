@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<!-- description : display DB entry details-->
+<html>
+<head>
+<title>FLASK APP GENERATOR</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="../static/assets/css/main.css" />
+<script>
+function select_profile() {
+var profile_name = document.getElementById("new_profile").value;
+//alert(profile_name);
+//window.open("/check_xdr?client_id="+client_id+"&client_password="+client_password+"&region="+region);
+window.open("/select_profile?profil_name="+profile_name);
+}
+function popup_window( url, id, width, height )
+{
+//extract the url parameters if any, and pass them to the called html
+var tempvar=document.location.toString(); // fetch the URL string
+var passedparams = tempvar.lastIndexOf("?");
+if(passedparams > -1)
+url += tempvar.substring(passedparams);
+popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+popup.focus();
+}
+</script>
+</head>
+<body class="is-preload">
+<!-- Nav -->
+<nav id="nav">
+<li><a href="/">Back to main page</a></li>
+<li><a href="/execute_this_step">Run IT</a></li>
+<li><a href="/logout">log Out</a></li>
+<li><a href="javascript:popup_window('/page_info?page={{page_name}}&route={{route}}','page_info',700,600);">:</a></li>
+</ul>
+</nav>
+<article id="create_new_feed" class="wrapper style4">
+<div class="container medium">
+<div class="row">
+<div class="col-12">
+<form method="get" action="/execute_this_step">
+<div class="row">
+<div class="col-12">
+<ul class="actions">
+<input type="hidden" name="next_step" value="{{next_step}}" />
+<input type="submit" value="Execute This Step" class="button small scrolly" />
+</ul>
+</div>
+<div class="col-6 col-12-small">
+<h3>workflow_name :  </h3>
+</div>
+<div class="col-6 col-12-small">
+</h3><input type="text"  id="workflow_name" name="workflow_name" value="{{workflow_name}}" placeholder="Title" />
+</div>
+<div class="col-6 col-12-small">
+<h3>step :  </h3>
+</div>
+<div class="col-6 col-12-small">
+</h3><input type="text"  id="step" name="step" value="{{step}}" placeholder="Title" />
+</div>
+<div class="col-6 col-12-small">
+<h3>step_name :  </h3>
+</div>
+<div class="col-6 col-12-small">
+</h3><input type="text"  id="step_name" name="step_name" value="{{step_prefix}} <=> {{step_name}}" placeholder="step_name" />
+</div>
+<div class="col-6 col-12-small">
+<h3>input :  </h3>
+</div>
+<div class="col-6 col-12-small">
+</h3><input type="text"  id="input" name="input" value="{{input}}" placeholder="input" />
+</div>
+<div class="col-6 col-12-small">
+<h3>output :  </h3>
+</div>
+<div class="col-6 col-12-small">
+</h3><input type="text"  id="output" name="output" value="{{output}}" placeholder="output" />
+</div>
+<div class="col-6 col-12-small">
+<h3>comment :  </h3>
+</div>
+<div class="col-6 col-12-small">
+</h3><input type="text"  id="comment" name="comment" value="{{comment}}" placeholder="Comment/description" />
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Scripts -->
+<script src="../static/assets/js/jquery.min.js"></script>
+<script src="../static/assets/js/jquery.scrolly.min.js"></script>
+<script src="../static/assets/js/init.js"></script>
+<script src="../static/assets/js/browser.min.js"></script>
+<script src="../static/assets/js/breakpoints.min.js"></script>
+<script src="../static/assets/js/util.js"></script>
+<script src="../static/assets/js/main.js"></script>
+</body>
+</html>

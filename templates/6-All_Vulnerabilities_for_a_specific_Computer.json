@@ -1,0 +1,27 @@
+{
+    "version": "v1.2.0",
+    "metadata": {
+        "links": {
+            "self": "https://api.amp.cisco.com/v1/computers/fc2842aa-12a7-4e65-ab73-b4d8053a9d9d/vulnerabilities?limit=10&start_time=2020-05-15&end_time=2020-05-26"
+        },
+        "results": {
+            "total": 0,
+            "current_item_count": 0,
+            "index": 0,
+            "items_per_page": 10
+        }
+    },
+    "data": {
+        "connector_guid": "fc2842aa-12a7-4e65-ab73-b4d8053a9d9d",
+        "hostname": "Demo_AMP_Threat_Audit",
+        "windows_processor_id": "fb4630928de175a",
+        "active": true,
+        "links": {
+            "computer": "https://api.amp.cisco.com/v1/computers/fc2842aa-12a7-4e65-ab73-b4d8053a9d9d",
+            "trajectory": "https://api.amp.cisco.com/v1/computers/fc2842aa-12a7-4e65-ab73-b4d8053a9d9d/trajectory",
+            "group": "https://api.amp.cisco.com/v1/groups/48e2eb37-df86-4823-9feb-1cb1cba09eb1"
+        },
+        "group_guid": "48e2eb37-df86-4823-9feb-1cb1cba09eb1",
+        "vulnerabilities": []
+    }
+}

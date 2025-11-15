@@ -1,0 +1,16 @@
+Meraki example :
+{
+"Accept": "application/json",
+"Authorization": "Bearer "+api_key
+}
+XDR Example :
+{'Authorization':f'Bearer {access_token}', 'Content-Type':'application/json', 'Accept':'application/json'}
+if you want to include one of the config parameters into the value, type its name with $+name at the location in the string where it must be
+positionned
+example : let's say we have the following variable in the config.txt file : orgID=:12345678
+To include the value : 123456 into the string then position the variable into the string like here under
+{'roomId': DESTINATION_ROOM_ID,'markdown': message_out,'text': text_message_out,'organisation_id':'$orgID'}
+<br>
+If you use the $SAVED_TOKEN keyword, then it will be replaced by the token you asked for prior
+<br>
+If you use the $api_key keyword, then it will be replaced by the api_key from the authentication profile

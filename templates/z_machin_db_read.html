@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>FLASK APP GENERATOR</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="../static/assets/css/main.css" />
+<script>
+function popup_window( url, id, width, height )
+{
+//extract the url parameters if any, and pass them to the called html
+var tempvar=document.location.toString(); // fetch the URL string
+var passedparams = tempvar.lastIndexOf("?");
+if(passedparams > -1)
+url += tempvar.substring(passedparams);
+popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+popup.focus();
+}
+</script>
+</head>
+<body class="is-preload">
+<!-- Nav -->
+<nav id="nav">
+<li><a href="/">Back to main page</a></li>
+<li><a href="/tools">Back to tools page</a></li>
+<li><a href="/logout">log Out</a></li>
+<li><a href="javascript:popup_window('/page_info?page={{page_name}}&route={{route}}','page_info',700,600);">:</a></li>
+</ul>
+</nav>
+<!-- Indicator list-->
+<article id="indic_list" class="wrapper style4">
+<div class="container medium">
+<header>
+<h2>Select a sighting</h2>
+<p>Current Incident : {{message4}}</p>
+<p>Select a sighting from the library in order to add it into an incident</p>
+</header>
+<div class="row">
+<div class="col-12">
+<form method="get" action="/go_to_incident_selection">
+<div class="row">
+<div class="col-12">
+<select id="filename" name="filename">
+<option value="test">test</option>
+</select>
+</div>
+<div class="col-12">
+<ul class="actions">
+<li><input type="submit" value="Select this Sighting" class="button small scrolly" /></li>
+</ul>
+</div>
+</div>
+</form>
+</div>
+<div class="col-12">
+<div class="row">
+<br><center><a href="javascript:popup_window('/sightings_reset_attachments','page_info',700,600);" >(click) Reset Every Incident Attachments</a></center>
+</div>
+</div>
+<form method="get" action="/ok_get_sightings">
+<div class="row">
+<div class="col-6 col-12-small">
+<h3>Search Keyword :</h3>
+</div>
+<div class="col-6 col-12-small">
+<input type="text"  id="keyword" name="keyword" placeholder="keyword" />
+<p>( Keep empty for getting every tenant sightings )</p>
+</div>
+<div class="col-6 col-12-small">
+<h3>In which field :</h3>
+</div>
+<div class="col-6 col-12-small">
+<select id="field" name="field">
+<option value="title">title</option>
+<option value="source">source</option>
+<option value="targets">targets</option>
+<option value="observables">observables</option>
+<option value="severity">severity</option>
+<option value="description">description</option>
+<option value="start_time">First Seen Time</option>
+<option value="ID">Sighting ID</option>
+</select>
+</div>
+<div class="col-12">
+<ul class="actions">
+<li><input type="submit" value="Search" class="button small scrolly" /></li>
+</ul>
+</div>
+</form>
+</div>
+<footer>
+<ul id="copyright">
+</ul>
+</footer>
+</div>
+</article>
+<!-- Scripts -->
+<script src="../static/assets/js/jquery.min.js"></script>
+<script src="../static/assets/js/jquery.scrolly.min.js"></script>
+<script src="../static/assets/js/browser.min.js"></script>
+<script src="../static/assets/js/breakpoints.min.js"></script>
+<script src="../static/assets/js/util.js"></script>
+<script src="../static/assets/js/main.js"></script>
+</body>
+</html>

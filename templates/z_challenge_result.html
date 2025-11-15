@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!-- description-->
+<html lang="en">
+<head>
+<title>FLASK APP GENERATOR</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="../static/assets/css/main.css" />
+<script>
+function popup_window( url, id, width, height )
+{
+//extract the url parameters if any, and pass them to the called html
+var tempvar=document.location.toString(); // fetch the URL string
+var passedparams = tempvar.lastIndexOf("?");
+if(passedparams > -1)
+url += tempvar.substring(passedparams);
+popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+popup.focus();
+}
+</script>
+<a href="/">Back to Home</a>--|--<a href="/reset_results">Reset Tables</a>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content=
+"width=device-width, initial-scale=1.0">
+<title>Responsive Tables</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+.table-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 20px;
+}
+.table {
+border-collapse: collapse;
+width: 100%;
+margin-bottom: 10px;
+}
+th,
+td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: left;
+}
+th {
+background-color: #f2f2f2;
+}
+/* Media query for small screens */
+@media (min-width: 768px) {
+.table {
+width: 45%;
+margin-bottom: 0;
+}
+}
+</style>
+</head>
+<body>
+<center><h1>Casebook</h1></center>
+<div class="table-container">
+<table class="table">
+<tr>
+<th><center><h2>Targets</h2></center></th>
+<th><center><h2>Value</h2></center></th>
+<th><center><h2>Blocked</h2></center></th>
+</tr>
+<tr>
+<td><a href="/update_variable?name=victim_hostname">Infected Host name<a></td>
+<td>{{hostname}}</td>
+<td><center>{{victim_hostname_isolation_status}}</center></td>
+</tr>
+<tr>
+<td><a href="/update_variable?name=GUID">Infected Host GUID<a></td>
+<td>{{guid}}</td>
+<td><center>{{guid_isolation_status}}</center></td>
+</tr>
+<tr>
+<td><a href="/update_variable?name=infected_machine_internal_ip_address">Infected Host IP<a></td>
+<td>{{host_ip}}</td>
+<td><center>{{host_ip_isolation_status}}</center></td>
+</tr>
+<tr>
+<td><a href="/update_variable?name=internal_infected_ip_address_1">Infected Internal IP 1<a></td>
+<td>{{internal_ip_1}}</td>
+<td><center>{{internal_ip_1_isolation_status}}</center></td>
+</tr>
+<tr>
+<td><a href="/update_variable?name=internal_infected_ip_address_2">Infected Internal IP 2<a></td>
+<td>{{internal_ip_2}}</td>
+<td><center>{{internal_ip_2_isolation_status}}</center></td>
+</tr>
+<tr>
+<td><a href="/update_variable?name=internal_infected_ip_address_3">Infected Internal IP 3<a></td>
+<td>{{internal_ip_3}}</td>
+<td><center>{{internal_ip_3_isolation_status}}</center></td>
+</tr>
+</table>
+<table class="table">
+<tr>
+<th><center><h2>Observables</h2></center></th>
+<th><center><h2>Value</h2></center></th>
+<th><center><h2>Blocked</h2></center></th>
+</tr>
+<tr>
+<td><a href="/update_variable?name=CSE_malicious_file_sha256">malicious sha256<a></td>
+<td>{{sha256}}</td>
+<td><center>{{sha256_isolation_status}}</center></td>
+</tr>
+<tr>
+<td><a href="/update_variable?name=CSE_malicious_file_name">malicious file name<a></td>
+<td>{{filename}}</td>
+<td><center>{{filename_isolation_status}}</center></td>
+</tr>
+<tr>
+<td><a href="/update_variable?name=domain">Malicious Domain<a></td>
+<td>{{domain}}</td>
+<td><center>{{domain_isolation_status}}</center></td>
+</tr>
+<tr>
+<td><a href="/update_variable?name=malicious_domain_ip">Domain IP<a></td>
+<td>{{malicious_domain_ip}}</td>
+<td><center>{{malicious_domain_ip_isolation_status}}</center></td>
+</tr>
+</table>
+<table class="table">
+<tr>
+<th><center><h2>Objects</h2></center></th>
+<th><center><h2>Value</h2></center></th>
+</tr>
+<tr>
+<td><a href="/update_variable?name=CSE_Threat_Detected_event_type_ID">Threat Detected Event ID<a></td>
+<td>{{threat_detected_id}}</td>
+</tr>
+<tr>
+<td><a href="/update_variable?name=sha256_submission">MA sha256 sample ID<a></td>
+<td>{{sha256_submission}}</td>
+</tr>
+<tr>
+<td><a href="/update_variable?name=nb_of_events_on_victim_machine">Nb of events found<a></td>
+<td>{{nb_events}}</td>
+</tr>
+</table>
+<table class="table">
+<tr>
+<th><center><h2>Credentials</h2></center></th>
+<th><center><h2>Value</h2></center></th>
+</tr>
+<tr>
+<td><a href="/account_keys_db_read">Secure Endpoint Account Key<a></td>
+<td><center>***</center></td>
+</tr>
+<tr>
+<td><a href="/update_variable?name=malware_analytics_api_key">Malware Analytics API Key<a></td>
+<td><center>***</center></td>
+</tr>
+<tr>
+<td><a href="/update_variable?name=umbrella_investigate_api_key">Umbrella investigate key<a></td>
+<td><center>***</center></td>
+</tr>
+<tr>
+<td><a href="/account_keys_db_read">Umbrella account key<a></td>
+<td><center>***</center></td>
+</tr>
+<tr>
+<td><a href="/account_keys_db_read">XDR Account Key<a></td>
+<td><center>***</center></td>
+</tr>
+</table>
+</div>
+</body>
+</html>

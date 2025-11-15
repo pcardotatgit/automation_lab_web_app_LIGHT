@@ -1,0 +1,4 @@
+{
+    "error": "invalid_jwt",
+    "error_description": "(bb4c07d3-3b8c-41a6-b0ea-a86e5f95d7a0) The JWT version is wrong, you must login again or request another access token, This JWT has expired since 13h 30min 50s (we don't allow JWT older than 1 day; we only checked creation date and not maximal expiration date)"
+}

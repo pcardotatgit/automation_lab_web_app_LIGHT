@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>FLASK APP GENERATOR</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+        <script> 
+            function popup_window( url, id, width, height )
+            {
+               //extract the url parameters if any, and pass them to the called html
+               var tempvar=document.location.toString(); // fetch the URL string
+               var passedparams = tempvar.lastIndexOf("?");
+               if(passedparams > -1)
+                  url += tempvar.substring(passedparams);
+              popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+              popup.focus();
+            }
+        </script>
+	</head>
+	<body class="is-preload">
+		<!-- Nav -->
+			<nav id="nav">
+                    <li><a href="/">Back to main page</a></li>
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window('/page_info?page=operation_done.html&route={{route}}','page_info',700,600);">:</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="{{image}}" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1><strong>{{message1}}</strong></h1>
+							</header>
+							<p>{{message2}}</p>
+                            <a href="{{message3}}" class="button small scrolly">{{message4}}</a>
+						</div>						
+					</div>				
+				</div>
+			</article>
+
+
+		<!-- Scripts -->
+			<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="../static/assets/js/browser.min.js"></script>
+			<script src="../static/assets/js/breakpoints.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<script src="../static/assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,53 @@
+{
+    "api_version": 2,
+    "id": 1033210,
+    "request_id": "req-abcd7596-fcd7-4699-94c8-628a0a783199",
+    "data": {
+        "index": 0,
+        "current_item_count": 3,
+        "items_per_page": 100000,
+        "items": [
+            {
+                "sample": "d826d1eec635e7d77c1d9dd7abb0a8e5",
+                "ts": "2020-10-01T22:15:25Z",
+                "domain": "retdemos.com",
+                "relation": "dns-lookup",
+                "data": {
+                    "answers": [
+                        "52.148.86.91",
+                        "52.148.86.91",
+                        "52.148.86.91",
+                        "52.148.86.91",
+                        "52.148.86.91",
+                        "52.148.86.91",
+                        "52.148.86.91",
+                        "52.148.86.91",
+                        "52.148.86.91"
+                    ]
+                }
+            },
+            {
+                "sample": "d826d1eec635e7d77c1d9dd7abb0a8e5",
+                "ts": "2020-10-01T22:15:25Z",
+                "domain": "retdemos.com",
+                "relation": "dns-lookup",
+                "data": {
+                    "answers": [
+                        "52.148.86.91"
+                    ]
+                }
+            },
+            {
+                "sample": "d826d1eec635e7d77c1d9dd7abb0a8e5",
+                "ts": "2020-10-01T22:15:25Z",
+                "domain": "retdemos.com",
+                "relation": "extracted",
+                "data": {
+                    "statuses": [
+                        "malicious"
+                    ]
+                }
+            }
+        ]
+    }
+}

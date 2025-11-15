@@ -1,0 +1,13 @@
+{
+    "columns": [
+        "name",
+        "type",
+        "username",
+        "password",
+        "key",
+        "comment"
+    ],
+    "db_name": "account_keys",
+    "description": "store credentials",
+    "table_name": "account_keys"
+}

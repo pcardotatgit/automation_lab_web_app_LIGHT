@@ -1,0 +1,15 @@
+{
+    "version": "v1.2.0",
+    "metadata": {
+        "links": {
+            "self": "https://api.eu.amp.cisco.com/v1/computers/7eb09223-b9b3-4508-ac9f-d16fffbdafb0/isolation"
+        }
+    },
+    "data": {
+        "available": 1,
+        "status": "isolated",
+        "unlock_code": "yggwf9",
+        "comment": "",
+        "isolated_by": "Patrick Cardot"
+    }
+}

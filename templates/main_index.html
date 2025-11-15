@@ -1,0 +1,182 @@
+{% if session['logged_in'] %}
+    {% if PAGE_DESTINATION == "home"%}
+    {% extends "home.html" %}
+    {% endif %}   
+    {% if PAGE_DESTINATION == "index"%}
+    {% extends "index.html" %}
+    {% endif %} 
+    {% if PAGE_DESTINATION == "operation_done"%}
+    {% extends "operation_done.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "under_construction"%}
+    {% extends "under_construction.html" %}
+    {% endif %}    
+    {% if PAGE_DESTINATION == "create_app_py"%}
+    {% extends "create_app_py.html" %}
+    {% endif %} 
+    {% if PAGE_DESTINATION == "z_patrick"%}
+    {% extends "z_patrick.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_page_test"%}
+    {% extends "z_page_test.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_nice_gui_1"%}
+    {% extends "z_nice_gui_1.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_codegen"%}
+    {% extends "z_codegen.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_codegen_sqlidb"%}
+    {% extends "z_codegen_sqlidb.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_codegen_get_input_variable"%}
+    {% extends "z_codegen_get_input_variable.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_codegen_input_variable_create"%}
+    {% extends "z_codegen_input_variable_create.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_machin_db_read"%}
+    {% extends "z_machin_db_read.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_machin_row_selected_test"%}
+    {% extends "z_machin_row_selected_test.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_db_display_entry_details"%}
+    {% extends "z_db_display_entry_details.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_codegen_flask_app"%}
+    {% extends "z_codegen_flask_app.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_codegen_flask_app_create"%}
+    {% extends "z_codegen_flask_app_create.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_machin_add_entry"%}
+    {% extends "z_machin_add_entry.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_sqlite_db_add_entry"%}
+    {% extends "z_sqlite_db_add_entry.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_machin_ingest_csv"%}
+    {% extends "z_machin_ingest_csv.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_sqlite_ingest_csv"%}
+    {% extends "z_sqlite_ingest_csv.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_sqlite_ingest_csv_result"%}
+    {% extends "z_sqlite_ingest_csv_result.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_step1"%}
+    {% extends "z_step1.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_product_apis"%}
+    {% extends "z_product_apis.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_cse_apis"%}
+    {% extends "z_cse_apis.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_cse_get_computer"%}
+    {% extends "z_cse_get_computer.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_cse_get_event_type"%}
+    {% extends "z_cse_get_event_type.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_cse_get_events"%}
+    {% extends "z_cse_get_events.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_cse_isolation"%}
+    {% extends "z_cse_isolation.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_ma_apis"%}
+    {% extends "z_ma_apis.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_ma_get_domains"%}
+    {% extends "z_ma_get_domains.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_ma_get_submission"%}
+    {% extends "z_ma_get_submission.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_umbrella_apis"%}
+    {% extends "z_umbrella_apis.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_umbrella_get_token"%}
+    {% extends "z_umbrella_get_token.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_umbrella_domain_status"%}
+    {% extends "z_umbrella_domain_status.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_umbrella_get_dns_activity"%}
+    {% extends "z_umbrella_get_dns_activity.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_xdr_apis"%}
+    {% extends "z_xdr_apis.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_cse_get_computer_api"%}
+    {% extends "z_cse_get_computer_api.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_api_call_result"%}
+    {% extends "z_api_call_result.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_selected_api"%}
+    {% extends "z_selected_api.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_product_api_call"%}
+    {% extends "z_product_api_call.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_no_api_documentation"%}
+    {% extends "z_no_api_documentation.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_workflows"%}
+    {% extends "z_workflows.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_db_display_entry_details_workflows"%}
+    {% extends "z_db_display_entry_details_workflows.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_new_step"%}
+    {% extends "z_new_step.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_sqlite_db_add_entry_custom"%}
+    {% extends "z_sqlite_db_add_entry_custom.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_run_workflow"%}
+    {% extends "z_run_workflow.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_go_run_workflow_step"%}
+    {% extends "z_go_run_workflow_step.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_challenge_result"%}
+    {% extends "z_challenge_result.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_update_variable"%}
+    {% extends "z_update_variable.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_xdr_get_token"%}
+    {% extends "z_xdr_get_token.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_introduction"%}
+    {% extends "z_introduction.html" %}
+    {% endif %}
+{% else %}
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+    <form action="/login" method="POST">
+    	<div class="login">
+    		<div class="login-screen">
+    			<div class="app-title">
+    				<h1>Login</h1>
+    			</div>
+     
+    			<div class="login-form">
+    				<div class="control-group">
+    				<input type="text" class="login-field" value="" placeholder="admin" name="username">
+    				<label class="login-field-icon fui-user" for="login-name"></label>
+    				</div>     
+    				<div class="control-group">
+    				<input type="password" class="login-field" value="" placeholder="password" name="password">
+    				<label class="login-field-icon fui-lock" for="login-pass"></label>
+    				</div>     
+                    <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" >
+    			    <br>
+    			</div>
+    		</div>
+    	</div>
+    </form>                            
+{% endif %}

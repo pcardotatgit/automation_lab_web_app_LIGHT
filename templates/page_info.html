@@ -1,0 +1,45 @@
+<html>
+<h3><b>STOP APP : <a href="/stop">Click here to stop the App  </a></h3>
+<b>current html page is : </b><a href="/edit_html?filename={{page}}">{{page}}</a><= click on the link to edit it in notepad++<br>
+<ul>
+<li>====================================================================================</li>
+<li><b>this html page was created by the following flask route : </b>[{{route}}] in <a href="/edit_html?filename=../app.py">app.py ( edit it with notepad++ )</a></li>
+<li><b>Edit the route which created this html page : </b>[{{route}}] in <a href="/code_edit?code={{chunk}}&type=route">{{chunk}}</a></li>
+<li>====================================================================================</li>
+<li><b>Edit a function : </b><a href="/list_functions">Search for a function</a></li>
+<li><b>Edit a route : </b><a href="/list_routes">Search for a route</a></li>
+<li><b>Edit an html page : </b><a href="/list_htmlpage">Search for an html page</a></li>
+<li><b>Edit a script to import: </b><a href="/list_external_scripts">Search for an external script</a>---<a href="/goto_script_B?script={{last_edited_script}}&type=route">Go To Last edited</a></li>
+<li><b>Edit a system script: </b><a href="/list_system_scripts">Search for a system script</a></li>
+<li>====================================================================================</li>
+<li><b>Add a new function : </b><a href="/new_function">new function</a>......<a href="/new_function_from_library">new function from library</a></li>
+<li><b>Add a new route : </b><a href="/new_route">new route</a>......<a href="/new_route_from_library">new route from library</a></li>
+<li><b>Add a new html page : </b><a href="/new_html_page">new html page</a></li>
+<li><b>Add a new script to import in flask package : </b><a href="/new_script_to_import">new script to import</a></li>
+<li>====================================================================================</li>
+<li><b>edit header : <a href="/edit_html?filename=../code_system_main_blocs/a_core_header.py">a_core_header.py ( edit it with notepad++ )</a></li>
+<li><b>edit imports : <a href="/edit_html?filename=../code_system_main_blocs/a_core_imports.py">a_core_imports.py ( edit it with notepad++ )</a></li>
+<li><b>edit global defintions : <a href="/edit_html?filename=../code_system_main_blocs/a_core_global_definitions.py">a_core_global_definitions.py ( edit it with notepad++ )</a></li>
+<li><b>edit Main function : <a href="/edit_html?filename=../code_system_main_blocs/a_core_main.py">a_core_main.py ( edit it with notepad++ )</a></li>
+<li><b>edit functions.txt : <a href="/edit_html?filename=../code_architecture/app_functions.txt">functions.txt ( edit it with notepad++ )</a></li>
+<li><b>edit routes.txt : <a href="/edit_html?filename=../code_architecture/app_routes.txt">routes.txt ( edit it with notepad++ )</a></li>
+<li><b>edit main_html.txt : <a href="/edit_html?filename=../code_architecture/main_html.txt">main_html.txt ( edit it with notepad++ )</a></li>
+<li><b>edit imported_scripts_to_import.txt : <a href="/edit_html?filename=../code_architecture/imported_scripts_to_import.txt">imported_scripts_to_import.txt ( edit it with notepad++ )</a></li>
+<li><b>page info : <a href="/edit_html?filename=../code_system_html_templates/page_info.html">page_info.html ( edit it with notepad++ )</a></li>
+<li><b>code snippets : <a href="/list_snippets">Search for a snippet</a></li>
+<li><a href="/edit_html?filename=../code_architecture/imported_scripts.txt">List every imported script in library</a></li>
+<li>====================================================================================</li>
+<li><a href="/new_project">New Script Project</a></li>
+<li><a href="/list_projects">List and edit Projects</a></li>
+<li><a href="/edit_html?filename=../code_projets/projets.txt">Edit (projects.txt)</a></li>
+<li>====================================================================================</li>
+<li><b>Change listening port and server ip address: <a href="/change_listening_port">GO for it</a></li>
+<li><b>Add tasks in todo list <a href="/edit_todo">todo.txt</a></li>
+<li><b>Analyse Logs <a href="/analyse_logs">Analyse Logs</a></li>
+<li><b>Application Dependency tree <a href="/application_tree">Display the tree</a></li>
+<li><b>Application Code Backup : <a href="/backup_application">Create a Backup Package</a></li>
+<li><b>Create Compiled Package : <a href="/compiled_package">Create Compiled Package</a></li>
+<li>====================================================================================</li>
+<li><b>System Files version : 20251029</li>
+</ul>
+</html>

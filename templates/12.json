@@ -1,0 +1,79 @@
+{
+    "data": [
+        {
+            "module": "AMP for Endpoints",
+            "module_instance_id": "21bb0ed7-937c-4fc7-9338-34e05a8d6916",
+            "module_type_id": "03d8591b-8374-5666-8fcc-eaea9188193c",
+            "id": "amp-add-sha256-scd",
+            "title": "Add SHA256 to custom detections File Block-list",
+            "description": "Add SHA256 to simple custom detection list File Block-list",
+            "url": "/respond/trigger/21bb0ed7-937c-4fc7-9338-34e05a8d6916/amp-add-sha256-scd?list=783198f5-cb0d-44c0-b50e-8a58f7e6be67&observable_type=sha256&observable_value=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+            "categories": [
+                "Simple Custom Detections"
+            ]
+        },    	
+        {
+            "module": "XDR Orchestration",
+            "module_instance_id": "11f567f2-ad5e-4374-8708-a8fcc7861f6c",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "id": "01LW1BI3UFB920QAxog7wA2LfHINvRM6XdX",
+            "title": "Take Orbital Forensic Snapshot",
+            "description": "[Executes an Orbital forensic snapshot]\n[Supported observables: IP address, hostname, AMP GUID]\n\nWorkflow Description:\nWhen triggered, this workflow will initiate an Orbital forensic snapshot for the endpoint identified by the provided observable.\n\nWorkflow Requirements:\nThis workflow requires the Orbital_Credentials account key be configured with Orbital API credentials. Please verify these settings prior to execution.",
+            "url": "/respond/trigger/11f567f2-ad5e-4374-8708-a8fcc7861f6c/01LW1BI3UFB920QAxog7wA2LfHINvRM6XdX?observable_type=sha256&observable_value=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967&workflow_id=01LW1BI3UFB920QAxog7wA2LfHINvRM6XdX"
+        },
+        {
+            "module": "XDR Orchestration",
+            "module_instance_id": "11f567f2-ad5e-4374-8708-a8fcc7861f6c",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "id": "01GX5QBLB5LEK6xUAXlZDxauCgRI3ivuG1s",
+            "title": "Submit URL to Threat Grid",
+            "description": "[Submit URL to Threat Grid]\n[Supported observable: URL]\n\nWorkflow Description:\nWhen triggered, this workflow will submit a URL to Threat Grid for analysis.\n\nWorkflow Requirements:\nThis workflow requires the Threat Grid API Key global variable to be populated. Please verify this setting prior to execution.",
+            "url": "/respond/trigger/11f567f2-ad5e-4374-8708-a8fcc7861f6c/01GX5QBLB5LEK6xUAXlZDxauCgRI3ivuG1s?observable_type=sha256&observable_value=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967&workflow_id=01GX5QBLB5LEK6xUAXlZDxauCgRI3ivuG1s"
+        },
+        {
+            "module": "XDR Orchestration",
+            "module_instance_id": "11f567f2-ad5e-4374-8708-a8fcc7861f6c",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "id": "01GX5OM56HL9M1iCglkHCFl9CP8mFfrgmy8",
+            "title": "AMP Host Isolation with Tier 2 Approval",
+            "description": "[Request Tier 2 Approval for AMP Host Isolation]\n[Supported observable: AMP GUID]\n\nWorkflow Description:\nWhen triggered, this workflow requests approval to isolate an endpoint using AMP host isolation. If approved, isolation is enabled using the CTR AMP isolation response action. \n\nWorkflow Requirements:\nThis workflow requires the Task Approver and Task Requestor global variables be populated. If you want to send emails, you need to enable the Send Email activity and verify your SMTP target configuration. Please verify these settings prior to execution. \nSince the workflow uses the CTR response action, please ensure the endpoint can be isolated using the \"AMP For Endpoints\" module from the pivot menu.",
+            "url": "/respond/trigger/11f567f2-ad5e-4374-8708-a8fcc7861f6c/01GX5OM56HL9M1iCglkHCFl9CP8mFfrgmy8?observable_type=sha256&observable_value=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967&workflow_id=01GX5OM56HL9M1iCglkHCFl9CP8mFfrgmy8"
+        },
+        {
+            "module": "XDR Orchestration",
+            "module_instance_id": "11f567f2-ad5e-4374-8708-a8fcc7861f6c",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "id": "01GX5PJUU9AS16fSvnuVjRJ6md8PifHILk2",
+            "title": "Move Computer to AMP Triage Group",
+            "description": "[Move Computer to AMP Triage Group]\n[Supported observables: IP address, hostname, AMP GUID]\n\nWorkflow Description:\nWhen triggered, this workflow will move the endpoint identified by the provided observable to an AMP triage device group.\n\nWorkflow Requirements:\nThis workflow requires the Triage Group Name local variable to be populated and valid AMP API credentials in the AMP_Credentials account key. Please verify these settings prior to execution.",
+            "url": "/respond/trigger/11f567f2-ad5e-4374-8708-a8fcc7861f6c/01GX5PJUU9AS16fSvnuVjRJ6md8PifHILk2?observable_type=sha256&observable_value=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967&workflow_id=01GX5PJUU9AS16fSvnuVjRJ6md8PifHILk2"
+        },
+        {
+            "module": "XDR Orchestration",
+            "module_instance_id": "11f567f2-ad5e-4374-8708-a8fcc7861f6c",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "id": "01JLO5FFIRO4M2uwM6lvN105dkXjwT1Mrzp",
+            "title": "CTR SEND EMAIL ON AN INCIDENT",
+            "description": "Workflow",
+            "url": "/respond/trigger/11f567f2-ad5e-4374-8708-a8fcc7861f6c/01JLO5FFIRO4M2uwM6lvN105dkXjwT1Mrzp?observable_type=sha256&observable_value=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967&workflow_id=01JLO5FFIRO4M2uwM6lvN105dkXjwT1Mrzp"
+        },
+        {
+            "module": "XDR Orchestration",
+            "module_instance_id": "11f567f2-ad5e-4374-8708-a8fcc7861f6c",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "id": "01HP8SN2BIX9I1IR4dI1b4l9q1DQVwziOKo",
+            "title": "Run Packet Capture",
+            "description": "Supported observable type: IP Address",
+            "url": "/respond/trigger/11f567f2-ad5e-4374-8708-a8fcc7861f6c/01HP8SN2BIX9I1IR4dI1b4l9q1DQVwziOKo?observable_type=sha256&observable_value=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967&workflow_id=01HP8SN2BIX9I1IR4dI1b4l9q1DQVwziOKo"
+        },
+        {
+            "module": "XDR Orchestration",
+            "module_instance_id": "11f567f2-ad5e-4374-8708-a8fcc7861f6c",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "id": "01FY06F2TKFUO3GaZNJAzz0anIxog6DebWE",
+            "title": "Perimeter Block",
+            "description": "Workflow",
+            "url": "/respond/trigger/11f567f2-ad5e-4374-8708-a8fcc7861f6c/01FY06F2TKFUO3GaZNJAzz0anIxog6DebWE?observable_type=sha256&observable_value=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967&workflow_id=01FY06F2TKFUO3GaZNJAzz0anIxog6DebWE"
+        }
+    ]
+}

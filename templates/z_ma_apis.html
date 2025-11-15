@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<!-- description-->
+<html>
+<head>
+<title>AUTOMATION CHALLENGE</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="../static/assets/css/main.css" />
+<script>
+function popup_window( url, id, width, height )
+{
+//extract the url parameters if any, and pass them to the called html
+var tempvar=document.location.toString(); // fetch the URL string
+var passedparams = tempvar.lastIndexOf("?");
+if(passedparams > -1)
+url += tempvar.substring(passedparams);
+popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+popup.focus();
+}
+</script>
+</head>
+<body class="is-preload">
+<!-- Nav -->
+<nav id="nav">
+<li><a href="/">Back to main page</a></li>
+<li><a href="/product_apis">Product APIs</a></li>
+<li><a href="/logout">log Out</a></li>
+<li><a href="javascript:popup_window('/page_info?page={{page_name}}&route={{route}}','page_info',700,600);">:</a></li>
+</ul>
+</nav>
+<!-- Portfolio -->
+<article id="portfolio" class="wrapper style3">
+<div class="container">
+<header>
+<h2>Malware Analytics APIs</h2>
+<p>Malware Analytics APIs are not public</p>
+</header>
+<div class="row">
+<div class="col-4 col-6-medium col-12-small">
+<article class="box style2">
+<a href="/generic_api_details?name=Malware Analytics Search Submission" class="image featured"><img src="../static/images/cdo.jpg" alt="" /></a>
+<h3><a href="/generic_api_details?name=Malware Analytics Search Submission">Search Submission</a></h3>
+<p>Search Submissions</p>
+</article>
+</div>
+<div class="col-4 col-6-medium col-12-small">
+<article class="box style2">
+<a href="/generic_api_details?name=Malware Analytics Get Domains" class="image featured"><img src="../static/images/cdo.jpg" alt="" /></a>
+<h3><a href="/generic_api_details?name=Malware Analytics Get Domains">Sample Feed Domains</a></h3>
+<p>Get Sample Feed domains </p>
+</article>
+</div>
+</div>
+</div>
+</article>
+<!-- Scripts -->
+<script src="../static/assets/js/jquery.min.js"></script>
+<script src="../static/assets/js/jquery.scrolly.min.js"></script>
+<script src="../static/assets/js/init.js"></script>
+<script src="../static/assets/js/browser.min.js"></script>
+<script src="../static/assets/js/breakpoints.min.js"></script>
+<script src="../static/assets/js/util.js"></script>
+<script src="../static/assets/js/main.js"></script>
+</body>
+</html>

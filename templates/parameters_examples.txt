@@ -1,0 +1,27 @@
+This section grant capability to declare some custom or non static parameters to include into one field of the API call.
+<br>
+It can be any field from api_key to body
+<br>
+The way to declare these parameters into the parameters field is a set of values and pairs either one parameter per line,
+or every parameter in one sigle line but separated by <b>***</b> ( 3 time stars ).
+<br>
+example :
+<br>
+limit=100
+keyword=some string
+location=Paris
+key=value
+<br>
+OR
+<br>
+limit=100***keyword=some string***location=Paris
+<br>
+The string before the <b>= char</b> is the key name and the other string is it's value
+<br>
+So if we declare <b>limit=100</b>, then <b>limit</b> is the key name and <b>100</b> is it's value
+<br>
+Then into the API fields, insert the key names at the location they must be, with the <b>$ char</b> at the begining
+<br>
+<b>location</b> will become <b>$location</b>
+<br>
+Then the <b>$location</b> keyword will be replaced by its corresponding value

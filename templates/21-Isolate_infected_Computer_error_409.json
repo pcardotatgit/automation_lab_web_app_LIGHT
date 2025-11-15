@@ -1,0 +1,24 @@
+{
+    "version": "v1.2.0",
+    "metadata": {
+        "links": {
+            "self": "https://api.amp.cisco.com/v1/computers/fc2842aa-12a7-4e65-ab73-b4d8053a9d9d/isolation"
+        }
+    },
+    "data": {
+        "available": true,
+        "status": "isolated",
+        "unlock_code": "yggwf9",
+        "comment": null,
+        "isolated_by": "Patrick Cardot"
+    },
+    "errors": [
+        {
+            "error_code": 409,
+            "description": "Conflict",
+            "details": [
+                "Cannot Process start, already in that state"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "version": "v1.2.0",
+    "metadata": {
+        "links": {
+            "self": "https://api.amp.cisco.com/v1/file_lists/783198f5-cb0d-44c0-b50e-8a58f7e6be67/files/b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967"
+        }
+    },
+    "data": {
+        "sha256": "b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+        "source": "Created by entering SHA-256 via Public api.",
+        "links": {
+            "file_list": "https://api.amp.cisco.com/v1/file_lists/783198f5-cb0d-44c0-b50e-8a58f7e6be67"
+        }
+    }
+}

@@ -1,0 +1,187 @@
+[
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [
+            "204.95.99.243"
+        ],
+        "sample_md5": "cb7b76853f30cf97e2f3747c3a05ca42",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/c97563cb3b611495015fba6513b91d59",
+        "sample_sha256": "f6775d140d56378dc606a851aba911d6882e4effc8c5ad7c7e19c7672cf6f3e0",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/n.zhjdwkpaz.ru",
+        "domain": "n.zhjdwkpaz.ru",
+        "sample_sha1": "1c7eaf092dbab784818cec4118da6e937b0287be",
+        "timestamp": "2021-03-04T08:02:21Z"
+    },
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [
+            "204.95.99.243"
+        ],
+        "sample_md5": "cb7b76853f30cf97e2f3747c3a05ca42",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/c97563cb3b611495015fba6513b91d59",
+        "sample_sha256": "f6775d140d56378dc606a851aba911d6882e4effc8c5ad7c7e19c7672cf6f3e0",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/n.vbemnggcj.ru",
+        "domain": "n.vbemnggcj.ru",
+        "sample_sha1": "1c7eaf092dbab784818cec4118da6e937b0287be",
+        "timestamp": "2021-03-04T08:02:21Z"
+    },
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [
+            "204.95.99.243"
+        ],
+        "sample_md5": "cb7b76853f30cf97e2f3747c3a05ca42",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/c97563cb3b611495015fba6513b91d59",
+        "sample_sha256": "f6775d140d56378dc606a851aba911d6882e4effc8c5ad7c7e19c7672cf6f3e0",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/n.yxntnyrap.ru",
+        "domain": "n.yxntnyrap.ru",
+        "sample_sha1": "1c7eaf092dbab784818cec4118da6e937b0287be",
+        "timestamp": "2021-03-04T08:02:21Z"
+    },
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [
+            "204.95.99.243"
+        ],
+        "sample_md5": "cb7b76853f30cf97e2f3747c3a05ca42",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/c97563cb3b611495015fba6513b91d59",
+        "sample_sha256": "f6775d140d56378dc606a851aba911d6882e4effc8c5ad7c7e19c7672cf6f3e0",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/n.jupoofsnc.ru",
+        "domain": "n.jupoofsnc.ru",
+        "sample_sha1": "1c7eaf092dbab784818cec4118da6e937b0287be",
+        "timestamp": "2021-03-04T08:02:21Z"
+    },
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [
+            "204.95.99.243"
+        ],
+        "sample_md5": "cb7b76853f30cf97e2f3747c3a05ca42",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/c97563cb3b611495015fba6513b91d59",
+        "sample_sha256": "f6775d140d56378dc606a851aba911d6882e4effc8c5ad7c7e19c7672cf6f3e0",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/n.kvupdstwh.ru",
+        "domain": "n.kvupdstwh.ru",
+        "sample_sha1": "1c7eaf092dbab784818cec4118da6e937b0287be",
+        "timestamp": "2021-03-04T08:02:21Z"
+    },
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [
+            "204.95.99.243"
+        ],
+        "sample_md5": "cb7b76853f30cf97e2f3747c3a05ca42",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/c97563cb3b611495015fba6513b91d59",
+        "sample_sha256": "f6775d140d56378dc606a851aba911d6882e4effc8c5ad7c7e19c7672cf6f3e0",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/n.yugypkhvl.ru",
+        "domain": "n.yugypkhvl.ru",
+        "sample_sha1": "1c7eaf092dbab784818cec4118da6e937b0287be",
+        "timestamp": "2021-03-04T08:02:21Z"
+    },
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [
+            "204.95.99.243"
+        ],
+        "sample_md5": "cb7b76853f30cf97e2f3747c3a05ca42",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/c97563cb3b611495015fba6513b91d59",
+        "sample_sha256": "f6775d140d56378dc606a851aba911d6882e4effc8c5ad7c7e19c7672cf6f3e0",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/n.spgpemwqk.ru",
+        "domain": "n.spgpemwqk.ru",
+        "sample_sha1": "1c7eaf092dbab784818cec4118da6e937b0287be",
+        "timestamp": "2021-03-04T08:02:21Z"
+    },
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [],
+        "sample_md5": "cb7b76853f30cf97e2f3747c3a05ca42",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/c97563cb3b611495015fba6513b91d59",
+        "sample_sha256": "f6775d140d56378dc606a851aba911d6882e4effc8c5ad7c7e19c7672cf6f3e0",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/n.jntbxduhz.ru",
+        "domain": "n.jntbxduhz.ru",
+        "sample_sha1": "1c7eaf092dbab784818cec4118da6e937b0287be",
+        "timestamp": "2021-03-04T08:02:21Z"
+    },
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [
+            "204.95.99.243"
+        ],
+        "sample_md5": "cb7b76853f30cf97e2f3747c3a05ca42",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/c97563cb3b611495015fba6513b91d59",
+        "sample_sha256": "f6775d140d56378dc606a851aba911d6882e4effc8c5ad7c7e19c7672cf6f3e0",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/n.ezjhyxxbf.ru",
+        "domain": "n.ezjhyxxbf.ru",
+        "sample_sha1": "1c7eaf092dbab784818cec4118da6e937b0287be",
+        "timestamp": "2021-03-04T08:02:21Z"
+    },
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [
+            "204.95.99.243"
+        ],
+        "sample_md5": "cb7b76853f30cf97e2f3747c3a05ca42",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/c97563cb3b611495015fba6513b91d59",
+        "sample_sha256": "f6775d140d56378dc606a851aba911d6882e4effc8c5ad7c7e19c7672cf6f3e0",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/n.dclhmfkcb.ru",
+        "domain": "n.dclhmfkcb.ru",
+        "sample_sha1": "1c7eaf092dbab784818cec4118da6e937b0287be",
+        "timestamp": "2021-03-04T08:02:21Z"
+    },
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [
+            "204.95.99.243"
+        ],
+        "sample_md5": "cb7b76853f30cf97e2f3747c3a05ca42",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/c97563cb3b611495015fba6513b91d59",
+        "sample_sha256": "f6775d140d56378dc606a851aba911d6882e4effc8c5ad7c7e19c7672cf6f3e0",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/n.aoyylwyxd.ru",
+        "domain": "n.aoyylwyxd.ru",
+        "sample_sha1": "1c7eaf092dbab784818cec4118da6e937b0287be",
+        "timestamp": "2021-03-04T08:02:21Z"
+    },
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [],
+        "sample_md5": "cb7b76853f30cf97e2f3747c3a05ca42",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/c97563cb3b611495015fba6513b91d59",
+        "sample_sha256": "f6775d140d56378dc606a851aba911d6882e4effc8c5ad7c7e19c7672cf6f3e0",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/n.hmiblgoja.ru",
+        "domain": "n.hmiblgoja.ru",
+        "sample_sha1": "1c7eaf092dbab784818cec4118da6e937b0287be",
+        "timestamp": "2021-03-04T08:02:21Z"
+    },
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [],
+        "sample_md5": "cb7b76853f30cf97e2f3747c3a05ca42",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/c97563cb3b611495015fba6513b91d59",
+        "sample_sha256": "f6775d140d56378dc606a851aba911d6882e4effc8c5ad7c7e19c7672cf6f3e0",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/n.yqqufklho.ru",
+        "domain": "n.yqqufklho.ru",
+        "sample_sha1": "1c7eaf092dbab784818cec4118da6e937b0287be",
+        "timestamp": "2021-03-04T08:02:21Z"
+    },
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [],
+        "sample_md5": "d684234e3d5124fdcd36aca50cb48d24",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/39f79b4c0c271be276ab540cc04f6818",
+        "sample_sha256": "eea5266eb10f38b154b9c3cfad67d3064bc1cfc4bfed469a2fc883168520c1cc",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/www.ylgkkzjhvk.com",
+        "domain": "www.ylgkkzjhvk.com",
+        "sample_sha1": "652064ffa95620b23a461f2dcbffae7618682c43",
+        "timestamp": "2021-03-04T14:11:53Z"
+    },
+    {
+        "description": "DGA Domains With Pseudo-randomly Generated Names.",
+        "ips": [],
+        "sample_md5": "d684234e3d5124fdcd36aca50cb48d24",
+        "sample": "https://panacea.threatgrid.com/feeds/dga-dns/samples/39f79b4c0c271be276ab540cc04f6818",
+        "sample_sha256": "eea5266eb10f38b154b9c3cfad67d3064bc1cfc4bfed469a2fc883168520c1cc",
+        "info": "https://panacea.threatgrid.com/feeds/dga-dns/domains/www.wjcxivzbjk.com",
+        "domain": "www.wjcxivzbjk.com",
+        "sample_sha1": "652064ffa95620b23a461f2dcbffae7618682c43",
+        "timestamp": "2021-03-04T14:11:53Z"
+    }
+]

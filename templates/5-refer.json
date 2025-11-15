@@ -1,0 +1,72 @@
+{
+    "data": [
+        {
+            "module": "AMP for Endpoints",
+            "module_instance_id": "21bb0ed7-937c-4fc7-9338-34e05a8d6916",
+            "module_type_id": "03d8591b-8374-5666-8fcc-eaea9188193c",
+            "id": "ref-amp-file-trajectory-sha256-b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+            "title": "File trajectory",
+            "description": "View file trajectory for b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967 on AMP for Endpoints console",
+            "categories": [
+                "AMP for Endpoints",
+                "File trajectory"
+            ],
+            "url": "https://console.amp.cisco.com/file/trajectory/b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967"
+        },
+        {
+            "module": "AMP for Endpoints",
+            "module_instance_id": "21bb0ed7-937c-4fc7-9338-34e05a8d6916",
+            "module_type_id": "03d8591b-8374-5666-8fcc-eaea9188193c",
+            "id": "ref-amp-search-sha256-b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+            "title": "Search for this SHA256",
+            "description": "Lookup this SHA256 on AMP for Endpoints console",
+            "categories": [
+                "AMP for Endpoints",
+                "Search"
+            ],
+            "url": "https://console.amp.cisco.com/search?query=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967"
+        },
+        {
+            "module": "Umbrella",
+            "module_instance_id": "2372feb2-cdac-436d-84bf-acc86f38b474",
+            "module_type_id": "188d70f7-29d5-5069-9098-d83a3ec8e797",
+            "id": "ref-odns-investigate-sample-view-sha256-b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+            "title": "Sample view for b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+            "description": "Investigate this SHA256",
+            "categories": [
+                "View",
+                "Investigate",
+                "OpenDNS",
+                "Umbrella",
+                "Sample"
+            ],
+            "url": "https://investigate.umbrella.com/sample-view/b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967"
+        },
+        {
+            "module": "Threat Grid",
+            "module_instance_id": "f330604c-f143-4aac-ae51-c69f4ba11f56",
+            "module_type_id": "d17cd812-6c10-5170-81b9-9dc30264d0e3",
+            "id": "ref-tg-detail-sha256-b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+            "title": "Browse b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+            "description": "Browse this sha256 on Threat Grid",
+            "categories": [
+                "Browse",
+                "Threat Grid"
+            ],
+            "url": "https://panacea.threatgrid.com/artifacts/b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967"
+        },
+        {
+            "module": "Threat Grid",
+            "module_instance_id": "f330604c-f143-4aac-ae51-c69f4ba11f56",
+            "module_type_id": "d17cd812-6c10-5170-81b9-9dc30264d0e3",
+            "id": "ref-tg-search-sha256-b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+            "title": "Search b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967",
+            "description": "Lookup this sha256 on Threat Grid",
+            "categories": [
+                "Search",
+                "Threat Grid"
+            ],
+            "url": "https://panacea.threatgrid.com/mask/#/search/samples?advanced=false&q=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967&sort_by=submitted_at&sort_order=desc&term=sample-sha256"
+        }
+    ]
+}

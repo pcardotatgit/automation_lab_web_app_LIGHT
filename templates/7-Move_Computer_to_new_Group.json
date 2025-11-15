@@ -1,0 +1,46 @@
+{
+    "version": "v1.2.0",
+    "metadata": {
+        "links": {
+            "self": "https://api.amp.cisco.com/v1/computers/fc2842aa-12a7-4e65-ab73-b4d8053a9d9d"
+        }
+    },
+    "data": {
+        "connector_guid": "fc2842aa-12a7-4e65-ab73-b4d8053a9d9d",
+        "hostname": "Demo_AMP_Threat_Audit",
+        "windows_processor_id": "fb4630928de175a",
+        "active": true,
+        "links": {
+            "computer": "https://api.amp.cisco.com/v1/computers/fc2842aa-12a7-4e65-ab73-b4d8053a9d9d",
+            "trajectory": "https://api.amp.cisco.com/v1/computers/fc2842aa-12a7-4e65-ab73-b4d8053a9d9d/trajectory",
+            "group": "https://api.amp.cisco.com/v1/groups/48e2eb37-df86-4823-9feb-1cb1cba09eb1"
+        },
+        "connector_version": "7.3.15.20174",
+        "operating_system": "Windows 10 Enterprise",
+        "internal_ips": [
+            "60.134.72.228"
+        ],
+        "external_ip": "217.80.222.179",
+        "group_guid": "48e2eb37-df86-4823-9feb-1cb1cba09eb1",
+        "install_date": "2021-03-09T13:35:24Z",
+        "is_compromised": true,
+        "network_addresses": [
+            {
+                "mac": "39:1f:bd:c5:c5:82",
+                "ip": "60.134.72.228"
+            }
+        ],
+        "policy": {
+            "guid": "8cca9724-dc14-4081-8ee8-11cd1a172fd0",
+            "name": "Triage"
+        },
+        "faults": [],
+        "isolation": {
+            "available": true,
+            "status": "isolated"
+        },
+        "orbital": {
+            "status": "not_enabled"
+        }
+    }
+}

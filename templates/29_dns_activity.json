@@ -1,0 +1,2978 @@
+{
+    "data": [
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "intake.prod.eu.tmc.nvmc.csc.cisco.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:49:16",
+            "timestamp": 1760636956000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "intake.prod.eu.tmc.nvmc.csc.cisco.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 632875592,
+                    "label": "Bertrand",
+                    "type": {
+                        "id": 34,
+                        "label": "Anyconnect Roaming Client",
+                        "type": "anyconnect"
+                    }
+                }
+            ],
+            "internalip": "215.203.108.231",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:33",
+            "timestamp": 1760636913000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "intake.prod.eu.tmc.nvmc.csc.cisco.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 655550635,
+                    "label": "StreamFire",
+                    "type": {
+                        "id": 34,
+                        "label": "Anyconnect Roaming Client",
+                        "type": "anyconnect"
+                    }
+                }
+            ],
+            "internalip": "215.203.108.231",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:30",
+            "timestamp": 1760636910000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "8.175.245.18.in-addr.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "retdemos.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 3,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "retdemos.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.181",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 3,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "retdemos.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.156",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 3,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 123,
+                    "integration": false,
+                    "label": "Infrastructure and Content Delivery Networks",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 148,
+                    "integration": false,
+                    "label": "Application",
+                    "type": "application"
+                },
+                {
+                    "deprecated": false,
+                    "id": 163,
+                    "integration": false,
+                    "label": "Business and Industry",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "www.netgear.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "AAAA",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "1.a.3.9.0.8.f.a.4.1.3.b.4.1.0.0.0.0.0.0.2.6.6.2.0.0.0.9.0.0.6.2.ip6.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 3,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "1.a.3.9.0.8.f.a.4.1.3.b.4.1.0.0.0.0.8.2.2.6.6.2.0.0.0.9.0.0.6.2.ip6.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 3,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "19.175.245.18.in-addr.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "43.175.245.18.in-addr.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "1.a.3.9.0.8.f.a.4.1.3.b.4.1.0.0.0.0.2.8.2.6.6.2.0.0.0.9.0.0.6.2.ip6.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 3,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "8.8.8.8.in-addr.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "1.a.3.9.0.8.f.a.4.1.3.b.4.1.0.0.0.0.6.2.2.6.6.2.0.0.0.9.0.0.6.2.ip6.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 3,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 123,
+                    "integration": false,
+                    "label": "Infrastructure and Content Delivery Networks",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 148,
+                    "integration": false,
+                    "label": "Application",
+                    "type": "application"
+                },
+                {
+                    "deprecated": false,
+                    "id": 163,
+                    "integration": false,
+                    "label": "Business and Industry",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "www.netgear.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "1.a.3.9.0.8.f.a.4.1.3.b.4.1.0.0.0.0.8.d.2.6.6.2.0.0.0.9.0.0.6.2.ip6.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 3,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "123.175.245.18.in-addr.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:16",
+            "timestamp": 1760636896000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "intake.prod.eu.tmc.nvmc.csc.cisco.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:15",
+            "timestamp": 1760636895000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "intake.prod.eu.tmc.nvmc.csc.cisco.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:48:15",
+            "timestamp": 1760636895000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "intake.prod.eu.tmc.nvmc.csc.cisco.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 632875592,
+                    "label": "Bertrand",
+                    "type": {
+                        "id": 34,
+                        "label": "Anyconnect Roaming Client",
+                        "type": "anyconnect"
+                    }
+                }
+            ],
+            "internalip": "215.203.108.231",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:47:33",
+            "timestamp": 1760636853000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "intake.prod.eu.tmc.nvmc.csc.cisco.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 655550635,
+                    "label": "StreamFire",
+                    "type": {
+                        "id": 34,
+                        "label": "Anyconnect Roaming Client",
+                        "type": "anyconnect"
+                    }
+                }
+            ],
+            "internalip": "215.203.108.231",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:47:30",
+            "timestamp": 1760636850000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "box",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:47:24",
+            "timestamp": 1760636844000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "box",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:47:24",
+            "timestamp": 1760636844000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 148,
+                    "integration": false,
+                    "label": "Application",
+                    "type": "application"
+                },
+                {
+                    "deprecated": false,
+                    "id": 163,
+                    "integration": false,
+                    "label": "Business and Industry",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "settings-win.data.microsoft.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 655550635,
+                    "label": "StreamFire",
+                    "type": {
+                        "id": 34,
+                        "label": "Anyconnect Roaming Client",
+                        "type": "anyconnect"
+                    }
+                }
+            ],
+            "internalip": "215.203.108.231",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:47:17",
+            "timestamp": 1760636837000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "intake.prod.eu.tmc.nvmc.csc.cisco.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:47:14",
+            "timestamp": 1760636834000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [
+                {
+                    "category": {
+                        "id": 54,
+                        "label": "Search"
+                    },
+                    "id": 824,
+                    "label": "Google"
+                }
+            ],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 23,
+                    "integration": false,
+                    "label": "Search Engines",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 148,
+                    "integration": false,
+                    "label": "Application",
+                    "type": "application"
+                },
+                {
+                    "deprecated": false,
+                    "id": 190,
+                    "integration": false,
+                    "label": "Search Engines and Portals",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "www.google.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:46:55",
+            "timestamp": 1760636815000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [
+                {
+                    "category": {
+                        "id": 44,
+                        "label": "IT Service Management"
+                    },
+                    "id": 997236,
+                    "label": "Windows Diagnostics Data"
+                }
+            ],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 148,
+                    "integration": false,
+                    "label": "Application",
+                    "type": "application"
+                },
+                {
+                    "deprecated": false,
+                    "id": 163,
+                    "integration": false,
+                    "label": "Business and Industry",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "v10.events.data.microsoft.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 632875592,
+                    "label": "Bertrand",
+                    "type": {
+                        "id": 34,
+                        "label": "Anyconnect Roaming Client",
+                        "type": "anyconnect"
+                    }
+                }
+            ],
+            "internalip": "215.203.108.231",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:46:49",
+            "timestamp": 1760636809000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "intake.prod.eu.tmc.nvmc.csc.cisco.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 632875592,
+                    "label": "Bertrand",
+                    "type": {
+                        "id": 34,
+                        "label": "Anyconnect Roaming Client",
+                        "type": "anyconnect"
+                    }
+                }
+            ],
+            "internalip": "215.203.108.231",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:46:32",
+            "timestamp": 1760636792000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "intake.prod.eu.tmc.nvmc.csc.cisco.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 655550635,
+                    "label": "StreamFire",
+                    "type": {
+                        "id": 34,
+                        "label": "Anyconnect Roaming Client",
+                        "type": "anyconnect"
+                    }
+                }
+            ],
+            "internalip": "215.203.108.231",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:46:29",
+            "timestamp": 1760636789000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "intake.prod.eu.tmc.nvmc.csc.cisco.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:46:15",
+            "timestamp": 1760636775000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "intake.prod.eu.tmc.nvmc.csc.cisco.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:46:15",
+            "timestamp": 1760636775000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [
+                {
+                    "category": {
+                        "id": 1,
+                        "label": "Application Development and Testing"
+                    },
+                    "id": 989025,
+                    "label": "Google APIs"
+                }
+            ],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 23,
+                    "integration": false,
+                    "label": "Search Engines",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 148,
+                    "integration": false,
+                    "label": "Application",
+                    "type": "application"
+                },
+                {
+                    "deprecated": false,
+                    "id": 190,
+                    "integration": false,
+                    "label": "Search Engines and Portals",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "play.googleapis.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:46:08",
+            "timestamp": 1760636768000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [
+                {
+                    "category": {
+                        "id": 1,
+                        "label": "Application Development and Testing"
+                    },
+                    "id": 989025,
+                    "label": "Google APIs"
+                }
+            ],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 23,
+                    "integration": false,
+                    "label": "Search Engines",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 148,
+                    "integration": false,
+                    "label": "Application",
+                    "type": "application"
+                },
+                {
+                    "deprecated": false,
+                    "id": 190,
+                    "integration": false,
+                    "label": "Search Engines and Portals",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "play.googleapis.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:46:08",
+            "timestamp": 1760636768000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [
+                {
+                    "category": {
+                        "id": 41,
+                        "label": "Security"
+                    },
+                    "id": 987461,
+                    "label": "Google Safe Browsing"
+                }
+            ],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 23,
+                    "integration": false,
+                    "label": "Search Engines",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 148,
+                    "integration": false,
+                    "label": "Application",
+                    "type": "application"
+                },
+                {
+                    "deprecated": false,
+                    "id": 190,
+                    "integration": false,
+                    "label": "Search Engines and Portals",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "safebrowsing.googleapis.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:58",
+            "timestamp": 1760636758000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [
+                {
+                    "category": {
+                        "id": 888,
+                        "label": "Test Applications"
+                    },
+                    "id": 28,
+                    "label": "Do Not Decrypt Application"
+                }
+            ],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": false,
+                    "id": 113,
+                    "integration": false,
+                    "label": "Computer Security",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 148,
+                    "integration": false,
+                    "label": "Application",
+                    "type": "application"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "reports.api.umbrella.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:39",
+            "timestamp": 1760636739000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [
+                {
+                    "category": {
+                        "id": 888,
+                        "label": "Test Applications"
+                    },
+                    "id": 28,
+                    "label": "Do Not Decrypt Application"
+                }
+            ],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": false,
+                    "id": 113,
+                    "integration": false,
+                    "label": "Computer Security",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 148,
+                    "integration": false,
+                    "label": "Application",
+                    "type": "application"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "management.api.umbrella.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:38",
+            "timestamp": 1760636738000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [
+                {
+                    "category": {
+                        "id": 888,
+                        "label": "Test Applications"
+                    },
+                    "id": 28,
+                    "label": "Do Not Decrypt Application"
+                }
+            ],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": false,
+                    "id": 113,
+                    "integration": false,
+                    "label": "Computer Security",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 148,
+                    "integration": false,
+                    "label": "Application",
+                    "type": "application"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "management.api.umbrella.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:38",
+            "timestamp": 1760636738000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "intake.prod.eu.tmc.nvmc.csc.cisco.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 632875592,
+                    "label": "Bertrand",
+                    "type": {
+                        "id": 34,
+                        "label": "Anyconnect Roaming Client",
+                        "type": "anyconnect"
+                    }
+                }
+            ],
+            "internalip": "215.203.108.231",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:31",
+            "timestamp": 1760636731000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "intake.prod.eu.tmc.nvmc.csc.cisco.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 655550635,
+                    "label": "StreamFire",
+                    "type": {
+                        "id": 34,
+                        "label": "Anyconnect Roaming Client",
+                        "type": "anyconnect"
+                    }
+                }
+            ],
+            "internalip": "215.203.108.231",
+            "policycategories": [],
+            "querytype": "A",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:28",
+            "timestamp": 1760636728000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "1.a.3.9.0.8.f.a.4.1.3.b.4.1.0.0.0.0.e.9.2.6.6.2.0.0.0.9.0.0.6.2.ip6.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 3,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:16",
+            "timestamp": 1760636716000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "1.a.3.9.0.8.f.a.4.1.3.b.4.1.0.0.0.0.a.4.2.6.6.2.0.0.0.9.0.0.6.2.ip6.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 3,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:16",
+            "timestamp": 1760636716000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "1.a.3.9.0.8.f.a.4.1.3.b.4.1.0.0.0.0.e.e.2.6.6.2.0.0.0.9.0.0.6.2.ip6.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 3,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:16",
+            "timestamp": 1760636716000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": true,
+                    "id": 32,
+                    "integration": false,
+                    "label": "Business Services",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 123,
+                    "integration": false,
+                    "label": "Infrastructure and Content Delivery Networks",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 148,
+                    "integration": false,
+                    "label": "Application",
+                    "type": "application"
+                },
+                {
+                    "deprecated": false,
+                    "id": 163,
+                    "integration": false,
+                    "label": "Business and Industry",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "www.netgear.com",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "AAAA",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:16",
+            "timestamp": 1760636716000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "1.a.3.9.0.8.f.a.4.1.3.b.4.1.0.0.0.0.c.d.2.6.6.2.0.0.0.9.0.0.6.2.ip6.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 3,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:16",
+            "timestamp": 1760636716000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "43.175.245.18.in-addr.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:16",
+            "timestamp": 1760636716000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "8.175.245.18.in-addr.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:16",
+            "timestamp": 1760636716000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "1.a.3.9.0.8.f.a.4.1.3.b.4.1.0.0.0.0.6.9.2.6.6.2.0.0.0.9.0.0.6.2.ip6.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 3,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:16",
+            "timestamp": 1760636716000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "19.175.245.18.in-addr.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:16",
+            "timestamp": 1760636716000,
+            "type": "dns",
+            "verdict": "allowed"
+        },
+        {
+            "allapplications": [],
+            "allowedapplications": [],
+            "blockedapplications": [],
+            "categories": [
+                {
+                    "deprecated": true,
+                    "id": 25,
+                    "integration": false,
+                    "label": "Software/Technology",
+                    "type": "content"
+                },
+                {
+                    "deprecated": false,
+                    "id": 167,
+                    "integration": false,
+                    "label": "Computers and Internet",
+                    "type": "content"
+                }
+            ],
+            "date": "2025-10-16",
+            "destinationcontinents": [],
+            "destinationcountries": [],
+            "device": {
+                "id": null
+            },
+            "domain": "8.8.8.8.in-addr.arpa",
+            "externalip": "215.203.108.231",
+            "identities": [
+                {
+                    "deleted": false,
+                    "id": 646436695,
+                    "label": "mx_demo",
+                    "type": {
+                        "id": 32,
+                        "label": "Network Devices",
+                        "type": "network_device"
+                    }
+                }
+            ],
+            "internalip": "192.168.128.192",
+            "policycategories": [],
+            "querytype": "PTR",
+            "returncode": 0,
+            "rule": {
+                "id": null,
+                "label": "UNKNOWN"
+            },
+            "threats": [],
+            "time": "17:45:16",
+            "timestamp": 1760636716000,
+            "type": "dns",
+            "verdict": "allowed"
+        }
+    ],
+    "meta": {}
+}

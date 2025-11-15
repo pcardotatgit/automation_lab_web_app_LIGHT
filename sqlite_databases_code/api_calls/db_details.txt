@@ -1,0 +1,21 @@
+{
+    "columns": [
+        "name",
+        "fqdn",
+        "relative_url",
+        "documentation",
+        "method",
+        "description",
+        "payload",
+        "header",
+        "body",
+        "query_params",
+        "custom_variables",
+        "authentication_profile",
+        "inputs_variables",
+        "output_variables"
+    ],
+    "db_name": "api_calls",
+    "description": "store API Calls",
+    "table_name": "api_calls"
+}

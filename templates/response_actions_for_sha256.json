@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "categories": [
+                "Simple Custom Detections"
+            ],
+            "description": "Remove SHA256 from simple custom detection list File Blacklist, will stop to detect and quarantine",
+            "id": "amp-remove-sha256-scd",
+            "module": "Secure Endpoints",
+            "module_instance_id": "9c99aefa-e13b-4681-b8da-9b30019a0189",
+            "module_type_id": "03d8591b-8374-5666-8fcc-eaea9188193c",
+            "title": "Remove SHA256 from custom detections File_Blacklist",
+            "url": "/respond/trigger/9c99aefa-e13b-4681-b8da-9b30019a0189/amp-remove-sha256-scd?observable_type=sha256&observable_value=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967"
+        },
+        {
+            "categories": [
+                "Simple Custom Detections"
+            ],
+            "description": "Add SHA256 from simple custom detection list test1, will start to detect and quarantine",
+            "id": "amp-add-sha256-scd",
+            "module": "Secure Endpoints",
+            "module_instance_id": "9c99aefa-e13b-4681-b8da-9b30019a0189",
+            "module_type_id": "03d8591b-8374-5666-8fcc-eaea9188193c",
+            "title": "Add SHA256 from custom detections File_Blacklist",
+            "url": "/respond/trigger/9c99aefa-8b06-4df8-96f4-a89e3f2556ef/01GWHRNGESXD03H9ZF47jbf3ZzJKez1F0Ej/observable_type=sha256&observable_value=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967"
+        },
+        {
+            "description": "Get Hostnames of all the hosts that reported to have runt a specific executable known by its name",
+            "id": "026S79IWTWZ884oOYfxyAmJndfhaOo7XbAh",
+            "module": "XDR Automation",
+            "module_instance_id": "bc64fd08-64be-4a3d-884e-d4f14e60eebc",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "title": "* W0002-which hosts saw this file ?",
+            "url": "/respond/trigger/bc64fd08-64be-4a3d-884e-d4f14e60eebc/026S79IWTWZ884oOYfxyAmJndfhaOo7XbAh?observable_type=sha256&observable_value=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967"
+        },
+        {
+            "description": "[Executes an Orbital forensic snapshot and enables AMP host isolation]\n[Supported observables: IP address, hostname, AMP GUID]\n",
+            "id": "01GWHRNGESXD03H9ZF47jbf3ZzJKez1F0Ej",
+            "module": "Automation",
+            "module_instance_id": "9c99aefa-8b06-4df8-96f4-a89e3f2556ef",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "title": "Take Forensic Snapshot and Isolate",
+            "url": "/respond/trigger/9c99aefa-8b06-4df8-96f4-a89e3f2556ef/10GWHRNGESXD03H9ZF47jbf3ZzJKez1F0Ej?observable_type=sha256&observable_value=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967"
+        },
+        {
+            "description": "[Executes an Orbital forensic snapshot]\n[Supported observables: IP address, hostname, AMP GUID]\n",
+            "id": "01GWHRU3V4F3W79uPuM3VWhfeJZ7VuHYUXF",
+            "module": "XDR Automation",
+            "module_instance_id": "bc64fd08-64be-4a3d-884e-d4f14e60eebc",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "title": "Take Orbital Forensic Snapshot",
+            "url": "/respond/trigger/bc64fd08-64be-4a3d-884e-d4f14e60eebc/01GWHRU3V4F3W79uPuM3VWhfeJZ7VuHYUXF?observable_type=sha256&observable_value=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967"
+        },
+        {
+            "description": "This workflow check the Secure EndPoint every 5 mins. And if there are new events then an alert is send to a Webex Team Room with details of all new events",
+            "id": "01YD3Z1A74H553WXOpHSOD0cJVN1fw1ik0T",
+            "module": "XDR Automation",
+            "module_instance_id": "bc64fd08-64be-4a3d-884e-d4f14e60eebc",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "title": "Get New Secure EndPoint Events-(W0049)-DEV",
+            "url": "/respond/trigger/bc64fd08-64be-4a3d-884e-d4f14e60eebc/01YD3Z1A74H553WXOpHSOD0cJVN1fw1ik0T?observable_type=sha256&observable_value=b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967"
+        }
+    ]
+}

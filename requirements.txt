@@ -1,0 +1,6 @@
+flask
+sqlalchemy
+pandas
+crayons
+requests
+ijson

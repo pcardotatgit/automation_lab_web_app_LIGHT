@@ -1,0 +1,13 @@
+{
+    "columns": [
+        "name",
+        "environment_name",
+        "value",
+        "description",
+        "comment",
+        "used_by"
+    ],
+    "db_name": "variables",
+    "description": "store variables",
+    "table_name": "variables"
+}

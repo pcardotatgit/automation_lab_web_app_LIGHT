@@ -1,0 +1,56 @@
+{
+    "records": [
+        {
+            "minTtl": 60,
+            "maxTtl": 60,
+            "firstSeen": 1615233459,
+            "lastSeen": 1615233459,
+            "name": "internetbadguys.com",
+            "type": "CNAME",
+            "rr": "htest.sytes.net.",
+            "securityCategories": [],
+            "contentCategories": [],
+            "firstSeenISO": "2021-03-08T19:57Z",
+            "lastSeenISO": "2021-03-08T19:57Z"
+        },
+        {
+            "minTtl": 86400,
+            "maxTtl": 86400,
+            "firstSeen": 1524592620,
+            "lastSeen": 1550097600,
+            "name": "internetbadguys.com",
+            "type": "CNAME",
+            "rr": "badcname.awfulhak.org.",
+            "securityCategories": [],
+            "contentCategories": [
+                "Software/Technology"
+            ],
+            "firstSeenISO": "2018-04-24T17:57Z",
+            "lastSeenISO": "2019-02-13T22:40Z"
+        },
+        {
+            "minTtl": 7200,
+            "maxTtl": 7200,
+            "firstSeen": 1505950740,
+            "lastSeen": 1505950740,
+            "name": "internetbadguys.com",
+            "type": "CNAME",
+            "rr": "alias.puter.ca.",
+            "securityCategories": [],
+            "contentCategories": [],
+            "firstSeenISO": "2017-09-20T23:39Z",
+            "lastSeenISO": "2017-09-20T23:39Z"
+        }
+    ],
+    "pageInfo": {
+        "hasMoreRecords": false,
+        "offset": 0,
+        "limit": 500,
+        "totalNumRecords": 3
+    },
+    "recordInfo": {
+        "minTtl": 60,
+        "maxTtl": 86400,
+        "totalMaliciousDomain": 0
+    }
+}

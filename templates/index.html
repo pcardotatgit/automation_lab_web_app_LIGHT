@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Automation Challenge</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="../static/assets/css/main.css" />
+<script>
+function popup_window( url, id, width, height )
+{
+//extract the url parameters if any, and pass them to the called html
+var tempvar=document.location.toString(); // fetch the URL string
+var passedparams = tempvar.lastIndexOf("?");
+if(passedparams > -1)
+url += tempvar.substring(passedparams);
+popup = window.open( url, id, 'toolbar=yes,scrollbars=yes,location=yes,statusbar=yes,menubar=yes,resizable=yes,width=' + width + ',height=' + height + '' );
+popup.focus();
+}
+</script>
+</head>
+<body class="is-preload">
+<!-- Nav -->
+<nav id="nav">
+<li><a href="#top">Top of page</a></li>
+<li><a href="/bases">Databases</a></li>
+<li><a href="#portfolio">Tools</a></li>
+<li><a href="/challenge_result">RESULTs</a></li>
+<li><a href="/logout">log Out</a></li>
+<li><a href="javascript:popup_window('/page_info?page={{page_name}}&route={{route}}','page_info',700,600);">:</a></li>
+<li>Version 1.2-20251113</li>
+</ul>
+</nav>
+<!-- Home -->
+<article id="top" class="wrapper style1">
+<div class="container">
+<div class="row">
+<div class="col-4 col-5-large col-12-medium">
+<span class="image fit"><img src="{{image}}" alt="" /></span>
+</div>
+<div class="col-8 col-7-large col-12-medium">
+<header>
+<h1>Automation Challenge</strong></h1>
+</header>
+<p>{{message1}}</p>
+<p>{{message2}}</p><br>
+<a href="javascript:popup_window('/introduction','page_info',700,600);" class="button small scrolly">Start the challenge</a>
+</div>
+</div>
+</div>
+</article>
+<!-- Portfolio -->
+<article id="portfolio" class="wrapper style3">
+<div class="container">
+<header>
+<h2>Some Action Selection</h2>
+<p>Here under some action to select</p>
+</header>
+<div class="row">
+<div class="col-4 col-6-medium col-12-small">
+<article class="box style2">
+<a href="/product_apis" class="image featured"><img src="../static/images/cdo.jpg" alt="" /></a>
+<h3><a href="/product_apis">Product APIs Calls</a></h3>
+<p>Product APIs Call Library</p>
+</article>
+</div>
+<div class="col-4 col-6-medium col-12-small">
+<article class="box style2">
+<a href="/functions_db_read" class="image featured"><img src="../static/images/cdo.jpg" alt="" /></a>
+<h3><a href="/functions_db_read">Functions</a></h3>
+<p>Functions Library</p>
+</article>
+</div>
+<div class="col-4 col-6-medium col-12-small">
+<article class="box style2">
+<a href="/workflows" class="image featured"><img src="../static/images/cdo.jpg" alt="" /></a>
+<h3><a href="/workflows">Workflows Editor</a></h3>
+<p>Manage Workflow Steps and Activities</p>
+</article>
+</div>
+<div class="col-4 col-6-medium col-12-small">
+<article class="box style2">
+<a href="/run_workflow" class="image featured"><img src="../static/images/cdo.jpg" alt="" /></a>
+<h3><a href="/run_workflow">Execute Workflow</a></h3>
+<p>Execute Workflow</p>
+</article>
+</div>
+</div>
+</div>
+</article>
+<!-- Scripts -->
+<script src="../static/assets/js/jquery.min.js"></script>
+<script src="../static/assets/js/jquery.scrolly.min.js"></script>
+<script src="../static/assets/js/browser.min.js"></script>
+<script src="../static/assets/js/breakpoints.min.js"></script>
+<script src="../static/assets/js/util.js"></script>
+<script src="../static/assets/js/main.js"></script>
+</body>
+</html>

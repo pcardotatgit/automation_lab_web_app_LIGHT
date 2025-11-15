@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online Python Code Editor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css" />
+    <script>
+        function save_code() {
+            var code = document.getElementById("code-editor").value;
+            window.open("/save_code?code="+code);
+        }      
+    </script>
+  </head>
+  <body>
+    <style>
+      body {
+        overflow: hidden;
+      }
+      /* Update CodeMirror theme for dark mode */
+      .CodeMirror {
+        height: 66vh; /* Full height of viewport */
+        width: 100%; /* Full width */
+      }
+
+      /* Update CodeMirror cursor color */
+      .CodeMirror-cursor {
+        border-left: 2px solid #abb2bf;
+      }
+
+      /* Update CodeMirror scrollbar style */
+
+      /* Update button style */
+      button {
+        margin-top: 10px;
+        background-color: #444;
+        color: #f0f0f0;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #666;
+      }
+
+      /* Adjust layout */
+      #code-editor {
+        height: calc(
+          92vh - 60px
+        ); /* Subtract 60px for the button and output div */
+        resize: none; /* Disable textarea resizing */
+      }
+
+      #output {
+        padding: 10px;
+      }
+    </style>
+    <textarea id="code-editor"></textarea>
+    <h3>Code Saved</h3>
+    <button onclick="save_code()">Save</button>
+    <script>alert("SAVED");</script>
+    <hr>For information this part downloads the following external resources:<br>
+    <ul>
+    <li>https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css</li>
+    <li>https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js</li>
+    <li>https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/python/python.min.js</li>
+    </ul>
+    <div id="output"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/python/python.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!-- description-->
+<html>
+<head>
+<title>AUTOMATION CHALLENGE</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="../static/assets/css/main.css" />
+<script>
+function popup_window( url, id, width, height )
+{
+//extract the url parameters if any, and pass them to the called html
+var tempvar=document.location.toString(); // fetch the URL string
+var passedparams = tempvar.lastIndexOf("?");
+if(passedparams > -1)
+url += tempvar.substring(passedparams);
+popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+popup.focus();
+}
+</script>
+</head>
+<body class="is-preload">
+<!-- Nav -->
+<nav id="nav">
+<li><a href="/">Back to Home</a></li>
+<li><a href="/product_apis">Product APIs</a></li>
+<li><a href="/logout">log Out</a></li>
+<li><a href="javascript:popup_window('/page_info?page={{page_name}}&route={{route}}','page_info',700,600);">:</a></li>
+</ul>
+</nav>
+<!-- create a new api call-->
+<article id="create_a_new_api_call" class="wrapper style4">
+<div class="container medium">
+<header>
+<h2>API Details</h2>
+<p>Send an API Call to the destination URL Endpoint and get the result</p>
+</header>
+<div class="row">
+<div class="col-12">
+<form method="get" action="/send_api_call">
+<div class="row">
+<div class="col-12">
+<ul class="actions">
+<li><input type="submit" value="Send API Call" class="button small scrolly" /></li>
+</ul>
+</div>
+<div class="col-6 col-12-small">
+<h4>API Call Name :</h4>
+</div>
+<div class="col-6 col-12-small">
+<input type="text"  id="name" name="name" value="{{name}}" placeholder="Model Name" />
+</div>
+<div class="col-6 col-12-small">
+<h4>Base URL with FQDN :</h4>
+</div>
+<div class="col-6 col-12-small">
+<input type="text"  id="base_url" name="base_url" value="{{base_url}}" placeholder="Base URL ( ex : https://api.meraki.com/api/v1 )" />
+</div>
+<h4>Relative URL :</a></h4>
+<div class="col-12">
+<input type="text"  id="relative_url" name="relative_url" value="{{relative_url}}" placeholder="relative_url" />
+</div>
+<h4>API Documentation :</a></h4>
+<div class="col-12">
+<input type="text"  id="api_docummentation" name="api_docummentation" value="{{api_docummentation}}" placeholder="API Documentation URL" />
+</div>
+<div class="col-6 col-12-small">
+<h4>Method :</h4>
+</div>
+<div class="col-6 col-12-small">
+<select id="method" name="method">
+<option value="{{method}}">{{method}}</option>
+<option value="GET">GET Method</option>
+<option value="POST">POST Method</option>
+<option value="Delete">DELETE Method</option>
+</select>
+</div>
+<h4>Description :</a></h4>
+<div class="col-12">
+<input type="text" id="short_description" name="short_description" value="{{short_description}}" placeholder="short description" />
+</div>
+<h4>payload<a href="javascript:popup_window('/payload_examples','page_info',500,500);">( help ) :</a></h4>
+<div class="col-12">
+<textarea id="payload" name="payload" rows="5" cols="33" placeholder="JSON data for payload">{{payload}}</textarea>
+</div>
+<h4>header<a href="javascript:popup_window('/header_examples','page_info',500,500);">( help ) :</a></h4>
+<div class="col-12">
+<textarea id="header" name="header" rows="5" cols="33">{{header}}</textarea>
+</div>
+<h4>body<a href="javascript:popup_window('/body_examples','page_info',500,500);">( help ) :</a></h4>
+<div class="col-12">
+<textarea id="body" name="body" rows="5" cols="33">{{body}}</textarea>
+</div>
+<h4>Query Params<a href="javascript:popup_window('/parameter_examples','page_info',500,500);">( help ) :</a></h4>
+<div class="col-12">
+<textarea id="params" name="params" rows="5" cols="33">{{params}}</textarea>
+</div>
+<h4>Custom Variables<a href="javascript:popup_window('/parameter_examples','page_info',500,500);">( help ) :</a></h4>
+<div class="col-12">
+<textarea id="parameters" name="parameters" rows="5" cols="33">{{parameters}}</textarea>
+</div>
+<h4>Authentication Profile :</a></h4>
+<div class="col-12">
+<input type="text" id="authentication_profile" name="authentication_profile" value="{{authentication_profile}}" placeholder="authentication_profile name" />
+</div>
+<h4>inputs :</a></h4>
+<div class="col-12">
+<input type="text" id="inputs" name="inputs" value="{{inputs}}" placeholder="inputs" />
+</div>
+<h4>outputs :</a></h4>
+<div class="col-12">
+<input type="text" id="outputs" name="outputs" value="{{outputs}}" placeholder="outputs" />
+</div>
+<div class="col-12">
+<ul class="actions">
+<li><input type="submit" value="Send API Call" class="button small scrolly" /></li>
+</ul>
+</div>
+</div>
+</form>
+<br>
+</div>
+</div>
+</div>
+</article>
+<!-- Scripts -->
+<script src="../static/assets/js/jquery.min.js"></script>
+<script src="../static/assets/js/jquery.scrolly.min.js"></script>
+<script src="../static/assets/js/browser.min.js"></script>
+<script src="../static/assets/js/breakpoints.min.js"></script>
+<script src="../static/assets/js/util.js"></script>
+<script src="../static/assets/js/main.js"></script>
+</body>
+</html>

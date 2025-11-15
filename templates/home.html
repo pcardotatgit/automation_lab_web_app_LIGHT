@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>FLASK FRONT END</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+    <script>
+        function popup_window( url, id, width, height )
+        {
+           //extract the url parameters if any, and pass them to the called html
+           var tempvar=document.location.toString(); // fetch the URL string
+           var passedparams = tempvar.lastIndexOf("?");
+           if(passedparams > -1)
+              url += tempvar.substring(passedparams);
+          popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=yes,resizable=yes,width=' + width + ',height=' + height + '' );
+          popup.focus();
+        }
+    </script>
+	</head>
+	<body class="is-preload">
+		<!-- Nav -->
+			<nav id="nav">
+					<li><a href="#top">Top of page</a></li>
+                    <li><a href="#profile">API Customer Profile</a></li>
+                    <li><a href="#api_client">Add API Client</a></li>
+                    <li><a href="/tools">Tools</a></li>                    
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window('/page_info?page={{page_name}}&route={{route}}','page_info',700,600);">:</a></li>
+                    <li>Version 1.0-001</li>
+				</ul>
+			</nav>
+		<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="{{image}}" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1>This page is index.html</strong></h1>
+                                <h1>invoked by the /index flask route</strong></h1>
+                                <ul>
+                                    <li>Edit index.html and update the page title with the name of the new application</li>
+                                    <li>Edit html files into ./code_templates page title in every html page with the name of the new application</li>
+                                    <li>Edit function_template.py into ./code_templates and review global variables</li>
+                                    <li>Edit route_template.py into ./code_templates and review global variables</li>
+                                    <li>Edit and update a_core_imports.py</li>
+                                    <li>Edit and update  a_core_global_definitions.py</li>
+                                    <li>Edit and update a_core_main.py</li>
+                                    <li>Change application listening port</li>
+                                </ul>                                
+							</header>
+							<p>{{message1}}</p>
+                            <p>{{message2}}</p><br>
+							<a href="{{message3}}" class="button small scrolly">{{message4}}</a>
+						</div>						
+					</div>				
+				</div>
+			</article>
+		<!-- Portfolio -->
+			<article id="portfolio" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Some Action selection</h2>
+						<p>Here under some action to select</p>
+					</header>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="/incident?file={{file}}" class="image featured"><img src="../static/images/cdo.jpg" alt="" /></a>
+								<h3><a href="/incident?file={{file}}">Action 1</a></h3>
+                                <p>Action 1</p>
+							</article>
+						</div>    
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="/incident?file={{file}}" class="image featured"><img src="../static/images/cdo.jpg" alt="" /></a>
+								<h3><a href="/incident?file={{file}}">Action 2</a></h3>
+                                <p>Action 2</p>
+							</article>
+						</div>           
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="/incident?file={{file}}" class="image featured"><img src="../static/images/cdo.jpg" alt="" /></a>
+								<h3><a href="/incident?file={{file}}">Action 3</a></h3>
+                                <p>Action 3</p>
+							</article>
+						</div>                            
+					</div>
+
+				</div>
+			</article>
+ 		<!-- profile -->
+			<article id="profile" class="wrapper style4">
+				<div class="container medium">
+					<header>
+						<h2>API Customer Profile</h2>
+						<p>Select an API Client Profile</p>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<form method="get" action="/select_profile">
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<p>Current Selected Profile :</p>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="text"  id="profil_name2" value="{{profil_name}}" placeholder="Profil Name" />
+									</div>
+									<div class="col-12">
+										<select id="profil_name" name="profil_name">
+                                            {% for file in profiles_list %}
+                                            <option value="{{file}}">{{file}}</option>
+                                            {% endfor %}
+                                        </select>
+									</div>                                    
+									<div class="col-12">
+										<ul class="actions">
+                                            <li><input type="submit" value="Select Profile" class="button small scrolly" /></li>
+											<li><a href="#api_client" >New a new API Client profile</a></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</article>
+ 		<!-- API CLient -->
+			<article id="api_client" class="wrapper style4">
+				<div class="container medium">
+					<header>
+						<h2>Add a new API Client Profiles</h2>
+						<p>Configure here Your API client_id and client_password</p>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<form method="get" action="/check_connexion_to_tenant">
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<input type="text"  id="profil_name" name="profil_name" placeholder="Profil Name" />
+									</div>
+									<div class="col-6 col-12-small">
+										<select id="host" name="host">
+<option value="https://api.meraki.com/api/v1">https://api.meraki.com/api/v1</option>                                        
+                                            <option value="US - https://private.intel.amp.cisco.com">US - https://private.intel.amp.cisco.com</option>	
+                                            <option value="EU - https://private.intel.eu.amp.cisco.com">EU - https://private.intel.eu.amp.cisco.com</option>
+                                            <option value="APJC - https://private.intel.apjc.amp.cisco.com">APJC - https://private.intel.apjc.amp.cisco.com</option>
+                                        </select>                                        
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="text"  id="api_key" name="api_key" placeholder="api_key *" />
+									</div>                                   
+									<div class="col-6 col-12-small">
+										<input type="text"  id="network_id" name="network_id" placeholder="Network ID ( if you have one )" />
+									</div>          
+                                    <div class="col-12">
+										<input type="text" id="orgID" name="orgID" placeholder="Organization ID" />
+									</div>                                      
+									<div class="col-12">
+										<ul class="actions">
+                                            <li><input type="submit" value="Save and check" class="button small scrolly" /></li>
+											<li><input type="reset" value="Clear Form" class="alt" /></li>
+										</ul>
+									</div>
+									<div class="col-6 col-12-small">
+										<!input type="text"  id="network_id" name="network_id" placeholder="Network ID ( if you have one )" />
+                                        <h3>Example :</h3>
+									</div>          
+                                    <div class="col-12">
+										<input type="text" id="example" name="example" placeholder="Example" />
+									</div>                                    
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</article>
+		<!-- Scripts -->
+			<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="../static/assets/js/browser.min.js"></script>
+			<script src="../static/assets/js/breakpoints.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<script src="../static/assets/js/main.js"></script>
+	</body>
+</html>

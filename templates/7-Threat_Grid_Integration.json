@@ -1,0 +1,503 @@
+{
+    "query": "getmalware.com",
+    "totalResults": 12,
+    "moreDataAvailable": false,
+    "limit": 100,
+    "offset": 0,
+    "samples": [
+        {
+            "sha256": "a78c29d1fa05c2b23d1dc9b75da8c053399143682fe3779bc466f10e1a997850",
+            "sha1": "cf162622e29bca072d01b274fbbc3ceaacdd13c7",
+            "md5": "0fe5be3811a98ee6a9c997d3812d911a",
+            "magicType": "PE32 executable (console) Intel 80386 (stripped to external PDB), for MS Windows, UPX compressed",
+            "threatScore": 100,
+            "size": 1550848,
+            "firstSeen": 1521556539000,
+            "lastSeen": 1597986210000,
+            "visible": true,
+            "avresults": [
+                {
+                    "signature": "Win.Malware.Emotet-6863337",
+                    "product": "ClamAV"
+                },
+                {
+                    "signature": "Win32.Trojan.Fuerboos",
+                    "product": "Reversing Labs"
+                },
+                {
+                    "signature": "ML.Attribute.HighConfidence",
+                    "product": "Symantec"
+                },
+                {
+                    "signature": "suspicious",
+                    "product": "Acronis"
+                },
+                {
+                    "signature": "malware",
+                    "product": "MAX"
+                },
+                {
+                    "signature": "Gen:Variant.Razy.317095",
+                    "product": "Ad-Aware"
+                },
+                {
+                    "signature": "Adware.Presenoker",
+                    "product": "VBA32"
+                },
+                {
+                    "signature": "W32.Malware.Gen",
+                    "product": "Webroot"
+                },
+                {
+                    "signature": "heuristic",
+                    "product": "Invincea"
+                },
+                {
+                    "signature": "Trojan.Win32.Generic.4!c",
+                    "product": "AegisLab"
+                },
+                {
+                    "signature": "Gen:Variant.Razy.317095",
+                    "product": "BitDefender"
+                },
+                {
+                    "signature": "Trojan.Malware.7164915.susgen",
+                    "product": "MaxSecure"
+                },
+                {
+                    "signature": "(PUA)",
+                    "product": "Sophos"
+                },
+                {
+                    "signature": "win/malicious_confidence_60%",
+                    "product": "CrowdStrike"
+                },
+                {
+                    "signature": "Unsafe",
+                    "product": "Cylance"
+                },
+                {
+                    "signature": "Win32:Malware-gen",
+                    "product": "AVG"
+                },
+                {
+                    "signature": "Win32:Malware-gen",
+                    "product": "Avast"
+                },
+                {
+                    "signature": "Gen:Variant.Razy.317095",
+                    "product": "FireEye"
+                },
+                {
+                    "signature": "Trj/CI.A",
+                    "product": "Panda"
+                },
+                {
+                    "signature": "PUA",
+                    "product": "Sophos"
+                },
+                {
+                    "signature": "Gen:Variant.Razy.317095",
+                    "product": "GData"
+                },
+                {
+                    "signature": "(moderate",
+                    "product": "Endgame"
+                },
+                {
+                    "signature": "W32/Trojan.URSQ",
+                    "product": "Cyren"
+                },
+                {
+                    "signature": "generic.ml",
+                    "product": "Paloalto"
+                },
+                {
+                    "signature": "malicious.811a98",
+                    "product": "Cybereason"
+                },
+                {
+                    "signature": "Gen:Variant.Razy.317095",
+                    "product": "Emsisoft"
+                },
+                {
+                    "signature": "(B)",
+                    "product": "Emsisoft"
+                },
+                {
+                    "signature": "W32/Generic!tr",
+                    "product": "Fortinet"
+                },
+                {
+                    "signature": "BehavesLike.Win32.Downloader.tc",
+                    "product": "McAfee-GW-Edition"
+                },
+                {
+                    "signature": "Gen:Variant.Razy.317095",
+                    "product": "ALYac"
+                },
+                {
+                    "signature": "score=99)",
+                    "product": "MAX"
+                },
+                {
+                    "signature": "TROJ_GEN.R002H0CE719",
+                    "product": "TrendMicro-HouseCall"
+                },
+                {
+                    "signature": "confidence)",
+                    "product": "Endgame"
+                },
+                {
+                    "signature": "Trojan.Agent!qoQ9XWAP75c",
+                    "product": "Yandex"
+                },
+                {
+                    "signature": "Gen:Variant.Razy.317095",
+                    "product": "MicroWorld-eScan"
+                },
+                {
+                    "signature": "Trojan.EquationDrug.ju",
+                    "product": "Jiangmin"
+                },
+                {
+                    "signature": "Trojan.Razy.D4D6A7",
+                    "product": "Arcabit"
+                },
+                {
+                    "signature": "HEUR:Trojan.Win32.Generic",
+                    "product": "Kaspersky"
+                },
+                {
+                    "signature": "(W)",
+                    "product": "CrowdStrike"
+                },
+                {
+                    "signature": "Trojan.Win32.Razy.fhmzzk",
+                    "product": "NANO-Antivirus"
+                },
+                {
+                    "signature": "malicious.moderate.ml.score",
+                    "product": "Trapmine"
+                },
+                {
+                    "signature": "Win32/Trojan.6ad",
+                    "product": "Qihoo-360"
+                },
+                {
+                    "signature": "Trojan:Win32/Occamy.C",
+                    "product": "Microsoft"
+                },
+                {
+                    "signature": "HEUR:Trojan.Win32.Generic",
+                    "product": "ZoneAlarm"
+                },
+                {
+                    "signature": "MP",
+                    "product": "Sophos"
+                },
+                {
+                    "signature": "(ai",
+                    "product": "MAX"
+                },
+                {
+                    "signature": "malicious",
+                    "product": "Endgame"
+                },
+                {
+                    "signature": "Trojan:Win32/Generic.ac55ec13",
+                    "product": "Alibaba"
+                },
+                {
+                    "signature": "Malware/Win32.Generic.C2718176",
+                    "product": "AhnLab-V3"
+                },
+                {
+                    "signature": "Trojan.Generic.Win32.55281",
+                    "product": "Zillya"
+                },
+                {
+                    "signature": "Generic",
+                    "product": "Sophos"
+                },
+                {
+                    "signature": "Artemis!0FE5BE3811A9",
+                    "product": "McAfee"
+                },
+                {
+                    "signature": "Win32.Trojan.Presenoker",
+                    "product": "Reversing Labs"
+                },
+                {
+                    "signature": "Win32.Trojan.Generic",
+                    "product": "Reversing Labs"
+                },
+                {
+                    "signature": "Win32.Trojan.Razy",
+                    "product": "Reversing Labs"
+                },
+                {
+                    "signature": "BehavesLike.Win32.Generic.tc",
+                    "product": "McAfee-GW-Edition"
+                },
+                {
+                    "signature": "(CLOUD)",
+                    "product": "Rising"
+                },
+                {
+                    "signature": "Trojan.IGENERIC",
+                    "product": "CAT-QuickHeal"
+                },
+                {
+                    "signature": "malicious_confidence_70%",
+                    "product": "CrowdStrike"
+                },
+                {
+                    "signature": "Trojan.Generic!8.C3",
+                    "product": "Rising"
+                },
+                {
+                    "signature": "Trj/Genetic.gen",
+                    "product": "Panda"
+                },
+                {
+                    "signature": "TROJ_GEN.R002H09JA18",
+                    "product": "TrendMicro-HouseCall"
+                },
+                {
+                    "signature": "TROJ_GEN.R03BC0OIJ18",
+                    "product": "TrendMicro"
+                },
+                {
+                    "signature": "Trojan:Win32/Zpevdo.B",
+                    "product": "Microsoft"
+                },
+                {
+                    "signature": "Gen:Variant.Razy.317095",
+                    "product": "F-Secure"
+                },
+                {
+                    "signature": "Win.Malware.Emotet-6863338",
+                    "product": "ClamAV"
+                }
+            ],
+            "behaviors": []
+        },
+        {
+            "sha256": "5fecb198a8d0c71909ed06ca638422d45e1054092d16c2ae9dbc53d112645716",
+            "sha1": "4faf42487323d6cb5c17bfd550feafdf01b79d28",
+            "md5": "a940ae22d3d79317792f600c0d572ea4",
+            "magicType": "ASCII text, with CRLF line terminators",
+            "threatScore": 100,
+            "size": 218,
+            "firstSeen": 1521139800000,
+            "lastSeen": 1526073058000,
+            "visible": true,
+            "avresults": [],
+            "behaviors": []
+        },
+        {
+            "sha256": "d414ff6fbddbcb4539cef542238048bb165e479d6b77a0bb070e5a249083aa00",
+            "sha1": "f2e489851d80e6ed5242cd7425703facf004caba",
+            "md5": "56cb4ae82182df2773f0e736ea03c11c",
+            "magicType": "ASCII text, with CRLF line terminators",
+            "threatScore": 100,
+            "size": 243,
+            "firstSeen": 1526488471000,
+            "lastSeen": 1599577692000,
+            "visible": true,
+            "avresults": [
+                {
+                    "signature": "HEUR:Trojan-Downloader.Script.SLoad.gen",
+                    "product": "ZoneAlarm"
+                },
+                {
+                    "signature": "HEUR:Trojan-Downloader.Script.SLoad.gen",
+                    "product": "Kaspersky"
+                },
+                {
+                    "signature": "Exploit.HTML.BitsAdmin.Gen",
+                    "product": "Emsisoft"
+                },
+                {
+                    "signature": "Heur.BZC.UGZ.Leopard.1.0982D405",
+                    "product": "GData"
+                },
+                {
+                    "signature": "Exploit.HTML.BitsAdmin.Gen",
+                    "product": "MicroWorld-eScan"
+                },
+                {
+                    "signature": "JS/Downloader.gen.pj",
+                    "product": "McAfee"
+                },
+                {
+                    "signature": "virus.js.qexvmc.1",
+                    "product": "Qihoo-360"
+                },
+                {
+                    "signature": "Trojan.Script.SLoad.4!c",
+                    "product": "AegisLab"
+                },
+                {
+                    "signature": "Exploit.HTML.BitsAdmin.Gen",
+                    "product": "BitDefender"
+                },
+                {
+                    "signature": "Exploit.HTML.BitsAdmin.Gen",
+                    "product": "Arcabit"
+                },
+                {
+                    "signature": "CL.Downloader!gen79",
+                    "product": "Symantec"
+                },
+                {
+                    "signature": "Exploit.HTML.BitsAdmin",
+                    "product": "Ikarus"
+                },
+                {
+                    "signature": "Exploit.HTML.BitsAdmin.Gen",
+                    "product": "FireEye"
+                },
+                {
+                    "signature": "JS/Downloader.gen.pj",
+                    "product": "McAfee-GW-Edition"
+                },
+                {
+                    "signature": "(B)",
+                    "product": "Emsisoft"
+                },
+                {
+                    "signature": "Exploit.HTML.BitsAdmin.Gen",
+                    "product": "Ad-Aware"
+                },
+                {
+                    "signature": "Heur.BZC.UGZ.Leopard.1.0982D405",
+                    "product": "ALYac"
+                },
+                {
+                    "signature": "Script.Downloader.SLoad",
+                    "product": "Reversing Labs"
+                }
+            ],
+            "behaviors": []
+        },
+        {
+            "sha256": "3b97e6e3a5a02e30a4a1090ce6af73b22bc0fdedf28081bc057cb1d0ce9f2978",
+            "sha1": "2929448b69a9a01bbf3cd66e92d5227cbfdd22c0",
+            "md5": "3648f6729bfdabfd946cbe65fb73993d",
+            "magicType": "CDFV2 Microsoft Outlook Message",
+            "threatScore": 100,
+            "size": 34816,
+            "firstSeen": 1543478104000,
+            "lastSeen": 1544209877000,
+            "visible": true,
+            "avresults": [],
+            "behaviors": []
+        },
+        {
+            "sha256": "142555c44aa40d43246b85c1e09bb83cd12784f8727fff807c39a74c8f2ccaf5",
+            "sha1": "1460574f0110b61f0c10b1aad1dd63f6e9140d21",
+            "md5": "86767f2afbed540eaa15066058aa00af",
+            "magicType": "MS Windows 95 Internet shortcut text (URL=<http://getmalware.com:7777/file>), ASCII text",
+            "threatScore": 100,
+            "size": 55,
+            "firstSeen": 1532367654000,
+            "lastSeen": 1583495584000,
+            "visible": true,
+            "avresults": [],
+            "behaviors": []
+        },
+        {
+            "sha256": "e88a10de6a82f3963cb02236e4ee5a210df0b94bf88ad124d53d2abc177ea6b3",
+            "sha1": "636cf703d639a327b18e5e97ef50a13f2082de4d",
+            "md5": "c2f97878c3581add90e849fddf022096",
+            "magicType": "PE32 executable (console) Intel 80386 (stripped to external PDB), for MS Windows, UPX compressed",
+            "threatScore": 100,
+            "size": 1550880,
+            "firstSeen": 1599152022000,
+            "lastSeen": 1599152022000,
+            "visible": true,
+            "avresults": [],
+            "behaviors": []
+        },
+        {
+            "sha256": "27de26b137d1c97e5a34cd1b7c12512051f8ee09ca2ddbeba3984bfac8b0ad33",
+            "sha1": "3df7b0354c814eba1ca11dfd351ac68bf41c6c64",
+            "md5": "61cdbdee10aa9bed596809f517d05549",
+            "magicType": "MS Windows 95 Internet shortcut text (URL=<http://getmalware.com:7777>), ASCII text",
+            "threatScore": 81,
+            "size": 50,
+            "firstSeen": 1524835501000,
+            "lastSeen": 1524835501000,
+            "visible": true,
+            "avresults": [],
+            "behaviors": []
+        },
+        {
+            "sha256": "27de26b137d1c97e5a34cd1b7c12512051f8ee09ca2ddbeba3984bfac8b0ad33",
+            "sha1": "3df7b0354c814eba1ca11dfd351ac68bf41c6c64",
+            "md5": "61cdbdee10aa9bed596809f517d05549",
+            "magicType": "MS Windows 95 Internet shortcut text (URL=<http://getmalware.com:7777>), ASCII text",
+            "threatScore": 81,
+            "size": 50,
+            "firstSeen": 1524835501000,
+            "lastSeen": 1524835501000,
+            "visible": true,
+            "avresults": [],
+            "behaviors": []
+        },
+        {
+            "sha256": "98404afa1ed09f8d8cdafe2077293cebd81bdd2d00221d1a019f0dac39b99aba",
+            "sha1": "bc1e4ca837bad264cbe5a1f552e43ad241ec9af6",
+            "md5": "a0322a798960c246259c4239afc3ad8a",
+            "magicType": "MS Windows 95 Internet shortcut text (URL=<http://getmalware.com:7777/payload>), ASCII text",
+            "threatScore": 81,
+            "size": 58,
+            "firstSeen": 1524835093000,
+            "lastSeen": 1583951070000,
+            "visible": true,
+            "avresults": [],
+            "behaviors": []
+        },
+        {
+            "sha256": "dde3a7db910587187b2d20af174b876241c7d79673548b4a9983cac2a0de50b9",
+            "sha1": "c2de1ca26ba25f087442c909f055d473d58166ec",
+            "md5": "8119856b1e5236bb6bbfa069e838e9d5",
+            "magicType": "PNG image data, 1313 x 824, 8-bit/color RGBA, non-interlaced",
+            "threatScore": 81,
+            "size": 1262554,
+            "firstSeen": 1535487193000,
+            "lastSeen": 1535487193000,
+            "visible": true,
+            "avresults": [],
+            "behaviors": []
+        },
+        {
+            "sha256": "ebb3c0eeb00dc0afd26bac07a6fc60f4d1936ee10d4cec6654af3722405ddf33",
+            "sha1": "f4fe266b003c8b80727cdc2438cf1b051b3df6b2",
+            "md5": "88ad4b50ac7c9d6147ee6ebd3fdca834",
+            "magicType": "MS Windows 95 Internet shortcut text (URL=<http://getmalware.com>), ASCII text",
+            "threatScore": 81,
+            "size": 45,
+            "firstSeen": 1537956902000,
+            "lastSeen": 1569939922000,
+            "visible": true,
+            "avresults": [],
+            "behaviors": []
+        },
+        {
+            "sha256": "af3a4aecb19eeec92a0329a4a3b2373c8a597b72a2c0c7f91ece1c02390431ac",
+            "sha1": "9bff6a223d4c11ef5c8645ce10aeb6093c693055",
+            "md5": "16043950cdd8fcae09f0fbd2920fcba9",
+            "magicType": "MS Windows 95 Internet shortcut text (URL=<http://getmalware.com/file>), ASCII text",
+            "threatScore": 81,
+            "size": 50,
+            "firstSeen": 1538769429000,
+            "lastSeen": 1539699295000,
+            "visible": true,
+            "avresults": [],
+            "behaviors": []
+        }
+    ]
+}
