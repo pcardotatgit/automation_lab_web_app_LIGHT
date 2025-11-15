@@ -174,7 +174,7 @@ username is : **admin**
 
 password is : **password**
 
-***Notice :*** The application is ready to manage users and their password.  Bu we don't need this for this lab
+***Notice :*** The application is ready to manage users and their password.  But we don't need this for this lab
 
 # Your Challenge
 
@@ -186,9 +186,10 @@ API keys shared with students are faked keys that only valid for the simulator.
 
 An automation workflow is a serie of steps, put one after the other which execute every atomic operation needed to achieve the final goal.
 
-Generally speaking you to... find the correct API call to send to the targeted Security Solution, Search in the Web Application the step which had been prepared for this call. Then customize it by selecting the correct inputs, and selecting the correct output.
+You have to find the correct API calls to send to the targeted Security Solutions. You have to search in the Web Application the step which had been prepared for this call. Then customize it by selecting the correct inputs, and selecting the correct output. And send the API call.
+Then you recieve an answer which is a JSON result you have to parse.
 
-The output will be the input of the next step.  Etc etc... until the final step ( Malicious objects blocked ).
+The output will be the input of the next step.  You have to execute this next step which does the same operation but on another security solution, and repeat this cycle again and again until the final step ( Malicious objects blocked ).
 
 So we always loop on the same operations... you have to send an API call, get the JSON result, parse it for extracting from it the searched information, and then store this extracted data into the variable library.
 
