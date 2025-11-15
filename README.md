@@ -80,7 +80,7 @@ You must see the flask server start
 
 ## Step 1. Create a working directory
 
-Create a working directory into your laptop. Open a terminal CMD window into it. Name It XDR_BOT for example.
+Create a working directory into your laptop. Open a terminal CMD window into it. Name It **Automation_Lab** for example.
 
 ## Step 2. Copy the code into your laptop
 
