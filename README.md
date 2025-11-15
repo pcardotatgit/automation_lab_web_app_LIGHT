@@ -96,7 +96,7 @@ And here under for those of you who are familiar with Github.
 
 You must have a git client installed into your laptop. Then you can type the following command from a terminal console opened into your working directory.
 
-    git clone https://github.com/pcardotatgit/automation_lab_web_app.git
+    git clone https://github.com/pcardotatgit/automation_lab_web_app_LIGHT.git
     
 
 ## Step 3. Go to the code subfolder
@@ -105,7 +105,7 @@ Once the code unzipped into your laptop, then Go to the code subfolder.
 
 ## Step 4. Create a Python virtual environment
 
-It is still a best practice to create a python virtual environment. Thank to this you will create a dedicated package with requested modules for this application. 
+It is still a best practice to create a python virtual environment. Thanks to this you will create a dedicated subdirectory structure which contains only the requested modules for the application. 
 
 ### Create a virtual environment on Windows
 
@@ -145,6 +145,10 @@ I such case we have to install the python modules one by one as shown bellow
 
     python z_init_appli.py
 
+This python script is doing some intialization operations for windows machines. It creates a few subdirectories and files that are required by the application, and it modifies the **venv\Scripts\activate.bat** in order to make this batch file to start the python virtual environment and start the application. 
+
+For now this initialization script is only for windows machines.
+    
 ## Step 7 : run the simulator
 
 type the following cli command
@@ -185,7 +189,7 @@ Generally speaking you to... find the correct API call to send to the targeted S
 
 The output will be the input of the next step.  Etc etc... until the final step ( Malicious objects blocked ).
 
-Every tile you have to send an API call, get the JSON result, parse it for extracting from it the searched information, and then store this extracted data into the variable library.
+So we always loop on the same operations... you have to send an API call, get the JSON result, parse it for extracting from it the searched information, and then store this extracted data into the variable library.
 
 You can test step by step your workflow at any time, either from the begining, or from a selected step.
 
