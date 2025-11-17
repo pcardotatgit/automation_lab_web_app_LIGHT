@@ -2700,7 +2700,7 @@ def parse_result_of_cse_get_computers(api_call_result,hostname):
 #  def_workflow_sqlite_update_step***
 def workflow_sqlite_update_step(index,new_step):
     '''
-    MODIFIED : 2025-11-01T16:03:53.000Z
+    MODIFIED : 2025-11-15
 
     description : update step field of row in workflow database
     
@@ -2710,11 +2710,6 @@ def workflow_sqlite_update_step(index,new_step):
     env.level+='-'
     print('\n'+env.level,white('def workflow_sqlite_update_step() in app.py : >\n',bold=True))
     loguer(env.level+' def workflow_sqlite_update_step() in app.py : >')
-    global client_id
-    global client_password
-    global host
-    global host_for_token
-    global profil_name
     # ===================================================================    
     database="workflows.db"
     #database = './z_bases/'+database+'.db'
@@ -2728,7 +2723,7 @@ def workflow_sqlite_update_step(index,new_step):
         cursor.execute(sql_request)
         result=1
     # ===================================================================
-    loguer(env.level+' def END OF workflow_sqlite_update_step() in app.py : >')    
+    #loguer(env.level+' def END OF workflow_sqlite_update_step() in app.py : >')    
     env.level=env.level[:-1]
     return result
     
@@ -4060,6 +4055,131 @@ def reset_every_databases():
     result=1
     # ===================================================================
     loguer(env.level+' def END OF reset_every_databases() in app.py : >')    
+    env.level=env.level[:-1]
+    return result
+    
+
+
+#  def_move_step***
+def move_step(current_step,new_step):
+    '''
+    MODIFIED : 2025-11-15T16:34:43.000Z
+
+    description : move step to another position in the workflow
+    
+    how to call it :
+    '''
+    route="/move_step"
+    env.level+='-'
+    print('\n'+env.level,white('def move_step() in app.py : >\n',bold=True))
+    loguer(env.level+' def move_step() in app.py : >')
+    # ===================================================================    
+    with open('./sqlite_databases_code/workflows/db_details.txt') as file:
+        db_details_dict=json.loads(file.read())
+    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+    database = os.getcwd()+'/z_bases/workflows.db'
+    database=database.replace("\\","/")
+    print('database is :',database)
+    db_name = "workflows.db"
+    table_name = db_details_dict["table_name"]
+    engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+    df = pd.read_sql_table(table_name, engine)
+    out_df = df[['index','workflow_name','step','step_name','input','output','comment']]
+    df = DataFrame(out_df)
+    #print (df)
+    select_options=''
+    res = df.values.tolist()
+    element_index=0
+    sorted_list=sorted(res, key=lambda x: x[element_index])
+    current_step_dict={}         
+    for item in sorted_list:
+        current_step_dict[item[2]]={'index':item[0],'step':item[2]}
+    print('current_step_dict :',cyan(current_step_dict,bold=True))
+    new_step_dict={}
+    if new_step<current_step: 
+        nb_step=1
+        for item,value in current_step_dict.items():
+            print(value['index'],value['step'])
+             
+            if value['step']>=new_step and value['step'] < current_step:
+                # calculate step+1
+                str_step_index=value['step'].split(' ')[1]
+                step_index=int(str_step_index)
+                print('step_index',cyan(step_index,bold=True))            
+                next_step=step_index+1
+                if next_step==1:
+                    str_next_step='Step 01'
+                elif next_step==2:
+                    str_next_step='Step 02'    
+                elif next_step==3:
+                    str_next_step='Step 03' 
+                elif next_step==4:
+                    str_next_step='Step 04' 
+                elif next_step==5:
+                    str_next_step='Step 05' 
+                elif next_step==6:
+                    str_next_step='Step 06' 
+                elif next_step==7:
+                    str_next_step='Step 07' 
+                elif next_step==8:
+                    str_next_step='Step 08'     
+                elif next_step==9:
+                    str_next_step='Step 09'             
+                else:
+                    str_next_step='Step '+str(next_step)         
+                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':str_next_step}    
+            else:
+                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':current_step_dict[value['step']]['step']} 
+
+            if value['step']==current_step:
+                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':new_step}            
+            nb_step+=1
+    else:
+        nb_step=1
+        for item,value in current_step_dict.items():
+            print(value['index'],value['step'])
+             
+            if value['step']<=new_step and value['step'] > current_step:
+                # calculate step+1
+                str_step_index=value['step'].split(' ')[1]
+                step_index=int(str_step_index)
+                print('step_index',cyan(step_index,bold=True))   
+                if step_index>1:
+                    next_step=step_index-1
+                else:
+                    next_step=1
+                if next_step==1:
+                    str_next_step='Step 01'
+                elif next_step==2:
+                    str_next_step='Step 02'    
+                elif next_step==3:
+                    str_next_step='Step 03' 
+                elif next_step==4:
+                    str_next_step='Step 04' 
+                elif next_step==5:
+                    str_next_step='Step 05' 
+                elif next_step==6:
+                    str_next_step='Step 06' 
+                elif next_step==7:
+                    str_next_step='Step 07' 
+                elif next_step==8:
+                    str_next_step='Step 08'     
+                elif next_step==9:
+                    str_next_step='Step 09'             
+                else:
+                    str_next_step='Step '+str(next_step)         
+                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':str_next_step}    
+            else:
+                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':current_step_dict[value['step']]['step']} 
+
+            if value['step']==current_step:
+                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':new_step}            
+            nb_step+=1    
+    print('\nnew_step_dict :',cyan(new_step_dict,bold=True))                       
+    for item,value in new_step_dict.items():        
+        workflow_sqlite_update_step(value['index'],value['step'])
+    result=1
+    # ===================================================================
     env.level=env.level[:-1]
     return result
     
@@ -12420,7 +12540,7 @@ def account_keys_db_ingest_csv():
 @app.route('/send_api_call', methods=['GET'])
 def send_api_call():
     '''
-    Created : 2025-11-06
+    Created : 2025-11-15
     description : Send the API call to URL Endpoint with the passed data
     '''
     route="/send_api_call"
@@ -12565,7 +12685,9 @@ def send_api_call():
                 base_url=new_chunks[0]+new_chunks[1]
         else:
             if use_simulator==1:
-                base_url='http://localhost:4000'
+                with open('./port.txt') as file:
+                    port=file.read()
+                base_url='http://localhost:'+port
 
         print()
         print('final base_url to use : ',cyan(base_url,bold=True))                      
@@ -13412,13 +13534,18 @@ def workflows_db_update_entry():
     else:
         row=request.args.get("row")
         print("\nrow : ",row)
+        old_step=request.args.get("old_step")
+        print("\nold_step : ",old_step)        
         workflow_name=request.args.get('workflow_name')
         print('\nworkflow_name : ',workflow_name)        
         step=request.args.get('step')
         print('\nstep : ',step)
         if "**" not in step:
+            # then the step number had been changed to another one to which we must move the selected step
             # NEW STEP
             int_step=int(step.split(' ')[1])
+            print(red('MOVE THIS STEP',bold=True))
+            move_step(old_step,step)
             #renumber_steps_minus_one(int_step)
             #renumber_steps(int_step)
         else:
@@ -13451,6 +13578,7 @@ def workflows_db_update_entry():
         print('\noutput : ',output)
         comment=request.args.get('comment')
         print('\ncomment : ',comment)
+        # OKAY let's update the entry here under
         with open('./sqlite_databases_code/workflows/db_details.txt') as file:
             db_details_dict=json.loads(file.read())
         print('db_details_dict : \n',yellow(db_details_dict,bold=True))        

@@ -1,5 +1,5 @@
 '''
-    modification : 20251115
+    modification : 20251111
     
     description : initialize the application, create empty files  clean folder
 '''
