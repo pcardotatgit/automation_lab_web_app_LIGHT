@@ -199,9 +199,9 @@ As you run a step, you are supposed to see your queries in the simulator console
 
 The challenge ends when in the Results page you see every objects to discover, and malicious objects blocked.
 
-#Have Fun !!
+# Have Fun !!
 
-#Installation on Linux machines
+# Installation on Linux machines
 
 Here is an example of command history for an Ubuntu machine that host python 3.10 version
 
@@ -222,7 +222,7 @@ Here is an example of command history for an Ubuntu machine that host python 3.1
 Then the application starts
 
 
-#Installation on Mac Machines 
+# Installation on Mac Machines 
 
 ***Under construction***
 
