@@ -168,7 +168,7 @@ Authorize this
 
 ## The challenge starts
 
-Your browser should open on the login page.
+Your browser should open on the login page.**If your browser doesn't open automatically then open it manually on http://localhost:4000**
 
 username is : **admin**
 
@@ -199,13 +199,35 @@ As you run a step, you are supposed to see your queries in the simulator console
 
 The challenge ends when in the Results page you see every objects to discover, and malicious objects blocked.
 
-# Have Fun !!
+#Have Fun !!
+
+#Installation on Linux machines
+
+Here is an example of command history for an Ubuntu machine that host python 3.10 version
+
+- **apt-get update**
+
+- **apt-get install python3.10-venv**
+
+- **python3.10 -m venv venv**
+
+- **source venv/bin/activate**
+
+- **python3.10 -m pip install --upgrade pip**
+
+- **pip install -r requirements.txt**
+
+- **python3.10 app.py**
+
+Then the application starts
 
 
-# Installation on Mac Machines 
+#Installation on Mac Machines 
 
 ***Under construction***
 
-# Installation on Linux machines
+# Some Tips
 
-***Under construction***
+## Change the listening port 
+
+
