@@ -221,13 +221,15 @@ Here is an example of command history for an Ubuntu machine that host python 3.1
 
 Then the application starts
 
-
 # Installation on Mac Machines 
 
 ***Under construction***
+
+But similar to the LINUX installation above.
 
 # Some Tips
 
 ## Change the listening port 
 
+You can change the listening port of the application. Just edit the **port.txt** file for this
 
