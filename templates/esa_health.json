@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "totalCount": -1
+    },
+    "data": {
+        "percentage_ram_utilization": 13,
+        "messages_in_pvo_quarantines": 50,
+        "resource_conservation": 0,
+        "messages_in_workqueue": 10,
+        "percentage_swap_utilization": 0.0,
+        "percentage_queue_utilization": 0.0,
+        "percentage_diskio": 0,
+        "percentage_cpu_load": 17
+    }
+}

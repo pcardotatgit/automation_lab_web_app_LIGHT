@@ -1,0 +1,151 @@
+{
+    "data": {
+        "resultSet": {
+            "counters": [
+                {
+                    "cache_hits_lifetime": 54,
+                    "cache_hits_reset": 54,
+                    "cache_hits_uptime": 54,
+                    "cache_misses_lifetime": 82,
+                    "cache_misses_reset": 82,
+                    "cache_misses_uptime": 82,
+                    "deleted_recipients_lifetime": 0,
+                    "deleted_recipients_reset": 0,
+                    "deleted_recipients_uptime": 0,
+                    "delivered_recipients_lifetime": 4,
+                    "delivered_recipients_reset": 4,
+                    "delivered_recipients_uptime": 4,
+                    "dk_signed_lifetime": 0,
+                    "dk_signed_reset": 0,
+                    "dk_signed_uptime": 0,
+                    "dns_hard_bounces_lifetime": 0,
+                    "dns_hard_bounces_reset": 0,
+                    "dns_hard_bounces_uptime": 0,
+                    "dns_reqs_lifetime": 126,
+                    "dns_reqs_reset": 126,
+                    "dns_reqs_uptime": 126,
+                    "dropped_messages_lifetime": 0,
+                    "dropped_messages_reset": 0,
+                    "dropped_messages_uptime": 0,
+                    "exceptions_lifetime": 45,
+                    "exceptions_reset": 45,
+                    "exceptions_uptime": 45,
+                    "expired_hard_bounces_lifetime": 0,
+                    "expired_hard_bounces_reset": 0,
+                    "expired_hard_bounces_uptime": 0,
+                    "expired_lifetime": 4,
+                    "expired_reset": 4,
+                    "expired_uptime": 4,
+                    "filter_hard_bounces_lifetime": 0,
+                    "filter_hard_bounces_reset": 0,
+                    "filter_hard_bounces_uptime": 0,
+                    "five_xx_hard_bounces_lifetime": 0,
+                    "five_xx_hard_bounces_reset": 0,
+                    "five_xx_hard_bounces_uptime": 0,
+                    "generated_bounce_recipients_lifetime": 0,
+                    "generated_bounce_recipients_reset": 0,
+                    "generated_bounce_recipients_uptime": 0,
+                    "global_unsub_hits_lifetime": 0,
+                    "global_unsub_hits_reset": 0,
+                    "global_unsub_hits_uptime": 0,
+                    "last_counter_reset_str": "Never",
+                    "messages_received_lifetime": 4,
+                    "messages_received_reset": 4,
+                    "messages_received_uptime": 4,
+                    "net_reqs_lifetime": 74,
+                    "net_reqs_reset": 74,
+                    "net_reqs_uptime": 74,
+                    "other_hard_bounces_lifetime": 0,
+                    "other_hard_bounces_reset": 0,
+                    "other_hard_bounces_uptime": 0,
+                    "outstanding_requests": 0,
+                    "pending_requests": 0,
+                    "recipients_received_lifetime": 4,
+                    "recipients_received_reset": 4,
+                    "recipients_received_uptime": 4,
+                    "rejected_recipients_lifetime": 1,
+                    "rejected_recipients_reset": 1,
+                    "rejected_recipients_uptime": 1,
+                    "soft_bounced_events_lifetime": 0,
+                    "soft_bounced_events_reset": 0,
+                    "soft_bounced_events_uptime": 0,
+                    "total_completed_recipients_lifetime": 4,
+                    "total_completed_recipients_reset": 4,
+                    "total_completed_recipients_uptime": 4,
+                    "total_hard_bounces_lifetime": 0,
+                    "total_hard_bounces_reset": 0,
+                    "total_hard_bounces_uptime": 0
+                }
+            ],
+            "gauges": [
+                {
+                    "anti_spam": "0%",
+                    "anti_virus": "0%",
+                    "attempted": 0,
+                    "current_incoming_connections": 0,
+                    "current_outgoing_connections": 0,
+                    "dest_objects_in_memory": 3,
+                    "disk_io_utilization": "0%",
+                    "email_security_appliance": "10%",
+                    "logging_disk_available": "141G",
+                    "logging_disk_utilization": "10%",
+                    "msgs_in_quarantine": 0,
+                    "msgs_in_work_queue": 0,
+                    "overall_cpu_load": "14%",
+                    "quarantine": "0%",
+                    "ram_utilization": "1%",
+                    "reporting": "0%",
+                    "space_used_by_quarantine": "0B",
+                    "total_active_recipients": 0,
+                    "total_queue_space_used": "0B",
+                    "total_queue_utilized": "0.0%",
+                    "unattempted": 0
+                }
+            ],
+            "mail_system_status": [
+                {
+                    "oldest_message": "No Messages",
+                    "status_as_of": "Thu Mar 06 09:49:13 2025 CET",
+                    "system_status": "Online",
+                    "up_since": "276d 1h 38m 14s"
+                }
+            ],
+            "rates": [
+                {
+                    "delivered_recipients_rate_fifteen": 0,
+                    "delivered_recipients_rate_five": 0,
+                    "delivered_recipients_rate_one": 0,
+                    "hard_bounced_recipients_rate_fifteen": 0,
+                    "hard_bounced_recipients_rate_five": 0,
+                    "hard_bounced_recipients_rate_one": 0,
+                    "messages_received_rate_fifteen": 0,
+                    "messages_received_rate_five": 0,
+                    "messages_received_rate_one": 0,
+                    "recipients_received_rate_fifteen": 0,
+                    "recipients_received_rate_five": 0,
+                    "recipients_received_rate_one": 0,
+                    "soft_bounced_events_rate_fifteen": 0,
+                    "soft_bounced_events_rate_five": 0,
+                    "soft_bounced_events_rate_one": 0,
+                    "total_completed_recipients_rate_fifteen": 0,
+                    "total_completed_recipients_rate_five": 0,
+                    "total_completed_recipients_rate_one": 0
+                }
+            ],
+            "version_details": [
+                {
+                    "build_date": "2025-01-10",
+                    "install_date": "2025-03-06 10:33:34",
+                    "model": "C100V",
+                    "operating_system": "16.0.1-017",
+                    "raid_status": "Unknown",
+                    "serial_number": "4204E42C559B2849A77B-96A970F46CBD"
+                }
+            ]
+        },
+        "type": "system_status"
+    },
+    "meta": {
+        "totalCount": -1
+    }
+}

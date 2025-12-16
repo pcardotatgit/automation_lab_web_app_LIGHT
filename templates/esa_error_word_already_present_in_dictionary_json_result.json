@@ -1,0 +1,7 @@
+{
+    "error": {
+        "code": "409",
+        "explanation": "409 = Request conflict..",
+        "message": "'mot1' - term already present in dictionary."
+    }
+}

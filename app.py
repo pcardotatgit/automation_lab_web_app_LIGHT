@@ -69,17 +69,17 @@ dateTime = datetime.now()
 PAGE_DESTINATION=""
 temp=''
 method="config.txt"  # for futur use :  must be either config.txt or ../key  or database  or vault or environment variable
-Umbrella_Investigate_Token='Bearer 31801821-b9a1-4ad3-82d9-dfe2c93ffake'
-UMBRELLA_ENFORCEMENT_KEY = "12345678-b9a1-4ad3-82d9-dfe2c93ffffz"
-CSE_CLIENT_ID = "defg26458064a05f1faz"
-CSE_API_KEY = "12345678-4f95-43d5-908d-7a7d41ad385z"
-CSE_AUTHORIZATION ="Basic ZGVmZzI2NDU4MDY0YTA1ZjFmYXo6MTIzNDU2NzgtNGY5NS00M2Q1LTkwOGQtN2E3ZDQxYWQzODV6"
-THREATGRID_API_KEY = "Bearer Zjttqveo7g1doaszbc0n6qfzzz"
-CTR_CLIENT_ID = "client-bbaad7e2-e5ff-413f-1234-0e21bc871zzz"
-CTR_API_KEY = "ZezA_VszEcMTCzzzU0Wr5mQypXoxbjFNKDnLa0Mkw_O_ZZ4TND9mZZ"
-CTR_TOKEN="Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkhqVW4yNlBPUGZlWFFxeDEtcEc3TFU1MnBNRTRVMVlySWlJa29fUTJMV0kifQ.eyJodHRwczovL3NjaGVtYXMuY2lzY28uY29tL2lyb2gvaWRlbnRpdHkvY2xhaW1zL3VzZXIvZW1haWwiOiJwY2FyZG90QGNpc2NvLmNvbSIsImh0dHBzOi8vc2NoZW1hcy5jaXNjby5jb20vaXJvaC9pZGVudGl0eS9jbGFpbXMvdXNlci9zY29wZXMiOlsiaW50ZWdyYXRpb24iLCJwcml2YXRlLWludGVsIiwiYWRtaW4iLCJwcm9maWxlIiwiaW5zcGVjdCIsInNzZSIsInJlZ2lzdHJ5IiwidXNlcnMiLCJjYXNlYm9vayIsIm9yYml0YWwiLCJlbnJpY2giLCJvYXV0aCIsImNvbGxlY3QiLCJyZXNwb25zZSIsInVpLXNldHRpbmdzIiwidGVsZW1ldHJ5OndyaXRlIiwib3BlbmlkIiwibm90aWZpY2F0aW9uIiwiZ2xvYmFsLWludGVsOnJlYWQiLCJhbyJdLCJodHRwczovL3NjaGVtYXMuY2lzY28uY29tL2lyb2gvaWRlbnRpdHkvY2xhaW1zL3VzZXIvaWRwL2lkIjoiaWRiLWFtcCIsImh0dHBzOi8vc2NoZW1hcy5jaXNjby5jb20vaXJvaC9pZGVudGl0eS9jbGFpbXMvdXNlci9uaWNrIjoiUGF0cmljayBDYXJkb3QiLCJlbWFpbCI6InBjYXJkb3RAY2lzY28uY29tIiwiYXVkIjoiY2xpZW50LWJiYWViN2UyLWU1YmItNDEzZi04NDY5LTBlMjFiYzg3MTJiYyIsImh0dHBzOi8vc2NoZW1hcy5jaXNjby5jb20vaXJvaC9pZGVudGl0eS9jbGFpbXMvdXNlci9yb2xlIjoiYWRtaW4iLCJzdWIiOiJiYjRjMDdkMy0zYjhjLTQxYTYtYjBlYS1hODZlNWY5NWQ3YTAiLCJpc3MiOiJJUk9IIEF1dGgiLCJodHRwczovL3NjaGVtYXMuY2lzY28uY29tL2lyb2gvaWRlbnRpdHkvY2xhaW1zL3Njb3BlcyI6WyJwcml2YXRlLWludGVsIiwiZW5yaWNoOnJlYWQiLCJjYXNlYm9vayIsImluc3BlY3Q6cmVhZCIsInJlc3BvbnNlIiwiZ2xvYmFsLWludGVsOnJlYWQiXSwiZXhwIjoxNjAxNDU5MTczLCJodHRwczovL3NjaGVtYXMuY2lzY28uY29tL2lyb2gvaWRlbnRpdHkvY2xhaW1zL29hdXRoL2NsaWVudC9uYW1lIjoicGF0cmlja19jdHJfYXBpX2tleSIsImh0dHBzOi8vc2NoZW1hcy5jaXNjby5jb20vaXJvaC9pZGVudGl0eS9jbGFpbXMvb2F1dGgvdXNlci9pZCI6ImJiNGMwN2QzLTNiOGMtNDFhNi1iMGVhLWE4NmU1Zjk1ZDdhMCIsImh0dHBzOi8vc2NoZW1hcy5jaXNjby5jb20vaXJvaC9pZGVudGl0eS9jbGFpbXMvb3JnL2lkIjoiNDE2MDM4MjYtNjA4ZS00YTRlLThiNjItYjE3ZjkwNjRmOWJkIiwiaHR0cHM6Ly9zY2hlbWFzLmNpc2NvLmNvbS9pcm9oL2lkZW50aXR5L2NsYWltcy9vYXV0aC9ncmFudCI6ImNsaWVudC1jcmVkcyIsImh0dHBzOi8vc2NoZW1hcy5jaXNjby5jb20vaXJvaC9pZGVudGl0eS9jbGFpbXMvb3JnL25hbWUiOiJDaXNjbyAtIHBjYXJkb3QiLCJqdGkiOiJ0b2tlbi05MDExZWJiNS0wZWQxLTQ3N2UtYTRhNS0yODc4N2Y3NjEwYmUiLCJuYmYiOjE2MDE0NTg1MTMsImh0dHBzOi8vc2NoZW1hcy5jaXNjby5jb20vaXJvaC9pZGVudGl0eS9jbGFpbXMvb2F1dGgvc2NvcGVzIjpbInByaXZhdGUtaW50ZWwiLCJlbnJpY2g6cmVhZCIsImNhc2Vib29rIiwiaW5zcGVjdDpyZWFkIiwicmVzcG9uc2UiLCJnbG9iYWwtaW50ZWw6cmVhZCJdLCJodHRwczovL3NjaGVtYXMuY2lzY28uY29tL2lyb2gvaWRlbnRpdHkvY2xhaW1zL3VzZXIvbmFtZSI6IlBhdHJpY2sgQ2FyZG90IiwiaHR0cHM6Ly9zY2hlbWFzLmNpc2NvLmNvbS9pcm9oL2lkZW50aXR5L2NsYWltcy91c2VyL2lkIjoiYmI0YzA3ZDMtM2I4Yy00MWE2LWIwZWEtYTg2ZTVmOTVkN2EwIiwiaHR0cHM6Ly9zY2hlbWFzLmNpc2NvLmNvbS9pcm9oL2lkZW50aXR5L2NsYWltcy9vYXV0aC9jbGllbnQvaWQiOiJjbGllbnQtYmJhZWI3ZTItZTViYi00MTNmLTg0NjktMGUyMWJjODcxMmJjIiwiaHR0cHM6Ly9zY2hlbWFzLmNpc2NvLmNvbS9pcm9oL2lkZW50aXR5L2NsYWltcy92ZXJzaW9uIjoidjEuMzkuMC1hNTBkMDllZWRmMWNkYzUwODBjYyIsImlhdCI6MTYwMTQ1ODU3MywiaHR0cHM6Ly9zY2hlbWFzLmNpc2NvLmNvbS9pcm9oL2lkZW50aXR5L2NsYWltcy9vYXV0aC9raW5kIjoiYWNjZXNzLXRva2VuIn0.pjQUsxKLn7kONHYJFaI7K5U4w3hs7n-3zLrwk13GBilgfaSQX10uSPAyWZ8nCQplx0gJ20Q9L7Z2XWeoI3VZKBYmWaJ8VvlQBNmie6klugGK54o1ysnf-YtgErgB5eo7lslu8nCMuCgxobXcCv5J4_hF0R9934UCGBH4NqqbogmPJe0lupsdyeXj9X1hf0Yx1fMDIJsaCU0QTTxzmZPj2wP_ywdyGFud4DagqGfFBUeOA6SaGh_iBtgcTF9No6VZLviLPde2UDrt4FcrTWmtlKF-BHvpusZZu1EAGs4ZpLwl9-QIouPOCdIou-umfMtEF_VLS71bjfiot4zUuojWQA"
-UMBRELLA_TOKEN="eyJhbGciOiJSUzI1NiIsImtpZCI6IjIwMTktMDEtMDEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJ1bWJyZWxsYS1hdXRoei9hdXRoc3ZjIiwic3ViIjoib3JnLzE5NTMxMTUvdXNlci83ODg3OTk3IiwiZXhwIjoxNzYwNjQ5NDcyLCJuYmYiOjE3NjA2NDU4NzIsImlhdCI6MTc2MDY0NTg3Miwic2NvcGUiOiJyb2xlOnJvb3QtYWRtaW4iLCJhdXRoel9kb25lIjpmYWxzZX0.P9Lmb4nvcjjLhltk8aSjdT2vG1ITybsjAFaNgVprRZ-5lpQMkIG3Sbnc94GhEp2RKduFO2q3kgS9VUayjfqpZnRRFrFVvld5AnhAcA_m0PHz0Kdbq-OwjRmv7K4CuvCwxgJ1L03jKZY1zJQmU7QEjEMlT44d0ZODQAr19aRoMFRR8yCKOyaZZHOuJ5f8ghdeunVtXVhEEJtDKSw1aEORJQEsCCtR888qbjFd38BCy0ZpAI16JpL3r3RJQMbduVz1nNUi8dKnIrqcSqBCkWPMyutri0epQSgMLqOmVkA_Ts0oTlCl0eCmB4B5ac4mYdZ8tkNH7Ay5eJ3w_cWD_y9BYQ"
-use_simulator=1 # if = 1 then we query localhost:4000 instead of real host,  0 = query real hosts
+Umbrella_Investigate_Token=''
+UMBRELLA_ENFORCEMENT_KEY = ""
+CSE_CLIENT_ID = ""
+CSE_API_KEY = ""
+CSE_AUTHORIZATION =""
+THREATGRID_API_KEY = ""
+CTR_CLIENT_ID = ""
+CTR_API_KEY = ""
+CTR_TOKEN=""
+UMBRELLA_TOKEN=""
+use_simulator=3 # if = 1 then we query localhost:4000 instead of real host,  0 = query real hosts
 
 
 
@@ -954,7 +954,7 @@ def '''+db+'''_ingest_demo_data():
 #  def_create_rte_for_db_read_function***
 def create_rte_for_db_read_function(name):
     '''
-    MODIFIED : 2025-09-30
+    MODIFIED : 2025-11-30
 
     description : Read SQLITE DB Content and display result into a select box
     
@@ -1112,8 +1112,9 @@ def '''+db+'''_db_read():
     if not session.get(\'logged_in\'):
         return render_template(\'login.html\')
     else:
-        keyword=\'\'
         keyword=request.args.get("keyword")
+        if keyword==None:
+            keyword=\'\'            
         print("\\nkeyword : ",keyword)      
         with open(\'./sqlite_databases_code/'''+db+'''/db_details.txt\') as file:
             db_details_dict=json.loads(file.read())
@@ -1144,11 +1145,26 @@ def '''+db+'''_db_read():
         df = DataFrame(out_df)
         #print (df)
         select_options=\'\'
-        res = df.values.tolist()
+        res = df.values.tolist()   
+        keyword=keyword.lower()        
         for item in res:
+            #print(\'\\nitem : \',yellow(item,bold=True))
             if keyword:
-                if keyword in item:
-                    select_options=select_options+\'<option value="\'+str(item[0])+\'">\'+item[1]+\'</option>\'
+                ii=0
+                found=0
+                for item2 in item:                    
+                    if ii!=0:
+                        item2=item2.lower()                   
+                        if keyword in item2:
+                            found=1
+                            print(\'\\n=======================\')                         
+                            print(yellow("YES FOUND",bold=True))
+                            print(\'\\nitem2 : \',green(item2,bold=True))
+                            #print(\'\\nkeyword: \',">"+keyword+"<")
+                            print(\'\\n=======================\')  
+                    ii+=1
+                if found:
+                        select_options=select_options+\'<option value="\'+str(item[0])+\'">\'+item[1]+\'</option>\' 
             else:
                 select_options=select_options+\'<option value="\'+str(item[0])+\'">\'+item[1]+\'</option>\'     
         print(\'=========================================\')
@@ -1618,7 +1634,7 @@ def '''+db+'''_db_update_entry():
 #  def_create_rte_for_db_dashboard***
 def create_rte_for_db_dashboard(name):
     '''
-    MODIFIED : 2025-09-29
+    MODIFIED : 2025-11-29
     description : create a new files structure for management of a new database
     
     how to call it : result=create_rte_for_db_dashboard(name)
@@ -1705,9 +1721,17 @@ def create_rte_for_db_dashboard(name):
                                 <p>Add an Entry to Database</p>
                             </article>
                         </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/'''+db+'''_db_add_entry_static" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/'''+db+'''_db_add_entry_static">Add Entry 2</a></h3>
+                                <p>Add an Entry to Database thru a customazible static html page</p>
+                            </article>
+                        </div>                        
             '''
         menu='''
                     <li><a href="/">Back to main page</a></li>
+                    <li><a href="/delete_database?database='''+db+'''">Delete Database</a></li>
                     <li><a href="/logout">log Out</a></li>
                     <li><a href="javascript:popup_window('/page_info?page=route_def_'''+db+'''_dashboard.py&route='''+route+'''','page_info',700,600);">:</a></li>
         '''
@@ -1939,17 +1963,15 @@ def sqlite_db_select_entry(database,table,where_clause):
     with sqlite3.connect(database) as conn:
         cursor=conn.cursor()           
         sql_request = f"SELECT * from {table} {where_clause}"
-        print('\nsql_request : ',cyan(sql_request+'\n',bold=True))
+        print('sql_request : ',sql_request)
         try:
             cursor.execute(sql_request)
             for resultat in cursor:
                 print('entry found : ',resultat)
                 liste.append(resultat)
         except:
-            print(red('Error reading database',bold=True))
             sys.exit("couldn't read database")
     # ===================================================================
-    print(' Result liste in sqlite_db_select_entry() : ',cyan(liste,bold=True))
     loguer(env.level+' def END OF sqlite_db_select_entry() in app.py : >')    
     env.level=env.level[:-1]
     return(liste) 
@@ -1958,7 +1980,7 @@ def sqlite_db_select_entry(database,table,where_clause):
 #  def_sqlite_db_update_entry***
 def sqlite_db_update_entry(database,table,where_clause,sql_fields,sql_data_list):
     '''
-    MODIFIED : 2025-10-01
+    MODIFIED : 2025-10-29
     description : Update a row into the sqllite Database
     
     how to call it :     resultats = sqlite_db_update_entry(database,table,where_clause,sql_fields,sql_data_list) 
@@ -2299,9 +2321,1260 @@ def '''+db+'''_db_duplicate_entry():
     
 
 
+#  def_create_rte_for_db_add_entry_static_function***
+def create_rte_for_db_add_entry_static_function(name):
+    '''
+    MODIFIED : 2025-11-29T13:39:40.000Z
 
-# here under FUNCTIONS ===========================   
+    description : Add entry formular creation - a static version
+    
+    how to call it :
+    '''
+    route="/create_rte_for_db_add_entry_static_function"
+    env.level+='-'
+    print('\n'+env.level,white('def create_rte_for_db_add_entry_static_function() in app.py : >\n',bold=True))
+    loguer(env.level+' def create_rte_for_db_add_entry_static_function() in app.py : >')
+    # ===================================================================    
+    #db=name
+    db_name=name.replace('./zbases/','')
+    db_name=db_name.replace('.db','')
+    name=name+'_db_add_entry_static'
+    filename='./code_app_routes/route_def_'+name+'.py'
+    filename2='/route_def_'+name+'.py'
+    description='Flask Route for the '+name+' Database Update an entry trhu a static formular'
+    print()
+    print(' filename :\n',yellow(filename,bold=True))
+    print(' filename2 :\n',yellow(filename2,bold=True))
+    print()
+    print(magenta('--> CALL  A SUB FUNCTION :',bold=True))
+    # check if file already exits
+    with open('./code_architecture/app_routes.txt') as file:
+        text_content2=file.read()    
+    fichier_route = Path('./code_app_routes/route_def_'+name+'_static.py')    
+    if fichier_route.is_file() or filename in text_content2:
+        print(red('ERROR !!',bold=True))
+        print(filename+' already exists ! Choose another name')
+        message1="ALREADY EXIST"
+        image="../static/images/nok.png" 
+        message2="Choose another name"
+        message3="/home"
+        message4="Back Home"        
+        PAGE_DESTINATION="operation_done"
+        page_name="z_operation_done.html"
+        loguer(env.level+' route END OF example_name() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return 0
+    else:
+        print(yellow(f'     {filename} does NOT exists. Let s create it',bold=True))
+        db=db_name
+        route="/"+db_name+"_db_add_entry_static"
+        title="FLASK APP GENERATOR"
+        with open('./sqlite_databases_code/'+db_name+'/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))       
+        # STEP 1 create the route whih display  the formular
+        text_content='''#  def_'''+db+'''_db_add_entry_static***
+@app.route('/'''+db+'''_db_add_entry_static', methods=['GET'])
+def '''+db+'''_db_add_entry_static():
+    \'\'\'
+    '''+description+'''
+    \'\'\'
+    route="/'''+db+'''_db_add_entry_static"
+    env.level+=\'-\'
+    print(\'\\n\'+env.level,white(\'route '''+db+'''_db_add_entry_static() in ***app.py*** : >\\n\',bold=True))
+    loguer(env.level+\' route '''+db+'''_db_add_entry_static() in ***app.py*** : >\')
+    if not session.get(\'logged_in\'):
+        return render_template(\'login.html\')
+    else:
+        db_name = "'''+db+'''.db"
+        column_list=[\''''
+        
+        len_columns=len(db_details_dict['columns'])-1
+        i=0
+        for col in db_details_dict['columns']:
+            print(col)
+            if i<len_columns:
+                text_content=text_content+col+"','"
+            else:
+                text_content=text_content+col
+            i=i+1
+        text_content=text_content+'''\']
+        print(\'\\ncolumn_list :\',cyan(column_list,bold=True))
+        index=sqlite_db_get_last_index(\''''+db+'''\')
+        index+=1        
+        print(\'index : \',index)
+        PAGE_DESTINATION="z_'''+db+'''_db_add_entry_static"
+        page_name="z_'''+db+'''_db_add_entry_static.html"
+        db_name=db_name.split(\'.\')[0]
+        #loguer(env.level+\' route END OF example_name() in ***app.py*** : >\')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template(\'main_index.html\',route=route,USERNAME=session[\'user\'],PAGE_DESTINATION=PAGE_DESTINATION,page_name=page_name,column_list=column_list,index=index,db_name=db_name)
  
+'''        
+        filename='./code_app_routes/route_def_'+db+'_db_add_entry_static.py'
+        with open(filename,"w") as fichier:
+            fichier.write(text_content)     
+        with open('./code_architecture/app_routes.txt',"a+") as fichier:
+            filename2=filename2.replace('/','')
+            fichier.write(filename2+'\n')  
+            
+        # STEP 2 create the html formular           
+        text_content='''* z_'''+db+'''_db_add_entry_custom.html***<!DOCTYPE HTML>
+<!-- description : display DB entry details-->
+<html>
+	<head>
+		<title>FLASK APP GENERATOR</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+    <script>
+        function select_profile() {
+            var profile_name = document.getElementById("new_profile").value;
+            //alert(profile_name);
+            //window.open("/check_xdr?client_id="+client_id+"&client_password="+client_password+"&region="+region);
+            window.open("/select_profile?profil_name="+profile_name);
+        }
+        function popup_window( url, id, width, height )
+        {
+           //extract the url parameters if any, and pass them to the called html
+           var tempvar=document.location.toString(); // fetch the URL string
+           var passedparams = tempvar.lastIndexOf("?");
+           if(passedparams > -1)
+              url += tempvar.substring(passedparams);
+          popup = window.open( url, id, \'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=\' + width + \',height=\' + height + \'\' );
+          popup.focus();
+        }
+    </script>
+	</head>
+	<body class="is-preload">
+		<!-- Nav -->
+			<nav id="nav">
+					<li><a href="/">Back to main page</a></li>
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window(\'/page_info?page={{page_name}}&route={{route}}\',\'page_info\',700,600);">:</a></li>
+				</ul>
+			</nav>
+            <center>
+                <br><h2>Entry Details</h2>
+            </center>
+			<article id="create_new_feed" class="wrapper style4">
+				<div class="container medium">
+					<div class="row">
+						<div class="col-12">
+							<form method="get" action="/'''+db+'''_db_add_entry_ok">
+								<div class="row">
+'''
+        len_columns=len(db_details_dict['columns'])-1
+        i=0
+        for col in db_details_dict['columns']:
+            print(col)
+
+            text_content=text_content+'''                                    <div class="col-6 col-12-small">
+                                    <h3>'''+col+''' :  </h3>
+                                    </div>
+                                    <div class="col-6 col-12-small">
+                                    </h3><input type="text"  id="'''+col+'''" name="'''+col+'''" value="" placeholder="Enter a value" />
+                                    </div>
+'''
+           
+        text_content=text_content+'''                                    <div class="col-12">
+                                        <ul class="actions">
+                                            <input type="hidden" name="index" value="{{index}}" />
+                                            <input type="hidden" name="db_name" value="{{db_name}}" /> 
+                                            <input type="submit" value="Add New Entry" class="button small scrolly" />
+                                        </ul>
+                             </form>                                    
+                                    </div>                                    
+								</div>
+							
+						</div>
+					</div>
+				</div>
+			</article>
+		<!-- Scripts -->
+			<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="../static/assets/js/init.js"></script>
+			<script src="../static/assets/js/browser.min.js"></script>
+			<script src="../static/assets/js/breakpoints.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<script src="../static/assets/js/main.js"></script>
+	</body>
+</html>'''
+        
+        filename=f"./code_app_html_templates/z_{db}_db_add_entry_static.html"
+        with open(filename,"w") as fichier:
+            fichier.write(text_content)  
+        filename=f"z_{db}_db_add_entry_static.html"
+        with open('./code_architecture/main_html.txt',"a+") as fichier:
+            fichier.write(filename+'\n')            
+        result=1
+    # ===================================================================
+    #loguer(env.level+' def END OF create_rte_for_db_add_entry_static_function() in app.py : >')    
+    env.level=env.level[:-1]
+    return result
+    
+
+
+#  def_workflow_sqlite_update_step***
+def workflow_sqlite_update_step(index,new_step):
+    '''
+    MODIFIED : 2025-11-15
+
+    description : update step field of row in workflow database
+    
+    how to call it :
+    '''
+    route="/workflow_sqlite_update_step"
+    env.level+='-'
+    print('\n'+env.level,white('def workflow_sqlite_update_step() in app.py : >\n',bold=True))
+    loguer(env.level+' def workflow_sqlite_update_step() in app.py : >')
+    # ===================================================================    
+    database="workflows.db"
+    #database = './z_bases/'+database+'.db'
+    result=0
+    print('database is :',database) 
+    #print('\n value = ',red(value,bold=True))   
+    with sqlite3.connect('./z_bases/'+database) as conn:
+        cursor=conn.cursor()
+        sql_request = f"UPDATE 'workflows' SET step = '{new_step}' where `index` = {index}"      
+        print('sql_request :',cyan(sql_request,bold=True))
+        cursor.execute(sql_request)
+        result=1
+    # ===================================================================
+    #loguer(env.level+' def END OF workflow_sqlite_update_step() in app.py : >')    
+    env.level=env.level[:-1]
+    return result
+    
+
+
+#  def_variable_value***
+def variable_value(name):
+    '''
+    MODIFIED : 2025-11-04T17:00:20.000Z
+
+    description : return value of the variable in the Database
+    
+    how to call it : value=variable_value(variable_name)
+    '''
+    route="/variable_value"
+    env.level+='-'
+    print('\n'+env.level,white('def variable_value() in app.py : >\n',bold=True))
+    loguer(env.level+' def variable_value() in app.py : >')
+
+    # ===================================================================    
+    database="variables"        
+    table="variables"              
+    where_clause=f'where name = "{name}"'
+    entry_list=sqlite_db_select_entry(database,table,where_clause)
+    value=entry_list[0][3]
+    # ===================================================================
+    env.level=env.level[:-1]
+    return value
+    
+
+
+#  def_variables_sqlite_update_value***
+def variables_sqlite_update_value(name,value):
+    '''
+    MODIFIED : 2025-11-05
+
+    description : Update the value of the selected variable name in variables DB
+    
+    how to call it : result = variables_sqlite_update_value(name,value)
+        name : name to search an update in the rows
+        value : new value
+    '''
+    route="/variables_sqlite_update_value"
+    env.level+='-'
+    print('\n'+env.level,white('def variables_sqlite_update_value() in app.py : >\n',bold=True))
+    loguer(env.level+' def variables_sqlite_update_value() in app.py : >')
+    # ===================================================================    
+    database="variables.db"
+    #database = './z_bases/'+database+'.db'
+    result=0
+    value=value.replace("'"," ")
+    print('database is :',database) 
+    print(cyan(f'\n new value : {value} for variable : {name} \n',bold=True))
+    #print('\n value = ',red(value,bold=True))   
+    with sqlite3.connect('./z_bases/'+database) as conn:
+        cursor=conn.cursor()
+        sql_request = f"UPDATE 'variables' SET value = '{value}' where name = '{name}'"      
+        print('sql_request :',cyan(sql_request,bold=True))
+        cursor.execute(sql_request)
+        result=1
+    # ===================================================================
+    #loguer(env.level+' def END OF variables_sqlite_update_value() in app.py : >')    
+    env.level=env.level[:-1]
+    return result
+    
+
+
+#  def_update_variables_from_json_inputs***
+def update_variables_from_json_inputs(inputs):
+    '''
+    MODIFIED : 2025-11-06T15:19:39.000Z
+
+    description : Update Variable from a JSON Input definition
+    
+    how to call it :
+    '''
+    route="/update_variables_from_json_inputs"
+    env.level+='-'
+    print('\n'+env.level,white('def update_variables_from_json_inputs() in app.py : >\n',bold=True))
+    loguer(env.level+' def update_variables_from_json_inputs() in app.py : >')
+    # ===================================================================    
+    json_dict=json.loads(inputs)
+    print('json_dict : ',cyan(json_dict,bold=True))
+    for item,v in json_dict.items():
+        print(item)
+        if '$' in v:    
+            word=v.replace('$','')
+            print(f'\n OK We replace this name : {word} by its value in Database\n')            
+            v=replace_this_variable_by_its_value(word)
+        print(v)        
+        print("========================")
+        variables_sqlite_update_value(item,v)
+    # ===================================================================
+    env.level=env.level[:-1]
+    return 1
+    
+
+
+#  def_sqlite_db_duplicate_workflow_entry***
+def sqlite_db_duplicate_workflow_entry(db_name,row):
+    '''
+    MODIFIED : 2025-10-29
+
+    description : duplicate selected row from the sqllite Database
+    
+    how to call it : result = sqlite_db_duplicate_workflow_entry(db_name,row)
+    '''
+    route="/sqlite_db_duplicate_workflow_entry"
+    env.level+='-'
+    print('\n'+env.level,white('def sqlite_db_duplicate_workflow_entry() in app.py : >\n',bold=True))
+    loguer(env.level+' def sqlite_db_duplicate_workflow_entry() in app.py : >')
+    # ===================================================================    
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        db_name=request.args.get("db_name")
+        print('db_name :',db_name)     
+        row=request.args.get("row")
+        print('db_name :',row)              
+        with open('./sqlite_databases_code/'+db_name+'/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True)) 
+        column_list=db_details_dict['columns']
+        database = os.getcwd()+'/z_bases/'+db_name+'.db'
+        database=database.replace("\\","/")
+        table=db_details_dict['table_name']
+        print('database is :',database) 
+        print('table is :',table)          
+        # read entry in data base
+        where_clause='where `index` = '+row
+        entry_list=sqlite_db_select_entry(db_name,table,where_clause)
+        print("\nentry_list : \n",entry_list)   
+        # calculate new step
+        where_clause=''
+        full_list=sqlite_db_select_entry(db_name,table,where_clause)
+        #print("\nfull_list : \n",full_list) 
+        last_step=''
+        for item in full_list:
+            #print(item[2])
+            if item[2]>last_step:
+                last_step=item[2]
+        print("\nLast step is : \n",last_step) 
+        step_index=int(last_step.split(' ')[1])
+        step_index+=1
+        if step_index=='1':
+            step_index='01'
+        elif step_index=='2':
+            step_index='02'    
+        elif step_index=='3':
+            step_index='03' 
+        elif step_index=='4':
+            step_index='04' 
+        elif step_index=='5':
+            step_index='05' 
+        elif step_index=='6':
+            step_index='06' 
+        elif step_index=='7':
+            step_index='07' 
+        elif step_index=='8':
+            step_index='08'     
+        elif step_index=='9':
+            step_index='09'             
+        else:
+            step_index=str(step_index)
+                
+        new_step_index='Step '+str(step_index)
+        print('New step index : ',cyan(new_step_index,bold=True))
+        items={}
+        i=0
+        for obj in entry_list[0]:
+            if i<len(column_list):
+                if i==1:
+                    items[i]={'name':column_list[i],'value':new_step_index}
+                else:
+                    items[i]={'name':column_list[i],'value':entry_list[0][i+1]}
+            i+=1
+        print('items : ',cyan(items,bold=True))        
+        # Get last index value in SQLITE DB
+        new_index=sqlite_db_get_last_index(db_name)+1        
+        print('new_index is :',str(new_index)+'\n')         
+        sqlite_data=[new_index]      
+        i=0
+        for obj in items.items():
+            print('obj :',cyan(obj,bold=True))
+            sqlite_data.append(obj[1]['value'])  
+        sql_add=f"INSERT OR IGNORE into {table} (`index`,"
+        i=0
+        for obj in items.items():
+            print('obj :',cyan(obj,bold=True))
+            if i<len(column_list)-1:
+                sql_add=sql_add+obj[1]['name']+','
+            else:
+                sql_add=sql_add+obj[1]['name']+') VALUES (?,'
+            i+=1       
+        i=0
+        for obj in items:
+            if i<len(column_list)-1:
+                sql_add=sql_add+'?,'
+            else:
+                sql_add=sql_add+'?)'
+            i+=1             
+        print('sqlite_data :',sqlite_data)     
+        print('sql_add :',sql_add)    
+        con = sqlite3.connect(database)       
+        try:
+            cur = con.cursor()
+            cur.execute(sql_add,sqlite_data)
+            con.commit()
+            print(green('OK DONE ENTRY DUPLICATED',bold=True))
+            image="../static/images/ok.png" 
+            message1="Entry Duplicated"
+            message2="Entry was duplicated"
+            message3=f"/{db_name}_dashboard"
+            message4=f"{db_name}_dasbhoard"        
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"            
+            env.level=env.level[:-1]        
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name) 
+        except:
+            print(red('Error',bold=True))
+            image="../static/images/nok.png" 
+            message1="Error"
+            message2="An error occured"
+            message3=f"/{db_name}_dashboard"
+            message4=f"{db_name}_dasbhoard"        
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"            
+            env.level=env.level[:-1]        
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+
+
+
+
+#  def_reset_every_databases***
+def reset_every_databases():
+    '''
+    MODIFIED : 2025-12-01
+
+    description : reset every databases
+    
+    how to call it : result = reset_every_databases()
+    '''
+    route="/reset_every_databases"
+    env.level+='-'
+    print('\n'+env.level,white('def reset_every_databases() in app.py : >\n',bold=True))
+    loguer(env.level+' def reset_every_databases() in app.py : >')
+    # ===================================================================    
+    action_type = 'replace'
+    # WORKFLOWS
+    print(red('RESET VARIABLES',bold=True))
+    with open('./sqlite_databases_code/workflows/db_details.txt') as file:
+        db_details_dict=json.loads(file.read())
+    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+    database = os.getcwd()+'/z_bases/workflows.db'
+    database=database.replace("\\","/")
+    print('database is :',database)
+    print('table is :', db_details_dict["table_name"])
+    conn=create_connection(database) # open connection to database
+    if conn:
+        # connection to database is OK
+        c=conn.cursor()
+        print(f'- Deleting table : {db_details_dict["table_name"]} =>')
+        sql_request="drop table "+db_details_dict["table_name"]
+        c.execute(sql_request)
+        conn.commit()
+        print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
+        create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
+        print(f'-- OK table {db_details_dict["table_name"]} reseted')     
+    db_name='workflows'
+    with open('./sqlite_databases_code/'+db_name+'/db_details.txt') as file:
+        db_details_dict=json.loads(file.read())
+    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+    database = os.getcwd()+'/z_bases/'+db_name+'.db'
+    database=database.replace("\\","/")
+    print('database is :',database)
+    print('table is :',db_details_dict['table_name'])
+    lines=[]
+    file='./DB_backups/workflows_init.csv'
+    with open (file) as csvfile:
+        reader = csv.reader(csvfile, delimiter=',')
+        lines = list(reader)
+        if action_type=="replace":
+            conn=create_connection(database) # open connection to database
+            if conn:
+                # connection to database is OK
+                c=conn.cursor()
+                print(f'- Deleting table : {db_details_dict["table_name"]} =>')
+                sql_request="drop table "+db_details_dict["table_name"]
+                c.execute(sql_request)
+                conn.commit()
+                print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
+                create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
+                print(f'-- OK table {db_details_dict["table_name"]} reseted')                  
+            indexA=0
+        else:
+            indexA=sqlite_db_get_last_index(db_name)+1
+        conn=create_connection(database) # open connection to database
+        for row in lines:
+            if conn:
+                # connection to database is OK
+                c=conn.cursor()
+                # let's go to every lines one by one and let's extract url, targeted brand
+                len_columns=len(db_details_dict['columns'])-1
+                sqlite_data=[indexA]
+                for cel in row:
+                    sqlite_data.append(cel)
+                print('\nsqlite_data :',cyan(sqlite_data,bold=True))
+                sql_add=f"INSERT OR IGNORE into {db_details_dict['table_name']} (`index`,"
+                i=0
+                for col in db_details_dict['columns']:
+                    print(col)
+                    if i<len_columns:
+                        sql_add=sql_add+col+","
+                    else:
+                        sql_add=sql_add+col+")"
+                    i+=1
+                sql_add=sql_add+' VALUES (?,'
+                i=0
+                for col in db_details_dict['columns']:
+                    print(col)
+                    if i<len_columns:
+                        sql_add=sql_add+"?,"
+                    else:
+                        sql_add=sql_add+'?)'
+                    i+=1
+                #sql_add="INSERT OR IGNORE into truc (`index`,premier,deuxieme,troisieme,quatrieme) VALUES (?,?,?,?,?)"
+                print('\nsql_add :',cyan(sql_add,bold=True))
+            c.execute(sql_add, sqlite_data)
+            print(green("==> OK Done : demo data ingested",bold=True))
+            indexA+=1
+            conn.commit()
+
+    #VARIABLES
+    print(red('RESET VARIABLES',bold=True))
+    with open('./sqlite_databases_code/variables/db_details.txt') as file:
+        db_details_dict=json.loads(file.read())
+    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+    file=open('./sqlite_databases_code/variables/init/variables.csv','w')
+    ligne_out=''
+    len_columns=len(db_details_dict['columns'])-1
+    i=0        
+    for col in db_details_dict['columns']:
+        if i<len_columns:
+            ligne_out=ligne_out+col+','
+        else:
+            ligne_out=ligne_out+col
+        i+=1
+    file.write(ligne_out+'\n')
+    for i in range (0,10):
+        ligne_out='name'+str(i)+','+'environment_name'+str(i)+','+'value'+str(i)+','+'description'+str(i)+','+'comment'+str(i)+','+'used_by'+str(i)           
+        file.write(ligne_out+'\n')
+    file.close()  
+    create_db_and_table(db_details_dict['db_name'],db_details_dict['table_name'])
+    
+    db_name = "variables"
+    print("\ndb_name : ",db_name)
+    print("\naction_type : ",action_type)        
+
+    result=1
+    if result==1:
+        with open('./sqlite_databases_code/variables/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/'+db_name+'.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        print('table is :',db_details_dict['table_name'])
+        lines=[]
+        file='./DB_backups/variables_init.csv'
+        with open (file) as csvfile:
+            reader = csv.reader(csvfile, delimiter=',')
+            lines = list(reader)
+            if action_type=="replace":
+                conn=create_connection(database) # open connection to database
+                if conn:
+                    # connection to database is OK
+                    c=conn.cursor()
+                    print(f'- Deleting table : {db_details_dict["table_name"]} =>')
+                    sql_request="drop table "+db_details_dict["table_name"]
+                    c.execute(sql_request)
+                    conn.commit()
+                    print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
+                    create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
+                    print(f'-- OK table {db_details_dict["table_name"]} reseted')                  
+                indexA=0
+            else:
+                indexA=sqlite_db_get_last_index(db_name)+1
+            conn=create_connection(database) # open connection to database
+            for row in lines:
+                if conn:
+                    # connection to database is OK
+                    c=conn.cursor()
+                    # let's go to every lines one by one and let's extract url, targeted brand
+                    len_columns=len(db_details_dict['columns'])-1
+                    sqlite_data=[indexA]
+                    for cel in row:
+                        sqlite_data.append(cel)
+                    print('\nsqlite_data :',cyan(sqlite_data,bold=True))
+                    sql_add=f"INSERT OR IGNORE into {db_details_dict['table_name']} (`index`,"
+                    i=0
+                    for col in db_details_dict['columns']:
+                        print(col)
+                        if i<len_columns:
+                            sql_add=sql_add+col+","
+                        else:
+                            sql_add=sql_add+col+")"
+                        i+=1
+                    sql_add=sql_add+' VALUES (?,'
+                    i=0
+                    for col in db_details_dict['columns']:
+                        print(col)
+                        if i<len_columns:
+                            sql_add=sql_add+"?,"
+                        else:
+                            sql_add=sql_add+'?)'
+                        i+=1
+                    #sql_add="INSERT OR IGNORE into truc (`index`,premier,deuxieme,troisieme,quatrieme) VALUES (?,?,?,?,?)"
+                    print('\nsql_add :',cyan(sql_add,bold=True))
+                c.execute(sql_add, sqlite_data)
+                print(green("==> OK Done : demo data ingested",bold=True))
+                indexA+=1
+                conn.commit()  
+    # FUNCTIONS
+    with open('./sqlite_databases_code/functions/db_details.txt') as file:
+        db_details_dict=json.loads(file.read())
+    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+    file=open('./sqlite_databases_code/functions/init/functions.csv','w')
+    ligne_out=''
+    len_columns=len(db_details_dict['columns'])-1
+    i=0        
+    for col in db_details_dict['columns']:
+        if i<len_columns:
+            ligne_out=ligne_out+col+','
+        else:
+            ligne_out=ligne_out+col
+        i+=1
+    file.write(ligne_out+'\n')
+    for i in range (0,10):
+        ligne_out='name'+str(i)+','+'environment_name'+str(i)+','+'description'+str(i)+','+'called_function'+str(i)+','+'input_variables'+str(i)+','+'output_variables'+str(i)+','+'comment'+str(i)           
+        file.write(ligne_out+'\n')
+    file.close()  
+    create_db_and_table(db_details_dict['db_name'],db_details_dict['table_name'])
+    
+    db_name = "functions"
+    print("\ndb_name : ",db_name)
+    print("\naction_type : ",action_type)        
+
+    result=1
+    if result==1:
+        with open('./sqlite_databases_code/functions/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/'+db_name+'.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        print('table is :',db_details_dict['table_name'])
+        lines=[]
+        file='./DB_backups/functions_init.csv'
+        with open (file) as csvfile:
+            reader = csv.reader(csvfile, delimiter=',')
+            lines = list(reader)
+            if action_type=="replace":
+                conn=create_connection(database) # open connection to database
+                if conn:
+                    # connection to database is OK
+                    c=conn.cursor()
+                    print(f'- Deleting table : {db_details_dict["table_name"]} =>')
+                    sql_request="drop table "+db_details_dict["table_name"]
+                    c.execute(sql_request)
+                    conn.commit()
+                    print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
+                    create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
+                    print(f'-- OK table {db_details_dict["table_name"]} reseted')                  
+                indexA=0
+            else:
+                indexA=sqlite_db_get_last_index(db_name)+1
+            conn=create_connection(database) # open connection to database
+            for row in lines:
+                if conn:
+                    # connection to database is OK
+                    c=conn.cursor()
+                    # let's go to every lines one by one and let's extract url, targeted brand
+                    len_columns=len(db_details_dict['columns'])-1
+                    sqlite_data=[indexA]
+                    for cel in row:
+                        sqlite_data.append(cel)
+                    print('\nsqlite_data :',cyan(sqlite_data,bold=True))
+                    sql_add=f"INSERT OR IGNORE into {db_details_dict['table_name']} (`index`,"
+                    i=0
+                    for col in db_details_dict['columns']:
+                        print(col)
+                        if i<len_columns:
+                            sql_add=sql_add+col+","
+                        else:
+                            sql_add=sql_add+col+")"
+                        i+=1
+                    sql_add=sql_add+' VALUES (?,'
+                    i=0
+                    for col in db_details_dict['columns']:
+                        print(col)
+                        if i<len_columns:
+                            sql_add=sql_add+"?,"
+                        else:
+                            sql_add=sql_add+'?)'
+                        i+=1
+                    #sql_add="INSERT OR IGNORE into truc (`index`,premier,deuxieme,troisieme,quatrieme) VALUES (?,?,?,?,?)"
+                    print('\nsql_add :',cyan(sql_add,bold=True))
+                c.execute(sql_add, sqlite_data)
+                print(green("==> OK Done : demo data ingested",bold=True))
+                indexA+=1
+                conn.commit()  
+    # ACCOUNT KEYS
+    with open('./sqlite_databases_code/account_keys/db_details.txt') as file:
+        db_details_dict=json.loads(file.read())
+    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+    file=open('./sqlite_databases_code/account_keys/init/account_keys.csv','w')
+    ligne_out=''
+    len_columns=len(db_details_dict['columns'])-1
+    i=0        
+    for col in db_details_dict['columns']:
+        if i<len_columns:
+            ligne_out=ligne_out+col+','
+        else:
+            ligne_out=ligne_out+col
+        i+=1
+    file.write(ligne_out+'\n')
+    for i in range (0,10):
+        ligne_out='name'+str(i)+','+'type'+str(i)+','+'username'+str(i)+','+'password'+str(i)+','+'key'+str(i)+','+'comment'+str(i)           
+        file.write(ligne_out+'\n')
+    file.close()  
+    create_db_and_table(db_details_dict['db_name'],db_details_dict['table_name'])
+    
+    db_name = "account_keys"
+    print("\ndb_name : ",db_name)
+    print("\naction_type : ",action_type)        
+    result=1
+    if result==1:
+        with open('./sqlite_databases_code/account_keys/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/'+db_name+'.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        print('table is :',db_details_dict['table_name'])
+        lines=[]
+        file='./DB_backups/account_keys_init.csv'
+        with open (file) as csvfile:
+            reader = csv.reader(csvfile, delimiter=',')
+            lines = list(reader)
+            if action_type=="replace":
+                conn=create_connection(database) # open connection to database
+                if conn:
+                    # connection to database is OK
+                    c=conn.cursor()
+                    print(f'- Deleting table : {db_details_dict["table_name"]} =>')
+                    sql_request="drop table "+db_details_dict["table_name"]
+                    c.execute(sql_request)
+                    conn.commit()
+                    print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
+                    create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
+                    print(f'-- OK table {db_details_dict["table_name"]} reseted')                  
+                indexA=0
+            else:
+                indexA=sqlite_db_get_last_index(db_name)+1
+            conn=create_connection(database) # open connection to database
+            for row in lines:
+                if conn:
+                    # connection to database is OK
+                    c=conn.cursor()
+                    # let's go to every lines one by one and let's extract url, targeted brand
+                    len_columns=len(db_details_dict['columns'])-1
+                    sqlite_data=[indexA]
+                    for cel in row:
+                        sqlite_data.append(cel)
+                    print('\nsqlite_data :',cyan(sqlite_data,bold=True))
+                    sql_add=f"INSERT OR IGNORE into {db_details_dict['table_name']} (`index`,"
+                    i=0
+                    for col in db_details_dict['columns']:
+                        print(col)
+                        if i<len_columns:
+                            sql_add=sql_add+col+","
+                        else:
+                            sql_add=sql_add+col+")"
+                        i+=1
+                    sql_add=sql_add+' VALUES (?,'
+                    i=0
+                    for col in db_details_dict['columns']:
+                        print(col)
+                        if i<len_columns:
+                            sql_add=sql_add+"?,"
+                        else:
+                            sql_add=sql_add+'?)'
+                        i+=1
+                    #sql_add="INSERT OR IGNORE into truc (`index`,premier,deuxieme,troisieme,quatrieme) VALUES (?,?,?,?,?)"
+                    print('\nsql_add :',cyan(sql_add,bold=True))
+                c.execute(sql_add, sqlite_data)
+                print(green("==> OK Done : demo data ingested",bold=True))
+                indexA+=1
+                conn.commit()
+    # API_CALLS
+    with open('./sqlite_databases_code/api_calls/db_details.txt') as file:
+        db_details_dict=json.loads(file.read())
+    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+    file=open('./sqlite_databases_code/api_calls/init/api_calls.csv','w')
+    ligne_out=''
+    len_columns=len(db_details_dict['columns'])-1
+    i=0        
+    for col in db_details_dict['columns']:
+        if i<len_columns:
+            ligne_out=ligne_out+col+','
+        else:
+            ligne_out=ligne_out+col
+        i+=1
+    file.write(ligne_out+'\n')
+    for i in range (0,10):
+        ligne_out='name'+str(i)+','+'fqdn'+str(i)+','+'relative_url'+str(i)+','+'documentation'+str(i)+','+'method'+str(i)+','+'description'+str(i)+','+'payload'+str(i)+','+'header'+str(i)+','+'body'+str(i)+','+'query_params'+str(i)+','+'custom_variables'+str(i)+','+'authentication_profile'+str(i)+','+'inputs_variables'+str(i)+','+'output_variables'+str(i)           
+        file.write(ligne_out+'\n')
+    file.close()  
+    create_db_and_table(db_details_dict['db_name'],db_details_dict['table_name'])
+    
+    db_name = "api_calls"
+    print("\ndb_name : ",db_name)
+    print("\naction_type : ",action_type)        
+
+    result=1
+    if result==1:
+        with open('./sqlite_databases_code/'+db_name+'/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/'+db_name+'.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        print('table is :',db_details_dict['table_name'])
+        lines=[]
+        file='./DB_backups/api_calls_init.csv'
+        with open (file) as csvfile:
+            reader = csv.reader(csvfile, delimiter=',')
+            lines = list(reader)
+            if action_type=="replace":
+                conn=create_connection(database) # open connection to database
+                if conn:
+                    # connection to database is OK
+                    c=conn.cursor()
+                    print(f'- Deleting table : {db_details_dict["table_name"]} =>')
+                    sql_request="drop table "+db_details_dict["table_name"]
+                    c.execute(sql_request)
+                    conn.commit()
+                    print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
+                    create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
+                    print(f'-- OK table {db_details_dict["table_name"]} reseted')                  
+                indexA=0
+            else:
+                indexA=sqlite_db_get_last_index(db_name)+1
+            conn=create_connection(database) # open connection to database
+            for row in lines:
+                if conn:
+                    # connection to database is OK
+                    c=conn.cursor()
+                    # let's go to every lines one by one and let's extract url, targeted brand
+                    len_columns=len(db_details_dict['columns'])-1
+                    sqlite_data=[indexA]
+                    for cel in row:
+                        sqlite_data.append(cel)
+                    print('\nsqlite_data :',cyan(sqlite_data,bold=True))
+                    sql_add=f"INSERT OR IGNORE into {db_details_dict['table_name']} (`index`,"
+                    i=0
+                    for col in db_details_dict['columns']:
+                        print(col)
+                        if i<len_columns:
+                            sql_add=sql_add+col+","
+                        else:
+                            sql_add=sql_add+col+")"
+                        i+=1
+                    sql_add=sql_add+' VALUES (?,'
+                    i=0
+                    for col in db_details_dict['columns']:
+                        print(col)
+                        if i<len_columns:
+                            sql_add=sql_add+"?,"
+                        else:
+                            sql_add=sql_add+'?)'
+                        i+=1
+                    #sql_add="INSERT OR IGNORE into truc (`index`,premier,deuxieme,troisieme,quatrieme) VALUES (?,?,?,?,?)"
+                    print('\nsql_add :',cyan(sql_add,bold=True))
+                c.execute(sql_add, sqlite_data)
+                print(green("==> OK Done : demo data ingested",bold=True))
+                indexA+=1
+                conn.commit()    
+
+    # SETTINGS
+    with open('./sqlite_databases_code/settings/db_details.txt') as file:
+        db_details_dict=json.loads(file.read())
+    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+    file=open('./sqlite_databases_code/settings/init/settings.csv','w')
+    ligne_out=''
+    len_columns=len(db_details_dict['columns'])-1
+    i=0        
+    for col in db_details_dict['columns']:
+        if i<len_columns:
+            ligne_out=ligne_out+col+','
+        else:
+            ligne_out=ligne_out+col
+        i+=1
+    file.write(ligne_out+'\n')
+    for i in range (0,10):
+        ligne_out='name'+str(i)+','+'value'+str(i)+','+'description'+str(i)+','+'comment'+str(i)           
+        file.write(ligne_out+'\n')
+    file.close()  
+    create_db_and_table(db_details_dict['db_name'],db_details_dict['table_name'])
+    
+    db_name = "settings"
+    print("\ndb_name : ",db_name)
+    print("\naction_type : ",action_type)        
+
+    result=1
+    if result==1:
+        with open('./sqlite_databases_code/'+db_name+'/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/'+db_name+'.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        print('table is :',db_details_dict['table_name'])
+        lines=[]
+        file='./DB_backups/settings_init.csv'
+        with open (file) as csvfile:
+            reader = csv.reader(csvfile, delimiter=',')
+            lines = list(reader)
+            if action_type=="replace":
+                conn=create_connection(database) # open connection to database
+                if conn:
+                    # connection to database is OK
+                    c=conn.cursor()
+                    print(f'- Deleting table : {db_details_dict["table_name"]} =>')
+                    sql_request="drop table "+db_details_dict["table_name"]
+                    c.execute(sql_request)
+                    conn.commit()
+                    print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
+                    create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
+                    print(f'-- OK table {db_details_dict["table_name"]} reseted')                  
+                indexA=0
+            else:
+                indexA=sqlite_db_get_last_index(db_name)+1
+            conn=create_connection(database) # open connection to database
+            for row in lines:
+                if conn:
+                    # connection to database is OK
+                    c=conn.cursor()
+                    # let's go to every lines one by one and let's extract url, targeted brand
+                    len_columns=len(db_details_dict['columns'])-1
+                    sqlite_data=[indexA]
+                    for cel in row:
+                        sqlite_data.append(cel)
+                    print('\nsqlite_data :',cyan(sqlite_data,bold=True))
+                    sql_add=f"INSERT OR IGNORE into {db_details_dict['table_name']} (`index`,"
+                    i=0
+                    for col in db_details_dict['columns']:
+                        print(col)
+                        if i<len_columns:
+                            sql_add=sql_add+col+","
+                        else:
+                            sql_add=sql_add+col+")"
+                        i+=1
+                    sql_add=sql_add+' VALUES (?,'
+                    i=0
+                    for col in db_details_dict['columns']:
+                        print(col)
+                        if i<len_columns:
+                            sql_add=sql_add+"?,"
+                        else:
+                            sql_add=sql_add+'?)'
+                        i+=1
+                    #sql_add="INSERT OR IGNORE into truc (`index`,premier,deuxieme,troisieme,quatrieme) VALUES (?,?,?,?,?)"
+                    print('\nsql_add :',cyan(sql_add,bold=True))
+                c.execute(sql_add, sqlite_data)
+                print(green("==> OK Done : demo data ingested",bold=True))
+                indexA+=1
+                conn.commit()                 
+    result=1
+    # ===================================================================
+    loguer(env.level+' def END OF reset_every_databases() in app.py : >')    
+    env.level=env.level[:-1]
+    return result
+    
+
+
+#  def_replace_this_variable_by_its_value***
+def replace_this_variable_by_its_value(objet):
+    '''
+    MODIFIED : 2025-11-03T22:47:34.000Z
+
+    description : replace every variables in the object by their values in the variable database
+    
+    how to call it :
+    '''
+    route="/replace_this_variable_by_its_value"
+    env.level+='-'
+    print('\n'+env.level,white('def replace_this_variable_by_its_value() in app.py : >\n',bold=True))
+    loguer(env.level+' def replace_this_variable_by_its_value() in app.py : >')
+    # ===================================================================    
+    # Variables
+    db_name = "variables.db"
+    table_name = "variables"
+    engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+    df = pd.read_sql_table(table_name, engine)
+    out_df = df[['index','name','environment_name','value','description','comment','used_by']]
+    df = DataFrame(out_df)
+    #print (df)
+    res = df.values.tolist()
+    variables_dict={}
+    for item in res:
+        print(cyan(item[1],bold=True))
+        if objet==item[1]:
+            print(green('OK Match => '+item[3],bold=True))
+            objet=item[3]
+            break
+    # ===================================================================
+    #loguer(env.level+' def END OF replace_this_variable_by_its_value() in app.py : >')    
+    env.level=env.level[:-1]
+    return objet
+    
+
+
+#  def_replace_variables***
+def replace_variables(chaine,config_dict):
+    '''
+    MODIFIED : 2025-07-18T14:43:59.000Z
+
+    description : replace a variable string which start whith $ by the corresponding config variable which has the same name
+    '''
+    route="/replace_variables(chaine,config_dict)"
+    env.level+='-'
+    print()
+    print(env.level,white('def replace_variables() in app.py  : >\n',bold=True))
+    loguer(env.level+' def replace_variables() in app.py  : > ')
+    print()
+    # ===================================================================    
+
+    for k,v in config_dict.items():
+          if v:
+              chaine=chaine.replace('$'+k,v)
+    print()
+    print('chaine :',yellow(chaine,bold=True))
+    print()   
+    # ===================================================================
+    env.level=env.level[:-1]
+    return chaine
+    
+
+#  def_replace_variable***
+def replace_variable(objet):
+    '''
+    MODIFIED : 2025-11-03T22:47:34.000Z
+
+    description : replace every variables in the object by their values stored in the database
+    
+    how to call it :
+    '''
+    route="/replace_variable"
+    env.level+='-'
+    print('\n'+env.level,white('def replace_variable() in app.py : >\n',bold=True))
+    loguer(env.level+' def replace_variable() in app.py : >')
+    # ===================================================================    
+    # Variables
+    #print(' in replace_variable()- line to update :\n ',object)
+    db_name = "variables.db"
+    table_name = "variables"
+    engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+    df = pd.read_sql_table(table_name, engine)
+    out_df = df[['index','name','environment_name','value','description','comment','used_by']]
+    df = DataFrame(out_df)
+    #print (df)
+    res = df.values.tolist()
+    variables_dict={}
+    for item in res:
+        #print(item)
+        objet=objet.replace('$'+item[1],item[3])
+    # ===================================================================
+    #loguer(env.level+' def END OF replace_variable() in app.py : >')    
+    env.level=env.level[:-1]
+    return objet
+    
+
+
+#  def_date_time_for_file_name***
+def date_time_for_file_name():
+    '''
+    MODIFIED : 2025-07-18T14:41:19.000Z
+
+    description : generate date and time suffixe to be added to file names when we save file : format YYYYmmddHMS 
+    '''
+    route="/date_time_for_file_name"
+    env.level+='-'
+    print()
+    print(env.level,white('def date_time_for_file_name() in app.py : >',bold=True))
+    loguer(env.level+' def date_time_for_file_name() in app.py : >')
+    print()
+    # ===================================================================    
+    current_time = datetime.utcnow()
+    timestampStr = current_time.strftime("%Y%m%d_%H%M%S")  
+    # ===================================================================
+    env.level=env.level[:-1]
+    return(timestampStr)
+    
+
+#  def_move_step***
+def move_step(current_step,new_step):
+    '''
+    MODIFIED : 2025-11-15T16:34:43.000Z
+
+    description : move step to another position in the workflow
+    
+    how to call it :
+    '''
+    route="/move_step"
+    env.level+='-'
+    print('\n'+env.level,white('def move_step() in app.py : >\n',bold=True))
+    loguer(env.level+' def move_step() in app.py : >')
+    # ===================================================================    
+    with open('./sqlite_databases_code/workflows/db_details.txt') as file:
+        db_details_dict=json.loads(file.read())
+    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+    database = os.getcwd()+'/z_bases/workflows.db'
+    database=database.replace("\\","/")
+    print('database is :',database)
+    db_name = "workflows.db"
+    table_name = db_details_dict["table_name"]
+    engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+    df = pd.read_sql_table(table_name, engine)
+    out_df = df[['index','workflow_name','step','step_name','input','output','comment']]
+    df = DataFrame(out_df)
+    #print (df)
+    select_options=''
+    res = df.values.tolist()
+    element_index=0
+    sorted_list=sorted(res, key=lambda x: x[element_index])
+    current_step_dict={}         
+    for item in sorted_list:
+        current_step_dict[item[2]]={'index':item[0],'step':item[2]}
+    print('current_step_dict :',cyan(current_step_dict,bold=True))
+    new_step_dict={}
+    if new_step<current_step: 
+        nb_step=1
+        for item,value in current_step_dict.items():
+            print(value['index'],value['step'])
+             
+            if value['step']>=new_step and value['step'] < current_step:
+                # calculate step+1
+                str_step_index=value['step'].split(' ')[1]
+                step_index=int(str_step_index)
+                print('step_index',cyan(step_index,bold=True))            
+                next_step=step_index+1
+                if next_step==1:
+                    str_next_step='Step 01'
+                elif next_step==2:
+                    str_next_step='Step 02'    
+                elif next_step==3:
+                    str_next_step='Step 03' 
+                elif next_step==4:
+                    str_next_step='Step 04' 
+                elif next_step==5:
+                    str_next_step='Step 05' 
+                elif next_step==6:
+                    str_next_step='Step 06' 
+                elif next_step==7:
+                    str_next_step='Step 07' 
+                elif next_step==8:
+                    str_next_step='Step 08'     
+                elif next_step==9:
+                    str_next_step='Step 09'             
+                else:
+                    str_next_step='Step '+str(next_step)         
+                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':str_next_step}    
+            else:
+                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':current_step_dict[value['step']]['step']} 
+
+            if value['step']==current_step:
+                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':new_step}            
+            nb_step+=1
+    else:
+        nb_step=1
+        for item,value in current_step_dict.items():
+            print(value['index'],value['step'])
+             
+            if value['step']<=new_step and value['step'] > current_step:
+                # calculate step+1
+                str_step_index=value['step'].split(' ')[1]
+                step_index=int(str_step_index)
+                print('step_index',cyan(step_index,bold=True))   
+                if step_index>1:
+                    next_step=step_index-1
+                else:
+                    next_step=1
+                if next_step==1:
+                    str_next_step='Step 01'
+                elif next_step==2:
+                    str_next_step='Step 02'    
+                elif next_step==3:
+                    str_next_step='Step 03' 
+                elif next_step==4:
+                    str_next_step='Step 04' 
+                elif next_step==5:
+                    str_next_step='Step 05' 
+                elif next_step==6:
+                    str_next_step='Step 06' 
+                elif next_step==7:
+                    str_next_step='Step 07' 
+                elif next_step==8:
+                    str_next_step='Step 08'     
+                elif next_step==9:
+                    str_next_step='Step 09'             
+                else:
+                    str_next_step='Step '+str(next_step)         
+                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':str_next_step}    
+            else:
+                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':current_step_dict[value['step']]['step']} 
+
+            if value['step']==current_step:
+                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':new_step}            
+            nb_step+=1    
+    print('\nnew_step_dict :',cyan(new_step_dict,bold=True))                       
+    for item,value in new_step_dict.items():        
+        workflow_sqlite_update_step(value['index'],value['step'])
+    result=1
+    # ===================================================================
+    env.level=env.level[:-1]
+    return result
+    
+
+
 # def_parse_config***
 def parse_config(text_content):
     env.level+='-'
@@ -2365,369 +3638,40 @@ def parse_config(text_content):
 
 
 
-#  def_replace_variables***
-def replace_variables(chaine,config_dict):
+#  def_read_db***
+def read_db(database,table,where_clause):
     '''
-    MODIFIED : 2025-07-18T14:43:59.000Z
+    MODIFIED : 2025-11-29T17:46:12.000Z
 
-    description : replace a variable string which start whith $ by the corresponding config variable which has the same name
+    description : Read entry from the selected database
+    
+    how to call it : entry_list=read_db(database,table,where_clause)
+    
     '''
-    route="/replace_variables(chaine,config_dict)"
+    route="/read_db"
     env.level+='-'
-    print()
-    print(env.level,white('def replace_variables() in app.py  : >\n',bold=True))
-    loguer(env.level+' def replace_variables() in app.py  : > ')
-    print()
-    global api_key
-    global orgID
-    global host
-    global network_id
-    global profil_name
+    print('\n'+env.level,white('def read_db() in app.py : >\n',bold=True))
+    loguer(env.level+' def read_db() in app.py : >')
     # ===================================================================    
-
-    for k,v in config_dict.items():
-          if v:
-              chaine=chaine.replace('$'+k,v)
-    print()
-    print('chaine :',yellow(chaine,bold=True))
-    print()   
-    # ===================================================================
-    env.level=env.level[:-1]
-    return chaine
-    
-
-
-
-#  def_send_api_call_function***
-def send_api_call_function(method,base_url,relative_url,additionnal_get_params,headers,payload,body,params,parameters,api_key):
-    '''
-    MODIFIED : 2025-11-06
-    description : send_the_api call to the destination REST service
-    
-    how to call it : result,json_txt_result=send_api_call_function(method,base_url,relative_url,additionnal_get_params,headers,payload,body,parameters,api_key)
-    '''
-    route="/send_api_call_function"
-    env.level+='-'
-    print()
-    print(env.level,white('def send_api_call_function() in app.py  : >\n',bold=True))
-    loguer(env.level+' def send_api_call_function() in app.py  : > ')
-    print()
-    #global api_key
-    global orgID
-    global host
-    global client_id
-    global client_password
-    global custom1
-    global custom2
-    global profil_name
-    # ===================================================================    
-    print('base_url :',cyan(base_url,bold=True))
-    print()        
-    print('relative_url :',cyan(relative_url,bold=True))
-    print()  
-    print('method :',cyan(method,bold=True))
-    print()       
-    print('payload :',cyan(payload,bold=True))
-    print()    
-    print('headers :',cyan(headers,bold=True))
-    print()      
-    print('body :',cyan(body,bold=True))
-    print()
-    print('params :',cyan(params,bold=True))    
-    print()
-    print('parameters :',cyan(parameters,bold=True))
-    print('\napi_key :',cyan(api_key,bold=True))          
-    config_dict={}
-    if api_key !='' and api_key !='no_key':    
-        config_dict['api_key']=api_key  
-    config_dict['host']=host 
-    '''
-    if client_id !='':    
-        config_dict['client_id']=client_id 
-    if client_password !='':    
-        config_dict['client_password']=client_password        
-    '''        
-    if parameters !='':
-        parameter_list=parameters.split("***")    
-        for param in parameter_list:
-            params=param.split('=')
-            config_dict[params[0]]=params[1]
-    print('config_dict :\n',yellow(config_dict,bold=True))
-    print()      
-    saved_token='xxx'
-    if '$SAVED_TOKEN' in relative_url:
-        relative_url=relative_url.replace('$SAVED_TOKEN',saved_token)      
-    if '$SAVED_TOKEN' in payload:
-        payload=payload.replace('$SAVED_TOKEN',saved_token)      
-    if '$SAVED_TOKEN' in headers:
-        headers=headers.replace('$SAVED_TOKEN',saved_token)        
-    if '$SAVED_TOKEN' in body:
-        body=body.replace('$SAVED_TOKEN',saved_token) 
-        
-    if '$' in relative_url:
-        relative_url=replace_variable(relative_url)
-    print('relative_url :',yellow(relative_url,bold=True))
-    print()
-    if payload!='':
-        if '$' in payload:
-           payload=replace_variable(payload)  
-    else:
-        payload={}
-    payload=json.loads(payload)         
-    if headers!='':
-        if '$' in headers:
-            headers=replace_variable(headers) 
-    else:
-        headers=''    
-    if body !='':
-        if '$' in body:
-            body=replace_variable(body)         
-    else:
-        body={}                  
-    api_url = f"{base_url}{relative_url}{additionnal_get_params}"          
-    print(magenta('--> API CALL details here under :',bold=True))
-    print('api_url : ',yellow(api_url,bold=True))
-    print()     
-    print('method : ',yellow(method,bold=True))
-    print()     
-    print('payload :',yellow(payload,bold=True))
-    print() 
-    print('headers :',yellow(headers,bold=True))
-    print()    
-    print('body :',yellow(body,bold=True))
-    print()     
-    print('parameters :',yellow(parameters,bold=True))
-    print()
-    #if headers!={}:
-    headers=json.loads(headers)  
-    if body=="{}":
-        body=json.loads(body)  
-    response = requests.request(method, api_url, headers=headers, data = payload, params=params)
-    print('response :',yellow(response,bold=True))
-    print('response content :',yellow(response.content,bold=True))
-    print()  
-    if 'Route NOT FOUND' not in response.content.decode('UTF-8'):
-        if response.status_code==401:
-            print()
-            print(red('INVALID API CREDENTIALS >',bold=True))
-            print()      
-            # renew the token
-            #access_token=get_ctr_token(host_for_token,client_id,client_password)
-            #response = requests.request(method, api_url, headers=headers, data = payload)
-            result=0
-            json_txt_result=''
-        elif response.status_code==403:
-            print()
-            print(red('ACCESS FORBIDEN >',bold=True))
-            print()      
-            # renew the token
-            result=0
-            json_txt_result=response.content       
-        else:
-            result=1
-            if '</title>' not in response.text:
-                json_txt_result = json.dumps(response.json(),indent=4,sort_keys=True, separators=(',', ': '))
-                print()
-                print('json_txt_result  : \n',green(json_txt_result,bold=True))       
-                with open('./json_results/json_result.json','w') as file:
-                    file.write(json_txt_result)
-                '''
-                items=response.json()
-                for item in items: 
-                    index+=1
-                    if type(item) is dict:
-                        print()
-                        print(item)
-                        print()
-                        print(cyan(item["target_ref"],bold=True))      
-                '''
-            else:
-                json_txt_result=response.text
-                print('RESULT : ',red(response_txt,bold=True))
-    else:
-        result=0
-        json_txt_result='ERROR  !!!! '
-    # ===================================================================
-    env.level=env.level[:-1]
-    return result,json_txt_result
-    
-
-
-
-#  def_date_time_for_file_name***
-def date_time_for_file_name():
-    '''
-    MODIFIED : 2025-07-18T14:41:19.000Z
-
-    description : generate date and time suffixe to be added to file names when we save file : format YYYYmmddHMS 
-    '''
-    route="/date_time_for_file_name"
-    env.level+='-'
-    print()
-    print(env.level,white('def date_time_for_file_name() in app.py : >',bold=True))
-    loguer(env.level+' def date_time_for_file_name() in app.py : >')
-    print()
-    # ===================================================================    
-    current_time = datetime.utcnow()
-    timestampStr = current_time.strftime("%Y%m%d_%H%M%S")  
-    # ===================================================================
-    env.level=env.level[:-1]
-    return(timestampStr)
-    
-
-#  def_select_profile_function***
-def select_profile_function(authentication_profile):
-    '''
-    MODIFIED : 2025-10-26T17:23:59.000Z
-
-    description : retrieve API credentials from profile
-    
-    how to call it :
-    '''
-    route="/select_profile_function"
-    env.level+='-'
-    print('\n'+env.level,white('def select_profile_function() in app.py : >\n',bold=True))
-    loguer(env.level+' def select_profile_function() in app.py : >')
-    global client_id
-    global client_password
-    global host
-    global host_for_token
-    global profil_name
-    # ===================================================================    
-    database="account_keys"
-    print("\ndatabase : ",database)
-    table="account_keys"
-    print("\ntable : ",table)
-    where_clause=f'where `name` = "{authentication_profile}"'
-    entry_list=sqlite_db_select_entry(database,table,where_clause)
-    print("\nentry_list : \n",entry_list)    
-    type=entry_list[0][2]
-    if type=='basic':
-        client_id=entry_list[0][3]
-        client_password=entry_list[0][4]
-        api_key="no_key"
-    elif type=='api_key':
-        client_id=""
-        client_password=""   
-        api_key=entry_list[0][4]   
-    elif type=='token':
-        client_id=""
-        client_password=""   
-        api_key=entry_list[0][4]           
-    else:
-        client_id=""
-        client_password=""   
-        api_key=entry_list[0][4]                
-    # ===================================================================
-    env.level=env.level[:-1]
-    return client_id,client_password,api_key
-    
-
-
-#  def_variables_sqlite_update_value***
-def variables_sqlite_update_value(name,value):
-    '''
-    MODIFIED : 2025-11-05
-
-    description : Update the value of the selected variable name in variables DB
-    
-    how to call it : result = variables_sqlite_update_value(name,value)
-        name : name to search an update in the rows
-        value : new value
-    '''
-    route="/variables_sqlite_update_value"
-    env.level+='-'
-    print('\n'+env.level,white('def variables_sqlite_update_value() in app.py : >\n',bold=True))
-    loguer(env.level+' def variables_sqlite_update_value() in app.py : >')
-    global client_id
-    global client_password
-    global host
-    global host_for_token
-    global profil_name
-    # ===================================================================    
-    database="variables.db"
-    #database = './z_bases/'+database+'.db'
-    result=0
-    value=value.replace("'"," ")
-    print('database is :',database) 
-    print(cyan(f'\n new value : {value} for variable : {name} \n',bold=True))
-    #print('\n value = ',red(value,bold=True))   
-    with sqlite3.connect('./z_bases/'+database) as conn:
+    liste=[]
+    with sqlite3.connect(database) as conn:
         cursor=conn.cursor()
-        sql_request = f"UPDATE 'variables' SET value = '{value}' where name = '{name}'"      
-        print('sql_request :',cyan(sql_request,bold=True))
-        cursor.execute(sql_request)
-        result=1
+        sql_request = f"SELECT * from {table} {where_clause}"
+        print()
+        print(sql_request)
+        print()
+        try:
+            cursor.execute(sql_request)
+            for resultat in cursor:
+                #print(resultat)
+                liste.append(resultat)
+        except:
+            sys.exit("couldn't read database")
     # ===================================================================
-    loguer(env.level+' def END OF variables_sqlite_update_value() in app.py : >')    
+    #loguer(env.level+' def END OF read_db() in app.py : >')    
     env.level=env.level[:-1]
-    return result
+    return(liste)
     
-
-
-#  def_parse_result_of_cse_get_computers***
-def parse_result_of_cse_get_computers(api_call_result,hostname):
-    '''
-    MODIFIED : 2025-11-01T13:14:17.000Z
-
-    description : Parse the result of the CSE Get Computers API call and output the GUID of the selected hostname
-    
-    how to call it :
-    '''
-    route="/parse_result_of_cse_get_computers"
-    env.level+='-'
-    print('\n'+env.level,white('def parse_result_of_cse_get_computers() in app.py : >\n',bold=True))
-    loguer(env.level+' def parse_result_of_cse_get_computers() in app.py : >')
-    # ===================================================================    
-    print('\n api_call_result  : \n',cyan(api_call_result,bold=True))
-    print('\nhostname  : ',cyan(hostname,bold=True))
-    json_input_data=json.loads(api_call_result)
-    computer_list_items = json_input_data["data"]
-    print('\n computer_list_items  : ',cyan(computer_list_items,bold=True))    
-    print(type(computer_list_items))
-    print(len(computer_list_items))
-    guid="xxxxxxxx"
-    for item in computer_list_items:
-        if item["hostname"]==hostname:
-            print('\n',yellow(item["hostname"],bold=True))
-            print(yellow(item["connector_guid"],bold=True))
-            guid=item["connector_guid"]
-    # ===================================================================  
-    env.level=env.level[:-1]
-    return guid
-
-
-#  def_workflow_sqlite_update_step***
-def workflow_sqlite_update_step(index,new_step):
-    '''
-    MODIFIED : 2025-11-15
-
-    description : update step field of row in workflow database
-    
-    how to call it :
-    '''
-    route="/workflow_sqlite_update_step"
-    env.level+='-'
-    print('\n'+env.level,white('def workflow_sqlite_update_step() in app.py : >\n',bold=True))
-    loguer(env.level+' def workflow_sqlite_update_step() in app.py : >')
-    # ===================================================================    
-    database="workflows.db"
-    #database = './z_bases/'+database+'.db'
-    result=0
-    print('database is :',database) 
-    #print('\n value = ',red(value,bold=True))   
-    with sqlite3.connect('./z_bases/'+database) as conn:
-        cursor=conn.cursor()
-        sql_request = f"UPDATE 'workflows' SET step = '{new_step}' where `index` = {index}"      
-        print('sql_request :',cyan(sql_request,bold=True))
-        cursor.execute(sql_request)
-        result=1
-    # ===================================================================
-    #loguer(env.level+' def END OF workflow_sqlite_update_step() in app.py : >')    
-    env.level=env.level[:-1]
-    return result
-    
-
 
 #  def_renumber_steps***
 def renumber_steps(step):
@@ -2880,48 +3824,6 @@ def renumber_steps_delete(step):
     
 
 
-#  def_cse_id_of_event_type_name***
-def cse_id_of_event_type_name(event_name):
-    '''
-    MODIFIED : 2025-11-03T09:54:03.000Z
-
-    description : Send CSE Get event type id API call and parse ID of the event type name give as input
-    
-    how to call it :
-    '''
-    route="/cse_id_of_event_type_name"
-    env.level+='-'
-    print('\n'+env.level,white('def cse_id_of_event_type_name() in app.py : >\n',bold=True))
-    loguer(env.level+' def cse_id_of_event_type_name() in app.py : >')
-    # ===================================================================    
-    api_call_name="Secure Endpoint Get Event Types"
-    # GET variable from calling web page
-    row=request.args.get("row")
-    print("\nrow : ",row)
-    database="api_calls"
-    print("\ndatabase : ",database)
-    table="api_calls"
-    print("\ntable : ",table)
-    where_clause=f' where name = "{api_call_name}"'
-    entry_list=sqlite_db_select_entry(database,table,where_clause)
-    print("\nentry_list : \n",entry_list)
-    result,json_txt_result=select_api_call_and_send_it(api_call_name)
-    result_dict=json.loads(json_txt_result)
-    #print(cyan(result_dict,bold=True))
-    all_events=result_dict['data']
-    event_id="xxxxxx"
-    for item in all_events:
-        print('\n',yellow(item,bold=True))
-        if item['name']==event_name:
-            event_id=str(item['id'])
-    print('event_id : ',green(event_id,bold=True))
-    # ===================================================================
-    loguer(env.level+' def END OF cse_id_of_event_type_name() in app.py : >')    
-    env.level=env.level[:-1]
-    return event_id
-    
-
-
 #  def_renumber_steps_minus_one***
 def renumber_steps_minus_one(step):
     '''
@@ -3031,37 +3933,293 @@ def renumber_steps_minus_one(step):
     
 
 
-#  def_replace_variable***
-def replace_variable(objet):
+#  def_select_profile_function***
+def select_profile_function(authentication_profile):
     '''
-    MODIFIED : 2025-11-03T22:47:34.000Z
+    MODIFIED : 2025-10-26T17:23:59.000Z
 
-    description : replace every variables in the object by their values
+    description : retrieve API credentials from profile
     
     how to call it :
     '''
-    route="/replace_variable"
+    route="/select_profile_function"
     env.level+='-'
-    print('\n'+env.level,white('def replace_variable() in app.py : >\n',bold=True))
-    loguer(env.level+' def replace_variable() in app.py : >')
+    print('\n'+env.level,white('def select_profile_function() in app.py : >\n',bold=True))
+    loguer(env.level+' def select_profile_function() in app.py : >')
+    global client_id
+    global client_password
+    global host
+    global host_for_token
+    global profil_name
     # ===================================================================    
-    # Variables
-    db_name = "variables.db"
-    table_name = "variables"
-    engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
-    df = pd.read_sql_table(table_name, engine)
-    out_df = df[['index','name','environment_name','value','description','comment','used_by']]
-    df = DataFrame(out_df)
-    #print (df)
-    res = df.values.tolist()
-    variables_dict={}
-    for item in res:
-        #print(item)
-        objet=objet.replace('$'+item[1],item[3])
+    database="account_keys"
+    print("\ndatabase : ",database)
+    table="account_keys"
+    print("\ntable : ",table)
+    where_clause=f'where `name` = "{authentication_profile}"'
+    entry_list=sqlite_db_select_entry(database,table,where_clause)
+    print("\nentry_list : \n",entry_list)    
+    type=entry_list[0][2]
+    if type=='basic':
+        client_id=entry_list[0][3]
+        client_password=entry_list[0][4]
+        api_key="no_key"
+    elif type=='api_key':
+        client_id=""
+        client_password=""   
+        api_key=entry_list[0][4]   
+    elif type=='token':
+        client_id=""
+        client_password=""   
+        api_key=entry_list[0][4]           
+    else:
+        client_id=""
+        client_password=""   
+        api_key=entry_list[0][4]                
     # ===================================================================
-    loguer(env.level+' def END OF replace_variable() in app.py : >')    
     env.level=env.level[:-1]
-    return objet
+    return client_id,client_password,api_key
+    
+
+
+
+# here under FUNCTIONS ===========================   
+ 
+#  def_send_api_call_function***
+def send_api_call_function(method,base_url,relative_url,additionnal_get_params,headers,payload,body,params,parameters,api_key):
+    '''
+    MODIFIED : 2025-11-12
+    description : send_the_api call to the destination REST service
+    
+    how to call it : result,json_txt_result=send_api_call_function(method,base_url,relative_url,additionnal_get_params,headers,payload,body,parameters,api_key)
+    '''
+    route="/send_api_call_function"
+    env.level+='-'
+    print()
+    print(env.level,white('def send_api_call_function() in app.py  : >\n',bold=True))
+    loguer(env.level+' def send_api_call_function() in app.py  : > ')
+    print()
+    global use_simulator
+    # ===================================================================    
+    base_url=replace_variable(base_url)
+    print('base_url :',cyan(base_url,bold=True))
+    print()        
+    print('relative_url :',cyan(relative_url,bold=True))
+    print()  
+    print('method :',cyan(method,bold=True))
+    print()       
+    print('payload :',cyan(payload,bold=True))
+    print()    
+    print('headers :',cyan(headers,bold=True))
+    print()      
+    print('body :',cyan(body,bold=True))
+    print()
+    if params==None or params=='':
+        params='{}'    
+    print('params :',cyan(params,bold=True))    
+    print()
+    print('parameters :',cyan(parameters,bold=True))
+    print('\napi_key :',cyan(api_key,bold=True))          
+    config_dict={}
+    if api_key !='' and api_key !='no_key':    
+        config_dict['api_key']=api_key  
+    config_dict['host']=host 
+    '''
+    if client_id !='':    
+        config_dict['client_id']=client_id 
+    if client_password !='':    
+        config_dict['client_password']=client_password        
+    '''        
+    if parameters !='':
+        parameter_list=parameters.split("***")    
+        for param in parameter_list:
+            params=param.split('=')
+            config_dict[params[0]]=params[1]
+    print('config_dict :\n',yellow(config_dict,bold=True))
+    print()      
+    saved_token='xxx'
+    if '$SAVED_TOKEN' in relative_url:
+        relative_url=relative_url.replace('$SAVED_TOKEN',saved_token)      
+    if '$SAVED_TOKEN' in payload:
+        payload=payload.replace('$SAVED_TOKEN',saved_token)      
+    if '$SAVED_TOKEN' in headers:
+        headers=headers.replace('$SAVED_TOKEN',saved_token)        
+    if '$SAVED_TOKEN' in body:
+        body=body.replace('$SAVED_TOKEN',saved_token) 
+        
+    if '$' in relative_url:
+        relative_url=replace_variable(relative_url)
+    print('relative_url :',yellow(relative_url,bold=True))
+    print()
+    if payload!='':
+        if '$' in payload:
+           payload=replace_variable(payload)  
+           print('new payload :',yellow(payload,bold=True))
+           #sys.exit()
+    else:
+        payload={}
+    if use_simulator==1:    
+        payload=json.loads(payload)         # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< TO TROUBLESHOOT - it work this way in ESA 20251208
+    if headers!='':
+        if '$' in headers:
+            headers=replace_variable(headers) 
+    else:
+        headers=''    
+    if body !='':
+        if '$' in body:
+            body=replace_variable(body)         
+    else:
+        body={}                  
+    api_url = f"{base_url}{relative_url}{additionnal_get_params}"              
+    #params=json.loads(params) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< to troublshoot
+    print(magenta('--> API CALL details here under :',bold=True))
+    print('api_url : ',yellow(api_url,bold=True))
+    print()     
+    print('method : ',yellow(method,bold=True))
+    print()     
+    print('payload :',yellow(payload,bold=True))
+    print() 
+    print('headers :',yellow(headers,bold=True))
+    print()    
+    print('body :',yellow(body,bold=True))
+    print()     
+    print('parameters :',yellow(parameters,bold=True))
+    print()
+    #if headers!={}:
+    headers=json.loads(headers)  
+    if body=="{}":
+        body=json.loads(body)  
+    requete=f"request({method}, {api_url}, headers={headers}, data = {payload}, params={params}, verify=False)"
+    print("\n\nrequest to send :\n",yellow(requete,bold=True))  
+    print("\n===================================================================\n")
+    response = requests.request(method, api_url, headers=headers, data = payload, params=params, verify=False)
+    print('response :',yellow(response,bold=True))
+    print('response content :',yellow(response.content,bold=True))
+    print() 
+    response_txt='{}'
+    if 'NOT FOUND' not in response.content.decode('UTF-8'):
+        if response.status_code==401:
+            print()
+            print(red('INVALID API CREDENTIALS >',bold=True))
+            print()      
+            # renew the token
+            #access_token=get_ctr_token(host_for_token,client_id,client_password)
+            #response = requests.request(method, api_url, headers=headers, data = payload)
+            result=0
+            json_txt_result='{"Error":"Wrong Authentication"}'
+        elif response.status_code==403:
+            print()
+            print(red('ACCESS FORBIDEN >',bold=True))
+            print()      
+            # renew the token
+            result=0
+            json_txt_result=response.content       
+        else:
+            result=1
+            if '</title>' not in response.text:
+                json_txt_result = json.dumps(response.json(),indent=4,sort_keys=True, separators=(',', ': '))
+                print()
+                print('json_txt_result  : \n',green(json_txt_result,bold=True))       
+                with open('./json_results/json_result.json','w') as file:
+                    file.write(json_txt_result)
+                '''
+                items=response.json()
+                for item in items: 
+                    index+=1
+                    if type(item) is dict:
+                        print()
+                        print(item)
+                        print()
+                        print(cyan(item["target_ref"],bold=True))      
+                '''
+            else:
+                json_txt_result=response.text
+                print('RESULT : ',red(response_txt,bold=True))
+    else:
+        result=2
+        json_txt_result='ERROR  !!!! '
+    # ===================================================================
+    env.level=env.level[:-1]
+    return result,json_txt_result
+    
+
+
+
+#  def_parse_result_of_cse_get_computers***
+def parse_result_of_cse_get_computers(api_call_result,hostname):
+    '''
+    MODIFIED : 2025-12-10
+
+    description : Parse the result of the CSE Get Computers API call and output the GUID of the selected hostname
+    
+    how to call it : guid=(api_call_result,hostname)
+    '''
+    route="/parse_result_of_cse_get_computers"
+    env.level+='-'
+    print('\n'+env.level,white('def parse_result_of_cse_get_computers() in app.py : >\n',bold=True))
+    loguer(env.level+' def parse_result_of_cse_get_computers() in app.py : >')
+    # ===================================================================    
+    print('\n api_call_result  : \n',cyan(api_call_result,bold=True))
+    print('\nhostname  : ',cyan(hostname,bold=True))
+    hostname=hostname.strip()
+    if hostname!="":
+        json_input_data=json.loads(api_call_result)
+        computer_list_items = json_input_data["data"]
+        print('\n computer_list_items  : ',cyan(computer_list_items,bold=True))    
+        print(type(computer_list_items))
+        print(len(computer_list_items))
+        guid="xxxxxxxx"
+        for item in computer_list_items:
+            if item["hostname"]==hostname:
+                print('\n',yellow(item["hostname"],bold=True))
+                print(yellow(item["connector_guid"],bold=True))
+                guid=item["connector_guid"]
+    else:
+        guid="no_hostname"
+    # ===================================================================  
+    env.level=env.level[:-1]
+    return guid
+
+
+#  def_cse_id_of_event_type_name***
+def cse_id_of_event_type_name(event_name):
+    '''
+    MODIFIED : 2025-11-03T09:54:03.000Z
+
+    description : Send CSE Get event type id API call and parse ID of the event type name give as input
+    
+    how to call it :
+    '''
+    route="/cse_id_of_event_type_name"
+    env.level+='-'
+    print('\n'+env.level,white('def cse_id_of_event_type_name() in app.py : >\n',bold=True))
+    loguer(env.level+' def cse_id_of_event_type_name() in app.py : >')
+    # ===================================================================    
+    api_call_name="Secure Endpoint Get Event Types"
+    # GET variable from calling web page
+    row=request.args.get("row")
+    print("\nrow : ",row)
+    database="api_calls"
+    print("\ndatabase : ",database)
+    table="api_calls"
+    print("\ntable : ",table)
+    where_clause=f' where name = "{api_call_name}"'
+    entry_list=sqlite_db_select_entry(database,table,where_clause)
+    print("\nentry_list : \n",entry_list)
+    result,json_txt_result=select_api_call_and_send_it(api_call_name)
+    result_dict=json.loads(json_txt_result)
+    #print(cyan(result_dict,bold=True))
+    all_events=result_dict['data']
+    event_id="xxxxxx"
+    for item in all_events:
+        print('\n',yellow(item,bold=True))
+        if item['name']==event_name:
+            event_id=str(item['id'])
+    print('event_id : ',green(event_id,bold=True))
+    # ===================================================================
+    loguer(env.level+' def END OF cse_id_of_event_type_name() in app.py : >')    
+    env.level=env.level[:-1]
+    return event_id
     
 
 
@@ -3102,32 +4260,6 @@ def cse_check_for_events_in_host(events,guid,event_id_list):
     loguer(env.level+' def END OF cse_check_for_events_in_host() in app.py : >')    
     env.level=env.level[:-1]
     return host_events
-    
-
-
-#  def_variable_value***
-def variable_value(name):
-    '''
-    MODIFIED : 2025-11-04T17:00:20.000Z
-
-    description : return value of the variable in the Database
-    
-    how to call it : value=variable_value(variable_name)
-    '''
-    route="/variable_value"
-    env.level+='-'
-    print('\n'+env.level,white('def variable_value() in app.py : >\n',bold=True))
-    loguer(env.level+' def variable_value() in app.py : >')
-
-    # ===================================================================    
-    database="variables"        
-    table="variables"              
-    where_clause=f'where name = "{name}"'
-    entry_list=sqlite_db_select_entry(database,table,where_clause)
-    value=entry_list[0][3]
-    # ===================================================================
-    env.level=env.level[:-1]
-    return value
     
 
 
@@ -3284,7 +4416,7 @@ def parse_result_of_dns_activity(result,domain):
 #  def_send_api_call_for_oauth_token***
 def send_api_call_for_oauth_token(base_url,relative_url,client_id,client_password,headers,body_payload):
     '''
-    MODIFIED : 2025-11-05T18:45:25.000Z
+    MODIFIED : 2025-11-30
 
     description : Send API call for asking for a token based on Oauth2
     
@@ -3295,6 +4427,7 @@ def send_api_call_for_oauth_token(base_url,relative_url,client_id,client_passwor
     print('\n'+env.level,white('def end_api_call_for_oauth_token() in app.py : >\n',bold=True))
     loguer(env.level+' def end_api_call_for_oauth_token() in app.py : >')
     # ===================================================================    
+    base_url=replace_variable(base_url)
     print('\nbase_url :',cyan(base_url,bold=True))   
     print('\nrelative_url :',cyan(relative_url,bold=True))
     print('\nmethod :',cyan('POST',bold=True))     
@@ -3308,7 +4441,7 @@ def send_api_call_for_oauth_token(base_url,relative_url,client_id,client_passwor
     api_url = f"{base_url}{relative_url}"          
     print(magenta('\n--> API CALL :',bold=True))
     print('\napi_url : ',yellow(api_url,bold=True))    
-    response = requests.post(api_url, headers=headers, auth=(client_id, client_password), data=body_payload)
+    response = requests.post(api_url, headers=headers, auth=(client_id, client_password), data=body_payload,verify=False)
     print('response code:',yellow(response,bold=True))
     print('response :',yellow(response.content,bold=True))
     print()     
@@ -3320,7 +4453,7 @@ def send_api_call_for_oauth_token(base_url,relative_url,client_id,client_passwor
         # access_token=get_ctr_token(host_for_token,client_id,client_password)
         # response = requests.request(method, api_url, headers=headers, data = payload)
         result=0
-        json_txt_result=''
+        json_txt_result='{"Error":"Wrong Authentication"}'
     else:
         result=1
         if '</title>' not in response.text:
@@ -3393,793 +4526,688 @@ def set_observable_type_to_domain():
     
 
 
-#  def_update_variables_from_json_inputs***
-def update_variables_from_json_inputs(inputs):
+#  def_update_step_name_in_workflows_db***
+def update_step_name_in_workflows_db(old_name,name):
     '''
-    MODIFIED : 2025-11-06T15:19:39.000Z
+    MODIFIED : 2025-11-30T11:17:30.000Z
 
-    description : Update Variable from a JSON Input definition
+    description : Update step name in workflow Database 
     
     how to call it :
     '''
-    route="/update_variables_from_json_inputs"
+    route="/update_step_name_in_workflows_db"
     env.level+='-'
-    print('\n'+env.level,white('def update_variables_from_json_inputs() in app.py : >\n',bold=True))
-    loguer(env.level+' def update_variables_from_json_inputs() in app.py : >')
+    print('\n'+env.level,white('def update_step_name_in_workflows_db() in app.py : >\n',bold=True))
+    loguer(env.level+' def update_step_name_in_workflows_db() in app.py : >')
     # ===================================================================    
-    json_dict=json.loads(inputs)
-    print('json_dict : ',cyan(json_dict,bold=True))
-    for item,v in json_dict.items():
-        print(item)
-        if '$' in v:    
-            word=v.replace('$','')
-            print(f'\n OK We replace this name : {word} by its value in Database\n')            
-            v=replace_this_variable_by_its_value(word)
-        print(v)        
-        print("========================")
-        variables_sqlite_update_value(item,v)
-    # ===================================================================
-    env.level=env.level[:-1]
-    return 1
-    
-
-
-#  def_replace_this_variable_by_its_value***
-def replace_this_variable_by_its_value(objet):
-    '''
-    MODIFIED : 2025-11-03T22:47:34.000Z
-
-    description : replace every variables in the object by their values
-    
-    how to call it :
-    '''
-    route="/replace_this_variable_by_its_value"
-    env.level+='-'
-    print('\n'+env.level,white('def replace_this_variable_by_its_value() in app.py : >\n',bold=True))
-    loguer(env.level+' def replace_this_variable_by_its_value() in app.py : >')
-    # ===================================================================    
-    # Variables
-    db_name = "variables.db"
-    table_name = "variables"
-    engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
-    df = pd.read_sql_table(table_name, engine)
-    out_df = df[['index','name','environment_name','value','description','comment','used_by']]
-    df = DataFrame(out_df)
-    #print (df)
-    res = df.values.tolist()
-    variables_dict={}
-    for item in res:
-        print(cyan(item[1],bold=True))
-        if objet==item[1]:
-            print(green('OK Match => '+item[3],bold=True))
-            objet=item[3]
-            break
-    # ===================================================================
-    loguer(env.level+' def END OF replace_this_variable_by_its_value() in app.py : >')    
-    env.level=env.level[:-1]
-    return objet
-    
-
-
-#  def_sqlite_db_duplicate_workflow_entry***
-def sqlite_db_duplicate_workflow_entry(db_name,row):
-    '''
-    MODIFIED : 2025-10-29
-
-    description : duplicate selected row from the sqllite Database
-    
-    how to call it : result = sqlite_db_duplicate_workflow_entry(db_name,row)
-    '''
-    route="/sqlite_db_duplicate_workflow_entry"
-    env.level+='-'
-    print('\n'+env.level,white('def sqlite_db_duplicate_workflow_entry() in app.py : >\n',bold=True))
-    loguer(env.level+' def sqlite_db_duplicate_workflow_entry() in app.py : >')
-    # ===================================================================    
-    if not session.get('logged_in'):
-        return render_template('login.html')
-    else:
-        db_name=request.args.get("db_name")
-        print('db_name :',db_name)     
-        row=request.args.get("row")
-        print('db_name :',row)              
-        with open('./sqlite_databases_code/'+db_name+'/db_details.txt') as file:
-            db_details_dict=json.loads(file.read())
-        print('db_details_dict : \n',yellow(db_details_dict,bold=True)) 
-        column_list=db_details_dict['columns']
-        database = os.getcwd()+'/z_bases/'+db_name+'.db'
-        database=database.replace("\\","/")
-        table=db_details_dict['table_name']
-        print('database is :',database) 
-        print('table is :',table)          
-        # read entry in data base
-        where_clause='where `index` = '+row
-        entry_list=sqlite_db_select_entry(db_name,table,where_clause)
-        print("\nentry_list : \n",entry_list)   
-        # calculate new step
-        where_clause=''
-        full_list=sqlite_db_select_entry(db_name,table,where_clause)
-        #print("\nfull_list : \n",full_list) 
-        last_step=''
-        for item in full_list:
-            #print(item[2])
-            if item[2]>last_step:
-                last_step=item[2]
-        print("\nLast step is : \n",last_step) 
-        step_index=int(last_step.split(' ')[1])
-        step_index+=1
-        if step_index=='1':
-            step_index='01'
-        elif step_index=='2':
-            step_index='02'    
-        elif step_index=='3':
-            step_index='03' 
-        elif step_index=='4':
-            step_index='04' 
-        elif step_index=='5':
-            step_index='05' 
-        elif step_index=='6':
-            step_index='06' 
-        elif step_index=='7':
-            step_index='07' 
-        elif step_index=='8':
-            step_index='08'     
-        elif step_index=='9':
-            step_index='09'             
-        else:
-            step_index=str(step_index)
-                
-        new_step_index='Step '+str(step_index)
-        print('New step index : ',cyan(new_step_index,bold=True))
-        items={}
-        i=0
-        for obj in entry_list[0]:
-            if i<len(column_list):
-                if i==1:
-                    items[i]={'name':column_list[i],'value':new_step_index}
-                else:
-                    items[i]={'name':column_list[i],'value':entry_list[0][i+1]}
-            i+=1
-        print('items : ',cyan(items,bold=True))        
-        # Get last index value in SQLITE DB
-        new_index=sqlite_db_get_last_index(db_name)+1        
-        print('new_index is :',str(new_index)+'\n')         
-        sqlite_data=[new_index]      
-        i=0
-        for obj in items.items():
-            print('obj :',cyan(obj,bold=True))
-            sqlite_data.append(obj[1]['value'])  
-        sql_add=f"INSERT OR IGNORE into {table} (`index`,"
-        i=0
-        for obj in items.items():
-            print('obj :',cyan(obj,bold=True))
-            if i<len(column_list)-1:
-                sql_add=sql_add+obj[1]['name']+','
-            else:
-                sql_add=sql_add+obj[1]['name']+') VALUES (?,'
-            i+=1       
-        i=0
-        for obj in items:
-            if i<len(column_list)-1:
-                sql_add=sql_add+'?,'
-            else:
-                sql_add=sql_add+'?)'
-            i+=1             
-        print('sqlite_data :',sqlite_data)     
-        print('sql_add :',sql_add)    
-        con = sqlite3.connect(database)       
-        try:
-            cur = con.cursor()
-            cur.execute(sql_add,sqlite_data)
-            con.commit()
-            print(green('OK DONE ENTRY DUPLICATED',bold=True))
-            image="../static/images/ok.png" 
-            message1="Entry Duplicated"
-            message2="Entry was duplicated"
-            message3=f"/{db_name}_dashboard"
-            message4=f"{db_name}_dasbhoard"        
-            PAGE_DESTINATION="operation_done"
-            page_name="operation_done.html"            
-            env.level=env.level[:-1]        
-            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name) 
-        except:
-            print(red('Error',bold=True))
-            image="../static/images/nok.png" 
-            message1="Error"
-            message2="An error occured"
-            message3=f"/{db_name}_dashboard"
-            message4=f"{db_name}_dasbhoard"        
-            PAGE_DESTINATION="operation_done"
-            page_name="operation_done.html"            
-            env.level=env.level[:-1]        
-            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
-
-
-
-
-#  def_reset_every_databases***
-def reset_every_databases():
-    '''
-    MODIFIED : 2025-11-11T08:06:18.000Z
-
-    description : reset every databases
-    
-    how to call it : result = reset_every_databases()
-    '''
-    route="/reset_every_databases"
-    env.level+='-'
-    print('\n'+env.level,white('def reset_every_databases() in app.py : >\n',bold=True))
-    loguer(env.level+' def reset_every_databases() in app.py : >')
-    # ===================================================================    
-    action_type = 'replace'
-    # WORKFLOWS
-    print(red('RESET VARIABLES',bold=True))
-    with open('./sqlite_databases_code/workflows/db_details.txt') as file:
-        db_details_dict=json.loads(file.read())
-    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
     database = os.getcwd()+'/z_bases/workflows.db'
     database=database.replace("\\","/")
-    print('database is :',database)
-    print('table is :', db_details_dict["table_name"])
-    conn=create_connection(database) # open connection to database
-    if conn:
-        # connection to database is OK
-        c=conn.cursor()
-        print(f'- Deleting table : {db_details_dict["table_name"]} =>')
-        sql_request="drop table "+db_details_dict["table_name"]
-        c.execute(sql_request)
-        conn.commit()
-        print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
-        create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
-        print(f'-- OK table {db_details_dict["table_name"]} reseted')     
-    db_name='workflows'
-    with open('./sqlite_databases_code/'+db_name+'/db_details.txt') as file:
-        db_details_dict=json.loads(file.read())
-    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
-    database = os.getcwd()+'/z_bases/'+db_name+'.db'
-    database=database.replace("\\","/")
-    print('database is :',database)
-    print('table is :',db_details_dict['table_name'])
-    lines=[]
-    file='./DB_backups/workflows_init_20251109.csv'
-    with open (file) as csvfile:
-        reader = csv.reader(csvfile, delimiter=',')
-        lines = list(reader)
-        if action_type=="replace":
-            conn=create_connection(database) # open connection to database
-            if conn:
-                # connection to database is OK
-                c=conn.cursor()
-                print(f'- Deleting table : {db_details_dict["table_name"]} =>')
-                sql_request="drop table "+db_details_dict["table_name"]
-                c.execute(sql_request)
-                conn.commit()
-                print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
-                create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
-                print(f'-- OK table {db_details_dict["table_name"]} reseted')                  
-            indexA=0
-        else:
-            indexA=sqlite_db_get_last_index(db_name)+1
-        conn=create_connection(database) # open connection to database
-        for row in lines:
-            if conn:
-                # connection to database is OK
-                c=conn.cursor()
-                # let's go to every lines one by one and let's extract url, targeted brand
-                len_columns=len(db_details_dict['columns'])-1
-                sqlite_data=[indexA]
-                for cel in row:
-                    sqlite_data.append(cel)
-                print('\nsqlite_data :',cyan(sqlite_data,bold=True))
-                sql_add=f"INSERT OR IGNORE into {db_details_dict['table_name']} (`index`,"
-                i=0
-                for col in db_details_dict['columns']:
-                    print(col)
-                    if i<len_columns:
-                        sql_add=sql_add+col+","
-                    else:
-                        sql_add=sql_add+col+")"
-                    i+=1
-                sql_add=sql_add+' VALUES (?,'
-                i=0
-                for col in db_details_dict['columns']:
-                    print(col)
-                    if i<len_columns:
-                        sql_add=sql_add+"?,"
-                    else:
-                        sql_add=sql_add+'?)'
-                    i+=1
-                #sql_add="INSERT OR IGNORE into truc (`index`,premier,deuxieme,troisieme,quatrieme) VALUES (?,?,?,?,?)"
-                print('\nsql_add :',cyan(sql_add,bold=True))
-            c.execute(sql_add, sqlite_data)
-            print(green("==> OK Done : demo data ingested",bold=True))
-            indexA+=1
-            conn.commit()
-
-    #VARIABLES
-    print(red('RESET VARIABLES',bold=True))
-    with open('./sqlite_databases_code/variables/db_details.txt') as file:
-        db_details_dict=json.loads(file.read())
-    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
-    file=open('./sqlite_databases_code/variables/init/variables.csv','w')
-    ligne_out=''
-    len_columns=len(db_details_dict['columns'])-1
-    i=0        
-    for col in db_details_dict['columns']:
-        if i<len_columns:
-            ligne_out=ligne_out+col+','
-        else:
-            ligne_out=ligne_out+col
-        i+=1
-    file.write(ligne_out+'\n')
-    for i in range (0,10):
-        ligne_out='name'+str(i)+','+'environment_name'+str(i)+','+'value'+str(i)+','+'description'+str(i)+','+'comment'+str(i)+','+'used_by'+str(i)           
-        file.write(ligne_out+'\n')
-    file.close()  
-    create_db_and_table(db_details_dict['db_name'],db_details_dict['table_name'])
-    
-    db_name = "variables"
-    print("\ndb_name : ",db_name)
-    print("\naction_type : ",action_type)        
-
-    result=1
-    if result==1:
-        with open('./sqlite_databases_code/variables/db_details.txt') as file:
-            db_details_dict=json.loads(file.read())
-        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
-        database = os.getcwd()+'/z_bases/'+db_name+'.db'
-        database=database.replace("\\","/")
-        print('database is :',database)
-        print('table is :',db_details_dict['table_name'])
-        lines=[]
-        file='./DB_backups/variables_ok_20251109.csv'
-        with open (file) as csvfile:
-            reader = csv.reader(csvfile, delimiter=',')
-            lines = list(reader)
-            if action_type=="replace":
-                conn=create_connection(database) # open connection to database
-                if conn:
-                    # connection to database is OK
-                    c=conn.cursor()
-                    print(f'- Deleting table : {db_details_dict["table_name"]} =>')
-                    sql_request="drop table "+db_details_dict["table_name"]
-                    c.execute(sql_request)
-                    conn.commit()
-                    print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
-                    create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
-                    print(f'-- OK table {db_details_dict["table_name"]} reseted')                  
-                indexA=0
-            else:
-                indexA=sqlite_db_get_last_index(db_name)+1
-            conn=create_connection(database) # open connection to database
-            for row in lines:
-                if conn:
-                    # connection to database is OK
-                    c=conn.cursor()
-                    # let's go to every lines one by one and let's extract url, targeted brand
-                    len_columns=len(db_details_dict['columns'])-1
-                    sqlite_data=[indexA]
-                    for cel in row:
-                        sqlite_data.append(cel)
-                    print('\nsqlite_data :',cyan(sqlite_data,bold=True))
-                    sql_add=f"INSERT OR IGNORE into {db_details_dict['table_name']} (`index`,"
-                    i=0
-                    for col in db_details_dict['columns']:
-                        print(col)
-                        if i<len_columns:
-                            sql_add=sql_add+col+","
-                        else:
-                            sql_add=sql_add+col+")"
-                        i+=1
-                    sql_add=sql_add+' VALUES (?,'
-                    i=0
-                    for col in db_details_dict['columns']:
-                        print(col)
-                        if i<len_columns:
-                            sql_add=sql_add+"?,"
-                        else:
-                            sql_add=sql_add+'?)'
-                        i+=1
-                    #sql_add="INSERT OR IGNORE into truc (`index`,premier,deuxieme,troisieme,quatrieme) VALUES (?,?,?,?,?)"
-                    print('\nsql_add :',cyan(sql_add,bold=True))
-                c.execute(sql_add, sqlite_data)
-                print(green("==> OK Done : demo data ingested",bold=True))
-                indexA+=1
-                conn.commit()  
-    # FUNCTIONS
-    with open('./sqlite_databases_code/functions/db_details.txt') as file:
-        db_details_dict=json.loads(file.read())
-    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
-    file=open('./sqlite_databases_code/functions/init/functions.csv','w')
-    ligne_out=''
-    len_columns=len(db_details_dict['columns'])-1
-    i=0        
-    for col in db_details_dict['columns']:
-        if i<len_columns:
-            ligne_out=ligne_out+col+','
-        else:
-            ligne_out=ligne_out+col
-        i+=1
-    file.write(ligne_out+'\n')
-    for i in range (0,10):
-        ligne_out='name'+str(i)+','+'environment_name'+str(i)+','+'description'+str(i)+','+'called_function'+str(i)+','+'input_variables'+str(i)+','+'output_variables'+str(i)+','+'comment'+str(i)           
-        file.write(ligne_out+'\n')
-    file.close()  
-    create_db_and_table(db_details_dict['db_name'],db_details_dict['table_name'])
-    
-    db_name = "functions"
-    print("\ndb_name : ",db_name)
-    print("\naction_type : ",action_type)        
-
-    result=1
-    if result==1:
-        with open('./sqlite_databases_code/functions/db_details.txt') as file:
-            db_details_dict=json.loads(file.read())
-        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
-        database = os.getcwd()+'/z_bases/'+db_name+'.db'
-        database=database.replace("\\","/")
-        print('database is :',database)
-        print('table is :',db_details_dict['table_name'])
-        lines=[]
-        file='./DB_backups/functions_ok_20251109.csv'
-        with open (file) as csvfile:
-            reader = csv.reader(csvfile, delimiter=',')
-            lines = list(reader)
-            if action_type=="replace":
-                conn=create_connection(database) # open connection to database
-                if conn:
-                    # connection to database is OK
-                    c=conn.cursor()
-                    print(f'- Deleting table : {db_details_dict["table_name"]} =>')
-                    sql_request="drop table "+db_details_dict["table_name"]
-                    c.execute(sql_request)
-                    conn.commit()
-                    print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
-                    create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
-                    print(f'-- OK table {db_details_dict["table_name"]} reseted')                  
-                indexA=0
-            else:
-                indexA=sqlite_db_get_last_index(db_name)+1
-            conn=create_connection(database) # open connection to database
-            for row in lines:
-                if conn:
-                    # connection to database is OK
-                    c=conn.cursor()
-                    # let's go to every lines one by one and let's extract url, targeted brand
-                    len_columns=len(db_details_dict['columns'])-1
-                    sqlite_data=[indexA]
-                    for cel in row:
-                        sqlite_data.append(cel)
-                    print('\nsqlite_data :',cyan(sqlite_data,bold=True))
-                    sql_add=f"INSERT OR IGNORE into {db_details_dict['table_name']} (`index`,"
-                    i=0
-                    for col in db_details_dict['columns']:
-                        print(col)
-                        if i<len_columns:
-                            sql_add=sql_add+col+","
-                        else:
-                            sql_add=sql_add+col+")"
-                        i+=1
-                    sql_add=sql_add+' VALUES (?,'
-                    i=0
-                    for col in db_details_dict['columns']:
-                        print(col)
-                        if i<len_columns:
-                            sql_add=sql_add+"?,"
-                        else:
-                            sql_add=sql_add+'?)'
-                        i+=1
-                    #sql_add="INSERT OR IGNORE into truc (`index`,premier,deuxieme,troisieme,quatrieme) VALUES (?,?,?,?,?)"
-                    print('\nsql_add :',cyan(sql_add,bold=True))
-                c.execute(sql_add, sqlite_data)
-                print(green("==> OK Done : demo data ingested",bold=True))
-                indexA+=1
-                conn.commit()  
-    # ACCOUNT KEYS
-    with open('./sqlite_databases_code/account_keys/db_details.txt') as file:
-        db_details_dict=json.loads(file.read())
-    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
-    file=open('./sqlite_databases_code/account_keys/init/account_keys.csv','w')
-    ligne_out=''
-    len_columns=len(db_details_dict['columns'])-1
-    i=0        
-    for col in db_details_dict['columns']:
-        if i<len_columns:
-            ligne_out=ligne_out+col+','
-        else:
-            ligne_out=ligne_out+col
-        i+=1
-    file.write(ligne_out+'\n')
-    for i in range (0,10):
-        ligne_out='name'+str(i)+','+'type'+str(i)+','+'username'+str(i)+','+'password'+str(i)+','+'key'+str(i)+','+'comment'+str(i)           
-        file.write(ligne_out+'\n')
-    file.close()  
-    create_db_and_table(db_details_dict['db_name'],db_details_dict['table_name'])
-    
-    db_name = "account_keys"
-    print("\ndb_name : ",db_name)
-    print("\naction_type : ",action_type)        
-    result=1
-    if result==1:
-        with open('./sqlite_databases_code/account_keys/db_details.txt') as file:
-            db_details_dict=json.loads(file.read())
-        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
-        database = os.getcwd()+'/z_bases/'+db_name+'.db'
-        database=database.replace("\\","/")
-        print('database is :',database)
-        print('table is :',db_details_dict['table_name'])
-        lines=[]
-        file='./DB_backups/account_keys_ok_20251109.csv'
-        with open (file) as csvfile:
-            reader = csv.reader(csvfile, delimiter=',')
-            lines = list(reader)
-            if action_type=="replace":
-                conn=create_connection(database) # open connection to database
-                if conn:
-                    # connection to database is OK
-                    c=conn.cursor()
-                    print(f'- Deleting table : {db_details_dict["table_name"]} =>')
-                    sql_request="drop table "+db_details_dict["table_name"]
-                    c.execute(sql_request)
-                    conn.commit()
-                    print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
-                    create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
-                    print(f'-- OK table {db_details_dict["table_name"]} reseted')                  
-                indexA=0
-            else:
-                indexA=sqlite_db_get_last_index(db_name)+1
-            conn=create_connection(database) # open connection to database
-            for row in lines:
-                if conn:
-                    # connection to database is OK
-                    c=conn.cursor()
-                    # let's go to every lines one by one and let's extract url, targeted brand
-                    len_columns=len(db_details_dict['columns'])-1
-                    sqlite_data=[indexA]
-                    for cel in row:
-                        sqlite_data.append(cel)
-                    print('\nsqlite_data :',cyan(sqlite_data,bold=True))
-                    sql_add=f"INSERT OR IGNORE into {db_details_dict['table_name']} (`index`,"
-                    i=0
-                    for col in db_details_dict['columns']:
-                        print(col)
-                        if i<len_columns:
-                            sql_add=sql_add+col+","
-                        else:
-                            sql_add=sql_add+col+")"
-                        i+=1
-                    sql_add=sql_add+' VALUES (?,'
-                    i=0
-                    for col in db_details_dict['columns']:
-                        print(col)
-                        if i<len_columns:
-                            sql_add=sql_add+"?,"
-                        else:
-                            sql_add=sql_add+'?)'
-                        i+=1
-                    #sql_add="INSERT OR IGNORE into truc (`index`,premier,deuxieme,troisieme,quatrieme) VALUES (?,?,?,?,?)"
-                    print('\nsql_add :',cyan(sql_add,bold=True))
-                c.execute(sql_add, sqlite_data)
-                print(green("==> OK Done : demo data ingested",bold=True))
-                indexA+=1
-                conn.commit()
-    # API_CALLS
-    with open('./sqlite_databases_code/api_calls/db_details.txt') as file:
-        db_details_dict=json.loads(file.read())
-    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
-    file=open('./sqlite_databases_code/api_calls/init/api_calls.csv','w')
-    ligne_out=''
-    len_columns=len(db_details_dict['columns'])-1
-    i=0        
-    for col in db_details_dict['columns']:
-        if i<len_columns:
-            ligne_out=ligne_out+col+','
-        else:
-            ligne_out=ligne_out+col
-        i+=1
-    file.write(ligne_out+'\n')
-    for i in range (0,10):
-        ligne_out='name'+str(i)+','+'fqdn'+str(i)+','+'relative_url'+str(i)+','+'documentation'+str(i)+','+'method'+str(i)+','+'description'+str(i)+','+'payload'+str(i)+','+'header'+str(i)+','+'body'+str(i)+','+'query_params'+str(i)+','+'custom_variables'+str(i)+','+'authentication_profile'+str(i)+','+'inputs_variables'+str(i)+','+'output_variables'+str(i)           
-        file.write(ligne_out+'\n')
-    file.close()  
-    create_db_and_table(db_details_dict['db_name'],db_details_dict['table_name'])
-    
-    db_name = "api_calls"
-    print("\ndb_name : ",db_name)
-    print("\naction_type : ",action_type)        
-
-    result=1
-    if result==1:
-        with open('./sqlite_databases_code/'+db_name+'/db_details.txt') as file:
-            db_details_dict=json.loads(file.read())
-        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
-        database = os.getcwd()+'/z_bases/'+db_name+'.db'
-        database=database.replace("\\","/")
-        print('database is :',database)
-        print('table is :',db_details_dict['table_name'])
-        lines=[]
-        file='./DB_backups/api_calls_ok_20251109.csv'
-        with open (file) as csvfile:
-            reader = csv.reader(csvfile, delimiter=',')
-            lines = list(reader)
-            if action_type=="replace":
-                conn=create_connection(database) # open connection to database
-                if conn:
-                    # connection to database is OK
-                    c=conn.cursor()
-                    print(f'- Deleting table : {db_details_dict["table_name"]} =>')
-                    sql_request="drop table "+db_details_dict["table_name"]
-                    c.execute(sql_request)
-                    conn.commit()
-                    print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
-                    create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
-                    print(f'-- OK table {db_details_dict["table_name"]} reseted')                  
-                indexA=0
-            else:
-                indexA=sqlite_db_get_last_index(db_name)+1
-            conn=create_connection(database) # open connection to database
-            for row in lines:
-                if conn:
-                    # connection to database is OK
-                    c=conn.cursor()
-                    # let's go to every lines one by one and let's extract url, targeted brand
-                    len_columns=len(db_details_dict['columns'])-1
-                    sqlite_data=[indexA]
-                    for cel in row:
-                        sqlite_data.append(cel)
-                    print('\nsqlite_data :',cyan(sqlite_data,bold=True))
-                    sql_add=f"INSERT OR IGNORE into {db_details_dict['table_name']} (`index`,"
-                    i=0
-                    for col in db_details_dict['columns']:
-                        print(col)
-                        if i<len_columns:
-                            sql_add=sql_add+col+","
-                        else:
-                            sql_add=sql_add+col+")"
-                        i+=1
-                    sql_add=sql_add+' VALUES (?,'
-                    i=0
-                    for col in db_details_dict['columns']:
-                        print(col)
-                        if i<len_columns:
-                            sql_add=sql_add+"?,"
-                        else:
-                            sql_add=sql_add+'?)'
-                        i+=1
-                    #sql_add="INSERT OR IGNORE into truc (`index`,premier,deuxieme,troisieme,quatrieme) VALUES (?,?,?,?,?)"
-                    print('\nsql_add :',cyan(sql_add,bold=True))
-                c.execute(sql_add, sqlite_data)
-                print(green("==> OK Done : demo data ingested",bold=True))
-                indexA+=1
-                conn.commit()    
-    
+    table="workflows"
+    print('database is :',database)    
+    print('table is :',table)         
+    where_clause=f" where `step_name` LIKE '%{old_name}%'" 
+    entries=read_db(database,table,where_clause)  
+    database="workflows.db"
+    result=0
+    for entry in entries:
+        print('entry : \n',yellow(entry,bold=True))        
+        step_name=entry[3].replace(old_name,name)
+        step_name=step_name.replace("'"," ")
+        print('database is :',database) 
+        print(cyan(f'\n new value : {step_name} for variable : {entry[3]} \n',bold=True))
+        #print('\n value = ',red(value,bold=True))   
+        with sqlite3.connect('./z_bases/'+database) as conn:
+            cursor=conn.cursor()
+            sql_request = f"UPDATE 'workflows' SET `step_name` = '{step_name}' where `step_name` = '{entry[3]}'"      
+            print('sql_request :',cyan(sql_request,bold=True))
+            cursor.execute(sql_request)
     result=1
     # ===================================================================
-    loguer(env.level+' def END OF reset_every_databases() in app.py : >')    
+    #loguer(env.level+' def END OF update_step_name_in_workflows_db() in app.py : >')    
     env.level=env.level[:-1]
     return result
     
 
 
-#  def_move_step***
-def move_step(current_step,new_step):
+#  def_update_inputs_outputs_names_in_functions_db***
+def update_inputs_outputs_names_in_functions_db(old_name,name):
     '''
-    MODIFIED : 2025-11-15T16:34:43.000Z
+    MODIFIED : 2025-12-01T17:03:54.000Z
 
-    description : move step to another position in the workflow
+    description : update_inputs_outputs_names_in_functions_db
     
     how to call it :
     '''
-    route="/move_step"
+    route="/update_inputs_outputs_names_in_functions_db"
     env.level+='-'
-    print('\n'+env.level,white('def move_step() in app.py : >\n',bold=True))
-    loguer(env.level+' def move_step() in app.py : >')
+    print('\n'+env.level,white('def update_inputs_outputs_names_in_functions_db() in app.py : >\n',bold=True))
+    loguer(env.level+' def update_inputs_outputs_names_in_functions_db() in app.py : >')
     # ===================================================================    
-    with open('./sqlite_databases_code/workflows/db_details.txt') as file:
-        db_details_dict=json.loads(file.read())
-    print('db_details_dict : \n',yellow(db_details_dict,bold=True))
-    database = os.getcwd()+'/z_bases/workflows.db'
+    database = os.getcwd()+'/z_bases/functions.db'
     database=database.replace("\\","/")
-    print('database is :',database)
-    db_name = "workflows.db"
-    table_name = db_details_dict["table_name"]
+    table="functions"
+    print('database is :',database)    
+    print('table is :',table)   
+    # INPUT_VARIABLES
+    where_clause=f" where `input_variables` LIKE '%{old_name}%'" 
+    entries=read_db(database,table,where_clause)  
+    database="functions.db"
+    result=0
+    for entry in entries:
+        print('entry : \n',yellow(entry,bold=True))        
+        input_variables=entry[5].replace(old_name,name)
+        input_variables=input_variables.replace("'"," ")
+        print('database is :',database) 
+        print(cyan(f'\n new value : {input_variables} for variable : {entry[5]} \n',bold=True))
+        #print('\n value = ',red(value,bold=True))   
+        with sqlite3.connect('./z_bases/'+database) as conn:
+            cursor=conn.cursor()
+            sql_request = f"UPDATE 'functions' SET `input_variables` = '{input_variables}' where `input_variables` = '{entry[5]}'"      
+            print('sql_request :',cyan(sql_request,bold=True))
+            cursor.execute(sql_request)
+    # OUTPUT_VARIABLES    
+    database = os.getcwd()+'/z_bases/functions.db'
+    database=database.replace("\\","/")
+    table="functions"    
+    where_clause=f" where `output_variables` LIKE '%{old_name}%'" 
+    entries=read_db(database,table,where_clause)  
+    database="functions.db"
+    result=0
+    for entry in entries:
+        print('entry : \n',yellow(entry,bold=True))        
+        output_variables=entry[6].replace(old_name,name)
+        output_variables=output_variables.replace("'"," ")
+        print('database is :',database) 
+        print(cyan(f'\n new value : {output_variables} for variable : {entry[6]} \n',bold=True))
+        #print('\n value = ',red(value,bold=True))   
+        with sqlite3.connect('./z_bases/'+database) as conn:
+            cursor=conn.cursor()
+            sql_request = f"UPDATE 'functions' SET `output_variables` = '{output_variables}' where `output_variables` = '{entry[6]}'"      
+            print('sql_request :',cyan(sql_request,bold=True))
+            cursor.execute(sql_request)            
+    result=1
+    # ===================================================================
+    #loguer(env.level+' def END OF update_inputs_outputs_names_in_functions_db() in app.py : >')    
+    env.level=env.level[:-1]
+    return result
+    
+
+
+#  def_convert_username_and_password_base64***
+def convert_username_and_password_base64(username,password):
+    '''
+    MODIFIED : 2025-12-04T15:52:28.000Z
+
+    description : convert username:password in base 64 format
+    
+    how to call it : encoded_creds=convert_username_and_password_base64(username,password)
+    '''
+    route="/convert_username_and_password_base64"
+    env.level+='-'
+    print('\n'+env.level,white('def convert_username_and_password_base64() in app.py : >\n',bold=True))
+    loguer(env.level+' def convert_username_and_password_base64() in app.py : >')
+    # ===================================================================    
+    user=username+':'+password
+    user_bytes=user.encode("ascii")
+    base64_bytes=base64.b64encode(user_bytes)
+    base64_string = base64_bytes.decode("ascii")
+    # ===================================================================
+    #loguer(env.level+' def END OF convert_username_and_password_base64() in app.py : >')    
+    env.level=env.level[:-1]
+    return (base64_string)
+    
+
+
+#  def_format_typosquatt_domains_to_add***
+def format_typosquatt_domains_to_add(var_to_update,list_of_words):
+    '''
+    MODIFIED : 2025-12-14
+
+    description : format the domains to add in esa dictionary and update the [dictionary_words] variables
+    
+    how to call it : format_typosquatt_domains_to_add(var_to_update,list_of_words)
+        var_to_update= variable name in the database that will receive the JSON result
+        list_of_words= variable_name in the database from which read the list of words ( words are string separated by a comma :  word1,word2        
+    '''
+    route="/format_typosquatt_domains_to_add"
+    env.level+='-'
+    print('\n'+env.level,white('def format_typosquatt_domains_to_add() in app.py : >\n',bold=True))
+    loguer(env.level+' def format_typosquatt_domains_to_add() in app.py : >')
+    # ===================================================================    
+    '''
+    with open('./result/typosquatt_domains_to_add.txt') as file:
+        text_content=file.read()
+        
+    domains=text_content.split('\n')
+    '''
+    domains=[] 
+    list_of_words=list_of_words.strip()
+    print('list_of_words :',">"+list_of_words+"<")
+    if list_of_words=="":
+        print(red('Words list is empty'))
+        image="../static/images/nok.png"
+        message1="Operation Failed"
+        #message2="An Error Occured"
+        message2="list_of_words is empty !"
+        message3="/"
+        message4="Home"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        env.level=env.level[:-1]
+        return 0    
+    list_of_domains=list_of_words.split(',')
+    for domain in list_of_domains:
+        domain=domain.strip()
+        domains.append(domain)
+    print('list of domains : ',yellow(domains,bold=True))        
+    result='{"data":{"words":['
+    long=len(domains)
+    print('long : ',yellow(long))
+    update_list=[]
+    i=1
+    for domain in domains:
+        if domain not in update_list and domain!="":
+            if i<long:
+                result=result+'["'+domain+'"],'
+            else:
+                result=result+'["'+domain+'"]'
+            update_list.append(domain)
+        i+=1            
+    result=result+']}}'
+    print('result : ',yellow(result))
+    variables_sqlite_update_value(var_to_update,result)
+    # ===================================================================
+    #loguer(env.level+' def END OF format_typosquatt_domains_to_add() in app.py : >')    
+    env.level=env.level[:-1]
+    return result
+    
+
+
+#  def_execute_this_step_then_next***
+def execute_this_step_then_next(step_name,step_input_list,step_output,step_output_list):
+    '''
+    MODIFIED : 2025-12-10T12:16:16.000Z
+
+    description : execute step_name step and then go to next step
+    
+    how to call it : execute_this_step_then_next(step_name,step_input_list,step_output,step_output_list)
+    '''
+    route="/execute_this_step_then_next"
+    env.level+='-'
+    print('\n'+env.level,white('def execute_this_step_then_next() in app.py : >\n',bold=True))
+    loguer(env.level+' def execute_this_step_then_next() in app.py : >')
+    # ===================================================================    
+    db_name = "api_calls.db"
+    table_name = "api_calls"
     engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
     df = pd.read_sql_table(table_name, engine)
-    out_df = df[['index','workflow_name','step','step_name','input','output','comment']]
+    out_df = df[['index','name','fqdn','relative_url','documentation','method','description','payload','header','body','query_params','custom_variables','authentication_profile','inputs_variables','output_variables']]
+    df = DataFrame(out_df)
+    #print (' df :',cyan(df,bold=True))
+    res = df.values.tolist()
+    authentication_profile=''
+    found=0
+    for item in res:
+        api_call_name=item[1]
+        print (' api call name :',cyan(api_call_name,bold=True))
+        if ' <=> ' in step_name:
+            step_name=step_name.split(' <=> ')[1]                
+        print (' step_name :',cyan(step_name,bold=True))
+        if step_name==api_call_name:    
+            found=1
+            print('\n API Call found in Database :',cyan(item,bold=True))
+            api_call_name=item[1]        
+            result,response_txt=select_api_call_and_send_it(api_call_name)
+    if found==0:
+        # #################################################
+        # #########  NO API CALLS FOUND ... THEN SEARCH IN FUNCTIONS DATABASE
+        response_txt=""
+        keyword=step_name
+        print("\nkeyword : ",keyword)      
+        database = os.getcwd()+'/z_bases/functions.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        db_name = "functions.db"
+        table_name = "functions"
+        engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+        df = pd.read_sql_table(table_name, engine)
+        out_df = df[['index','name','environment_name','description','called_function','input_variables','output_variables','comment']]
+        df = DataFrame(out_df)
+        #print (df)
+        select_options=''
+        res = df.values.tolist()
+        found=0
+        for item in res:
+            if keyword in item:
+                found=1
+                print('FUNCTION FOUND THEN RUN IT')
+                print(item)
+                called_function=item[4]
+                print('called function : ',called_function)                   
+                print('input variables : ',item[5])
+                print('output variables : ',item[6])
+                print('Step input variables list : ',step_input_list)
+                print('Step output variables list : ',step_output_list)  
+                step_input_variable_list=[]
+                database="variables"
+                #database = os.getcwd()+'/z_bases/'+database+'.db'
+                #database=database.replace("\\","/")                    
+                print("\ndatabase : ",database)
+                table="variables"
+                print("\ntable : ",table)                    
+                for item in step_input_list:
+                    where_clause=f'where name = "{item}"'
+                    entry_list=sqlite_db_select_entry(database,table,where_clause)
+                    #print("\nentry_list : \n",entry_list)
+                    step_input_variable_list.append(entry_list[0][3])   
+                print('Step input variables list : ',yellow(step_input_variable_list,bold=True))
+                if called_function=='dummy':
+                    #no action here
+                    result=1
+                elif called_function=='convert_username_and_password_base64':
+                    jwt=convert_username_and_password_base64(step_input_variable_list[0],step_input_variable_list[1])
+                    if "xxxx" not in jwt:
+                        response_txt=jwt
+                        result=variables_sqlite_update_value(step_output,jwt)
+                        result=1
+                    else:
+                        result=0 
+                elif called_function=='cse_check_for_events_in_host':
+                    idlist=step_input_variable_list[2].split(',')     
+                    host_events="xxxxxx"
+                    host_events=cse_check_for_events_in_host(step_input_variable_list[0],step_input_variable_list[1],idlist)
+                    host_events_txt=json.dumps(host_events)
+                    with open('./json_results/json_result.json','w') as file:
+                        file.write(host_events_txt)                        
+                    #print('\nstep_output : ',red(step_output,bold=True))
+                    #print()                              
+                    if "xxxx" not in host_events:
+                        response_txt=host_events
+                        print('\nstep_output : ',red(step_output,bold=True))
+                        print()                                
+                        result=variables_sqlite_update_value(step_output,host_events_txt)
+                        result=1
+                    else:
+                        result=0 
+                elif called_function=='cse_id_of_event_type_name':
+                    event_type_id=cse_id_of_event_type_name(step_input_variable_list[0])
+                    if "xxxx" not in event_type_id:
+                        response_txt=event_type_id
+                        result=variables_sqlite_update_value(step_output,event_type_id)
+                        result=1
+                    else:
+                        result=0 
+                elif called_function=='format_typosquatt_domains_to_add':
+                    result=format_typosquatt_domains_to_add(step_input_variable_list[0],step_input_variable_list[1])
+                    if result!=0:
+                        response_txt="{'status':'success domain list was succesfully formatted'} - check ["+step_input_variable_list[0]+"]"                            
+                        with open('./json_results/json_result.json','w') as file:
+                            file.write(response_txt)                        
+                        result=1
+                    else:
+                        response_txt="{'status':'ERROR list of words is empty'}"                            
+                        with open('./json_results/json_result.json','w') as file:
+                            file.write(response_txt)                        
+                        result=1                                
+                
+                elif called_function=='get_sha256_from_cse_event':
+                    sha256="xxxxxx"
+                    sha256,filename=get_sha256_from_cse_event(step_input_variable_list[0])
+                    sha256_txt='{"sha256":"'+sha256+'"}'
+                    with open('./json_results/json_result.json','w') as file:
+                        file.write(sha256_txt)                        
+                    #print('\nstep_output : ',red(step_output,bold=True))
+                    #print()                              
+                    if "xxxx" not in sha256:
+                        response_txt=sha256_txt
+                        #print('\nstep_output : ',red(step_output,bold=True))
+                        #print()                                
+                        variables_sqlite_update_value('CSE_malicious_file_sha256',sha256)
+                        variables_sqlite_update_value('CSE_malicious_file_name',filename)
+                        result=1
+                    else:
+                        result=0  
+                elif called_function=='parse_result_of_cse_get_computers':
+                    guid=parse_result_of_cse_get_computers(step_input_variable_list[0],step_input_variable_list[1])
+                    if "xxxx" not in guid:
+                        if guid=="no_hostname":
+                            response_txt="[hostname] variable is empty"
+                            result=0                                
+                        else:
+                            response_txt=guid
+                            result=variables_sqlite_update_value(step_output,guid)
+                            result=1
+                    else:
+                        result=0
+                elif called_function=='parse_result_of_dns_activity':
+                    ip_list=["xxxxxx"]
+                    ip_list=parse_result_of_dns_activity(step_input_variable_list[0],step_input_variable_list[1])
+                    result_txt=json.dumps(ip_list)
+                    with open('./json_results/json_result.json','w') as file:
+                        file.write(result_txt)                        
+                    #print('\nstep_output : ',red(step_output,bold=True))
+                    #print()                              
+                    if "xxxx" not in ip_list:
+                        response_txt=result_txt
+                        #print('\nstep_output : ',red(step_output,bold=True))
+                        #print()                                
+                        #variables_sqlite_update_value('malicious_domain_ip',domain_ip)
+                        #variables_sqlite_update_value('domain',domain)
+                        index=1
+                        for ip_addr in ip_list:
+                            variable_name='internal_infected_ip_address_'+str(index)
+                            index+=1
+                            variables_sqlite_update_value(variable_name,ip_addr)
+                        result=1
+                    else:
+                        result=0
+                elif called_function=='parse_result_of_ma_get_domains':
+                    domain="xxxxxx"
+                    domain,domain_ip=parse_result_of_ma_get_domains(step_input_variable_list[0])
+                    result_txt="{'domain':'"+domain+"','domain_ip':'"+domain_ip+"'}"
+                    with open('./json_results/json_result.json','w') as file:
+                        file.write(result_txt)                        
+                    #print('\nstep_output : ',red(step_output,bold=True))
+                    #print()                              
+                    if "xxxx" not in domain:
+                        response_txt=result_txt
+                        #print('\nstep_output : ',red(step_output,bold=True))
+                        #print()                                
+                        variables_sqlite_update_value('malicious_domain_ip',domain_ip)
+                        variables_sqlite_update_value('domain',domain)
+                        result=1
+                    else:
+                        result=0 
+                elif called_function=='parse_result_of_ma_search_submission':
+                    sample_id_txt="xxxxxx"
+                    sample_id=parse_result_of_ma_search_submission(step_input_variable_list[0])
+                    sample_id_txt='{"sample_id":"'+str(sample_id)+'"}'
+                    with open('./json_results/json_result.json','w') as file:
+                        file.write(sample_id_txt)                        
+                    #print('\nstep_output : ',red(step_output,bold=True))
+                    #print()                              
+                    if "xxxx" not in sample_id_txt:
+                        response_txt=sample_id_txt
+                        #print('\nstep_output : ',red(step_output,bold=True))
+                        #print()                                
+                        variables_sqlite_update_value('Malware_Analytics_sample_ID',str(sample_id))
+                        result=1
+                    else:
+                        result=0 
+                elif called_function=='parse_umbrella_result_for_token':
+                    token_txt="xxxxxx"
+                    token_txt=parse_umbrella_result_for_token(step_input_variable_list[0])
+                    with open('./json_results/json_result.json','w') as file:
+                        file.write(token_txt)                        
+                    #print('\nstep_output : ',red(step_output,bold=True))
+                    #print()                              
+                    if "xxxx" not in token_txt:
+                        response_txt=token_txt
+                        #print('\nstep_output : ',red(step_output,bold=True))
+                        #print()                                
+                        variables_sqlite_update_value('umbrella_v2_api_token',token_txt)
+                        result=1
+                    else:
+                        result=0
+                elif called_function=='parse_xdr_result_for_token':
+                    token_txt="xxxxxx"
+                    token_txt=parse_xdr_result_for_token(step_input_variable_list[0])
+                    with open('./json_results/json_result.json','w') as file:
+                        file.write(token_txt)                        
+                    #print('\nstep_output : ',red(step_output,bold=True))
+                    #print()                              
+                    if "xxxx" not in token_txt:
+                        response_txt=token_txt
+                        print('\nstep_output : ',red(step_output,bold=True))
+                        print()                                
+                        variables_sqlite_update_value(step_output,token_txt)
+                        result=1
+                    else:
+                        result=0 
+                elif called_function=='set_observable_type_to_domain':
+                    response_txt="{'status':'success'}"
+                    set_observable_type_to_domain()
+                    with open('./json_results/json_result.json','w') as file:
+                        file.write(response_txt)                        
+                    result=1
+                elif called_function=='update_variables_from_json_inputs':
+                    print(red('xx320'))
+                    response_txt="{'status':'success'}"
+                    update_variables_from_json_inputs(step_input_variable_list[0])
+                    with open('./json_results/json_result.json','w') as file:
+                        file.write(response_txt)                        
+                    result=1
+                else:
+                    result=0
+                    image="../static/images/nok.png"
+                    message1="No Operation"
+                    message2="No API Call or Function to call was found"
+                    message3="/"
+                    message4="Home"
+                    PAGE_DESTINATION="operation_done"
+                    page_name="operation_done.html"
+                    env.level=env.level[:-1]
+                    return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+    # ===================================================================
+    #loguer(env.level+' def END OF execute_this_step_then_next() in app.py : >')    
+    env.level=env.level[:-1]
+    return 1
+    
+
+
+#  def_read_demo_variables***
+def read_demo_variables():
+    '''
+    MODIFIED : 2025-12-13T09:33:12.000Z
+
+    description : read value of demo variables for demo data use
+    
+    how to call it :
+    '''
+    route="/read_demo_variables"
+    env.level+='-'
+    print('\n'+env.level,white('def read_demo_variables() in app.py : >\n',bold=True))
+    loguer(env.level+' def read_demo_variables() in app.py : >')
+    # ===================================================================    
+    database = os.getcwd()+'/z_bases/variables.db'
+    database=database.replace("\\","/")
+    table="variables"
+    print('database is :',database)    
+    print('table is :',table)  
+    where_clause=" where name='demo_Umbrella_Investigate_Token'"     
+    entry=read_db(database,table,where_clause)
+    print('entry :\n',type(entry))
+    Umbrella_Investigate_Token=entry[0][3]
+    print('Umbrella_Investigate_Token =',Umbrella_Investigate_Token)    
+    where_clause=" where name='demo_UMBRELLA_ENFORCEMENT_KEY'"     
+    entry=read_db(database,table,where_clause)
+    UMBRELLA_ENFORCEMENT_KEY=entry[0][3]
+    print('UMBRELLA_ENFORCEMENT_KEY =',UMBRELLA_ENFORCEMENT_KEY)  
+    where_clause=" where name='demo_CSE_CLIENT_ID'"     
+    entry=read_db(database,table,where_clause)
+    CSE_CLIENT_ID=entry[0][3]
+    print('CSE_CLIENT_ID =',CSE_CLIENT_ID)      
+    where_clause=" where name='demo_CSE_API_KEY'"     
+    entry=read_db(database,table,where_clause)
+    CSE_API_KEY=entry[0][3]
+    print('CSE_API_KEY =',CSE_API_KEY)  
+    where_clause=" where name='demo_CSE_AUTHORIZATION'"     
+    entry=read_db(database,table,where_clause)
+    CSE_AUTHORIZATION=entry[0][3]
+    print('CSE_AUTHORIZATION =',CSE_AUTHORIZATION) 
+    where_clause=" where name='demo_THREATGRID_API_KEY'"     
+    entry=read_db(database,table,where_clause)
+    THREATGRID_API_KEY=entry[0][3]
+    print('THREATGRID_API_KEY =',THREATGRID_API_KEY)  
+    where_clause=" where name='demo_CTR_CLIENT_ID'"     
+    entry=read_db(database,table,where_clause)
+    CTR_CLIENT_ID=entry[0][3]
+    print('CTR_CLIENT_ID =',CTR_CLIENT_ID)  
+    where_clause=" where name='demo_CTR_API_KEY'"     
+    entry=read_db(database,table,where_clause)
+    CTR_API_KEY=entry[0][3]
+    print('CTR_API_KEY =',CTR_API_KEY)  
+    where_clause=" where name='demo_CTR_TOKEN'"     
+    entry=read_db(database,table,where_clause)
+    CTR_TOKEN=entry[0][3]
+    print('CTR_TOKEN =',CTR_TOKEN)  
+    where_clause=" where name='demo_UMBRELLA_TOKEN'"     
+    entry=read_db(database,table,where_clause)
+    UMBRELLA_TOKEN=entry[0][3]
+    print('UMBRELLA_TOKEN =',UMBRELLA_TOKEN)      
+    # ===================================================================
+    #loguer(env.level+' def END OF read_demo_variables() in app.py : >')    
+    env.level=env.level[:-1]
+    return (Umbrella_Investigate_Token,UMBRELLA_ENFORCEMENT_KEY,CSE_CLIENT_ID,CSE_API_KEY,CSE_AUTHORIZATION,THREATGRID_API_KEY,CTR_CLIENT_ID,CTR_API_KEY,CTR_TOKEN,UMBRELLA_TOKEN)
+
+
+#  def_update_variable_in_api_calls***
+def update_variable_in_api_calls(old_name,new_name):
+    '''
+    MODIFIED : 2025-12-13
+
+    description : update_variable_in_api_calls
+    
+    how to call it : result=update_variable_in_api_calls(old_variable_name,new_variable_name)
+    '''
+    route="/update_variable_in_api_calls"
+    env.level+='-'
+    print('\n'+env.level,white('def update_variable_in_api_calls() in app.py : >\n',bold=True))
+    loguer(env.level+' def update_variable_in_api_calls() in app.py : >')
+    # ===================================================================    
+    db_name = "api_calls.db"
+    table_name = "api_calls"
+    engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+    df = pd.read_sql_table(table_name, engine)
+    out_df = df[['index','name','solution','fqdn','relative_url','documentation','method','description','payload','header','body','query_params','custom_variables','authentication_profile','inputs_variables','output_variables']]
+    #save result to csv file
+    #out_df.to_csv(r'./result/api_calls.csv')
     df = DataFrame(out_df)
     #print (df)
     select_options=''
-    res = df.values.tolist()
-    element_index=0
-    sorted_list=sorted(res, key=lambda x: x[element_index])
-    current_step_dict={}         
-    for item in sorted_list:
-        current_step_dict[item[2]]={'index':item[0],'step':item[2]}
-    print('current_step_dict :',cyan(current_step_dict,bold=True))
-    new_step_dict={}
-    if new_step<current_step: 
-        nb_step=1
-        for item,value in current_step_dict.items():
-            print(value['index'],value['step'])
-             
-            if value['step']>=new_step and value['step'] < current_step:
-                # calculate step+1
-                str_step_index=value['step'].split(' ')[1]
-                step_index=int(str_step_index)
-                print('step_index',cyan(step_index,bold=True))            
-                next_step=step_index+1
-                if next_step==1:
-                    str_next_step='Step 01'
-                elif next_step==2:
-                    str_next_step='Step 02'    
-                elif next_step==3:
-                    str_next_step='Step 03' 
-                elif next_step==4:
-                    str_next_step='Step 04' 
-                elif next_step==5:
-                    str_next_step='Step 05' 
-                elif next_step==6:
-                    str_next_step='Step 06' 
-                elif next_step==7:
-                    str_next_step='Step 07' 
-                elif next_step==8:
-                    str_next_step='Step 08'     
-                elif next_step==9:
-                    str_next_step='Step 09'             
-                else:
-                    str_next_step='Step '+str(next_step)         
-                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':str_next_step}    
-            else:
-                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':current_step_dict[value['step']]['step']} 
-
-            if value['step']==current_step:
-                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':new_step}            
-            nb_step+=1
-    else:
-        nb_step=1
-        for item,value in current_step_dict.items():
-            print(value['index'],value['step'])
-             
-            if value['step']<=new_step and value['step'] > current_step:
-                # calculate step+1
-                str_step_index=value['step'].split(' ')[1]
-                step_index=int(str_step_index)
-                print('step_index',cyan(step_index,bold=True))   
-                if step_index>1:
-                    next_step=step_index-1
-                else:
-                    next_step=1
-                if next_step==1:
-                    str_next_step='Step 01'
-                elif next_step==2:
-                    str_next_step='Step 02'    
-                elif next_step==3:
-                    str_next_step='Step 03' 
-                elif next_step==4:
-                    str_next_step='Step 04' 
-                elif next_step==5:
-                    str_next_step='Step 05' 
-                elif next_step==6:
-                    str_next_step='Step 06' 
-                elif next_step==7:
-                    str_next_step='Step 07' 
-                elif next_step==8:
-                    str_next_step='Step 08'     
-                elif next_step==9:
-                    str_next_step='Step 09'             
-                else:
-                    str_next_step='Step '+str(next_step)         
-                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':str_next_step}    
-            else:
-                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':current_step_dict[value['step']]['step']} 
-
-            if value['step']==current_step:
-                new_step_dict[value['step']]={'index':current_step_dict[value['step']]['index'],'step':new_step}            
-            nb_step+=1    
-    print('\nnew_step_dict :',cyan(new_step_dict,bold=True))                       
-    for item,value in new_step_dict.items():        
-        workflow_sqlite_update_step(value['index'],value['step'])
+    res = df.values.tolist()   
+    for item in res:
+        print('\nitem : ',yellow(item,bold=True))
+        row=str(item[0])
+        name=item[1]
+        solution=item[2]
+        base_url=item[3]
+        relative_url=item[4]
+        api_docummentation=item[5]
+        method=item[6]
+        short_description=item[7]
+        payload=item[8]
+        header=item[9]
+        body=item[10]
+        params=item[11]
+        parameters=item[12]
+        authentication_profile=item[13]
+        inputs=item[14]
+        outputs=item[15]   
+        # here under update variable
+        payload=payload.replace(old_name,new_name)
+        base_url=base_url.replace(old_name,new_name)
+        relative_url=relative_url.replace(old_name,new_name)
+        header=header.replace(old_name,new_name)      
+        body=body.replace(old_name,new_name)   
+        params=params.replace(old_name,new_name)          
+        inputs=inputs.replace(old_name,new_name)
+        outputs=outputs.replace(old_name,new_name)        
+        # update sqlite
+        where_clause='`index` = '+row
+        sql_fields=['index','name','solution','fqdn','relative_url','documentation','method','description','payload','header','body','query_params','custom_variables','authentication_profile','inputs_variables','output_variables']
+        sql_data_list=[int(row),name,solution,base_url,relative_url,api_docummentation,method,short_description,payload,header,body,params,parameters,authentication_profile,inputs,outputs]
+        result=sqlite_db_update_entry(db_name,table_name,where_clause,sql_fields,sql_data_list)          
     result=1
     # ===================================================================
+    #loguer(env.level+' def END OF update_variable_in_api_calls() in app.py : >')    
+    env.level=env.level[:-1]
+    return result
+    
+
+
+#  def_update_variable_in_functions***
+def update_variable_in_functions(old_name,new_name):
+    '''
+    MODIFIED : 2025-12-13
+
+    description : update_variable_in_functions
+    
+    how to call it : result=update_variable_in_functions(old_variable_name,new_variable_name)
+    '''
+    route="/update_variable_in_functions"
+    env.level+='-'
+    print('\n'+env.level,white('def update_variable_in_functions() in app.py : >\n',bold=True))
+    loguer(env.level+' def update_variable_in_functions() in app.py : >')
+    # ===================================================================    
+    db_name = "functions.db"
+    table_name = "functions"
+    engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+    df = pd.read_sql_table(table_name, engine)
+    out_df = df[['index','name','environment_name','description','called_function','input_variables','output_variables','comment']]
+    #save result to csv file
+    #out_df.to_csv(r'./result/api_calls.csv')
+    df = DataFrame(out_df)
+    #print (df)
+    select_options=''
+    res = df.values.tolist()   
+    for item in res:
+        print('\nitem : ',yellow(item,bold=True))
+        row=str(item[0])
+        name=item[1]
+        environment_name=item[2]
+        description=item[3]
+        called_function=item[4]
+        input_variables=item[5]
+        output_variables=item[6]
+        comment=item[7] 
+        # here under update variable
+        input_variables=input_variables.replace(old_name,new_name)
+        output_variables=output_variables.replace(old_name,new_name)
+        # update sqlite
+        where_clause='`index` = '+row
+        sql_fields=['index','name','environment_name','description','called_function','input_variables','output_variables','comment']
+        sql_data_list=[int(row),name,environment_name,description,called_function,input_variables,output_variables,comment]
+        result=sqlite_db_update_entry(db_name,table_name,where_clause,sql_fields,sql_data_list)          
+    result=1
+    # ===================================================================
+    #loguer(env.level+' def END OF update_variable_in_functions() in app.py : >')    
+    env.level=env.level[:-1]
+    return result
+    
+
+
+#  def_settings_sqlite_update_value***
+def settings_sqlite_update_value(name,value):
+    '''
+    MODIFIED : 2025-12-15
+
+    description : Update the value of the selected variable name in settings DB
+    
+    how to call it : result = settings_sqlite_update_value(name,value)
+        name : name to search an update in the rows
+        value : new value
+    '''
+    route="/settings_sqlite_update_value"
+    env.level+='-'
+    print('\n'+env.level,white('def settings_sqlite_update_value() in app.py : >\n',bold=True))
+    loguer(env.level+' def settings_sqlite_update_value() in app.py : >')
+    # ===================================================================    
+    database="settings.db"
+    #database = './z_bases/'+database+'.db'
+    result=0
+    value=value.replace("'"," ")
+    print('database is :',database) 
+    print(cyan(f'\n new value : {value} for variable : {name} \n',bold=True))
+    #print('\n value = ',red(value,bold=True))   
+    with sqlite3.connect('./z_bases/'+database) as conn:
+        cursor=conn.cursor()
+        sql_request = f"UPDATE 'settings' SET value = '{value}' where name = '{name}'"      
+        print('sql_request :',cyan(sql_request,bold=True))
+        cursor.execute(sql_request)
+        result=1
+    # ===================================================================
+    #loguer(env.level+' def END OF settings_sqlite_update_value() in app.py : >')    
     env.level=env.level[:-1]
     return result
     
@@ -4951,24 +5979,27 @@ def tools():
 # def_edit_html***
 @app.route('/edit_html', methods=['GET'])
 def edit_html():
+    '''
+        version : 20251129
+    '''
     env.level+='-'
     route="/edit_html"
     print()
     print(env.level,white('route edit_html() : >',bold=True))
     #loguer(env.level+' route edit_html() : >')
     filename=request.args.get('filename')
-    print()
-    print(yellow(f"- filename : {filename}",bold=True))
-    command="start notepad++.exe ./code_app_html_templates/"+filename
-    result = os.system(command)
-    print()    
+    if ".py" not in filename:
+        print(yellow(f"- filename : {filename}",bold=True))
+        command="start notepad++.exe ./code_app_html_templates/"+filename
+        result = os.system(command)
+    else:
+        command="start notepad++.exe ./code_app_routes/"+filename
+        result = os.system(command)        
     with open('./result/home_url.txt') as file:
         home_url=file.read()   
     env.level=env.level[:-1]
     return render_template('OK.html',home_url=home_url)
    
-
-
 
 
 # def_edit_todo***
@@ -8521,16 +9552,9 @@ def bases():
                             </article>
                         </div>            
 '''            
-        portfolio=portfolio+'''                        <div class="col-4 col-6-medium col-12-small">
-                            <article class="box style2">
-                                <a href="/reset_databases" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
-                                <h3><a href="/reset_databases">Reset Databases</a></h3>
-                                <p>Reset All Databases</p>
-                            </article>
-                        </div>
-'''
-        menu='''        
+        menu='''
                     <li><a href="/">Back to main page</a></li>
+                    <li><a href="/confirm_reset_databases">Reset Databases</a></li>
                     <li><a href="/logout">log Out</a></li>
                     <li><a href="javascript:popup_window('/page_info?page=route_def_bases.py&route='''+route+'''','page_info',700,600);">:</a></li>
         '''       
@@ -8585,7 +9609,7 @@ def bases():
     </body>
 </html>
 '''
-        loguer(env.level+' route END OF bases() in ***app.py*** : >')
+        #loguer(env.level+' route END OF bases() in ***app.py*** : >')
         # ===================================================================
         env.level=env.level[:-1]
         return output
@@ -9421,6 +10445,7 @@ if __name__==\'__main__\':
         create_rte_for_db_update_entry_function(db_name)
         create_rte_for_db_delete_entry_function(db_name)
         create_rte_for_db_add_entry_function(db_name)
+        create_rte_for_db_add_entry_static_function(db_name)        
         create_rte_for_db_ingest_cvs(db_name)
         create_rte_for_sqlite_db_duplicate_entry_function(db_name)
         message1="SQLITE DB CREATED"
@@ -9793,6 +10818,209 @@ def sqlite_ingest_csv():
         
 
 
+#  def_delete_database***
+@app.route('/delete_database', methods=['GET'])
+def delete_database():
+    '''
+    Created : 2025-11-29T10:45:25.000Z
+
+    description : delete selected SQlite Database
+    '''
+    route="/delete_database"
+    env.level+='-'
+    print('\n'+env.level,white('route delete_database() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route delete_database() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:    
+        database=request.args.get("database")
+        print("\ndatabase to delete: ",database)         
+        with open('./result/db_to_delete.txt','w') as file:
+            file.write(database)
+        message1="Really, You want to do this ?"
+        image="../static/images/warning.png" 
+        message2="You are about to delete [ "+database+" ] Database"
+        message3="/delete_database_confirmed"
+        message4="I Confirm"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        loguer(env.level+' route END OF delete_database() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        
+
+
+#  def_delete_database_confirmed***
+@app.route('/delete_database_confirmed', methods=['GET'])
+def delete_database_confirmed():
+    '''
+    Created : 2025-11-29T10:53:57.000Z
+
+    description : Confirmation recieved from admin, let s delete the selected DB
+    '''
+    route="/delete_database_confirmed"
+    env.level+='-'
+    print('\n'+env.level,white('route delete_database_confirmed() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route delete_database_confirmed() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        # ===================================================================       
+        with open('./result/db_to_delete.txt') as file:
+            database=file.read()
+        print("\ndatabase to delete: ",database)
+        
+        with open('./result/db_to_delete.txt') as file:
+            database=file.read()
+            
+        fichier1=f"route_def_{database}_create_db.py"
+        full_path="./code_app_routes/"+fichier1
+        if os.path.exists(full_path):
+            print(' ok delete',full_path)
+            os.remove(full_path)        
+            
+        fichier2=f"route_def_{database}_dashboard.py"
+        full_path="./code_app_routes/"+fichier2
+        if os.path.exists(full_path):
+            print(' ok delete',full_path)
+            os.remove(full_path)   
+            
+        fichier3=f"route_def_{database}_db_add_entry.py"
+        full_path="./code_app_routes/"+fichier3
+        if os.path.exists(full_path):
+            print(' ok delete',full_path)
+            os.remove(full_path) 
+                        
+        fichier4=f"route_def_{database}_db_add_entry_ok.py"
+        full_path="./code_app_routes/"+fichier4
+        if os.path.exists(full_path):
+            print(' ok delete',full_path)
+            os.remove(full_path) 
+            
+        fichier5=f"route_def_{database}_db_clear.py"
+        full_path="./code_app_routes/"+fichier5
+        if os.path.exists(full_path):
+            print(' ok delete',full_path)
+            os.remove(full_path)         
+            
+        fichier6=f"route_def_{database}_db_delete_entry.py"
+        full_path="./code_app_routes/"+fichier6
+        if os.path.exists(full_path):
+            print(' ok delete',full_path)
+            os.remove(full_path)  
+            
+        fichier7=f"route_def_{database}_db_duplicate_entry.py"
+        full_path="./code_app_routes/"+fichier7
+        if os.path.exists(full_path):
+            print(' ok delete',full_path)
+            os.remove(full_path) 
+            
+        fichier8=f"route_def_{database}_db_ingest_csv.py"
+        full_path="./code_app_routes/"+fichier8
+        if os.path.exists(full_path):
+            print(' ok delete',full_path)
+            os.remove(full_path)
+            
+        fichier9=f"route_def_{database}_db_read.py"
+        full_path="./code_app_routes/"+fichier9
+        if os.path.exists(full_path):
+            print(' ok delete',full_path)
+            os.remove(full_path)
+            
+        fichier10=f"route_def_{database}_db_update_entry.py"
+        full_path="./code_app_routes/"+fichier10
+        if os.path.exists(full_path):
+            print(' ok delete',full_path)
+            os.remove(full_path)
+            
+        fichier11=f"route_def_{database}_ingest_demo_data.py"
+        full_path="./code_app_routes/"+fichier11
+        if os.path.exists(full_path):
+            print(' ok delete',full_path)
+            os.remove(full_path)
+
+        fichier12=f"route_def_{database}_db_update_entry.py"
+        full_path="./code_app_routes/"+fichier12
+        if os.path.exists(full_path):
+            print(' ok delete',full_path)
+            os.remove(full_path)
+
+        fichier13=f"z_{database}_db_add_entry_static.html"
+        full_path="./code_app_html_templates/"+fichier13
+        if os.path.exists(full_path):
+            print(' ok delete',full_path)
+            os.remove(full_path)
+        with open('./code_architecture/main_html.txt') as file:
+            text_content=file.read()    
+            text_content=text_content.replace(fichier13,'')    
+            text_content=text_content.replace('\n\n','\n')
+        with open('./code_architecture/main_html.txt','w') as file:      
+            file.write(text_content)
+            
+        fichier14=f"route_def_{database}_db_add_entry.py"
+        full_path="./code_app_routes/"+fichier14
+        if os.path.exists(full_path):
+            print(' ok delete',full_path)
+            os.remove(full_path)
+            
+        function_file='./code_architecture/app_routes.txt'            
+        with open(function_file) as file:
+            text_content=file.read()
+            text_content=text_content.replace(fichier1,'')    
+            text_content=text_content.replace('\n\n','\n')
+            text_content=text_content.replace(fichier2,'')    
+            text_content=text_content.replace('\n\n','\n')            
+            text_content=text_content.replace(fichier3,'')    
+            text_content=text_content.replace('\n\n','\n')            
+            text_content=text_content.replace(fichier4,'')    
+            text_content=text_content.replace('\n\n','\n')            
+            text_content=text_content.replace(fichier5,'')    
+            text_content=text_content.replace('\n\n','\n')
+            text_content=text_content.replace(fichier6,'')    
+            text_content=text_content.replace('\n\n','\n')            
+            text_content=text_content.replace(fichier7,'')    
+            text_content=text_content.replace('\n\n','\n')
+            text_content=text_content.replace(fichier7,'')    
+            text_content=text_content.replace('\n\n','\n')
+            text_content=text_content.replace(fichier8,'')    
+            text_content=text_content.replace('\n\n','\n')            
+            text_content=text_content.replace(fichier9,'')    
+            text_content=text_content.replace('\n\n','\n')            
+            text_content=text_content.replace(fichier10,'')    
+            text_content=text_content.replace('\n\n','\n')            
+            text_content=text_content.replace(fichier11,'')    
+            text_content=text_content.replace('\n\n','\n')             
+            text_content=text_content.replace(fichier12,'')    
+            text_content=text_content.replace('\n\n','\n')    
+            text_content=text_content.replace(fichier14,'')    
+            text_content=text_content.replace('\n\n','\n')              
+        with open(function_file,'w') as file:      
+            file.write(text_content)
+
+        function_file='./sqlite_databases_code/databases.txt'            
+        with open(function_file) as file:
+            text_content=file.read()        
+        text_content=text_content.replace(database,'')    
+        text_content=text_content.replace('\n\n','\n')
+        with open(function_file,'w') as file:      
+            file.write(text_content)
+            
+        # Prepare the resulting Next Web Page          
+        message1="Database Deleted"
+        image="../static/images/ok.png" 
+        message2="You must Stop flask, and delete manually the folder ./sqlite_databases_code"+database+".  And the ./z_bases/"+database+".db file. Then restart flask"
+        message3="/stop"
+        message4="Stop Flask"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        #loguer(env.level+' route END OF delete_database_confirmed() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        
+
+
 # def_index***
 @app.route('/', methods=['GET'])
 def index():
@@ -9821,7 +11049,7 @@ def index():
         result=1
         if result==1:
             image="../static/images/automation.png"
-            message1="Automate Threat Hunting Operations"
+            message1="Automate Network and Security Operations"
             message2=""
             message3="/do_something"
             message4="Do something"
@@ -10237,7 +11465,11 @@ if __name__=="__main__":
         
 
 
+'''
+    version 2025-12-11
+    description : every demo data routes  here under
 
+'''
 def t_():
     current_time = datetime.utcnow()
     current_time = current_time.strftime("$%Y%m%dW%H%M%S.%fZ")
@@ -11111,7 +12343,190 @@ def CTR13():
             return ('"status": "unknown"')            
     else:
         return ('"status": "unknown"') 
+        
+# ######################## HERE UNDER ESA APPLIANCE DEMO DATA
+
+@app.route("/esa/api/v2.0/config/system_time", methods=['GET'])
+def ESA1():
+    print(cyan("ESA Asking for system time",bold=True)) 
+    Authorization=request.headers.get("Authorization")
+    Authorization=Authorization.replace("Basic ","")
+    Authorization=Authorization.encode('utf-8')
+    print('Authorization ',cyan(Authorization,bold=True)) 
+    if Authorization==b'dGVzdGFwaTpDMXNjMDEyMyEy':
+        return render_template('esa_json_result_system_time.json')
+    else:
+        return'{"Error":"401 authentication  failed"}'
     
+@app.route("/esa/api/v2.0/health", methods=['GET'])
+def ESA2():
+    print(cyan("ESA Asking for health",bold=True)) 
+    Authorization=request.headers.get("Authorization")
+    Authorization=Authorization.replace("Basic ","")
+    Authorization=Authorization.encode('utf-8')
+    print('Authorization ',cyan(Authorization,bold=True)) 
+    if Authorization==b'dGVzdGFwaTpDMXNjMDEyMyEy':
+        return render_template('esa_health.json')
+    else:
+        return'{"Error":"401 authentication  failed"}'
+
+
+@app.route("/esa/api/v2.0/health/system_status", methods=['GET'])
+def ESA3():
+    print(cyan("ESA Asking for system status",bold=True)) 
+    Authorization=request.headers.get("Authorization")
+    Authorization=Authorization.replace("Basic ","")
+    Authorization=Authorization.encode('utf-8')
+    print('Authorization ',cyan(Authorization,bold=True)) 
+    if Authorization==b'dGVzdGFwaTpDMXNjMDEyMyEy':
+        return render_template('esa_system_status_json_result.json')
+    else:
+        return'{"Error":"401 authentication  failed"}'
+
+@app.route("/esa/api/v2.0/config/dictionaries", methods=['GET'])
+def ESA4():
+    print(cyan("ESA  list all dictionaries",bold=True)) 
+    Authorization=request.headers.get("Authorization")
+    Authorization=Authorization.replace("Basic ","")
+    Authorization=Authorization.encode('utf-8')
+    print('Authorization ',cyan(Authorization,bold=True)) 
+    if Authorization==b'dGVzdGFwaTpDMXNjMDEyMyEy':
+        return render_template('esa_list_all_dictionaries_json_result.json')
+    else:
+        return'{"Error":"401 authentication  failed"}'
+        
+@app.route("/esa/api/v2.0/config/dictionaries/prod_dictionary", methods=['GET'])
+def ESA5():
+    print(cyan("ESA  list prod_dictionaries",bold=True)) 
+    Authorization=request.headers.get("Authorization")
+    Authorization=Authorization.replace("Basic ","")
+    Authorization=Authorization.encode('utf-8')
+    print('Authorization ',cyan(Authorization,bold=True)) 
+    if Authorization==b'dGVzdGFwaTpDMXNjMDEyMyEy':
+        with open('./templates/esa_list_selected_dictionary_json_result.json') as file:
+            text_content=file.read()
+        return text_content
+    else:
+        return'{"Error":"401 authentication  failed"}'
+        
+@app.route("/esa/api/v2.0/login/privileges", methods=['GET'])
+def ESA6():
+    print(cyan("ESA api privileges",bold=True)) 
+    Authorization=request.headers.get("Authorization")
+    Authorization=Authorization.replace("Basic ","")
+    Authorization=Authorization.encode('utf-8')
+    print('Authorization ',cyan(Authorization,bold=True)) 
+    if Authorization==b'dGVzdGFwaTpDMXNjMDEyMyEy':
+        return render_template('esa_accessible_apis_json_result.json')
+    else:
+        return'{"Error":"401 authentication  failed"}'
+        
+@app.route("/esa/api/v2.0/config/dictionaries/prod_dictionary/words", methods=['POST',"DELETE"])
+def ESA7():
+    print(cyan("ESA api add words to prod_dictionaries",bold=True)) 
+    Authorization=request.headers.get("Authorization")
+    Authorization=Authorization.replace("Basic ","")
+    Authorization=Authorization.encode('utf-8')
+    print('Authorization ',cyan(Authorization,bold=True))
+    if Authorization==b'dGVzdGFwaTpDMXNjMDEyMyEy':
+        if request.method=="POST":
+            #  Adding new words in dictionary
+            # read existing list
+            with open('./templates/esa_list_selected_dictionary_json_result.json') as file:
+                text_content=file.read()
+            current_data=json.loads(text_content)
+            existing_word_list=current_data['data']['words']        
+            print('existing_word_list : ',green(existing_word_list,bold=True))
+
+            data=request.get_data()
+            #data=json.loads(request.form['data'])
+            #data=data.encode('utf-8')
+            print('data ',cyan(data,bold=True))  
+            database = os.getcwd()+'/z_bases/variables.db'
+            database=database.replace("\\","/")
+            table="variables"
+            print('database is :',database)    
+            print('table is :',table)    
+            where_clause=' where `name`="dictionnary_words"'
+            entry=read_db(database,table,where_clause)
+            print('dictionary_words : ',cyan(entry,bold=True))
+            words_data_json=json.loads(entry[0][3])
+            word_list_0=words_data_json['data']['words']
+            word_list=[]
+            for item in word_list_0:
+                word_list.append(item[0])
+            print('new word_list : ',yellow(word_list,bold=True))        
+            new_data=current_data
+            for item3 in existing_word_list:
+                print(green(item3,bold=True))  
+                for item2 in word_list:
+                    print('--',red(item2,bold=True))            
+                    if item2 in item3:
+                        resultat='''{
+        "error": {
+            "code": "409",
+            "explanation": "409 = Request conflict..",
+            "message": "['''+item2+'''] - term already present in dictionary."
+            }
+        }'''
+                        return resultat   
+            nb=0
+            for item2 in word_list:    
+                new_data["data"]["words"].append([item2,1])    
+                nb+=1
+            new_data["data"]["words_count"]["term_count"]=current_data["data"]["words_count"]["term_count"]+nb
+            text_result=json.dumps(new_data,sort_keys=True,indent=4, separators=(',', ': '))
+            print('resulting_word_list : ',green(text_result,bold=True))    
+            with open('./templates/esa_list_selected_dictionary_json_result.json',"w") as file:     
+                file.write(text_result)
+            return render_template('esa_add_words_in_dictionary_json_result.json')
+        if request.method=="DELETE":
+            # get words to delete from database
+            database = os.getcwd()+'/z_bases/variables.db'
+            database=database.replace("\\","/")
+            table="variables"
+            print('database is :',database)    
+            print('table is :',table)    
+            where_clause=' where `name`="dictionary_wordlist_to_delete"'
+            entry=read_db(database,table,where_clause)
+            data=json.loads(entry[0][3])
+            words_to_delete=data["data"]["words"]
+            print('words to delete : ',cyan(words_to_delete,bold=True))   
+            # read existing word list in dictionary
+            with open('./templates/esa_list_selected_dictionary_json_result.json') as file:
+                text_content=file.read()
+            current_data=json.loads(text_content)
+            existing_word_list=current_data['data']['words']        
+            print('existing_word_list : ',green(existing_word_list,bold=True))     
+            new_data={
+    "data": {
+        "encoding": "utf-8",
+        "ignorecase": 1,
+        "name": "prod_dictionary",
+        "wholewords": 0,
+        "words_count": {
+            "smart_identifier_count": 1,
+            "term_count": 0
+        }
+    }
+}
+            new_data["words"]=[]
+            nb=0
+            for item in existing_word_list:
+                if item[0] not in words_to_delete:
+                    new_data["words"].append(item)
+                    nb+=1
+            new_data["data"]["words_count"]["term_count"]=nb                    
+            text_result=json.dumps(new_data,sort_keys=True,indent=4, separators=(',', ': '))
+            print('resulting_word_list : ',green(text_result,bold=True))          
+            with open('./templates/esa_list_selected_dictionary_json_result.json',"w") as file:     
+                file.write(text_result)            
+            return render_template('esa_delete_words_from_selected_dictionary_json_result.json')
+        else:       
+            return '{"Error":"No Valid HTTP METHOD (POST or DELETE)"}'
+    else:
+        return'{"Error":"401 authentication  failed"}'
+        
 @app.errorhandler(404)
 def not_found(error):
     return render_template('error.html'), 404 
@@ -11170,53 +12585,7 @@ def product_apis():
     global profil_name
     if not session.get('logged_in'):
         return render_template('login.html')
-    else:
-        # ===================================================================       
-        '''
-        # GET variable from calling web page
-        profil_name='./profiles/'+request.args.get('profil_name')
-        print()
-        print('profil_name : ',profil_name)        
-        # POST variable 
-        keyword = request.form['keyword']
-        print()
-        print('keyword : ',keyword)
-        
-        # API TOKEN
-        with open('ctr_token.txt','r') as file0:
-            access_token=file0.read()
-            
-        action=request.args.get('action')
-        print()
-        print('action: ',action)
-        print()
-        if action=="copy":
-            do something
-            
-        #CALL  A SUB FUNCTION
-        print()   
-        print(magenta('--> CALL  A SUB FUNCTION :',bold=True)) 
-        '''        
-        # Prepare the resulting Next Web Page
-        result=1
-        if result==1:        
-            image="../static/images/ok.png" 
-            message1="Title"
-            message2="Connexion to XDR Tenant is Okay !"
-            message3="#portfolio"
-            message4="Button Message"            
-        elif result==2:
-            image="../static/images/ok.png" 
-            message1="Title"
-            message2="Connexion to XDR Tenant is Okay !"
-            message3="#portfolio"
-            message4="Button Message"              
-        else:
-            image="../static/images/ok.png" 
-            message1="Title"
-            message2="Connexion to XDR Tenant is Okay !"
-            message3="#portfolio"
-            message4="Button Message"              
+    else:         
         message1="Message 1 :"
         image="../static/images/toolbox.png" 
         message2="Message 2 :"
@@ -11224,7 +12593,7 @@ def product_apis():
         message4="Message 4 in button"
         PAGE_DESTINATION="z_product_apis"
         page_name="z_product_apis.html"
-        loguer(env.level+' route END OF product_apis() in ***app.py*** : >')
+        #loguer(env.level+' route END OF product_apis() in ***app.py*** : >')
         # ===================================================================
         env.level=env.level[:-1]
         return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
@@ -12186,6 +13555,7 @@ def account_keys_db_clear():
 @app.route('/account_keys_db_read', methods=['GET'])
 def account_keys_db_read():
     '''
+    version : 20251130
     Flask Route for the account_keys_db_read Database Read DB content function
     '''
     route="/account_keys_db_read"
@@ -12195,8 +13565,9 @@ def account_keys_db_read():
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
-        keyword=''
         keyword=request.args.get("keyword")
+        if keyword==None:
+            keyword=''          
         print("\nkeyword : ",keyword)      
         with open('./sqlite_databases_code/account_keys/db_details.txt') as file:
             db_details_dict=json.loads(file.read())
@@ -12218,10 +13589,25 @@ def account_keys_db_read():
         #print (df)
         select_options=''
         res = df.values.tolist()
+        keyword=keyword.lower()        
         for item in res:
+            #print('\nitem : ',yellow(item,bold=True))
             if keyword:
-                if keyword in item:
-                    select_options=select_options+'<option value="'+str(item[0])+'">'+item[1]+'</option>'
+                ii=0
+                found=0
+                for item2 in item:                    
+                    if ii!=0:
+                        item2=item2.lower()                   
+                        if keyword in item2:
+                            found=1
+                            print('\n=======================')                         
+                            print(yellow("YES FOUND",bold=True))
+                            print('\nitem2 : ',green(item2,bold=True))
+                            #print('\nkeyword: ',">"+keyword+"<")
+                            print('\n=======================')  
+                    ii+=1
+                if found:
+                        select_options=select_options+'<option value="'+str(item[0])+'">'+item[1]+'</option>' 
             else:
                 select_options=select_options+'<option value="'+str(item[0])+'">'+item[1]+'</option>'     
         print('=========================================')
@@ -12540,7 +13926,7 @@ def account_keys_db_ingest_csv():
 @app.route('/send_api_call', methods=['GET'])
 def send_api_call():
     '''
-    Created : 2025-11-15
+    Created : 2025-12-06
     description : Send the API call to URL Endpoint with the passed data
     '''
     route="/send_api_call"
@@ -12552,7 +13938,18 @@ def send_api_call():
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
+        with open('./json_results/json_result.json','w') as file:
+            pass    
         global use_simulator
+        database = os.getcwd()+'/z_bases/settings.db'
+        database=database.replace("\\","/")
+        table="settings"
+        print('database is :',database)    
+        print('table is :',table)         
+        where_clause=" where name='use_simulator'" 
+        entry=read_db(database,table,where_clause)  
+        use_simulator=int(entry[0][2])    
+        
         base_url=request.args.get('base_url')
         print('\nbase_url : ',yellow(base_url,bold=True))
         name=request.args.get('name')
@@ -12668,8 +14065,8 @@ def send_api_call():
                     ii=0
                     new_cred_words=[]
                     for cred_word in creds:
-                        if '$$' in cred_word:
-                            mot=cred_word.replace('$$','')
+                        if '$*' in cred_word:
+                            mot=cred_word.replace('$*','')
                             mot=mot.replace('***','')                        
                         print(cyan(mot,bold=True))
                         new_cred_words.append(authentication_dict[mot])
@@ -12698,16 +14095,18 @@ def send_api_call():
             body_json=json.loads(body)
         if body_json == {"grant_type": "client_credentials"}:
             header_json=json.loads(header)
-            result,response_txt=send_api_call_for_oauth_token(base_url,relative_url,client_id,client_password,header_json,body_json) # http://127.0.0.1:4000/code_edit?code=def_send_api_call_for_oauth_token.py&type=function
+            result,response_txt=send_api_call_for_oauth_token(base_url,relative_url,client_id,client_password,header_json,body_json) #xx174
         elif payload == {"grant_type": "client_credentials"}:
             header_json=json.loads(header)
-            result,response_txt=send_api_call_for_oauth_token(base_url,relative_url,client_id,client_password,header_json,body_json) # http://127.0.0.1:4000/code_edit?code=def_send_api_call_for_oauth_token.py&type=function
+            result,response_txt=send_api_call_for_oauth_token(base_url,relative_url,client_id,client_password,header_json,body_json) #xx177
         else:
             print("\nOK SEND CALL (x166): ") 
             if api_key==None:
                 api_key='xxx'
             print('api_key :',red(api_key,bold=True))       
-            result,response_txt=send_api_call_function(method,base_url,relative_url,additionnal_get_params,header,payload,body,params,parameters,api_key) # http://127.0.0.1:4000/code_edit?code=def_send_api_call_function.py&type=function
+            if params==None:
+                params='{}'
+            result,response_txt=send_api_call_function(method,base_url,relative_url,additionnal_get_params,header,payload,body,params,parameters,api_key) #xx183
         # read the first 200 lines of the JSON result
         with open('./json_results/json_result.json') as file:
             lines=file.read().split('\n')
@@ -12731,6 +14130,16 @@ def send_api_call():
             page_name="z_api_call_result.html"
             env.level=env.level[:-1]
             return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        if result==2:
+            image="../static/images/nok.png"
+            message1="NO ROUTE"
+            message2="Flask Route Not Found in the simulator. Check Your URL"
+            message3="/"
+            message4="Home"
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"
+            env.level=env.level[:-1]
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)            
         else:
             image="../static/images/nok.png"
             message1="Operation Failed"
@@ -12841,7 +14250,7 @@ def cse_get_event_type_api():
 @app.route('/generic_api_details', methods=['GET'])
 def generic_api_details():
     '''
-    Created : 2025-10-28T08:25:17.000Z
+    Created : 2025-12-13
 
     description : display API details before sending the API Call
     '''
@@ -12867,26 +14276,27 @@ def generic_api_details():
         entry_list=sqlite_db_select_entry(database,table,where_clause)
         print("\nentry_list : \n",entry_list)
         name=entry_list[0][1]
-        base_url=entry_list[0][2]
-        relative_url=entry_list[0][3]
-        api_docummentation=entry_list[0][4]
-        method=entry_list[0][5]
-        short_description=entry_list[0][6]
-        payload=entry_list[0][7]
-        header=entry_list[0][8]
-        body=entry_list[0][9]
-        params=entry_list[0][10]
-        parameters=entry_list[0][11]
-        authentication_profile=entry_list[0][12]
-        inputs=entry_list[0][13]
-        outputs=entry_list[0][14]
+        solution=entry_list[0][2]
+        base_url=entry_list[0][3]
+        relative_url=entry_list[0][4]
+        api_docummentation=entry_list[0][5]
+        method=entry_list[0][6]
+        short_description=entry_list[0][7]
+        payload=entry_list[0][8]
+        header=entry_list[0][9]
+        body=entry_list[0][10]
+        params=entry_list[0][11]
+        parameters=entry_list[0][12]
+        authentication_profile=entry_list[0][13]
+        inputs=entry_list[0][14]
+        outputs=entry_list[0][15]
         image="../static/images/API.png"
         PAGE_DESTINATION="z_selected_api"
         page_name="z_selected_api.html"
         loguer(env.level+' route END OF cse_get_computer() in ***app.py*** : >')
         # ===================================================================
         env.level=env.level[:-1]
-        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,image=image,page_name=page_name,name=name,base_url=base_url,relative_url=relative_url,api_docummentation=api_docummentation,method=method,short_description=short_description,payload=payload,header=header,body=body,params=params,parameters=parameters,authentication_profile=authentication_profile)
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,image=image,page_name=page_name,name=name,base_url=base_url,relative_url=relative_url,api_docummentation=api_docummentation,method=method,short_description=short_description,payload=payload,header=header,body=body,params=params,parameters=parameters,authentication_profile=authentication_profile,solution=solution,inputs=inputs,outputs=outputs)
        
 
 
@@ -13384,8 +14794,9 @@ def workflows_db_read():
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
-        keyword=''
         keyword=request.args.get("keyword")
+        if keyword==None:
+            keyword=''  
         print("\nkeyword : ",keyword)
         with open('./sqlite_databases_code/workflows/db_details.txt') as file:
             db_details_dict=json.loads(file.read())
@@ -13409,11 +14820,25 @@ def workflows_db_read():
         res = df.values.tolist()
         element_index=2
         sorted_list=sorted(res, key=lambda x: x[element_index])
-                    
+        keyword=keyword.lower()            
         for item in sorted_list:
+            #print('\nitem : ',yellow(item,bold=True))
             if keyword:
-                if keyword in item:
-                    select_options=select_options+'<option value="'+str(item[2])+'">'+item[2]+'</option>'
+                ii=0
+                found=0
+                for item2 in item:                    
+                    if ii!=0:
+                        item2=item2.lower()                   
+                        if keyword in item2:
+                            found=1
+                            print('\n=======================')                         
+                            print(yellow("YES FOUND",bold=True))
+                            print('\nitem2 : ',green(item2,bold=True))
+                            #print('\nkeyword: ',">"+keyword+"<")
+                            print('\n=======================')  
+                    ii+=1
+                if found:
+                        select_options=select_options+'<option value="'+str(item[0])+'">'+item[1]+'</option>' 
             else:
                 select_options=select_options+'<option value="'+str(item[2])+'">'+item[2]+'</option>'
         print('=========================================')
@@ -14062,840 +15487,6 @@ def workflows_db_duplicate_entry():
  
 
 
-#  def_api_calls_dashboard***
-@app.route('/api_calls_dashboard', methods=['GET'])
-def api_calls_dashboard():
-    '''
-    Flask Route for the api_calls_dashboard Database dashoard
-    '''
-    route="/api_calls_dashboard"
-    env.level+='-'
-    print('\n'+env.level,white('route api_calls_dashboard() in ***app.py*** : >\n',bold=True))
-    loguer(env.level+' route api_calls_dashboard() in ***app.py*** : >')
-    if not session.get('logged_in'):
-        return render_template('login.html')
-    else:
-        html_output='''<!DOCTYPE HTML>
-<!-- description-->
-<html>
-    <head>
-        <title>FLASK APP GENERATOR</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="../static/assets/css/main.css" />
-    <script>
-        function popup_window( url, id, width, height )
-        {
-            //extract the url parameters if any, and pass them to the called html
-            var tempvar=document.location.toString(); // fetch the URL string
-            var passedparams = tempvar.lastIndexOf("?");
-            if(passedparams > -1)
-                url += tempvar.substring(passedparams);
-            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
-            popup.focus();
-        }
-    </script>
-    </head>
-    <body class="is-preload">
-        <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                
-                    <li><a href="/">Back to main page</a></li>
-                    <li><a href="/logout">log Out</a></li>
-                    <li><a href="javascript:popup_window('/page_info?page=route_def_api_calls_dashboard.py&route=/api_calls_dashboard','page_info',700,600);">:</a></li>
-        
-                </ul>
-            </nav>
-        <!-- Portfolio -->
-            <article id="portfolio" class="wrapper style3">
-                <div class="container">
-                    <header>
-                        <h2>api_calls Database</h2>
-                    </header>
-                    <div class="row">
-                        <div class="col-4 col-6-medium col-12-small">
-                            <article class="box style2">
-                                <a href="/api_calls_create_db" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
-                                <h3><a href="/api_calls_create_db">Create Database</a></h3>
-                                <p>Create the api_calls Database</p>
-                            </article>
-                        </div>
-                        <div class="col-4 col-6-medium col-12-small">
-                            <article class="box style2">
-                                <a href="/api_calls_ingest_demo_data" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
-                                <h3><a href="/api_calls_ingest_demo_data">Ingest Demo Data</a></h3>
-                                <p>Ingest Demo Data into DB</p>
-                            </article>
-                        </div>
-                        <div class="col-4 col-6-medium col-12-small">
-                            <article class="box style2">
-                                <a href="/api_calls_db_read" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
-                                <h3><a href="/api_calls_db_read">Read Database content</a></h3>
-                                <p>Read DB an Create a CSV result</p>
-                            </article>
-                        </div>
-                        <div class="col-4 col-6-medium col-12-small">
-                            <article class="box style2">
-                                <a href="/api_calls_db_clear" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
-                                <h3><a href="/api_calls_db_clear">Clear Database</a></h3>
-                                <p>Delete Database content</p>
-                            </article>
-                        </div>
-                        <div class="col-4 col-6-medium col-12-small">
-                            <article class="box style2">
-                                <a href="/api_calls_db_ingest_csv" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
-                                <h3><a href="/api_calls_db_ingest_csv">Ingest a CSV file</a></h3>
-                                <p>Ingest a CSV file</p>
-                            </article>
-                        </div>
-                        <div class="col-4 col-6-medium col-12-small">
-                            <article class="box style2">
-                                <a href="/api_calls_db_add_entry" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
-                                <h3><a href="/api_calls_db_add_entry">Add Entry</a></h3>
-                                <p>Add an Entry to Database</p>
-                            </article>
-                        </div>
-            
-                    </div>
-                </div>
-            </article>
-        <!-- Scripts -->
-            <script src="../static/assets/js/jquery.min.js"></script>
-            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
-            <script src="../static/assets/js/init.js"></script>
-            <script src="../static/assets/js/browser.min.js"></script>
-            <script src="../static/assets/js/breakpoints.min.js"></script>
-            <script src="../static/assets/js/util.js"></script>
-            <script src="../static/assets/js/main.js"></script>
-    </body>
-</html>
-'''
-        loguer(env.level+' route END OF api_calls_dashboard() in ***app.py*** : >')
-        # ===================================================================
-        env.level=env.level[:-1]
-        return html_output
-        
-
-#  def_api_calls_create_db***
-@app.route('/api_calls_create_db', methods=['GET'])
-def api_calls_create_db():
-    '''
-    Flask Route for the api_calls_create_db Database Create DB action
-    '''
-    route="/api_calls_create_db"
-    env.level+='-'
-    print('\n'+env.level,white('route api_calls_create_db() in ***app.py*** : >\n',bold=True))
-    loguer(env.level+' route api_calls_create_db() in ***app.py*** : >')
-    if not session.get('logged_in'):
-        return render_template('login.html')
-    else:
-        with open('./sqlite_databases_code/api_calls/db_details.txt') as file:
-            db_details_dict=json.loads(file.read())
-        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
-        file=open('./sqlite_databases_code/api_calls/init/api_calls.csv','w')
-        ligne_out=''
-        len_columns=len(db_details_dict['columns'])-1
-        i=0        
-        for col in db_details_dict['columns']:
-            if i<len_columns:
-                ligne_out=ligne_out+col+','
-            else:
-                ligne_out=ligne_out+col
-            i+=1
-        file.write(ligne_out+'\n')
-        for i in range (0,10):
-            ligne_out='name'+str(i)+','+'fqdn'+str(i)+','+'relative_url'+str(i)+','+'documentation'+str(i)+','+'method'+str(i)+','+'description'+str(i)+','+'payload'+str(i)+','+'header'+str(i)+','+'body'+str(i)+','+'query_params'+str(i)+','+'custom_variables'+str(i)+','+'authentication_profile'+str(i)+','+'inputs_variables'+str(i)+','+'output_variables'+str(i)           
-            file.write(ligne_out+'\n')
-        file.close()  
-        create_db_and_table(db_details_dict['db_name'],db_details_dict['table_name'])
-        html_output='''<!DOCTYPE HTML>
-<!-- description-->
-<html>
-    <head>
-        <title>FLASK APP GENERATOR</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="../static/assets/css/main.css" />
-    <script>
-        function popup_window( url, id, width, height )
-        {
-            //extract the url parameters if any, and pass them to the called html
-            var tempvar=document.location.toString(); // fetch the URL string
-            var passedparams = tempvar.lastIndexOf("?");
-            if(passedparams > -1)
-                url += tempvar.substring(passedparams);
-            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
-            popup.focus();
-        }
-    </script>
-    </head>
-    <body class="is-preload">
-        <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                
-                    <li><a href="/">Back to main page</a></li>
-                    <li><a href="/logout">log Out</a></li>
-                    <li><a href="javascript:popup_window('/page_info?page=route_def_bases.py&route=/api_calls_create_db','page_info',700,600);">:</a></li>
-        
-                </ul>
-            </nav>
-        <!-- Portfolio -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="../static/images/ok.png" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1><strong> Database :api_calls, was created</strong></h1>
-							</header>
-							<p>The SQLITE had been created in ./z_bases</p>
-                            <a href="/api_calls_dashboard" class="button small scrolly">Go to Dashboard for api_calls DB </a>
-						</div>						
-					</div>				
-				</div>
-			</article>
-        <!-- Scripts -->
-            <script src="../static/assets/js/jquery.min.js"></script>
-            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
-            <script src="../static/assets/js/init.js"></script>
-            <script src="../static/assets/js/browser.min.js"></script>
-            <script src="../static/assets/js/breakpoints.min.js"></script>
-            <script src="../static/assets/js/util.js"></script>
-            <script src="../static/assets/js/main.js"></script>
-    </body>
-</html>
-'''
-        loguer(env.level+' route END OF api_calls_create_db() in ***app.py*** : >')
-        # ===================================================================
-        env.level=env.level[:-1]    
-        return html_output
-
-
-#  def_api_calls_ingest_demo_data***
-@app.route('/api_calls_ingest_demo_data', methods=['GET'])
-def api_calls_ingest_demo_data():
-    '''
-    Flask Route for the api_calls_ingest_demo_data Database Ingest demo data
-    '''
-    route="/api_calls_ingest_demo_data"
-    env.level+='-'
-    print('\n'+env.level,white('route api_calls_ingest_demo_data() in ***app.py*** : >\n',bold=True))
-    loguer(env.level+' route api_calls_ingest_demo_data() in ***app.py*** : >')
-    if not session.get('logged_in'):
-        return render_template('login.html')
-    else:
-        with open('./sqlite_databases_code/api_calls/db_details.txt') as file:
-            db_details_dict=json.loads(file.read())
-        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
-        database = os.getcwd()+'/z_bases/api_calls.db'
-        database=database.replace("\\","/")
-        print('database is :',database)
-        lines=[]    
-        file='./sqlite_databases_code/api_calls/init/api_calls.csv'
-        with open (file) as csvfile:
-            reader = csv.reader(csvfile, delimiter=',')
-            lines = list(reader)
-            indexA=0
-            print('api_calls table =>\n')
-            conn=create_connection(database) # open connection to database            
-            for row in lines:
-                if conn:
-                    # connection to database is OK
-                    c=conn.cursor()
-                    # let's go to every lines one by one and let's extract url, targeted brand
-                    sqlite_data=[indexA]
-                    sqlite_data=(indexA,row[0] ,row[1] ,row[2] ,row[3] ,row[4] ,row[5] ,row[6] ,row[7] ,row[8] ,row[9] ,row[10] ,row[11] ,row[12] ,row[13])
-                    sql_add="INSERT OR IGNORE into api_calls (`index`,name,fqdn,relative_url,documentation,method,description,payload,header,body,query_params,custom_variables,authentication_profile,inputs_variables,output_variables) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
-                    print('\nsql_add :',cyan(sql_add,bold=True))
-                c.execute(sql_add, sqlite_data)
-                print(green("==> OK Done : demo data ingested",bold=True))
-                indexA+=1
-                conn.commit()        
-
-        html_output='''<!DOCTYPE HTML>
-<!-- description-->
-<html>
-    <head>
-        <title>FLASK APP GENERATOR</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="../static/assets/css/main.css" />
-    <script>
-        function popup_window( url, id, width, height )
-        {
-            //extract the url parameters if any, and pass them to the called html
-            var tempvar=document.location.toString(); // fetch the URL string
-            var passedparams = tempvar.lastIndexOf("?");
-            if(passedparams > -1)
-                url += tempvar.substring(passedparams);
-            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
-            popup.focus();
-        }
-    </script>
-    </head>
-    <body class="is-preload">
-        <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                
-                    <li><a href="/">Back to main page</a></li>
-                    <li><a href="/logout">log Out</a></li>
-                    <li><a href="javascript:popup_window('/page_info?page=route_def_api_calls.py&route=/api_calls_ingest_demo_data_ingest_demo_data','page_info',700,600);">:</a></li>
-        
-                </ul>
-            </nav>
-        <!-- Portfolio -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="../static/images/ok.png" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1><strong>Demo Data ingested</strong></h1>
-							</header>
-							<p>Demo Data ingested into Database :api_calls</p>
-                            <a href="/api_calls_dashboard" class="button small scrolly">Go to Dashboard for api_calls DB </a>
-						</div>						
-					</div>				
-				</div>
-			</article>
-        <!-- Scripts -->
-            <script src="../static/assets/js/jquery.min.js"></script>
-            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
-            <script src="../static/assets/js/init.js"></script>
-            <script src="../static/assets/js/browser.min.js"></script>
-            <script src="../static/assets/js/breakpoints.min.js"></script>
-            <script src="../static/assets/js/util.js"></script>
-            <script src="../static/assets/js/main.js"></script>
-    </body>
-</html>
-'''
-        loguer(env.level+' route END OF api_calls_ingest_demo_data() in ***app.py*** : >')
-        # ===================================================================
-        env.level=env.level[:-1]    
-        return html_output
-
-
-#  def_api_calls_db_clear***
-@app.route('/api_calls_db_clear', methods=['GET'])
-def api_calls_db_clear():
-    '''
-    Flask Route for the api_calls_db_clear Database Clearing / reset function
-    '''
-    route="/api_calls_db_clear"
-    env.level+='-'
-    print('\n'+env.level,white('route api_calls_db_clear() in ***app.py*** : >\n',bold=True))
-    loguer(env.level+' route api_calls_db_clear() in ***app.py*** : >')
-    if not session.get('logged_in'):
-        return render_template('login.html')
-    else:
-        with open('./sqlite_databases_code/api_calls/db_details.txt') as file:
-            db_details_dict=json.loads(file.read())
-        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
-        database = os.getcwd()+'/z_bases/api_calls.db'
-        database=database.replace("\\","/")
-        print('database is :',database)
-        print('table is :', db_details_dict["table_name"])
-        conn=create_connection(database) # open connection to database
-        if conn:
-            # connection to database is OK
-            c=conn.cursor()
-            print(f'- Deleting table : {db_details_dict["table_name"]} =>')
-            sql_request="drop table "+db_details_dict["table_name"]
-            c.execute(sql_request)
-            conn.commit()
-            print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
-            create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
-            print(f'-- OK table {db_details_dict["table_name"]} reseted')     
-
-        html_output='''<!DOCTYPE HTML>
-<!-- description-->
-<html>
-    <head>
-        <title>FLASK APP GENERATOR</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="../static/assets/css/main.css" />
-    <script>
-        function popup_window( url, id, width, height )
-        {
-            //extract the url parameters if any, and pass them to the called html
-            var tempvar=document.location.toString(); // fetch the URL string
-            var passedparams = tempvar.lastIndexOf("?");
-            if(passedparams > -1)
-                url += tempvar.substring(passedparams);
-            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
-            popup.focus();
-        }
-    </script>
-    </head>
-    <body class="is-preload">
-        <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                
-                    <li><a href="/">Back to main page</a></li>
-                    <li><a href="/logout">log Out</a></li>
-                    <li><a href="javascript:popup_window('/page_info?page=route_def_api_calls_db_clear.py&route=/api_calls_db_clear','page_info',700,600);">:</a></li>
-        
-                </ul>
-            </nav>
-        <!-- Portfolio -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="../static/images/ok.png" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1><strong>Database Content Deleted</strong></h1>
-							</header>
-							<p>Data in Database : api_calls had been cleaned</p>
-                            <a href="/api_calls_dashboard" class="button small scrolly">Go to Dashboard for api_calls DB </a>
-						</div>						
-					</div>				
-				</div>
-			</article>
-        <!-- Scripts -->
-            <script src="../static/assets/js/jquery.min.js"></script>
-            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
-            <script src="../static/assets/js/init.js"></script>
-            <script src="../static/assets/js/browser.min.js"></script>
-            <script src="../static/assets/js/breakpoints.min.js"></script>
-            <script src="../static/assets/js/util.js"></script>
-            <script src="../static/assets/js/main.js"></script>
-    </body>
-</html>
-'''
-        loguer(env.level+' route END OF api_calls_db_clear() in ***app.py*** : >')
-        # ===================================================================
-        env.level=env.level[:-1]    
-        return html_output
-
-
-#  def_api_calls_db_read***
-@app.route('/api_calls_db_read', methods=['GET'])
-def api_calls_db_read():
-    '''
-    Flask Route for the api_calls_db_read Database Read DB content function
-    '''
-    route="/api_calls_db_read"
-    env.level+='-'
-    print('\n'+env.level,white('route api_calls_db_read() in ***app.py*** : >\n',bold=True))
-    loguer(env.level+' route api_calls_db_read() in ***app.py*** : >')
-    if not session.get('logged_in'):
-        return render_template('login.html')
-    else:
-        keyword=''
-        keyword=request.args.get("keyword")
-        print("\nkeyword : ",keyword)      
-        with open('./sqlite_databases_code/api_calls/db_details.txt') as file:
-            db_details_dict=json.loads(file.read())
-        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
-        database = os.getcwd()+'/z_bases/api_calls.db'
-        database=database.replace("\\","/")
-        print('database is :',database)
-        # sqlite:///:memory: (or, sqlite://)
-        # sqlite:///relative/path/to/file.db
-        # sqlite:////absolute/path/to/file.db
-        db_name = "api_calls.db"
-        table_name = db_details_dict["table_name"]
-        engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
-        df = pd.read_sql_table(table_name, engine)
-        out_df = df[['index','name','fqdn','relative_url','documentation','method','description','payload','header','body','query_params','custom_variables','authentication_profile','inputs_variables','output_variables']]
-        #save result to csv file
-        out_df.to_csv(r'./result/api_calls.csv')
-        df = DataFrame(out_df)
-        #print (df)
-        select_options=''
-        res = df.values.tolist()
-        for item in res:
-            if keyword:
-                if keyword in item:
-                    select_options=select_options+'<option value="'+str(item[0])+'">'+item[1]+'</option>'
-            else:
-                select_options=select_options+'<option value="'+str(item[0])+'">'+item[1]+'</option>'     
-        print('=========================================')
-        columns="name,fqdn,relative_url,documentation,method,description,payload,header,body,query_params,custom_variables,authentication_profile,inputs_variables,output_variables"                
-        print('DONE')        
-        html_output='''<!DOCTYPE HTML>
-<!-- description-->
-<html>
-    <head>
-        <title>FLASK APP GENERATOR</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="../static/assets/css/main.css" />
-    <script>
-        function popup_window( url, id, width, height )
-        {
-            //extract the url parameters if any, and pass them to the called html
-            var tempvar=document.location.toString(); // fetch the URL string
-            var passedparams = tempvar.lastIndexOf("?");
-            if(passedparams > -1)
-                url += tempvar.substring(passedparams);
-            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
-            popup.focus();
-        }
-    </script>
-    </head>
-    <body class="is-preload">
-        <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                
-                    <li><a href="/">Back to main page</a></li>
-                    <li><a href="/api_calls_dashboard">Back to Database Page</a></li>
-                    <li><a href="/logout">log Out</a></li>
-                    <li><a href="javascript:popup_window('/page_info?page=route_def_api_calls_db_read.py&route=/api_calls_db_read','page_info',700,600);">:</a></li>
-        
-                </ul>
-            </nav>
-			<article id="indic_list" class="wrapper style4">
-				<div class="container medium">
-					<header>
-						<h2>Database Content</h2>
-                        <p>Select a Row</p>
-						<p>Or refine Search by keyword (in any columns)</p>
-					</header>
-					<div class="row">
-						<div class="col-12">
-							<form method="get" action="/db_row_details">
-                            	<input type="hidden" name="database" value="api_calls">
-                            	<input type="hidden" name="table" value="api_calls"> 
-                                <input type="hidden" name="columns" value="'''+columns+'''">                                
-								<div class="row">
-									<div class="col-12">
-										<select id="row" name="row">
-                                            '''+select_options+'''           
-                                        </select>
-									</div>      
-									<div class="col-12">
-										<ul class="actions">
-                                            <li><input type="submit" value="Select this row" class="button small scrolly" /></li>
-										</ul>
-									</div>                                    
-								</div>
-							</form>
-						</div>    
-                        <form method="get" action="/api_calls_db_read">
-                            <div class="row">                        
-                                <div class="col-6 col-12-small">
-                                    <h3>Search Keyword :</h3>
-                                </div>                                
-                                <div class="col-6 col-12-small">
-                                    <input type="text"  id="keyword" name="keyword" placeholder="keyword" />
-                               </div>  
-                                <div class="col-12">      
-                                    <ul class="actions">
-                                        <input type="submit" value="Search" class="button small scrolly" />
-                                    </ul>
-                                </div> 
-                        </form>
-					</div>
-					<footer>
-						<ul id="copyright">
-							
-						</ul>
-					</footer>
-				</div>
-			</article>
-        <!-- Scripts -->
-            <script src="../static/assets/js/jquery.min.js"></script>
-            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
-            <script src="../static/assets/js/init.js"></script>
-            <script src="../static/assets/js/browser.min.js"></script>
-            <script src="../static/assets/js/breakpoints.min.js"></script>
-            <script src="../static/assets/js/util.js"></script>
-            <script src="../static/assets/js/main.js"></script>
-    </body>
-</html>
-'''
-        loguer(env.level+' route END OF api_calls_db_read() in ***app.py*** : >')
-        # ===================================================================
-        env.level=env.level[:-1]    
-        return html_output
-
-
-#  def_api_calls_db_update_entry***
-@app.route('/api_calls_db_update_entry', methods=['GET'])
-def api_calls_db_update_entry():
-    '''
-    Flask Route for the api_calls_db_update_entry Database Update an entry
-    '''
-    route="/api_calls_db_update_entry"
-    env.level+='-'
-    print('\n'+env.level,white('route api_calls_db_update_entry() in ***app.py*** : >\n',bold=True))
-    loguer(env.level+' route api_calls_db_update_entry() in ***app.py*** : >')
-    if not session.get('logged_in'):
-        return render_template('login.html')
-    else:
-        row=request.args.get("row")
-        print("\nrow : ",row)
-        name=request.args.get('name')
-        print('\nname : ',name)
-        fqdn=request.args.get('fqdn')
-        print('\nfqdn : ',fqdn)
-        relative_url=request.args.get('relative_url')
-        print('\nrelative_url : ',relative_url)
-        documentation=request.args.get('documentation')
-        print('\ndocumentation : ',documentation)
-        method=request.args.get('method')
-        print('\nmethod : ',method)
-        description=request.args.get('description')
-        print('\ndescription : ',description)
-        payload=request.args.get('payload')
-        print('\npayload : ',payload)
-        header=request.args.get('header')
-        print('\nheader : ',header)
-        body=request.args.get('body')
-        print('\nbody : ',body)
-        query_params=request.args.get('query_params')
-        print('\nquery_params : ',query_params)
-        custom_variables=request.args.get('custom_variables')
-        print('\ncustom_variables : ',custom_variables)
-        authentication_profile=request.args.get('authentication_profile')
-        print('\nauthentication_profile : ',authentication_profile)
-        inputs_variables=request.args.get('inputs_variables')
-        print('\ninputs_variables : ',inputs_variables)
-        output_variables=request.args.get('output_variables')
-        print('\noutput_variables : ',output_variables)
-        with open('./sqlite_databases_code/api_calls/db_details.txt') as file:
-            db_details_dict=json.loads(file.read())
-        print('db_details_dict : \n',yellow(db_details_dict,bold=True))        
-        db_name = "api_calls.db"
-        table_name = db_details_dict["table_name"]
-        where_clause='`index` = '+row
-        sql_fields=['index','name','fqdn','relative_url','documentation','method','description','payload','header','body','query_params','custom_variables','authentication_profile','inputs_variables','output_variables']
-        sql_data_list=[int(row),name,fqdn,relative_url,documentation,method,description,payload,header,body,query_params,custom_variables,authentication_profile,inputs_variables,output_variables]
-        result=sqlite_db_update_entry(db_name,table_name,where_clause,sql_fields,sql_data_list)        
-        message1="OK done"
-        image="../static/images/ok.png" 
-        message2="entry had been updated"
-        message3="/api_calls_dashboard"
-        message4="api_calls Dashboard"
-        PAGE_DESTINATION="operation_done"
-        page_name="operation_done.html"
-        loguer(env.level+' route END OF example_name() in ***app.py*** : >')
-        # ===================================================================
-        env.level=env.level[:-1]
-        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
- 
-
-
-#  def_api_calls_db_delete_entry***
-@app.route('/api_calls_db_delete_entry', methods=['GET'])
-def api_calls_db_delete_entry():
-    '''
-    Flask Route for the api_calls_db_delete_entry Database delete entry
-    '''
-    route="/api_calls_db_delete_entry"
-    env.level+='-'
-    print('\n'+env.level,white('route api_calls_db_delete_entry() in ***app.py*** : >\n',bold=True))
-    loguer(env.level+' route api_calls_db_delete_entry() in ***app.py*** : >')
-    if not session.get('logged_in'):
-        return render_template('login.html')
-    else:
-        row=request.args.get("row")
-        print("\nrow : ",row)
-        result=sqlite_db_delete_entry('api_calls',row)         
-        message1="OK done - Entry DELETED"
-        image="../static/images/ok.png" 
-        message2="entry had been deleted"
-        message3="/api_calls_dashboard"
-        message4="api_calls Dashboard"
-        PAGE_DESTINATION="operation_done"
-        page_name="operation_done.html"
-        loguer(env.level+' route END OF example_name() in ***app.py*** : >')
-        # ===================================================================
-        env.level=env.level[:-1]
-        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
- 
-
-
-#  def_api_calls_db_add_entry***
-@app.route('/api_calls_db_add_entry', methods=['GET'])
-def api_calls_db_add_entry():
-    '''
-    Flask Route for the api_calls_db_add_entry Database Update an entry
-    '''
-    route="/api_calls_db_add_entry"
-    env.level+='-'
-    print('\n'+env.level,white('route api_calls_db_add_entry() in ***app.py*** : >\n',bold=True))
-    loguer(env.level+' route api_calls_db_add_entry() in ***app.py*** : >')
-    if not session.get('logged_in'):
-        return render_template('login.html')
-    else:
-        db_name = "api_calls.db"
-        column_list=['name','fqdn','relative_url','documentation','method','description','payload','header','body','query_params','custom_variables','authentication_profile','inputs_variables','output_variables']
-        print('\ncolumn_list :',cyan(column_list,bold=True))
-        index=sqlite_db_get_last_index('api_calls')
-        index+=1        
-        print('index : ',index)
-        PAGE_DESTINATION="z_sqlite_db_add_entry"
-        page_name="z_sqlite_db_add_entry.html"
-        db_name=db_name.split('.')[0]
-        loguer(env.level+' route END OF example_name() in ***app.py*** : >')
-        # ===================================================================
-        env.level=env.level[:-1]
-        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,page_name=page_name,column_list=column_list,index=index,db_name=db_name)
- 
-
-
-#  def_api_calls_db_add_entry_ok***
-@app.route('/api_calls_db_add_entry_ok', methods=['GET'])
-def api_calls_db_add_entry_ok():
-    '''
-    Flask Route for the api_calls_db_add_entry Database Update an entry
-    '''
-    route="/api_calls_db_add_entry_ok"
-    env.level+='-'
-    print('\n'+env.level,white('route api_calls_db_add_entry_ok() in ***app.py*** : >\n',bold=True))
-    loguer(env.level+' route api_calls_db_add_entry_ok() in ***app.py*** : >')
-    if not session.get('logged_in'):
-        return render_template('login.html')
-    else:
-        name=request.args.get("name")
-        print("\nname: ",name)
-        fqdn=request.args.get("fqdn")
-        print("\nfqdn: ",fqdn)
-        relative_url=request.args.get("relative_url")
-        print("\nrelative_url: ",relative_url)
-        documentation=request.args.get("documentation")
-        print("\ndocumentation: ",documentation)
-        method=request.args.get("method")
-        print("\nmethod: ",method)
-        description=request.args.get("description")
-        print("\ndescription: ",description)
-        payload=request.args.get("payload")
-        print("\npayload: ",payload)
-        header=request.args.get("header")
-        print("\nheader: ",header)
-        body=request.args.get("body")
-        print("\nbody: ",body)
-        query_params=request.args.get("query_params")
-        print("\nquery_params: ",query_params)
-        custom_variables=request.args.get("custom_variables")
-        print("\ncustom_variables: ",custom_variables)
-        authentication_profile=request.args.get("authentication_profile")
-        print("\nauthentication_profile: ",authentication_profile)
-        inputs_variables=request.args.get("inputs_variables")
-        print("\ninputs_variables: ",inputs_variables)
-        output_variables=request.args.get("output_variables")
-        print("\noutput_variables: ",output_variables)
-
-        db_name=request.args.get("db_name")
-        print('db_name :',db_name)     
-        with open('./sqlite_databases_code/'+db_name+'/db_details.txt') as file:
-            db_details_dict=json.loads(file.read())
-        print('db_details_dict : \n',yellow(db_details_dict,bold=True)) 
-        database = os.getcwd()+'/z_bases/'+db_name+'.db'
-        database=database.replace("\\","/")
-        table=db_details_dict['table_name']
-        print('database is :',database) 
-        print('table is :',table)          
-        # Get last index value in SQLITE DB
-        new_index=sqlite_db_get_last_index(db_name)+1        
-        print('new_index is :',new_index)  
-        sqlite_data=(new_index,name,fqdn,relative_url,documentation,method,description,payload,header,body,query_params,custom_variables,authentication_profile,inputs_variables,output_variables)
-        sql_add=f"INSERT OR IGNORE into {table} (`index`,name,fqdn,relative_url,documentation,method,description,payload,header,body,query_params,custom_variables,authentication_profile,inputs_variables,output_variables) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
-        print('sqlite_data :',sqlite_data)     
-        print('sql_add :',sql_add)          
-        con = sqlite3.connect(database)       
-        try:
-            cur = con.cursor()
-            cur.execute(sql_add,sqlite_data)
-            con.commit()
-            print(green('OK DONE ENTRY DELETED',bold=True))
-            image="../static/images/ok.png" 
-            message1="Entry Added"
-            message2="Entry was added to DB"
-            message3=f"/{db_name}_dashboard"
-            message4=f"{db_name}_dasbhoard"        
-            PAGE_DESTINATION="operation_done"
-            page_name="operation_done.html"            
-            loguer(env.level+' route END OF machin_db_add_entry_ok() in ***app.py*** : >')    
-            env.level=env.level[:-1]        
-            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name) 
-        except:
-            print(red('Error',bold=True))
-            image="../static/images/nok.png" 
-            message1="Error"
-            message2="An error occured"
-            message3=f"/{db_name}_dashboard"
-            message4=f"{db_name}_dasbhoard"        
-            PAGE_DESTINATION="operation_done"
-            page_name="operation_done.html"            
-            loguer(env.level+' route END OF machin_db_add_entry_ok() in ***app.py*** : >')    
-            env.level=env.level[:-1]        
-            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
-
-
-
-#  def_api_calls_db_ingest_csv***
-@app.route('/api_calls_db_ingest_csv', methods=['GET'])
-def api_calls_db_ingest_csv():
-    '''
-    Flask Route for the api_calls_db_ingest_csv Database Update an entry
-    '''
-    route="/api_calls_db_ingest_csv"
-    env.level+='-'
-    print('\n'+env.level,white('route api_calls_db_ingest_csv() in ***app.py*** : >\n',bold=True))
-    loguer(env.level+' route api_calls_db_ingest_csv() in ***app.py*** : >')
-    if not session.get('logged_in'):
-        return render_template('login.html')
-    else:
-        db_name="api_calls"
-        message1="Message 1 :"
-        image="../static/images/toolbox.png"
-        message2="Message 2 :"
-        message3="/Message 3"
-        message4="Message 4 in button"
-        PAGE_DESTINATION="z_sqlite_ingest_csv"
-        page_name="z_sqlite_ingest_csv.html"
-        loguer(env.level+' route END OF api_calls_db_ingest_csv() in ***app.py*** : >')
-        # ===================================================================
-        env.level=env.level[:-1]
-        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name,db_name=db_name) 
-
-
-#  def_api_calls_db_duplicate_entry***
-@app.route('/api_calls_db_duplicate_entry', methods=['GET'])
-def api_calls_db_duplicate_entry():
-    '''
-    Flask Route for the api_calls_db_duplicate_entry Database delete entry
-    '''
-    route="/api_calls_db_duplicate_entry"
-    env.level+='-'
-    print('\n'+env.level,white('route api_calls_db_duplicate_entry() in ***app.py*** : >\n',bold=True))
-    loguer(env.level+' route api_calls_db_duplicate_entry() in ***app.py*** : >')
-    if not session.get('logged_in'):
-        return render_template('login.html')
-    else:
-        row=request.args.get("row")
-        print("\nrow : ",row)
-        result=sqlite_db_duplicate_entry('api_calls',row)         
-        message1="OK done - Entry DUPLICATED"
-        image="../static/images/ok.png" 
-        message2="entry had been duplicated"
-        message3="/api_calls_dashboard"
-        message4="api_calls Dashboard"
-        PAGE_DESTINATION="operation_done"
-        page_name="operation_done.html"
-        loguer(env.level+' route END OF example_name() in ***app.py*** : >')
-        # ===================================================================
-        env.level=env.level[:-1]
-        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
- 
-
-
 #  def_no_api_documentation***
 @app.route('/no_api_documentation', methods=['GET'])
 def no_api_documentation():
@@ -15509,6 +16100,7 @@ def variables_db_read():
 @app.route('/variables_db_update_entry', methods=['GET'])
 def variables_db_update_entry():
     '''
+    version : 20251212
     Flask Route for the variables_db_update_entry Database Update an entry
     '''
     route="/variables_db_update_entry"
@@ -15520,8 +16112,21 @@ def variables_db_update_entry():
     else:
         row=request.args.get("row")
         print("\nrow : ",row)
+        # ##################################
+        # first get existing values
+        database = os.getcwd()+'/z_bases/variables.db'
+        database=database.replace("\\","/")
+        table="variables"
+        print('database is :',database)    
+        print('table is :',table)  
+        where_clause=f" where `index`={row}" 
+        entry=read_db(database,table,where_clause)  
+        old_name=entry[0][1]
+        print('old_name : ',yellow(old_name,bold=True))
+        # ##############################        
         name=request.args.get('name')
         print('\nname : ',name)
+        # ##########################    
         environment_name=request.args.get('environment_name')
         print('\nenvironment_name : ',environment_name)
         value=request.args.get('value')
@@ -15531,7 +16136,35 @@ def variables_db_update_entry():
         comment=request.args.get('comment')
         print('\ncomment : ',comment)
         used_by=request.args.get('used_by')
-        print('\nused_by : ',used_by)
+        print('\nused_by : ',used_by)        
+        if old_name!=name:
+            print(red('UPDATE INPUT & OUTPUT NAMES IN FUNCTIONS !',bold=True))
+            # check for name conflict risk
+            database = os.getcwd()+'/z_bases/variables.db'
+            database=database.replace("\\","/")
+            table="variables"
+            print('database is :',database)    
+            print('table is :',table)   
+            # INPUT_VARIABLES
+            where_clause=f" where `name` LIKE '%{name}%'" 
+            entries=read_db(database,table,where_clause)  
+            nb=0
+            for entry in entries:        
+                nb+=1
+            if nb!=0:
+                print(red('POTENTIAL NAME CONFLICT',bold=True))
+                image="../static/images/warning.png" 
+                message1="Name Conflict Risk"
+                message2="Choose another name than the current one. It might create some conflict in the application. Add a unique string at the end of the name ex -aa"
+                message3=f"/variables_db_add_entry"
+                message4=f"Add New Variable"        
+                PAGE_DESTINATION="operation_done"
+                page_name="operation_done.html"           
+                return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+            # #########################                
+            resultat=update_inputs_outputs_names_in_functions_db(old_name,name)
+            resultat=update_variable_in_api_calls(old_name,name)   
+            resultat=update_variable_in_functions(old_name,name)            
         with open('./sqlite_databases_code/variables/db_details.txt') as file:
             db_details_dict=json.loads(file.read())
         print('db_details_dict : \n',yellow(db_details_dict,bold=True))        
@@ -15540,7 +16173,7 @@ def variables_db_update_entry():
         where_clause='`index` = '+row
         sql_fields=['index','name','environment_name','value','description','comment','used_by']
         sql_data_list=[int(row),name,environment_name,value,description,comment,used_by]
-        result=sqlite_db_update_entry(db_name,table_name,where_clause,sql_fields,sql_data_list)        
+        result=sqlite_db_update_entry(db_name,table_name,where_clause,sql_fields,sql_data_list)
         message1="OK done"
         image="../static/images/ok.png" 
         message2="entry had been updated"
@@ -15618,6 +16251,7 @@ def variables_db_add_entry():
 @app.route('/variables_db_add_entry_ok', methods=['GET'])
 def variables_db_add_entry_ok():
     '''
+    version 20251214
     Flask Route for the variables_db_add_entry Database Update an entry
     '''
     route="/variables_db_add_entry_ok"
@@ -15628,7 +16262,34 @@ def variables_db_add_entry_ok():
         return render_template('login.html')
     else:
         name=request.args.get("name")
+        name=name.strip()
         print("\nname: ",name)
+        # ##########################
+        # check for name conflict risk
+        database = os.getcwd()+'/z_bases/variables.db'
+        database=database.replace("\\","/")
+        table="variables"
+        print('database is :',database)    
+        print('table is :',table)   
+        # INPUT_VARIABLES
+        where_clause=f" where `name` LIKE '%{name}%'" 
+        entries=read_db(database,table,where_clause)  
+        nb=0
+        if name in "username" or name in "password":
+            nb=1
+        for entry in entries:        
+            nb+=1
+        if nb!=0:
+            print(red('POTENTIAL NAME CONFLICT',bold=True))
+            image="../static/images/warning.png" 
+            message1="Name Conflict Risk"
+            message2="Choose another name than the current one. It might create some conflict in the application. Add a unique string at the end of the name ex -aa"
+            message3=f"/variables_db_add_entry"
+            message4=f"Add New Variable"        
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"           
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        # #########################
         environment_name=request.args.get("environment_name")
         print("\nenvironment_name: ",environment_name)
         value=request.args.get("value")
@@ -15831,7 +16492,7 @@ def workflows():
 @app.route('/workflows_db_read_custom', methods=['GET'])
 def workflows_db_read_custom():
     '''
-    Created : 2025-10-29T18:18:38.000Z
+    Created : 2025-11-30
 
     description : Display the workflow read DB custom formular
     '''
@@ -15839,16 +16500,12 @@ def workflows_db_read_custom():
     env.level+='-'
     print('\n'+env.level,white('route workflows_db_read_custom() in ***app.py*** : >\n',bold=True))
     loguer(env.level+' route workflows_db_read_custom() in ***app.py*** : >')
-    global client_id
-    global client_password
-    global host
-    global host_for_token
-    global profil_name
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
-        keyword=''
         keyword=request.args.get("keyword")
+        if keyword==None:
+            keyword=''  
         print("\nkeyword : ",keyword)
         with open('./sqlite_databases_code/workflows/db_details.txt') as file:
             db_details_dict=json.loads(file.read())
@@ -15872,11 +16529,25 @@ def workflows_db_read_custom():
         res = df.values.tolist()
         element_index=2
         sorted_list=sorted(res, key=lambda x: x[element_index])
-                    
+        keyword=keyword.lower()            
         for item in sorted_list:
+            #print('\nitem : ',yellow(item,bold=True))
             if keyword:
-                if keyword in item:
-                    select_options=select_options+'<option value="'+str(item[2])+'">'+item[2]+'</option>'
+                ii=0
+                found=0
+                for item2 in item:                    
+                    if ii!=0:
+                        item2=item2.lower()                   
+                        if keyword in item2:
+                            found=1
+                            print('\n=======================')                         
+                            print(yellow("YES FOUND",bold=True))
+                            print('\nitem2 : ',green(item2,bold=True))
+                            #print('\nkeyword: ',">"+keyword+"<")
+                            print('\n=======================')  
+                    ii+=1
+                if found:
+                        select_options=select_options+'<option value="'+str(item[2])+'">'+item[2]+'</option>' 
             else:
                 select_options=select_options+'<option value="'+str(item[2])+'">'+item[2]+'</option>'
         print('=========================================')
@@ -16246,9 +16917,9 @@ def run_workflow():
             file.write('Step 01')
         message1="Ready to run the workflow"
         image="../static/images/automation.png"
-        message2="Run the workflow step by step"
+        message2="Run the workflow "
         message3="/go_run_workflow"
-        message4="GO Run Workflow"
+        message4="Step by Step"
         PAGE_DESTINATION="z_run_workflow"
         page_name="z_run_workflow.html"
         loguer(env.level+' route END OF run_workflow() in ***app.py*** : >')
@@ -16350,19 +17021,12 @@ def go_run_workflow():
 @app.route('/execute_this_step', methods=['GET'])
 def execute_this_step():
     '''
-    Created : 2025-11-03
-
-    description : execute the step
+    Created : 2025-12-07
     '''
     route="/execute_this_step"
     env.level+='-'
     print('\n'+env.level,white('route execute_this_step() in ***app.py*** : >\n',bold=True))
     loguer(env.level+' route execute_this_step() in ***app.py*** : >')
-    global client_id
-    global client_password
-    global host
-    global host_for_token
-    global profil_name
     if not session.get('logged_in'):
         return render_template('login.html')
     else:          
@@ -16435,14 +17099,15 @@ def execute_this_step():
                 if ' <=> ' in step_name:
                     step_name=step_name.split(' <=> ')[1]                
                 print (' step_name :',cyan(step_name,bold=True))
+                #response_txt='{}'
                 if step_name==api_call_name:    
                     found=1
                     print('\n API Call found in Database :',cyan(item,bold=True))
                     api_call_name=item[1]        
-                    result,response_txt=select_api_call_and_send_it(api_call_name)
+                    result,response_txt=select_api_call_and_send_it(api_call_name)               
             if found==0:
                 # #################################################
-                # #########  THEN SEARCH IN FUNCTIONS DATABASE
+                # #########  NO API CALLS FOUND ... THEN SEARCH IN FUNCTIONS DATABASE
                 response_txt=""
                 keyword=step_name
                 print("\nkeyword : ",keyword)      
@@ -16466,10 +17131,10 @@ def execute_this_step():
                         print(item)
                         called_function=item[4]
                         print('called function : ',called_function)                   
-                        print('input variables : ',item[5])
-                        print('output variables : ',item[6])
-                        print('Step input variables list : ',step_input_list)
-                        print('Step output variables list : ',step_output_list)  
+                        print('function input variables : ',item[5])
+                        print('function output variables : ',item[6])
+                        print('Step input variables list ( preempt to function input variables ) : ',step_input_list)
+                        print('Step output variables list ( preempt to function ouput variables ): ',step_output_list)  
                         step_input_variable_list=[]
                         database="variables"
                         #database = os.getcwd()+'/z_bases/'+database+'.db'
@@ -16480,29 +17145,35 @@ def execute_this_step():
                         for item in step_input_list:
                             where_clause=f'where name = "{item}"'
                             entry_list=sqlite_db_select_entry(database,table,where_clause)
-                            #print("\nentry_list : \n",entry_list)
-                            step_input_variable_list.append(entry_list[0][3])   
-                        print('Step input variables list : ',yellow(step_input_variable_list,bold=True))
-                        if called_function=='parse_result_of_cse_get_computers':
-                            guid=parse_result_of_cse_get_computers(step_input_variable_list[0],step_input_variable_list[1])
-                            if "xxxx" not in guid:
-                                response_txt=guid
-                                result=variables_sqlite_update_value(step_output,guid)
-                                result=1
-                                with open('./result/step.txt','w') as file:
-                                    file.write(str_next_step)                               
+                            #print("\nentry_list : \n",entry_list)          
+                            if entry_list !=[]:
+                                step_input_variable_list.append(entry_list[0][3])  
                             else:
                                 result=0
-                        elif called_function=='cse_id_of_event_type_name':
-                            event_type_id=cse_id_of_event_type_name(step_input_variable_list[0])
-                            if "xxxx" not in event_type_id:
-                                response_txt=event_type_id
-                                result=variables_sqlite_update_value(step_output,event_type_id)
+                                image="../static/images/nok.png"
+                                message1="Operation Failed"
+                                message2=f"input variable : [{item}] was not found in DB"
+                                message3="/"
+                                message4="Home"
+                                PAGE_DESTINATION="operation_done"
+                                page_name="operation_done.html"
+                                env.level=env.level[:-1]
+                                return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)                                
+
+                        print('Step input variables list : ',yellow(step_input_variable_list,bold=True))
+                        if called_function=='dummy':
+                            # no action here
+                            result=0
+                        elif called_function=='convert_username_and_password_base64':
+                            jwt=convert_username_and_password_base64(step_input_variable_list[0],step_input_variable_list[1])
+                            if "xxxx" not in jwt:
+                                response_txt=jwt
+                                result=variables_sqlite_update_value(step_output,jwt)
                                 result=1
                                 with open('./result/step.txt','w') as file:
                                     file.write(str_next_step)                               
                             else:
-                                result=0    
+                                result=0 
                         elif called_function=='cse_check_for_events_in_host':
                             idlist=step_input_variable_list[2].split(',')     
                             host_events="xxxxxx"
@@ -16521,7 +17192,32 @@ def execute_this_step():
                                 with open('./result/step.txt','w') as file:
                                     file.write(str_next_step)                               
                             else:
-                                result=0      
+                                result=0 
+                        elif called_function=='cse_id_of_event_type_name':
+                            event_type_id=cse_id_of_event_type_name(step_input_variable_list[0])
+                            if "xxxx" not in event_type_id:
+                                response_txt=event_type_id
+                                result=variables_sqlite_update_value(step_output,event_type_id)
+                                result=1
+                                with open('./result/step.txt','w') as file:
+                                    file.write(str_next_step)                               
+                            else:
+                                result=0 
+                        elif called_function=='format_typosquatt_domains_to_add':
+                            result=format_typosquatt_domains_to_add(step_input_variable_list[0],step_input_variable_list[1])
+                            if result!=0:
+                                response_txt="{'status':'success domain list was succesfully formatted'} - check ["+step_input_variable_list[0]+"]"                            
+                                with open('./json_results/json_result.json','w') as file:
+                                    file.write(response_txt)                        
+                                result=1
+                            else:
+                                response_txt="{'status':'ERROR list of words is empty'}"                            
+                                with open('./json_results/json_result.json','w') as file:
+                                    file.write(response_txt)                        
+                                result=1                                
+                            with open('./result/step.txt','w') as file:
+                                file.write(str_next_step)  
+                        
                         elif called_function=='get_sha256_from_cse_event':
                             sha256="xxxxxx"
                             sha256,filename=get_sha256_from_cse_event(step_input_variable_list[0])
@@ -16540,61 +17236,21 @@ def execute_this_step():
                                 with open('./result/step.txt','w') as file:
                                     file.write(str_next_step)                               
                             else:
-                                result=0         
-                        elif called_function=='parse_result_of_ma_search_submission':
-                            sample_id_txt="xxxxxx"
-                            sample_id=parse_result_of_ma_search_submission(step_input_variable_list[0])
-                            sample_id_txt='{"sample_id":"'+str(sample_id)+'"}'
-                            with open('./json_results/json_result.json','w') as file:
-                                file.write(sample_id_txt)                        
-                            #print('\nstep_output : ',red(step_output,bold=True))
-                            #print()                              
-                            if "xxxx" not in sample_id_txt:
-                                response_txt=sample_id_txt
-                                #print('\nstep_output : ',red(step_output,bold=True))
-                                #print()                                
-                                variables_sqlite_update_value('Malware_Analytics_sample_ID',str(sample_id))
-                                result=1
+                                result=0  
+                        elif called_function=='parse_result_of_cse_get_computers':
+                            guid=parse_result_of_cse_get_computers(step_input_variable_list[0],step_input_variable_list[1])
+                            if "xxxx" not in guid:
+                                if guid=="no_hostname":
+                                    response_txt="[hostname] variable is empty"
+                                    result=0                                
+                                else:
+                                    response_txt=guid
+                                    result=variables_sqlite_update_value(step_output,guid)
+                                    result=1
                                 with open('./result/step.txt','w') as file:
                                     file.write(str_next_step)                               
                             else:
-                                result=0     
-                        elif called_function=='parse_umbrella_result_for_token':
-                            token_txt="xxxxxx"
-                            token_txt=parse_umbrella_result_for_token(step_input_variable_list[0])
-                            with open('./json_results/json_result.json','w') as file:
-                                file.write(token_txt)                        
-                            #print('\nstep_output : ',red(step_output,bold=True))
-                            #print()                              
-                            if "xxxx" not in token_txt:
-                                response_txt=token_txt
-                                #print('\nstep_output : ',red(step_output,bold=True))
-                                #print()                                
-                                variables_sqlite_update_value('umbrella_v2_api_token',token_txt)
-                                result=1
-                                with open('./result/step.txt','w') as file:
-                                    file.write(str_next_step)                               
-                            else:
-                                result=0            
-                        elif called_function=='parse_result_of_ma_get_domains':
-                            domain="xxxxxx"
-                            domain,domain_ip=parse_result_of_ma_get_domains(step_input_variable_list[0])
-                            result_txt="{'domain':'"+domain+"','domain_ip':'"+domain_ip+"'}"
-                            with open('./json_results/json_result.json','w') as file:
-                                file.write(result_txt)                        
-                            #print('\nstep_output : ',red(step_output,bold=True))
-                            #print()                              
-                            if "xxxx" not in domain:
-                                response_txt=result_txt
-                                #print('\nstep_output : ',red(step_output,bold=True))
-                                #print()                                
-                                variables_sqlite_update_value('malicious_domain_ip',domain_ip)
-                                variables_sqlite_update_value('domain',domain)
-                                result=1
-                                with open('./result/step.txt','w') as file:
-                                    file.write(str_next_step)                               
-                            else:
-                                result=0      
+                                result=0
                         elif called_function=='parse_result_of_dns_activity':
                             ip_list=["xxxxxx"]
                             ip_list=parse_result_of_dns_activity(step_input_variable_list[0],step_input_variable_list[1])
@@ -16618,7 +17274,61 @@ def execute_this_step():
                                 with open('./result/step.txt','w') as file:
                                     file.write(str_next_step)                               
                             else:
-                                result=0              
+                                result=0
+                        elif called_function=='parse_result_of_ma_get_domains':
+                            domain="xxxxxx"
+                            domain,domain_ip=parse_result_of_ma_get_domains(step_input_variable_list[0])
+                            result_txt="{'domain':'"+domain+"','domain_ip':'"+domain_ip+"'}"
+                            with open('./json_results/json_result.json','w') as file:
+                                file.write(result_txt)                        
+                            #print('\nstep_output : ',red(step_output,bold=True))
+                            #print()                              
+                            if "xxxx" not in domain:
+                                response_txt=result_txt
+                                #print('\nstep_output : ',red(step_output,bold=True))
+                                #print()                                
+                                variables_sqlite_update_value('malicious_domain_ip',domain_ip)
+                                variables_sqlite_update_value('domain',domain)
+                                result=1
+                                with open('./result/step.txt','w') as file:
+                                    file.write(str_next_step)                               
+                            else:
+                                result=0 
+                        elif called_function=='parse_result_of_ma_search_submission':
+                            sample_id_txt="xxxxxx"
+                            sample_id=parse_result_of_ma_search_submission(step_input_variable_list[0])
+                            sample_id_txt='{"sample_id":"'+str(sample_id)+'"}'
+                            with open('./json_results/json_result.json','w') as file:
+                                file.write(sample_id_txt)                        
+                            #print('\nstep_output : ',red(step_output,bold=True))
+                            #print()                              
+                            if "xxxx" not in sample_id_txt:
+                                response_txt=sample_id_txt
+                                #print('\nstep_output : ',red(step_output,bold=True))
+                                #print()                                
+                                variables_sqlite_update_value('Malware_Analytics_sample_ID',str(sample_id))
+                                result=1
+                                with open('./result/step.txt','w') as file:
+                                    file.write(str_next_step)                               
+                            else:
+                                result=0 
+                        elif called_function=='parse_umbrella_result_for_token':
+                            token_txt="xxxxxx"
+                            token_txt=parse_umbrella_result_for_token(step_input_variable_list[0])
+                            with open('./json_results/json_result.json','w') as file:
+                                file.write(token_txt)                        
+                            #print('\nstep_output : ',red(step_output,bold=True))
+                            #print()                              
+                            if "xxxx" not in token_txt:
+                                response_txt=token_txt
+                                #print('\nstep_output : ',red(step_output,bold=True))
+                                #print()                                
+                                variables_sqlite_update_value('umbrella_v2_api_token',token_txt)
+                                result=1
+                                with open('./result/step.txt','w') as file:
+                                    file.write(str_next_step)                               
+                            else:
+                                result=0
                         elif called_function=='parse_xdr_result_for_token':
                             token_txt="xxxxxx"
                             token_txt=parse_xdr_result_for_token(step_input_variable_list[0])
@@ -16635,7 +17345,7 @@ def execute_this_step():
                                 with open('./result/step.txt','w') as file:
                                     file.write(str_next_step)                               
                             else:
-                                result=0           
+                                result=0 
                         elif called_function=='set_observable_type_to_domain':
                             response_txt="{'status':'success'}"
                             set_observable_type_to_domain()
@@ -16643,20 +17353,23 @@ def execute_this_step():
                                 file.write(response_txt)                        
                             result=1
                             with open('./result/step.txt','w') as file:
-                                file.write(str_next_step)           
+                                file.write(str_next_step)     
                         elif called_function=='update_variables_from_json_inputs':
+                            print(red('xx320'))
                             response_txt="{'status':'success'}"
                             update_variables_from_json_inputs(step_input_variable_list[0])
                             with open('./json_results/json_result.json','w') as file:
                                 file.write(response_txt)                        
                             result=1
                             with open('./result/step.txt','w') as file:
-                                file.write(str_next_step)                                   
+                                file.write(str_next_step)
                         else:
-                            result=0
-                            image="../static/images/nok.png"
-                            message1="Operation Failed"
-                            message2="No Function to call was found"
+                            result=1
+                            with open('./json_results/json_result.json','w') as file:
+                                file.write('{ called function was not found in list of function that have specific return behaviors }')                            
+                            image="../static/images/warning.png"
+                            message1="Operation Not Done"
+                            message2=f"No Function to call was found : [{called_function}]. We felt into default branch"
                             message3="/"
                             message4="Home"
                             PAGE_DESTINATION="operation_done"
@@ -16677,7 +17390,8 @@ def execute_this_step():
                 else:
                     image="../static/images/nok.png"
                     message1="Operation Failed"
-                    message2="An Error Occured"
+                    #message2="An Error Occured"
+                    message2=response_txt
                     message3="/"
                     message4="Home"
                     PAGE_DESTINATION="operation_done"
@@ -16704,6 +17418,7 @@ def execute_this_step():
                 #print('  lines : \n',lines)
                 print('\ncall_result : \n',green(call_result,bold=True)) 
                 ii=0
+                response_txt=''
                 for line in lines:
                     response_txt=response_txt+line+'\n'
                     ii+=1
@@ -16723,233 +17438,7 @@ def execute_this_step():
                     page_name="z_api_call_result.html"
                     env.level=env.level[:-1]
                     return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)           
-        else:
-            # DELETE THIS BRANCH IF IT WORKS
-            db_name = "api_calls.db"
-            table_name = "api_calls"
-            engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
-            df = pd.read_sql_table(table_name, engine)
-            out_df = df[['index','name','fqdn','relative_url','documentation','method','description','payload','header','body','query_params','custom_variables','authentication_profile','inputs_variables','output_variables']]
-            df = DataFrame(out_df)
-            #print (' df :',cyan(df,bold=True))
-            res = df.values.tolist()
-            authentication_profile=''
-            found=0
-            for item in res:
-                api_call_name=item[1]
-                print (' api call name :',cyan(api_call_name,bold=True))
-                if ' <=> ' in step_name:
-                    step_name=step_name.split(' <=> ')[1]                
-                print (' step_name :',cyan(step_name,bold=True))
-                if step_name==api_call_name:    
-                    found=1
-                    print('\n API Call found in Database :',cyan(item,bold=True))
-                    name=item[1]
-                    print('\nname : ',yellow(name,bold=True))
-                    print()     
-                    base_url=item[2]
-                    print('\nbase_url : ',yellow(base_url,bold=True))
-                    print()
-                    relative_url=item[3]
-                    print('relative_url : ',yellow(relative_url,bold=True))
-                    api_documentation=item[4]
-                    print()
-                    print('api_documentation : ',yellow(api_documentation,bold=True))
-                    method=item[5]
-                    print()
-                    print('method : ',yellow(method,bold=True))
-                    short_description=item[6]
-                    print()
-                    print('short_description : ',yellow(short_description,bold=True))
-                    payload=item[7]
-                    payload=payload.replace('\n','')
-                    payload=payload.replace('\r','')
-                    payload=payload.replace('  ',' ')
-                    payload=payload.replace('  ',' ')
-                    payload=payload.replace('  ',' ')
-                    payload=payload.replace('  ',' ')
-                    print()
-                    print('payload : ',yellow(payload,bold=True))
-                    header=item[7]
-                    header=header.replace('\n','')
-                    header=header.replace('\r','')
-                    header=header.replace('  ',' ')
-                    header=header.replace('  ',' ')
-                    header=header.replace('  ',' ')
-                    header=header.replace('  ',' ')
-                    print()
-                    print('header : ',yellow(header,bold=True))
-                    body=item[8]
-                    body=body.replace('\n','')
-                    body=body.replace('\r','')
-                    body=body.replace('  ',' ')
-                    body=body.replace('  ',' ')
-                    body=body.replace('  ',' ')
-                    body=body.replace('  ',' ')
-                    print()
-                    print('body : ',yellow(body,bold=True))
-                    params=item[9]
-                    params=params.replace('\n','***')
-                    params=params.replace('\r','')
-                    params=params.replace('  ',' ')
-                    params=params.replace('  ',' ')
-                    params=params.replace('  ',' ')
-                    params=params.replace('  ',' ')
-                    print()
-                    print('params : ',yellow(params,bold=True))
-                    custom_variables=item[10]
-                    print('custom_variables : ',yellow(custom_variables,bold=True))                
-                    parameters=item[11]
-                    parameters=parameters.replace('\n','***')
-                    parameters=parameters.replace('\r','')
-                    parameters=parameters.replace('  ',' ')
-                    parameters=parameters.replace('  ',' ')
-                    parameters=parameters.replace('  ',' ')
-                    parameters=parameters.replace('  ',' ')
-                    print()
-                    print('parameters : ',yellow(parameters,bold=True))
-                    authentication_profile=item[12]
-                    if authentication_profile==None:    
-                        authentication_profile=''
-                    print('authentication_profile : ',yellow(authentication_profile,bold=True))
-                    input_variables=item[13]
-                    print('input_variables : ',yellow(input_variables,bold=True))    
-                    output_variables=item[10]
-                    print('output_variables : ',yellow(output_variables,bold=True))   
-            print('FOUND = ' ,found)
-            if found==1:
-                print('\nauthentication_profile : ',yellow(authentication_profile,bold=True))
-                print()   
-                '''
-                filename='./api_calls_history/'+name+'_'+date_time_for_file_name()+'.txt'  # http://127.0.0.1:4000/code_edit?code=def_date_time_for_file_name.py&type=function
-                with open(filename,'w') as file:
-                    file.write('name=:'+name+'\n')
-                    file.write('base_url=:'+base_url+'\n')
-                    file.write('relative_url=:'+relative_url+'\n')
-                    file.write('api_documentation=:'+api_documentation+'\n')
-                    file.write('method=:'+method+'\n')
-                    file.write('short_description=:'+short_description+'\n')
-                    file.write('payload=:'+payload+'\n')
-                    file.write('header=:'+header+'\n')
-                    file.write('body=:'+body+'\n')
-                    file.write('params=:'+params+'\n')
-                    file.write('parameters=:'+parameters+'\n')
-                    file.write('authentication_profile=:'+authentication_profile+'\n')
-                with open('./result/last_api_call.txt','w') as file:
-                    file.write(filename)
-                '''
-                # Select Authentication Profile
-                
-                if authentication_profile!="saved_token":
-                    if authentication_profile!="":
-                        username,password,api_key=select_profile_function(authentication_profile) 
-                        
-                        authentication_dict={
-                            'username':username,
-                            'password':password,
-                            'api_key':api_key
-                        }
-                        print("\nauthentication_dict : ",yellow(authentication_dict,bold=True))  
-                else:
-                    with open('./profiles/saved_token.txt') as file:
-                        api_key=file.read()
-                if "@" in base_url:
-                    chunks=base_url.split('@')
-                    i=0
-                    new_chunks=[]
-                    for chunk in chunks:
-                        if 'https' in chunk or 'HTTPS' in chunk:
-                            chunk=chunk.replace('https://','')
-                            chunk=chunk.replace('HTTPS://','')
-                            protocol='https'
-                        else:
-                            chunk=chunk.replace('http://','')
-                            chunk=chunk.replace('HTTP://','')      
-                            protocol='http'                    
-                        print(chunk)    
-                        if i==0:
-                            creds=chunk.split(':')
-                            ii=0
-                            new_cred_words=[]
-                            for cred_word in creds:
-                                if '$$' in cred_word:
-                                    mot=cred_word.replace('$$','')
-                                    mot=mot.replace('***','')                        
-                                print(cyan(mot,bold=True))
-                                new_cred_words.append(authentication_dict[mot])
-                                ii+=1
-                            print(yellow(new_cred_words,bold=True))
-                            new_chunks.append(protocol+'://'+new_cred_words[0]+':'+new_cred_words[1]+'@')
-                        elif i==1:
-                           new_chunks.append(chunk)
-                        i+=1
-                    if use_simulator==1:
-                        base_url=new_chunks[0].replace('https:','http:')+'localhost:4000'
-                    else:
-                        base_url=new_chunks[0]+new_chunks[1]
-                else:
-                    if use_simulator==1:
-                        base_url='http://localhost:4000'
 
-                print()
-                print('final base_url to use : ',cyan(base_url,bold=True))                      
-                additionnal_get_params='' # parameters at the end of the URL ?parm1=xxx?param2=yyy
-                if body=='':
-                    body_json={}
-                else:
-                    body_json=json.loads(body)
-                if body_json == {"grant_type": "client_credentials"}:
-                    header_json=json.loads(header)
-                    result,response_txt=send_api_call_for_oauth_token(base_url,relative_url,client_id,client_password,header_json,body_json) # http://127.0.0.1:4000/code_edit?code=def_send_api_call_for_oauth_token.py&type=function
-                elif payload == {"grant_type": "client_credentials"}:
-                    header_json=json.loads(header)
-                    result,response_txt=send_api_call_for_oauth_token(base_url,relative_url,client_id,client_password,header_json,body_json) # http://127.0.0.1:4000/code_edit?code=def_send_api_call_for_oauth_token.py&type=function
-                else:
-                    print("\nOK SEND CALL : ") 
-                    result,response_txt=send_api_call_function(method,base_url,relative_url,additionnal_get_params,header,payload,body,parameters,api_key) # http://127.0.0.1:4000/code_edit?code=def_send_api_call_function.py&type=function
-
-                # read the first 200 lines of the JSON result
-                with open('./result/step.txt','w') as file:
-                    file.write(str_next_step)   
-                
-                with open('./json_results/json_result.json') as file:
-                    call_result=file.read()
-                lines=call_result.split('\n')
-                #print('  lines : \n',lines)
-                print('\ncall_result : \n',cyan(call_result,bold=True))
-                # update SQLite DB variables
-                result=variables_sqlite_update_value(step_output,call_result)
-                
-                # ##################################
-                response_txt=''
-                ii=0
-                for line in lines:
-                    response_txt=response_txt+line+'\n'
-                    ii+=1
-                    if ii>200:
-                        response_txt=response_txt+'..... Rest of response is not shown... it was too long \n\n=> You can click on the [ Display in Tree Graph ] button  to see the entire content'
-                        break
-                # #########################################################
-                if result==1:
-                    image="../static/images/ok.png"
-                    message1=response_txt
-                    message2="Connexion to XDR Tenant is Okay !"
-                    message3="#portfolio"
-                    message4="Button Message"
-                    PAGE_DESTINATION="z_api_call_result"
-                    page_name="z_api_call_result.html"
-                    env.level=env.level[:-1]
-                    return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
-                else:
-                    image="../static/images/nok.png"
-                    message1="Operation Failed"
-                    message2="An Error Occured"
-                    message3="/"
-                    message4="Home"
-                    PAGE_DESTINATION="operation_done"
-                    page_name="operation_done.html"
-                    env.level=env.level[:-1]
-                    return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
 
                                                                    
 
@@ -17384,8 +17873,9 @@ def functions_db_read():
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
-        keyword=''
         keyword=request.args.get("keyword")
+        if keyword==None:
+            keyword=''  
         print("\nkeyword : ",keyword)      
         with open('./sqlite_databases_code/functions/db_details.txt') as file:
             db_details_dict=json.loads(file.read())
@@ -17407,10 +17897,25 @@ def functions_db_read():
         #print (df)
         select_options=''
         res = df.values.tolist()
+        keyword=keyword.lower()        
         for item in res:
+            #print('\nitem : ',yellow(item,bold=True))
             if keyword:
-                if keyword in item:
-                    select_options=select_options+'<option value="'+str(item[0])+'">'+item[1]+'</option>'
+                ii=0
+                found=0
+                for item2 in item:                    
+                    if ii!=0:
+                        item2=item2.lower()                   
+                        if keyword in item2:
+                            found=1
+                            print('\n=======================')                         
+                            print(yellow("YES FOUND",bold=True))
+                            print('\nitem2 : ',green(item2,bold=True))
+                            #print('\nkeyword: ',">"+keyword+"<")
+                            print('\n=======================')  
+                    ii+=1
+                if found:
+                        select_options=select_options+'<option value="'+str(item[0])+'">'+item[1]+'</option>' 
             else:
                 select_options=select_options+'<option value="'+str(item[0])+'">'+item[1]+'</option>'     
         print('=========================================')
@@ -17443,7 +17948,8 @@ def functions_db_read():
                 <ul>
                 
                     <li><a href="/">Back to main page</a></li>
-                    <li><a href="/functions_dashboard">Back to Database Page</a></li>
+                    <li><a href="/functions_dashboard">Back to Database Page</a></li>*
+                    <li><a href="/functions_db_add_entry">Add New Function</a></li>
                     <li><a href="/logout">log Out</a></li>
                     <li><a href="javascript:popup_window('/page_info?page=route_def_functions_db_read.py&route=/functions_db_read','page_info',700,600);">:</a></li>
         
@@ -17519,6 +18025,7 @@ def functions_db_read():
 @app.route('/functions_db_update_entry', methods=['GET'])
 def functions_db_update_entry():
     '''
+    version : 20251130
     Flask Route for the functions_db_update_entry Database Update an entry
     '''
     route="/functions_db_update_entry"
@@ -17530,6 +18037,18 @@ def functions_db_update_entry():
     else:
         row=request.args.get("row")
         print("\nrow : ",row)
+        # ##################################
+        # first get existing values
+        database = os.getcwd()+'/z_bases/functions.db'
+        database=database.replace("\\","/")
+        table="functions"
+        print('database is :',database)    
+        print('table is :',table)  
+        where_clause=f" where `index`={row}" 
+        entry=read_db(database,table,where_clause)  
+        old_name=entry[0][1]
+        print('old_name : ',yellow(old_name,bold=True))
+        # ##############################                
         name=request.args.get('name')
         print('\nname : ',name)
         environment_name=request.args.get('environment_name')
@@ -17544,6 +18063,11 @@ def functions_db_update_entry():
         print('\noutput_variables : ',output_variables)
         comment=request.args.get('comment')
         print('\ncomment : ',comment)
+
+        if old_name!=name:
+            print(red('UPDATE NAME IN WORKFLOWS !',bold=True))
+            resultat=update_step_name_in_workflows_db(old_name,name)        
+        
         with open('./sqlite_databases_code/functions/db_details.txt') as file:
             db_details_dict=json.loads(file.read())
         print('db_details_dict : \n',yellow(db_details_dict,bold=True))        
@@ -17678,13 +18202,13 @@ def functions_db_add_entry_ok():
             con.commit()
             print(green('OK DONE ENTRY DELETED',bold=True))
             image="../static/images/ok.png" 
-            message1="Entry Added"
+            message1="Function Added"
             message2="Entry was added to DB"
             message3=f"/{db_name}_dashboard"
             message4=f"{db_name}_dasbhoard"        
-            PAGE_DESTINATION="operation_done"
-            page_name="operation_done.html"            
-            loguer(env.level+' route END OF machin_db_add_entry_ok() in ***app.py*** : >')    
+            PAGE_DESTINATION="z_function_create_next"
+            page_name="z_function_create_next.html"            
+            #loguer(env.level+' route END OF machin_db_add_entry_ok() in ***app.py*** : >')    
             env.level=env.level[:-1]        
             return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name) 
         except:
@@ -17696,7 +18220,7 @@ def functions_db_add_entry_ok():
             message4=f"{db_name}_dasbhoard"        
             PAGE_DESTINATION="operation_done"
             page_name="operation_done.html"            
-            loguer(env.level+' route END OF machin_db_add_entry_ok() in ***app.py*** : >')    
+            #loguer(env.level+' route END OF machin_db_add_entry_ok() in ***app.py*** : >')    
             env.level=env.level[:-1]        
             return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
 
@@ -17763,7 +18287,7 @@ def functions_db_duplicate_entry():
 @app.route('/select_api_call_and_send_it', methods=['GET'])
 def select_api_call_and_send_it(api_call_name):
     '''
-    Created : 2025-11-03T10:27:03.000Z
+    Created : 2025-11-29
 
     description : Select an API call in database by name, send it and save the result in ./result
     
@@ -17791,24 +18315,26 @@ def select_api_call_and_send_it(api_call_name):
         print("\nentry_list : \n",entry_list)                    
         name=entry_list[0][1]
         print('\nname : ',yellow(name,bold=True))
-        print()     
-        base_url=entry_list[0][2]
+        solution=entry_list[0][2]
+        print('\nsolution : ',yellow(solution,bold=True))
+    
+        base_url=entry_list[0][3]
         print('\nbase_url : ',yellow(base_url,bold=True))
         print()
-        relative_url=entry_list[0][3]
+        relative_url=entry_list[0][4]
         if '$' in relative_url:
             relative_url=replace_variable(relative_url)        
         print('relative_url : ',yellow(relative_url,bold=True))
-        api_documentation=entry_list[0][4]
+        api_documentation=entry_list[0][5]
         print()
         print('api_documentation : ',yellow(api_documentation,bold=True))
-        method=entry_list[0][5]
+        method=entry_list[0][6]
         print()
         print('method : ',yellow(method,bold=True))
-        short_description=entry_list[0][6]
+        short_description=entry_list[0][7]
         print()
         print('short_description : ',yellow(short_description,bold=True))
-        payload=entry_list[0][7]
+        payload=entry_list[0][8]
         payload=payload.replace('\n','')
         payload=payload.replace('\r','')
         payload=payload.replace('  ',' ')
@@ -17817,7 +18343,7 @@ def select_api_call_and_send_it(api_call_name):
         payload=payload.replace('  ',' ')
         print()
         print('payload : ',yellow(payload,bold=True))
-        header=entry_list[0][8]
+        header=entry_list[0][9]
         if '$' in header:
             header=replace_variable(header)        
         header=header.replace('\n','')
@@ -17828,7 +18354,7 @@ def select_api_call_and_send_it(api_call_name):
         header=header.replace('  ',' ')
         print()
         print('header : ',yellow(header,bold=True))
-        body=entry_list[0][9]
+        body=entry_list[0][10]
         if '$' in body:
             body=replace_variable(body)          
         body=body.replace('\n','')
@@ -17839,7 +18365,7 @@ def select_api_call_and_send_it(api_call_name):
         body=body.replace('  ',' ')
         print()
         print('body : ',yellow(body,bold=True))
-        params=entry_list[0][10]
+        params=entry_list[0][11]
         if '$' in params:
             params=replace_variable(params)             
         params=params.replace('\n','***')
@@ -17852,7 +18378,7 @@ def select_api_call_and_send_it(api_call_name):
         print('params : ',yellow(params,bold=True))
         #custom_variables=entry_list[0][11]
         #print('custom_variables : ',yellow(custom_variables,bold=True))                
-        parameters=entry_list[0][11]
+        parameters=entry_list[0][12]
         if '$' in parameters:
             parameters=replace_variable(parameters)            
         parameters=parameters.replace('\n','***')
@@ -17863,13 +18389,13 @@ def select_api_call_and_send_it(api_call_name):
         parameters=parameters.replace('  ',' ')
         print()
         print('parameters : ',yellow(parameters,bold=True))
-        authentication_profile=entry_list[0][12]
+        authentication_profile=entry_list[0][13]
         if authentication_profile==None:    
             authentication_profile=''
         print('authentication_profile : ',yellow(authentication_profile,bold=True))
-        input_variables=entry_list[0][13]
+        input_variables=entry_list[0][14]
         print('input_variables : ',yellow(input_variables,bold=True))    
-        output_variables=entry_list[0][14]
+        output_variables=entry_list[0][15]
         print('output_variables : ',yellow(output_variables,bold=True))   
     found=1
     print('\nFOUND (x114) = ' ,found)
@@ -17928,8 +18454,8 @@ def select_api_call_and_send_it(api_call_name):
                     ii=0
                     new_cred_words=[]
                     for cred_word in creds:
-                        if '$$' in cred_word:
-                            mot=cred_word.replace('$$','')
+                        if '$*' in cred_word:
+                            mot=cred_word.replace('$*','')
                             mot=mot.replace('***','')                        
                         print(cyan(mot,bold=True))
                         new_cred_words.append(authentication_dict[mot])
@@ -17996,7 +18522,7 @@ def challenge_result():
         domain=variable_value('domain')
         executed_malware_id=variable_value('CSE_Executed_Malware_event_type_ID')
         threat_detected_id=variable_value('CSE_Threat_Detected_event_type_ID')
-        sha256_submission=variable_value('Malware_Analytics_sample_ID')
+        Malware_Analytics_sample_ID=variable_value('Malware_Analytics_sample_ID')
         nb_events=variable_value('nb_of_events_on_victim_machine')
         filename=variable_value('CSE_malicious_file_name')
         malicious_domain_ip=variable_value('malicious_domain_ip')
@@ -18045,7 +18571,7 @@ def challenge_result():
         env.level=env.level[:-1]
         return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,page_name=page_name,hostname=hostname,
             host_ip=host_ip,internal_ip_1=internal_ip_1,internal_ip_2=internal_ip_2,internal_ip_3=internal_ip_3,sha256=sha256,domain=domain,executed_malware_id=executed_malware_id,
-            threat_detected_id=threat_detected_id,sha256_submission=sha256_submission,guid=guid,nb_events=nb_events,filename=filename,malicious_domain_ip=malicious_domain_ip,
+            threat_detected_id=threat_detected_id,Malware_Analytics_sample_ID=Malware_Analytics_sample_ID,guid=guid,nb_events=nb_events,filename=filename,malicious_domain_ip=malicious_domain_ip,
             internal_ip_1_isolation_status=internal_ip_1_isolation_status,internal_ip_2_isolation_status=internal_ip_2_isolation_status,internal_ip_3_isolation_status=internal_ip_3_isolation_status,
             host_ip_isolation_status=host_ip_isolation_status,guid_isolation_status=guid_isolation_status,hostname_isolation_status=hostname_isolation_status,sha256_isolation_status=sha256_isolation_status,
             filename_isolation_status=filename_isolation_status,malicious_domain_ip_isolation_status=malicious_domain_ip_isolation_status,domain_isolation_status=domain_isolation_status,
@@ -18065,11 +18591,6 @@ def update_variable():
     env.level+='-'
     print('\n'+env.level,white('route update_variable() in ***app.py*** : >\n',bold=True))
     loguer(env.level+' route update_variable() in ***app.py*** : >')
-    global client_id
-    global client_password
-    global host
-    global host_for_token
-    global profil_name
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
@@ -18098,7 +18619,7 @@ def update_variable():
         comment=entry_list[0][6]
         PAGE_DESTINATION="z_update_variable"
         page_name="z_update_variable.html"    
-        loguer(env.level+' route END OF update_variable() in ***app.py*** : >')
+        #loguer(env.level+' route END OF update_variable() in ***app.py*** : >')
         # ===================================================================
         env.level=env.level[:-1]
         return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,
@@ -18397,7 +18918,7 @@ def workflows_solution():
         print('database is :',database)
         print('table is :',db_details_dict['table_name'])
         lines=[]
-        file='./DB_backups/workflows_full_solution_ok_20251109.csv'
+        file='./DB_backups/workflows_solution.csv'
         with open (file) as csvfile:
             reader = csv.reader(csvfile, delimiter=',')
             lines = list(reader)
@@ -18456,7 +18977,7 @@ def workflows_solution():
         image="../static/images/ok.png" 
         message2="Example of workflow soluton installed"
         message3="/workflows"
-        message4="Worflows"
+        message4="Workflows"
         PAGE_DESTINATION="operation_done"
         page_name="operation_done.html"
         loguer(env.level+' route END OF workflows_solution() in ***app.py*** : >')
@@ -18478,11 +18999,6 @@ def reset_databases():
     env.level+='-'
     print('\n'+env.level,white('route reset_databases() in ***app.py*** : >\n',bold=True))
     loguer(env.level+' route reset_databases() in ***app.py*** : >')
-    global client_id
-    global client_password
-    global host
-    global host_for_token
-    global profil_name
     if not session.get('logged_in'):
         return render_template('login.html')
     else:    
@@ -18494,7 +19010,7 @@ def reset_databases():
         message4="Home"
         PAGE_DESTINATION="operation_done"
         page_name="operation_done.html"
-        loguer(env.level+' route END OF reset_databases() in ***app.py*** : >')
+        #loguer(env.level+' route END OF reset_databases() in ***app.py*** : >')
         # ===================================================================
         env.level=env.level[:-1]
         return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
@@ -18533,6 +19049,2356 @@ def compiled_package():
     return html_output 
   
 
+#  def_api_calls_dashboard***
+@app.route('/api_calls_dashboard', methods=['GET'])
+def api_calls_dashboard():
+    '''
+    Flask Route for the api_calls_dashboard Database dashoard
+    '''
+    route="/api_calls_dashboard"
+    env.level+='-'
+    print('\n'+env.level,white('route api_calls_dashboard() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route api_calls_dashboard() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        html_output='''<!DOCTYPE HTML>
+<!-- description-->
+<html>
+    <head>
+        <title>FLASK APP GENERATOR</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../static/assets/css/main.css" />
+    <script>
+        function popup_window( url, id, width, height )
+        {
+            //extract the url parameters if any, and pass them to the called html
+            var tempvar=document.location.toString(); // fetch the URL string
+            var passedparams = tempvar.lastIndexOf("?");
+            if(passedparams > -1)
+                url += tempvar.substring(passedparams);
+            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+            popup.focus();
+        }
+    </script>
+    </head>
+    <body class="is-preload">
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                
+                    <li><a href="/">Back to main page</a></li>
+                    <li><a href="/delete_database?database=api_calls">Delete Database</a></li>
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window('/page_info?page=route_def_api_calls_dashboard.py&route=/api_calls_dashboard','page_info',700,600);">:</a></li>
+        
+                </ul>
+            </nav>
+        <!-- Portfolio -->
+            <article id="portfolio" class="wrapper style3">
+                <div class="container">
+                    <header>
+                        <h2>api_calls Database</h2>
+                    </header>
+                    <div class="row">
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/api_calls_create_db" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/api_calls_create_db">Create Database</a></h3>
+                                <p>Create the api_calls Database</p>
+                            </article>
+                        </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/api_calls_ingest_demo_data" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/api_calls_ingest_demo_data">Ingest Demo Data</a></h3>
+                                <p>Ingest Demo Data into DB</p>
+                            </article>
+                        </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/api_calls_db_read" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/api_calls_db_read">Read Database content</a></h3>
+                                <p>Read DB an Create a CSV result</p>
+                            </article>
+                        </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/api_calls_db_clear" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/api_calls_db_clear">Clear Database</a></h3>
+                                <p>Delete Database content</p>
+                            </article>
+                        </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/api_calls_db_ingest_csv" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/api_calls_db_ingest_csv">Ingest a CSV file</a></h3>
+                                <p>Ingest a CSV file</p>
+                            </article>
+                        </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/api_calls_db_add_entry" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/api_calls_db_add_entry">Add Entry</a></h3>
+                                <p>Add an Entry to Database</p>
+                            </article>
+                        </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/api_calls_db_add_entry_static" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/api_calls_db_add_entry_static">Add Entry 2</a></h3>
+                                <p>Add an Entry to Database thru a customazible static html page</p>
+                            </article>
+                        </div>                        
+            
+                    </div>
+                </div>
+            </article>
+        <!-- Scripts -->
+            <script src="../static/assets/js/jquery.min.js"></script>
+            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="../static/assets/js/init.js"></script>
+            <script src="../static/assets/js/browser.min.js"></script>
+            <script src="../static/assets/js/breakpoints.min.js"></script>
+            <script src="../static/assets/js/util.js"></script>
+            <script src="../static/assets/js/main.js"></script>
+    </body>
+</html>
+'''
+        loguer(env.level+' route END OF api_calls_dashboard() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return html_output
+        
+
+#  def_api_calls_create_db***
+@app.route('/api_calls_create_db', methods=['GET'])
+def api_calls_create_db():
+    '''
+    Flask Route for the api_calls_create_db Database Create DB action
+    '''
+    route="/api_calls_create_db"
+    env.level+='-'
+    print('\n'+env.level,white('route api_calls_create_db() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route api_calls_create_db() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        with open('./sqlite_databases_code/api_calls/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        file=open('./sqlite_databases_code/api_calls/init/api_calls.csv','w')
+        ligne_out=''
+        len_columns=len(db_details_dict['columns'])-1
+        i=0        
+        for col in db_details_dict['columns']:
+            if i<len_columns:
+                ligne_out=ligne_out+col+','
+            else:
+                ligne_out=ligne_out+col
+            i+=1
+        file.write(ligne_out+'\n')
+        for i in range (0,10):
+            ligne_out='name'+str(i)+','+'solution'+str(i)+','+'fqdn'+str(i)+','+'relative_url'+str(i)+','+'documentation'+str(i)+','+'method'+str(i)+','+'description'+str(i)+','+'payload'+str(i)+','+'header'+str(i)+','+'body'+str(i)+','+'query_params'+str(i)+','+'custom_variables'+str(i)+','+'authentication_profile'+str(i)+','+'inputs_variables'+str(i)+','+'output_variables'+str(i)           
+            file.write(ligne_out+'\n')
+        file.close()  
+        create_db_and_table(db_details_dict['db_name'],db_details_dict['table_name'])
+        html_output='''<!DOCTYPE HTML>
+<!-- description-->
+<html>
+    <head>
+        <title>FLASK APP GENERATOR</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../static/assets/css/main.css" />
+    <script>
+        function popup_window( url, id, width, height )
+        {
+            //extract the url parameters if any, and pass them to the called html
+            var tempvar=document.location.toString(); // fetch the URL string
+            var passedparams = tempvar.lastIndexOf("?");
+            if(passedparams > -1)
+                url += tempvar.substring(passedparams);
+            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+            popup.focus();
+        }
+    </script>
+    </head>
+    <body class="is-preload">
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                
+                    <li><a href="/">Back to main page</a></li>
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window('/page_info?page=route_def_bases.py&route=/api_calls_create_db','page_info',700,600);">:</a></li>
+        
+                </ul>
+            </nav>
+        <!-- Portfolio -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="../static/images/ok.png" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1><strong> Database :api_calls, was created</strong></h1>
+							</header>
+							<p>The SQLITE had been created in ./z_bases</p>
+                            <a href="/api_calls_dashboard" class="button small scrolly">Go to Dashboard for api_calls DB </a>
+						</div>						
+					</div>				
+				</div>
+			</article>
+        <!-- Scripts -->
+            <script src="../static/assets/js/jquery.min.js"></script>
+            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="../static/assets/js/init.js"></script>
+            <script src="../static/assets/js/browser.min.js"></script>
+            <script src="../static/assets/js/breakpoints.min.js"></script>
+            <script src="../static/assets/js/util.js"></script>
+            <script src="../static/assets/js/main.js"></script>
+    </body>
+</html>
+'''
+        loguer(env.level+' route END OF api_calls_create_db() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]    
+        return html_output
+
+
+#  def_api_calls_ingest_demo_data***
+@app.route('/api_calls_ingest_demo_data', methods=['GET'])
+def api_calls_ingest_demo_data():
+    '''
+    Flask Route for the api_calls_ingest_demo_data Database Ingest demo data
+    '''
+    route="/api_calls_ingest_demo_data"
+    env.level+='-'
+    print('\n'+env.level,white('route api_calls_ingest_demo_data() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route api_calls_ingest_demo_data() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        with open('./sqlite_databases_code/api_calls/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/api_calls.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        lines=[]    
+        file='./sqlite_databases_code/api_calls/init/api_calls.csv'
+        with open (file) as csvfile:
+            reader = csv.reader(csvfile, delimiter=',')
+            lines = list(reader)
+            indexA=0
+            print('api_calls table =>\n')
+            conn=create_connection(database) # open connection to database            
+            for row in lines:
+                if conn:
+                    # connection to database is OK
+                    c=conn.cursor()
+                    # let's go to every lines one by one and let's extract url, targeted brand
+                    sqlite_data=[indexA]
+                    sqlite_data=(indexA,row[0] ,row[1] ,row[2] ,row[3] ,row[4] ,row[5] ,row[6] ,row[7] ,row[8] ,row[9] ,row[10] ,row[11] ,row[12] ,row[13] ,row[14])
+                    sql_add="INSERT OR IGNORE into api_calls (`index`,name,solution,fqdn,relative_url,documentation,method,description,payload,header,body,query_params,custom_variables,authentication_profile,inputs_variables,output_variables) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+                    print('\nsql_add :',cyan(sql_add,bold=True))
+                c.execute(sql_add, sqlite_data)
+                print(green("==> OK Done : demo data ingested",bold=True))
+                indexA+=1
+                conn.commit()        
+
+        html_output='''<!DOCTYPE HTML>
+<!-- description-->
+<html>
+    <head>
+        <title>FLASK APP GENERATOR</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../static/assets/css/main.css" />
+    <script>
+        function popup_window( url, id, width, height )
+        {
+            //extract the url parameters if any, and pass them to the called html
+            var tempvar=document.location.toString(); // fetch the URL string
+            var passedparams = tempvar.lastIndexOf("?");
+            if(passedparams > -1)
+                url += tempvar.substring(passedparams);
+            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+            popup.focus();
+        }
+    </script>
+    </head>
+    <body class="is-preload">
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                
+                    <li><a href="/">Back to main page</a></li>
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window('/page_info?page=route_def_api_calls.py&route=/api_calls_ingest_demo_data_ingest_demo_data','page_info',700,600);">:</a></li>
+        
+                </ul>
+            </nav>
+        <!-- Portfolio -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="../static/images/ok.png" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1><strong>Demo Data ingested</strong></h1>
+							</header>
+							<p>Demo Data ingested into Database :api_calls</p>
+                            <a href="/api_calls_dashboard" class="button small scrolly">Go to Dashboard for api_calls DB </a>
+						</div>						
+					</div>				
+				</div>
+			</article>
+        <!-- Scripts -->
+            <script src="../static/assets/js/jquery.min.js"></script>
+            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="../static/assets/js/init.js"></script>
+            <script src="../static/assets/js/browser.min.js"></script>
+            <script src="../static/assets/js/breakpoints.min.js"></script>
+            <script src="../static/assets/js/util.js"></script>
+            <script src="../static/assets/js/main.js"></script>
+    </body>
+</html>
+'''
+        loguer(env.level+' route END OF api_calls_ingest_demo_data() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]    
+        return html_output
+
+
+#  def_api_calls_db_clear***
+@app.route('/api_calls_db_clear', methods=['GET'])
+def api_calls_db_clear():
+    '''
+    Flask Route for the api_calls_db_clear Database Clearing / reset function
+    '''
+    route="/api_calls_db_clear"
+    env.level+='-'
+    print('\n'+env.level,white('route api_calls_db_clear() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route api_calls_db_clear() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        with open('./sqlite_databases_code/api_calls/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/api_calls.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        print('table is :', db_details_dict["table_name"])
+        conn=create_connection(database) # open connection to database
+        if conn:
+            # connection to database is OK
+            c=conn.cursor()
+            print(f'- Deleting table : {db_details_dict["table_name"]} =>')
+            sql_request="drop table "+db_details_dict["table_name"]
+            c.execute(sql_request)
+            conn.commit()
+            print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
+            create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
+            print(f'-- OK table {db_details_dict["table_name"]} reseted')     
+
+        html_output='''<!DOCTYPE HTML>
+<!-- description-->
+<html>
+    <head>
+        <title>FLASK APP GENERATOR</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../static/assets/css/main.css" />
+    <script>
+        function popup_window( url, id, width, height )
+        {
+            //extract the url parameters if any, and pass them to the called html
+            var tempvar=document.location.toString(); // fetch the URL string
+            var passedparams = tempvar.lastIndexOf("?");
+            if(passedparams > -1)
+                url += tempvar.substring(passedparams);
+            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+            popup.focus();
+        }
+    </script>
+    </head>
+    <body class="is-preload">
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                
+                    <li><a href="/">Back to main page</a></li>
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window('/page_info?page=route_def_api_calls_db_clear.py&route=/api_calls_db_clear','page_info',700,600);">:</a></li>
+        
+                </ul>
+            </nav>
+        <!-- Portfolio -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="../static/images/ok.png" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1><strong>Database Content Deleted</strong></h1>
+							</header>
+							<p>Data in Database : api_calls had been cleaned</p>
+                            <a href="/api_calls_dashboard" class="button small scrolly">Go to Dashboard for api_calls DB </a>
+						</div>						
+					</div>				
+				</div>
+			</article>
+        <!-- Scripts -->
+            <script src="../static/assets/js/jquery.min.js"></script>
+            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="../static/assets/js/init.js"></script>
+            <script src="../static/assets/js/browser.min.js"></script>
+            <script src="../static/assets/js/breakpoints.min.js"></script>
+            <script src="../static/assets/js/util.js"></script>
+            <script src="../static/assets/js/main.js"></script>
+    </body>
+</html>
+'''
+        loguer(env.level+' route END OF api_calls_db_clear() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]    
+        return html_output
+
+
+#  def_api_calls_db_read***
+@app.route('/api_calls_db_read', methods=['GET'])
+def api_calls_db_read():
+    '''
+    version :  20251130
+    Flask Route for the api_calls_db_read Database Read DB content function
+    '''
+    route="/api_calls_db_read"
+    env.level+='-'
+    print('\n'+env.level,white('route api_calls_db_read() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route api_calls_db_read() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        keyword=request.args.get("keyword")
+        if keyword==None:
+            keyword=''            
+        print("\nkeyword : ",keyword)      
+        with open('./sqlite_databases_code/api_calls/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/api_calls.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        # sqlite:///:memory: (or, sqlite://)
+        # sqlite:///relative/path/to/file.db
+        # sqlite:////absolute/path/to/file.db
+        db_name = "api_calls.db"
+        table_name = db_details_dict["table_name"]
+        engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+        df = pd.read_sql_table(table_name, engine)
+        out_df = df[['index','name','solution','fqdn','relative_url','documentation','method','description','payload','header','body','query_params','custom_variables','authentication_profile','inputs_variables','output_variables']]
+        #save result to csv file
+        out_df.to_csv(r'./result/api_calls.csv')
+        df = DataFrame(out_df)
+        #print (df)
+        select_options=''
+        res = df.values.tolist()   
+        keyword=keyword.lower()        
+        for item in res:
+            #print('\nitem : ',yellow(item,bold=True))
+            if keyword:
+                ii=0
+                found=0
+                for item2 in item:                    
+                    if ii!=0:
+                        item2=item2.lower()                   
+                        if keyword in item2:
+                            found=1
+                            print('\n=======================')                         
+                            print(yellow("YES FOUND",bold=True))
+                            print('\nitem2 : ',green(item2,bold=True))
+                            #print('\nkeyword: ',">"+keyword+"<")
+                            print('\n=======================')  
+                    ii+=1
+                if found:
+                        select_options=select_options+'<option value="'+str(item[0])+'">'+item[1]+'</option>'                    
+            else:
+                select_options=select_options+'<option value="'+str(item[0])+'">'+item[1]+'</option>'     
+        print('=========================================')
+        columns="name,solution,fqdn,relative_url,documentation,method,description,payload,header,body,query_params,custom_variables,authentication_profile,inputs_variables,output_variables"                
+        print('DONE')        
+        html_output='''<!DOCTYPE HTML>
+<!-- description-->
+<html>
+    <head>
+        <title>FLASK APP GENERATOR</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../static/assets/css/main.css" />
+    <script>
+        function popup_window( url, id, width, height )
+        {
+            //extract the url parameters if any, and pass them to the called html
+            var tempvar=document.location.toString(); // fetch the URL string
+            var passedparams = tempvar.lastIndexOf("?");
+            if(passedparams > -1)
+                url += tempvar.substring(passedparams);
+            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+            popup.focus();
+        }
+    </script>
+    </head>
+    <body class="is-preload">
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                
+                    <li><a href="/">Back to main page</a></li>
+                    <li><a href="/api_calls_dashboard">Back to Database Page</a></li>
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window('/page_info?page=route_def_api_calls_db_read.py&route=/api_calls_db_read','page_info',700,600);">:</a></li>
+        
+                </ul>
+            </nav>
+			<article id="indic_list" class="wrapper style4">
+				<div class="container medium">
+					<header>
+						<h2>Database Content</h2>
+                        <p>Select a Row</p>
+						<p>Or refine Search by keyword (in any columns)</p>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<form method="get" action="/db_row_details">
+                            	<input type="hidden" name="database" value="api_calls">
+                            	<input type="hidden" name="table" value="api_calls"> 
+                                <input type="hidden" name="columns" value="'''+columns+'''">                                
+								<div class="row">
+									<div class="col-12">
+										<select id="row" name="row">
+                                            '''+select_options+'''           
+                                        </select>
+									</div>      
+									<div class="col-12">
+										<ul class="actions">
+                                            <li><input type="submit" value="Select this row" class="button small scrolly" /></li>
+										</ul>
+									</div>                                    
+								</div>
+							</form>
+						</div>    
+                        <form method="get" action="/api_calls_db_read">
+                            <div class="row">                        
+                                <div class="col-6 col-12-small">
+                                    <h3>Search Keyword :</h3>
+                                </div>                                
+                                <div class="col-6 col-12-small">
+                                    <input type="text"  id="keyword" name="keyword" placeholder="keyword" />
+                               </div>  
+                                <div class="col-12">      
+                                    <ul class="actions">
+                                        <input type="submit" value="Search" class="button small scrolly" />
+                                    </ul>
+                                </div> 
+                        </form>
+					</div>
+					<footer>
+						<ul id="copyright">
+							
+						</ul>
+					</footer>
+				</div>
+			</article>
+        <!-- Scripts -->
+            <script src="../static/assets/js/jquery.min.js"></script>
+            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="../static/assets/js/init.js"></script>
+            <script src="../static/assets/js/browser.min.js"></script>
+            <script src="../static/assets/js/breakpoints.min.js"></script>
+            <script src="../static/assets/js/util.js"></script>
+            <script src="../static/assets/js/main.js"></script>
+    </body>
+</html>
+'''
+        loguer(env.level+' route END OF api_calls_db_read() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]    
+        return html_output
+
+
+#  def_api_calls_db_update_entry***
+@app.route('/api_calls_db_update_entry', methods=['GET'])
+def api_calls_db_update_entry():
+    '''
+    version : 202511130
+    Flask Route for the api_calls_db_update_entry Database Update an entry
+    '''
+    route="/api_calls_db_update_entry"
+    env.level+='-'
+    print('\n'+env.level,white('route api_calls_db_update_entry() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route api_calls_db_update_entry() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        row=request.args.get("row")
+        print("\nrow : ",row)
+        # ##################################
+        # first get existing values
+        database = os.getcwd()+'/z_bases/api_calls.db'
+        database=database.replace("\\","/")
+        table="api_calls"
+        print('database is :',database)    
+        print('table is :',table)  
+        where_clause=f" where `index`={row}" 
+        entry=read_db(database,table,where_clause)  
+        old_name=entry[0][1]
+        print('old_name : ',yellow(old_name,bold=True))
+        # ##############################
+        name=request.args.get('name')
+        print('\nname : ',name)
+        solution=request.args.get('solution')
+        print('\nsolution : ',solution)
+        fqdn=request.args.get('fqdn')
+        print('\nfqdn : ',fqdn)
+        relative_url=request.args.get('relative_url')
+        print('\nrelative_url : ',relative_url)
+        documentation=request.args.get('documentation')
+        print('\ndocumentation : ',documentation)
+        method=request.args.get('method')
+        print('\nmethod : ',method)
+        description=request.args.get('description')
+        print('\ndescription : ',description)
+        payload=request.args.get('payload')
+        print('\npayload : ',payload)
+        header=request.args.get('header')
+        print('\nheader : ',header)
+        body=request.args.get('body')
+        print('\nbody : ',body)
+        query_params=request.args.get('query_params')
+        print('\nquery_params : ',query_params)
+        custom_variables=request.args.get('custom_variables')
+        print('\ncustom_variables : ',custom_variables)
+        authentication_profile=request.args.get('authentication_profile')
+        print('\nauthentication_profile : ',authentication_profile)
+        inputs_variables=request.args.get('inputs_variables')
+        print('\ninputs_variables : ',inputs_variables)
+        output_variables=request.args.get('output_variables')
+        print('\noutput_variables : ',output_variables)
+        
+        if old_name!=name:
+            print(red('UPDATE NAME IN WORKFLOWS !',bold=True))
+            resultat=update_step_name_in_workflows_db(old_name,name)
+
+        with open('./sqlite_databases_code/api_calls/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))        
+        db_name = "api_calls.db"
+        table_name = db_details_dict["table_name"]
+        where_clause='`index` = '+row
+        sql_fields=['index','name','solution','fqdn','relative_url','documentation','method','description','payload','header','body','query_params','custom_variables','authentication_profile','inputs_variables','output_variables']
+        sql_data_list=[int(row),name,solution,fqdn,relative_url,documentation,method,description,payload,header,body,query_params,custom_variables,authentication_profile,inputs_variables,output_variables]
+        result=sqlite_db_update_entry(db_name,table_name,where_clause,sql_fields,sql_data_list)  
+        message1="OK done"
+        image="../static/images/ok.png" 
+        message2="entry had been updated"
+        message3="/api_calls_dashboard"
+        message4="api_calls Dashboard"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        #loguer(env.level+' route END OF example_name() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+ 
+
+
+#  def_api_calls_db_delete_entry***
+@app.route('/api_calls_db_delete_entry', methods=['GET'])
+def api_calls_db_delete_entry():
+    '''
+    Flask Route for the api_calls_db_delete_entry Database delete entry
+    '''
+    route="/api_calls_db_delete_entry"
+    env.level+='-'
+    print('\n'+env.level,white('route api_calls_db_delete_entry() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route api_calls_db_delete_entry() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        row=request.args.get("row")
+        print("\nrow : ",row)
+        result=sqlite_db_delete_entry('api_calls',row)         
+        message1="OK done - Entry DELETED"
+        image="../static/images/ok.png" 
+        message2="entry had been deleted"
+        message3="/api_calls_dashboard"
+        message4="api_calls Dashboard"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        loguer(env.level+' route END OF example_name() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+ 
+
+
+#  def_api_calls_db_add_entry***
+@app.route('/api_calls_db_add_entry', methods=['GET'])
+def api_calls_db_add_entry():
+    '''
+    Flask Route for the api_calls_db_add_entry Database Update an entry
+    '''
+    route="/api_calls_db_add_entry"
+    env.level+='-'
+    print('\n'+env.level,white('route api_calls_db_add_entry() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route api_calls_db_add_entry() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        db_name = "api_calls.db"
+        column_list=['name','solution','fqdn','relative_url','documentation','method','description','payload','header','body','query_params','custom_variables','authentication_profile','inputs_variables','output_variables']
+        print('\ncolumn_list :',cyan(column_list,bold=True))
+        index=sqlite_db_get_last_index('api_calls')
+        index+=1        
+        print('index : ',index)
+        PAGE_DESTINATION="z_sqlite_db_add_entry"
+        page_name="z_sqlite_db_add_entry.html"
+        db_name=db_name.split('.')[0]
+        loguer(env.level+' route END OF example_name() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,page_name=page_name,column_list=column_list,index=index,db_name=db_name)
+ 
+
+
+#  def_api_calls_db_add_entry_ok***
+@app.route('/api_calls_db_add_entry_ok', methods=['GET'])
+def api_calls_db_add_entry_ok():
+    '''
+    Flask Route for the api_calls_db_add_entry Database Update an entry
+    '''
+    route="/api_calls_db_add_entry_ok"
+    env.level+='-'
+    print('\n'+env.level,white('route api_calls_db_add_entry_ok() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route api_calls_db_add_entry_ok() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        name=request.args.get("name")
+        print("\nname: ",name)
+        solution=request.args.get("solution")
+        print("\nsolution: ",solution)
+        fqdn=request.args.get("fqdn")
+        print("\nfqdn: ",fqdn)
+        relative_url=request.args.get("relative_url")
+        print("\nrelative_url: ",relative_url)
+        documentation=request.args.get("documentation")
+        print("\ndocumentation: ",documentation)
+        method=request.args.get("method")
+        print("\nmethod: ",method)
+        description=request.args.get("description")
+        print("\ndescription: ",description)
+        payload=request.args.get("payload")
+        print("\npayload: ",payload)
+        header=request.args.get("header")
+        print("\nheader: ",header)
+        body=request.args.get("body")
+        print("\nbody: ",body)
+        query_params=request.args.get("query_params")
+        print("\nquery_params: ",query_params)
+        custom_variables=request.args.get("custom_variables")
+        print("\ncustom_variables: ",custom_variables)
+        authentication_profile=request.args.get("authentication_profile")
+        print("\nauthentication_profile: ",authentication_profile)
+        inputs_variables=request.args.get("inputs_variables")
+        print("\ninputs_variables: ",inputs_variables)
+        output_variables=request.args.get("output_variables")
+        print("\noutput_variables: ",output_variables)
+
+        db_name=request.args.get("db_name")
+        print('db_name :',db_name)     
+        with open('./sqlite_databases_code/'+db_name+'/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True)) 
+        database = os.getcwd()+'/z_bases/'+db_name+'.db'
+        database=database.replace("\\","/")
+        table=db_details_dict['table_name']
+        print('database is :',database) 
+        print('table is :',table)          
+        # Get last index value in SQLITE DB
+        new_index=sqlite_db_get_last_index(db_name)+1        
+        print('new_index is :',new_index)  
+        sqlite_data=(new_index,name,solution,fqdn,relative_url,documentation,method,description,payload,header,body,query_params,custom_variables,authentication_profile,inputs_variables,output_variables)
+        sql_add=f"INSERT OR IGNORE into {table} (`index`,name,solution,fqdn,relative_url,documentation,method,description,payload,header,body,query_params,custom_variables,authentication_profile,inputs_variables,output_variables) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        print('sqlite_data :',sqlite_data)     
+        print('sql_add :',sql_add)          
+        con = sqlite3.connect(database)       
+        try:
+            cur = con.cursor()
+            cur.execute(sql_add,sqlite_data)
+            con.commit()
+            print(green('OK DONE ENTRY DELETED',bold=True))
+            image="../static/images/ok.png" 
+            message1="Entry Added"
+            message2="Entry was added to DB"
+            message3=f"/{db_name}_dashboard"
+            message4=f"{db_name}_dasbhoard"        
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"            
+            loguer(env.level+' route END OF machin_db_add_entry_ok() in ***app.py*** : >')    
+            env.level=env.level[:-1]        
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name) 
+        except:
+            print(red('Error',bold=True))
+            image="../static/images/nok.png" 
+            message1="Error"
+            message2="An error occured"
+            message3=f"/{db_name}_dashboard"
+            message4=f"{db_name}_dasbhoard"        
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"            
+            loguer(env.level+' route END OF machin_db_add_entry_ok() in ***app.py*** : >')    
+            env.level=env.level[:-1]        
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+
+
+
+#  def_api_calls_db_add_entry_static***
+@app.route('/api_calls_db_add_entry_static', methods=['GET'])
+def api_calls_db_add_entry_static():
+    '''
+    Flask Route for the api_calls_db_add_entry_static Database Update an entry trhu a static formular
+    '''
+    route="/api_calls_db_add_entry_static"
+    env.level+='-'
+    print('\n'+env.level,white('route api_calls_db_add_entry_static() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route api_calls_db_add_entry_static() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        db_name = "api_calls.db"
+        column_list=['name','solution','fqdn','relative_url','documentation','method','description','payload','header','body','query_params','custom_variables','authentication_profile','inputs_variables','output_variables']
+        print('\ncolumn_list :',cyan(column_list,bold=True))
+        index=sqlite_db_get_last_index('api_calls')
+        index+=1        
+        print('index : ',index)
+        PAGE_DESTINATION="z_api_calls_db_add_entry_static"
+        page_name="z_api_calls_db_add_entry_static.html"
+        db_name=db_name.split('.')[0]
+        #loguer(env.level+' route END OF example_name() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,page_name=page_name,column_list=column_list,index=index,db_name=db_name)
+ 
+
+
+#  def_api_calls_db_ingest_csv***
+@app.route('/api_calls_db_ingest_csv', methods=['GET'])
+def api_calls_db_ingest_csv():
+    '''
+    Flask Route for the api_calls_db_ingest_csv Database Update an entry
+    '''
+    route="/api_calls_db_ingest_csv"
+    env.level+='-'
+    print('\n'+env.level,white('route api_calls_db_ingest_csv() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route api_calls_db_ingest_csv() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        db_name="api_calls"
+        message1="Message 1 :"
+        image="../static/images/toolbox.png"
+        message2="Message 2 :"
+        message3="/Message 3"
+        message4="Message 4 in button"
+        PAGE_DESTINATION="z_sqlite_ingest_csv"
+        page_name="z_sqlite_ingest_csv.html"
+        loguer(env.level+' route END OF api_calls_db_ingest_csv() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name,db_name=db_name) 
+
+
+#  def_api_calls_db_duplicate_entry***
+@app.route('/api_calls_db_duplicate_entry', methods=['GET'])
+def api_calls_db_duplicate_entry():
+    '''
+    Flask Route for the api_calls_db_duplicate_entry Database delete entry
+    '''
+    route="/api_calls_db_duplicate_entry"
+    env.level+='-'
+    print('\n'+env.level,white('route api_calls_db_duplicate_entry() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route api_calls_db_duplicate_entry() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        row=request.args.get("row")
+        print("\nrow : ",row)
+        result=sqlite_db_duplicate_entry('api_calls',row)         
+        message1="OK done - Entry DUPLICATED"
+        image="../static/images/ok.png" 
+        message2="entry had been duplicated"
+        message3="/api_calls_dashboard"
+        message4="api_calls Dashboard"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        loguer(env.level+' route END OF example_name() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+ 
+
+
+#  def_settings_dashboard***
+@app.route('/settings_dashboard', methods=['GET'])
+def settings_dashboard():
+    '''
+    Flask Route for the settings_dashboard Database dashoard
+    '''
+    route="/settings_dashboard"
+    env.level+='-'
+    print('\n'+env.level,white('route settings_dashboard() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route settings_dashboard() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        html_output='''<!DOCTYPE HTML>
+<!-- description-->
+<html>
+    <head>
+        <title>FLASK APP GENERATOR</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../static/assets/css/main.css" />
+    <script>
+        function popup_window( url, id, width, height )
+        {
+            //extract the url parameters if any, and pass them to the called html
+            var tempvar=document.location.toString(); // fetch the URL string
+            var passedparams = tempvar.lastIndexOf("?");
+            if(passedparams > -1)
+                url += tempvar.substring(passedparams);
+            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+            popup.focus();
+        }
+    </script>
+    </head>
+    <body class="is-preload">
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                
+                    <li><a href="/">Back to main page</a></li>
+                    <li><a href="/delete_database?database=settings">Delete Database</a></li>
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window('/page_info?page=route_def_settings_dashboard.py&route=/settings_dashboard','page_info',700,600);">:</a></li>
+        
+                </ul>
+            </nav>
+        <!-- Portfolio -->
+            <article id="portfolio" class="wrapper style3">
+                <div class="container">
+                    <header>
+                        <h2>settings Database</h2>
+                    </header>
+                    <div class="row">
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/settings_create_db" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/settings_create_db">Create Database</a></h3>
+                                <p>Create the settings Database</p>
+                            </article>
+                        </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/settings_ingest_demo_data" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/settings_ingest_demo_data">Ingest Demo Data</a></h3>
+                                <p>Ingest Demo Data into DB</p>
+                            </article>
+                        </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/settings_db_read" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/settings_db_read">Read Database content</a></h3>
+                                <p>Read DB an Create a CSV result</p>
+                            </article>
+                        </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/settings_db_clear" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/settings_db_clear">Clear Database</a></h3>
+                                <p>Delete Database content</p>
+                            </article>
+                        </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/settings_db_ingest_csv" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/settings_db_ingest_csv">Ingest a CSV file</a></h3>
+                                <p>Ingest a CSV file</p>
+                            </article>
+                        </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/settings_db_add_entry" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/settings_db_add_entry">Add Entry</a></h3>
+                                <p>Add an Entry to Database</p>
+                            </article>
+                        </div>
+                        <div class="col-4 col-6-medium col-12-small">
+                            <article class="box style2">
+                                <a href="/settings_db_add_entry_static" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                                <h3><a href="/settings_db_add_entry_static">Add Entry 2</a></h3>
+                                <p>Add an Entry to Database thru a customazible static html page</p>
+                            </article>
+                        </div>                        
+            
+                    </div>
+                </div>
+            </article>
+        <!-- Scripts -->
+            <script src="../static/assets/js/jquery.min.js"></script>
+            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="../static/assets/js/init.js"></script>
+            <script src="../static/assets/js/browser.min.js"></script>
+            <script src="../static/assets/js/breakpoints.min.js"></script>
+            <script src="../static/assets/js/util.js"></script>
+            <script src="../static/assets/js/main.js"></script>
+    </body>
+</html>
+'''
+        loguer(env.level+' route END OF settings_dashboard() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return html_output
+        
+
+#  def_settings_create_db***
+@app.route('/settings_create_db', methods=['GET'])
+def settings_create_db():
+    '''
+    Flask Route for the settings_create_db Database Create DB action
+    '''
+    route="/settings_create_db"
+    env.level+='-'
+    print('\n'+env.level,white('route settings_create_db() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route settings_create_db() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        with open('./sqlite_databases_code/settings/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        file=open('./sqlite_databases_code/settings/init/settings.csv','w')
+        ligne_out=''
+        len_columns=len(db_details_dict['columns'])-1
+        i=0        
+        for col in db_details_dict['columns']:
+            if i<len_columns:
+                ligne_out=ligne_out+col+','
+            else:
+                ligne_out=ligne_out+col
+            i+=1
+        file.write(ligne_out+'\n')
+        for i in range (0,10):
+            ligne_out='name'+str(i)+','+'value'+str(i)+','+'description'+str(i)+','+'comment'+str(i)           
+            file.write(ligne_out+'\n')
+        file.close()  
+        create_db_and_table(db_details_dict['db_name'],db_details_dict['table_name'])
+        html_output='''<!DOCTYPE HTML>
+<!-- description-->
+<html>
+    <head>
+        <title>FLASK APP GENERATOR</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../static/assets/css/main.css" />
+    <script>
+        function popup_window( url, id, width, height )
+        {
+            //extract the url parameters if any, and pass them to the called html
+            var tempvar=document.location.toString(); // fetch the URL string
+            var passedparams = tempvar.lastIndexOf("?");
+            if(passedparams > -1)
+                url += tempvar.substring(passedparams);
+            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+            popup.focus();
+        }
+    </script>
+    </head>
+    <body class="is-preload">
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                
+                    <li><a href="/">Back to main page</a></li>
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window('/page_info?page=route_def_bases.py&route=/settings_create_db','page_info',700,600);">:</a></li>
+        
+                </ul>
+            </nav>
+        <!-- Portfolio -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="../static/images/ok.png" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1><strong> Database :settings, was created</strong></h1>
+							</header>
+							<p>The SQLITE had been created in ./z_bases</p>
+                            <a href="/settings_dashboard" class="button small scrolly">Go to Dashboard for settings DB </a>
+						</div>						
+					</div>				
+				</div>
+			</article>
+        <!-- Scripts -->
+            <script src="../static/assets/js/jquery.min.js"></script>
+            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="../static/assets/js/init.js"></script>
+            <script src="../static/assets/js/browser.min.js"></script>
+            <script src="../static/assets/js/breakpoints.min.js"></script>
+            <script src="../static/assets/js/util.js"></script>
+            <script src="../static/assets/js/main.js"></script>
+    </body>
+</html>
+'''
+        loguer(env.level+' route END OF settings_create_db() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]    
+        return html_output
+
+
+#  def_settings_ingest_demo_data***
+@app.route('/settings_ingest_demo_data', methods=['GET'])
+def settings_ingest_demo_data():
+    '''
+    Flask Route for the settings_ingest_demo_data Database Ingest demo data
+    '''
+    route="/settings_ingest_demo_data"
+    env.level+='-'
+    print('\n'+env.level,white('route settings_ingest_demo_data() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route settings_ingest_demo_data() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        with open('./sqlite_databases_code/settings/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/settings.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        lines=[]    
+        file='./sqlite_databases_code/settings/init/settings.csv'
+        with open (file) as csvfile:
+            reader = csv.reader(csvfile, delimiter=',')
+            lines = list(reader)
+            indexA=0
+            print('settings table =>\n')
+            conn=create_connection(database) # open connection to database            
+            for row in lines:
+                if conn:
+                    # connection to database is OK
+                    c=conn.cursor()
+                    # let's go to every lines one by one and let's extract url, targeted brand
+                    sqlite_data=[indexA]
+                    sqlite_data=(indexA,row[0] ,row[1] ,row[2] ,row[3])
+                    sql_add="INSERT OR IGNORE into settings (`index`,name,value,description,comment) VALUES (?,?,?,?,?)"
+                    print('\nsql_add :',cyan(sql_add,bold=True))
+                c.execute(sql_add, sqlite_data)
+                print(green("==> OK Done : demo data ingested",bold=True))
+                indexA+=1
+                conn.commit()        
+
+        html_output='''<!DOCTYPE HTML>
+<!-- description-->
+<html>
+    <head>
+        <title>FLASK APP GENERATOR</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../static/assets/css/main.css" />
+    <script>
+        function popup_window( url, id, width, height )
+        {
+            //extract the url parameters if any, and pass them to the called html
+            var tempvar=document.location.toString(); // fetch the URL string
+            var passedparams = tempvar.lastIndexOf("?");
+            if(passedparams > -1)
+                url += tempvar.substring(passedparams);
+            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+            popup.focus();
+        }
+    </script>
+    </head>
+    <body class="is-preload">
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                
+                    <li><a href="/">Back to main page</a></li>
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window('/page_info?page=route_def_settings.py&route=/settings_ingest_demo_data_ingest_demo_data','page_info',700,600);">:</a></li>
+        
+                </ul>
+            </nav>
+        <!-- Portfolio -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="../static/images/ok.png" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1><strong>Demo Data ingested</strong></h1>
+							</header>
+							<p>Demo Data ingested into Database :settings</p>
+                            <a href="/settings_dashboard" class="button small scrolly">Go to Dashboard for settings DB </a>
+						</div>						
+					</div>				
+				</div>
+			</article>
+        <!-- Scripts -->
+            <script src="../static/assets/js/jquery.min.js"></script>
+            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="../static/assets/js/init.js"></script>
+            <script src="../static/assets/js/browser.min.js"></script>
+            <script src="../static/assets/js/breakpoints.min.js"></script>
+            <script src="../static/assets/js/util.js"></script>
+            <script src="../static/assets/js/main.js"></script>
+    </body>
+</html>
+'''
+        loguer(env.level+' route END OF settings_ingest_demo_data() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]    
+        return html_output
+
+
+#  def_settings_db_clear***
+@app.route('/settings_db_clear', methods=['GET'])
+def settings_db_clear():
+    '''
+    Flask Route for the settings_db_clear Database Clearing / reset function
+    '''
+    route="/settings_db_clear"
+    env.level+='-'
+    print('\n'+env.level,white('route settings_db_clear() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route settings_db_clear() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        with open('./sqlite_databases_code/settings/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/settings.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        print('table is :', db_details_dict["table_name"])
+        conn=create_connection(database) # open connection to database
+        if conn:
+            # connection to database is OK
+            c=conn.cursor()
+            print(f'- Deleting table : {db_details_dict["table_name"]} =>')
+            sql_request="drop table "+db_details_dict["table_name"]
+            c.execute(sql_request)
+            conn.commit()
+            print('-- OK DONE : Deleted table : '+db_details_dict["table_name"])
+            create_db_and_table(db_details_dict["db_name"],db_details_dict["table_name"])
+            print(f'-- OK table {db_details_dict["table_name"]} reseted')     
+
+        html_output='''<!DOCTYPE HTML>
+<!-- description-->
+<html>
+    <head>
+        <title>FLASK APP GENERATOR</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../static/assets/css/main.css" />
+    <script>
+        function popup_window( url, id, width, height )
+        {
+            //extract the url parameters if any, and pass them to the called html
+            var tempvar=document.location.toString(); // fetch the URL string
+            var passedparams = tempvar.lastIndexOf("?");
+            if(passedparams > -1)
+                url += tempvar.substring(passedparams);
+            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+            popup.focus();
+        }
+    </script>
+    </head>
+    <body class="is-preload">
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                
+                    <li><a href="/">Back to main page</a></li>
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window('/page_info?page=route_def_settings_db_clear.py&route=/settings_db_clear','page_info',700,600);">:</a></li>
+        
+                </ul>
+            </nav>
+        <!-- Portfolio -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="../static/images/ok.png" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1><strong>Database Content Deleted</strong></h1>
+							</header>
+							<p>Data in Database : settings had been cleaned</p>
+                            <a href="/settings_dashboard" class="button small scrolly">Go to Dashboard for settings DB </a>
+						</div>						
+					</div>				
+				</div>
+			</article>
+        <!-- Scripts -->
+            <script src="../static/assets/js/jquery.min.js"></script>
+            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="../static/assets/js/init.js"></script>
+            <script src="../static/assets/js/browser.min.js"></script>
+            <script src="../static/assets/js/breakpoints.min.js"></script>
+            <script src="../static/assets/js/util.js"></script>
+            <script src="../static/assets/js/main.js"></script>
+    </body>
+</html>
+'''
+        loguer(env.level+' route END OF settings_db_clear() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]    
+        return html_output
+
+
+#  def_settings_db_read***
+@app.route('/settings_db_read', methods=['GET'])
+def settings_db_read():
+    '''
+    Flask Route for the settings_db_read Database Read DB content function
+    '''
+    route="/settings_db_read"
+    env.level+='-'
+    print('\n'+env.level,white('route settings_db_read() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route settings_db_read() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        keyword=request.args.get("keyword")
+        if keyword==None:
+            keyword=''            
+        print("\nkeyword : ",keyword)      
+        with open('./sqlite_databases_code/settings/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/settings.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        # sqlite:///:memory: (or, sqlite://)
+        # sqlite:///relative/path/to/file.db
+        # sqlite:////absolute/path/to/file.db
+        db_name = "settings.db"
+        table_name = db_details_dict["table_name"]
+        engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+        df = pd.read_sql_table(table_name, engine)
+        out_df = df[['index','name','value','description','comment']]
+        #save result to csv file
+        out_df.to_csv(r'./result/settings.csv')
+        df = DataFrame(out_df)
+        #print (df)
+        select_options=''
+        res = df.values.tolist()   
+        keyword=keyword.lower()        
+        for item in res:
+            #print('\nitem : ',yellow(item,bold=True))
+            if keyword:
+                ii=0
+                found=0
+                for item2 in item:                    
+                    if ii!=0:
+                        item2=item2.lower()                   
+                        if keyword in item2:
+                            found=1
+                            print('\n=======================')                         
+                            print(yellow("YES FOUND",bold=True))
+                            print('\nitem2 : ',green(item2,bold=True))
+                            #print('\nkeyword: ',">"+keyword+"<")
+                            print('\n=======================')  
+                    ii+=1
+                if found:
+                        select_options=select_options+'<option value="'+str(item[0])+'">'+item[1]+'</option>' 
+            else:
+                select_options=select_options+'<option value="'+str(item[0])+'">'+item[1]+'</option>'     
+        print('=========================================')
+        columns="name,value,description,comment"                
+        print('DONE')        
+        html_output='''<!DOCTYPE HTML>
+<!-- description-->
+<html>
+    <head>
+        <title>FLASK APP GENERATOR</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../static/assets/css/main.css" />
+    <script>
+        function popup_window( url, id, width, height )
+        {
+            //extract the url parameters if any, and pass them to the called html
+            var tempvar=document.location.toString(); // fetch the URL string
+            var passedparams = tempvar.lastIndexOf("?");
+            if(passedparams > -1)
+                url += tempvar.substring(passedparams);
+            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+            popup.focus();
+        }
+    </script>
+    </head>
+    <body class="is-preload">
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                
+                    <li><a href="/">Back to main page</a></li>
+                    <li><a href="/settings_dashboard">Back to Database Page</a></li>
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window('/page_info?page=route_def_settings_db_read.py&route=/settings_db_read','page_info',700,600);">:</a></li>
+        
+                </ul>
+            </nav>
+			<article id="indic_list" class="wrapper style4">
+				<div class="container medium">
+					<header>
+						<h2>Database Content</h2>
+                        <p>Select a Row</p>
+						<p>Or refine Search by keyword (in any columns)</p>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<form method="get" action="/db_row_details">
+                            	<input type="hidden" name="database" value="settings">
+                            	<input type="hidden" name="table" value="settings"> 
+                                <input type="hidden" name="columns" value="'''+columns+'''">                                
+								<div class="row">
+									<div class="col-12">
+										<select id="row" name="row">
+                                            '''+select_options+'''           
+                                        </select>
+									</div>      
+									<div class="col-12">
+										<ul class="actions">
+                                            <li><input type="submit" value="Select this row" class="button small scrolly" /></li>
+										</ul>
+									</div>                                    
+								</div>
+							</form>
+						</div>    
+                        <form method="get" action="/settings_db_read">
+                            <div class="row">                        
+                                <div class="col-6 col-12-small">
+                                    <h3>Search Keyword :</h3>
+                                </div>                                
+                                <div class="col-6 col-12-small">
+                                    <input type="text"  id="keyword" name="keyword" placeholder="keyword" />
+                               </div>  
+                                <div class="col-12">      
+                                    <ul class="actions">
+                                        <input type="submit" value="Search" class="button small scrolly" />
+                                    </ul>
+                                </div> 
+                        </form>
+					</div>
+					<footer>
+						<ul id="copyright">
+							
+						</ul>
+					</footer>
+				</div>
+			</article>
+        <!-- Scripts -->
+            <script src="../static/assets/js/jquery.min.js"></script>
+            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="../static/assets/js/init.js"></script>
+            <script src="../static/assets/js/browser.min.js"></script>
+            <script src="../static/assets/js/breakpoints.min.js"></script>
+            <script src="../static/assets/js/util.js"></script>
+            <script src="../static/assets/js/main.js"></script>
+    </body>
+</html>
+'''
+        loguer(env.level+' route END OF settings_db_read() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]    
+        return html_output
+
+
+#  def_settings_db_update_entry***
+@app.route('/settings_db_update_entry', methods=['GET'])
+def settings_db_update_entry():
+    '''
+    Flask Route for the settings_db_update_entry Database Update an entry
+    '''
+    route="/settings_db_update_entry"
+    env.level+='-'
+    print('\n'+env.level,white('route settings_db_update_entry() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route settings_db_update_entry() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        row=request.args.get("row")
+        print("\nrow : ",row)
+        name=request.args.get('name')
+        print('\nname : ',name)
+        value=request.args.get('value')
+        print('\nvalue : ',value)
+        description=request.args.get('description')
+        print('\ndescription : ',description)
+        comment=request.args.get('comment')
+        print('\ncomment : ',comment)
+        with open('./sqlite_databases_code/settings/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))        
+        db_name = "settings.db"
+        table_name = db_details_dict["table_name"]
+        where_clause='`index` = '+row
+        sql_fields=['index','name','value','description','comment']
+        sql_data_list=[int(row),name,value,description,comment]
+        result=sqlite_db_update_entry(db_name,table_name,where_clause,sql_fields,sql_data_list)        
+        message1="OK done"
+        image="../static/images/ok.png" 
+        message2="entry had been updated"
+        message3="/settings_dashboard"
+        message4="settings Dashboard"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        loguer(env.level+' route END OF example_name() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+ 
+
+
+#  def_settings_db_delete_entry***
+@app.route('/settings_db_delete_entry', methods=['GET'])
+def settings_db_delete_entry():
+    '''
+    Flask Route for the settings_db_delete_entry Database delete entry
+    '''
+    route="/settings_db_delete_entry"
+    env.level+='-'
+    print('\n'+env.level,white('route settings_db_delete_entry() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route settings_db_delete_entry() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        row=request.args.get("row")
+        print("\nrow : ",row)
+        result=sqlite_db_delete_entry('settings',row)         
+        message1="OK done - Entry DELETED"
+        image="../static/images/ok.png" 
+        message2="entry had been deleted"
+        message3="/settings_dashboard"
+        message4="settings Dashboard"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        loguer(env.level+' route END OF example_name() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+ 
+
+
+#  def_settings_db_add_entry***
+@app.route('/settings_db_add_entry', methods=['GET'])
+def settings_db_add_entry():
+    '''
+    Flask Route for the settings_db_add_entry Database Update an entry
+    '''
+    route="/settings_db_add_entry"
+    env.level+='-'
+    print('\n'+env.level,white('route settings_db_add_entry() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route settings_db_add_entry() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        db_name = "settings.db"
+        column_list=['name','value','description','comment']
+        print('\ncolumn_list :',cyan(column_list,bold=True))
+        index=sqlite_db_get_last_index('settings')
+        index+=1        
+        print('index : ',index)
+        PAGE_DESTINATION="z_sqlite_db_add_entry"
+        page_name="z_sqlite_db_add_entry.html"
+        db_name=db_name.split('.')[0]
+        loguer(env.level+' route END OF example_name() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,page_name=page_name,column_list=column_list,index=index,db_name=db_name)
+ 
+
+
+#  def_settings_db_add_entry_ok***
+@app.route('/settings_db_add_entry_ok', methods=['GET'])
+def settings_db_add_entry_ok():
+    '''
+    Flask Route for the settings_db_add_entry Database Update an entry
+    '''
+    route="/settings_db_add_entry_ok"
+    env.level+='-'
+    print('\n'+env.level,white('route settings_db_add_entry_ok() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route settings_db_add_entry_ok() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        name=request.args.get("name")
+        print("\nname: ",name)
+        value=request.args.get("value")
+        print("\nvalue: ",value)
+        description=request.args.get("description")
+        print("\ndescription: ",description)
+        comment=request.args.get("comment")
+        print("\ncomment: ",comment)
+
+        db_name=request.args.get("db_name")
+        print('db_name :',db_name)     
+        with open('./sqlite_databases_code/'+db_name+'/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True)) 
+        database = os.getcwd()+'/z_bases/'+db_name+'.db'
+        database=database.replace("\\","/")
+        table=db_details_dict['table_name']
+        print('database is :',database) 
+        print('table is :',table)          
+        # Get last index value in SQLITE DB
+        new_index=sqlite_db_get_last_index(db_name)+1        
+        print('new_index is :',new_index)  
+        sqlite_data=(new_index,name,value,description,comment)
+        sql_add=f"INSERT OR IGNORE into {table} (`index`,name,value,description,comment) VALUES (?,?,?,?,?)"
+        print('sqlite_data :',sqlite_data)     
+        print('sql_add :',sql_add)          
+        con = sqlite3.connect(database)       
+        try:
+            cur = con.cursor()
+            cur.execute(sql_add,sqlite_data)
+            con.commit()
+            print(green('OK DONE ENTRY DELETED',bold=True))
+            image="../static/images/ok.png" 
+            message1="Entry Added"
+            message2="Entry was added to DB"
+            message3=f"/{db_name}_dashboard"
+            message4=f"{db_name}_dasbhoard"        
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"            
+            loguer(env.level+' route END OF machin_db_add_entry_ok() in ***app.py*** : >')    
+            env.level=env.level[:-1]        
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name) 
+        except:
+            print(red('Error',bold=True))
+            image="../static/images/nok.png" 
+            message1="Error"
+            message2="An error occured"
+            message3=f"/{db_name}_dashboard"
+            message4=f"{db_name}_dasbhoard"        
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"            
+            loguer(env.level+' route END OF machin_db_add_entry_ok() in ***app.py*** : >')    
+            env.level=env.level[:-1]        
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+
+
+
+#  def_settings_db_add_entry_static***
+@app.route('/settings_db_add_entry_static', methods=['GET'])
+def settings_db_add_entry_static():
+    '''
+    Flask Route for the settings_db_add_entry_static Database Update an entry trhu a static formular
+    '''
+    route="/settings_db_add_entry_static"
+    env.level+='-'
+    print('\n'+env.level,white('route settings_db_add_entry_static() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route settings_db_add_entry_static() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        db_name = "settings.db"
+        column_list=['name','value','description','comment']
+        print('\ncolumn_list :',cyan(column_list,bold=True))
+        index=sqlite_db_get_last_index('settings')
+        index+=1        
+        print('index : ',index)
+        PAGE_DESTINATION="z_settings_db_add_entry_static"
+        page_name="z_settings_db_add_entry_static.html"
+        db_name=db_name.split('.')[0]
+        #loguer(env.level+' route END OF example_name() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,page_name=page_name,column_list=column_list,index=index,db_name=db_name)
+ 
+
+
+#  def_settings_db_ingest_csv***
+@app.route('/settings_db_ingest_csv', methods=['GET'])
+def settings_db_ingest_csv():
+    '''
+    Flask Route for the settings_db_ingest_csv Database Update an entry
+    '''
+    route="/settings_db_ingest_csv"
+    env.level+='-'
+    print('\n'+env.level,white('route settings_db_ingest_csv() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route settings_db_ingest_csv() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        db_name="settings"
+        message1="Message 1 :"
+        image="../static/images/toolbox.png"
+        message2="Message 2 :"
+        message3="/Message 3"
+        message4="Message 4 in button"
+        PAGE_DESTINATION="z_sqlite_ingest_csv"
+        page_name="z_sqlite_ingest_csv.html"
+        loguer(env.level+' route END OF settings_db_ingest_csv() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name,db_name=db_name) 
+
+
+#  def_settings_db_duplicate_entry***
+@app.route('/settings_db_duplicate_entry', methods=['GET'])
+def settings_db_duplicate_entry():
+    '''
+    Flask Route for the settings_db_duplicate_entry Database delete entry
+    '''
+    route="/settings_db_duplicate_entry"
+    env.level+='-'
+    print('\n'+env.level,white('route settings_db_duplicate_entry() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route settings_db_duplicate_entry() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        row=request.args.get("row")
+        print("\nrow : ",row)
+        result=sqlite_db_duplicate_entry('settings',row)         
+        message1="OK done - Entry DUPLICATED"
+        image="../static/images/ok.png" 
+        message2="entry had been duplicated"
+        message3="/settings_dashboard"
+        message4="settings Dashboard"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        loguer(env.level+' route END OF example_name() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+ 
+
+
+#  def_product_apis_v2***
+@app.route('/product_apis_v2', methods=['GET'])
+def product_apis_v2():
+    '''
+    Created : 2025-11-29T18:05:33.000Z
+
+    description : Product APIs dahsboard version 2
+    '''
+    route="/product_apis_v2"
+    env.level+='-'
+    print('\n'+env.level,white('route product_apis_v2() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route product_apis_v2() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:          
+        title="Task Automation"      
+        database = os.getcwd()+'/z_bases/api_calls.db'
+        database=database.replace("\\","/")
+        table="api_calls"
+        print('database is :',database)    
+        print('table is :',table)  
+        where_clause="" 
+        entries=read_db(database,table,where_clause) 
+        solutions=[]
+        for item in entries:
+            if item[2] not in solutions:
+                solutions.append(item[2]) 
+        portfolio=''
+        for item in solutions:
+            print('solution : ',yellow(item,bold=True))
+            portfolio=portfolio+'''
+                <div class="col-4 col-6-medium col-12-small">
+                    <article class="box style2">
+                        <a href="/product_dashboard?product='''+item+'''" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                        <h3><a href="/product_dashboard?product='''+item+'''">'''+item+'''</a></h3>
+                        <p>'''+item+''' API Library</p>
+                    </article>
+                </div>      
+'''                           
+           
+        menu='''
+                    <li><a href="/">Back to main page</a></li>
+                    <li><a href="/reset_databases">Reset Databases</a></li>
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window('/page_info?page=route_def_bases.py&route='''+route+'''','page_info',700,600);">:</a></li>
+        '''       
+        output='''<!DOCTYPE HTML>
+<!-- description-->
+<html>
+    <head>
+        <title>'''+title+'''</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../static/assets/css/main.css" />
+    <script>
+        function popup_window( url, id, width, height )
+        {
+            //extract the url parameters if any, and pass them to the called html
+            var tempvar=document.location.toString(); // fetch the URL string
+            var passedparams = tempvar.lastIndexOf("?");
+            if(passedparams > -1)
+                url += tempvar.substring(passedparams);
+            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+            popup.focus();
+        }
+    </script>
+    </head>
+    <body class="is-preload">
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                '''+menu+'''
+                </ul>
+            </nav>
+        <!-- Portfolio -->
+            <article id="portfolio" class="wrapper style3">
+                <div class="container">
+                    <header>
+                        <h2>Solutions</h2>
+                    </header>
+                    <div class="row">'''
+        output=output+portfolio
+        output=output+'''
+                    </div>
+                </div>
+            </article>
+        <!-- Scripts -->
+            <script src="../static/assets/js/jquery.min.js"></script>
+            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="../static/assets/js/init.js"></script>
+            <script src="../static/assets/js/browser.min.js"></script>
+            <script src="../static/assets/js/breakpoints.min.js"></script>
+            <script src="../static/assets/js/util.js"></script>
+            <script src="../static/assets/js/main.js"></script>
+    </body>
+</html>
+'''
+        #loguer(env.level+' route END OF bases() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return output
+        
+
+
+#  def_product_dashboard***
+@app.route('/product_dashboard', methods=['GET'])
+def product_dashboard():
+    '''
+    Created : 2025-11-29T18:37:54.000Z
+
+    description : display the solution API dashboard
+    '''
+    route="/product_dashboard"
+    env.level+='-'
+    print('\n'+env.level,white('route product_dashboard() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route product_dashboard() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        title="MINI ORCHESTRATOR"
+        database="api_calls"
+        print("\ndatabase : ",database)
+        table="api_calls"
+        print("\ntable : ",table)
+        #name='Secure Endpoint Get Computers'
+        product=request.args.get('product')
+        where_clause=f'where `solution` = "{product}"'
+        entries=sqlite_db_select_entry(database,table,where_clause)
+        api_calls=[]
+        for item in entries:
+            if item[2] not in api_calls:
+                api_calls.append(item[1])         
+        portfolio=''
+        for item in api_calls:
+            item2=item.replace(product+' ','')
+            print('api_calls : ',yellow(item,bold=True))
+            portfolio=portfolio+'''
+                <div class="col-4 col-6-medium col-12-small">
+                    <article class="box style2">
+                        <a href="/generic_api_details?name='''+item+'''" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
+                        <h3><a href="/generic_api_details?name='''+item+'''">'''+item2+'''</a></h3>
+                        <p>'''+item+''' API Details</p>
+                    </article>
+                </div>      
+'''                           
+           
+        menu='''
+                    <li><a href="/">Back to main page</a></li>
+                    <li><a href="/reset_databases">Reset Databases</a></li>
+                    <li><a href="/logout">log Out</a></li>
+                    <li><a href="javascript:popup_window('/page_info?page=route_def_bases.py&route='''+route+'''','page_info',700,600);">:</a></li>
+        '''       
+        output='''<!DOCTYPE HTML>
+<!-- description-->
+<html>
+    <head>
+        <title>'''+title+'''</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../static/assets/css/main.css" />
+    <script>
+        function popup_window( url, id, width, height )
+        {
+            //extract the url parameters if any, and pass them to the called html
+            var tempvar=document.location.toString(); // fetch the URL string
+            var passedparams = tempvar.lastIndexOf("?");
+            if(passedparams > -1)
+                url += tempvar.substring(passedparams);
+            popup = window.open( url, id, 'toolbar=no,scrollbars=yes,location=yes,statusbar=yes,menubar=no,resizable=yes,width=' + width + ',height=' + height + '' );
+            popup.focus();
+        }
+    </script>
+    </head>
+    <body class="is-preload">
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                '''+menu+'''
+                </ul>
+            </nav>
+        <!-- Portfolio -->
+            <article id="portfolio" class="wrapper style3">
+                <div class="container">
+                    <header>
+                        <h2>'''+product+''' APIs</h2>
+                    </header>
+                    <div class="row">'''
+        output=output+portfolio
+        output=output+'''
+                    </div>
+                </div>
+            </article>
+        <!-- Scripts -->
+            <script src="../static/assets/js/jquery.min.js"></script>
+            <script src="../static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="../static/assets/js/init.js"></script>
+            <script src="../static/assets/js/browser.min.js"></script>
+            <script src="../static/assets/js/breakpoints.min.js"></script>
+            <script src="../static/assets/js/util.js"></script>
+            <script src="../static/assets/js/main.js"></script>
+    </body>
+</html>
+'''
+        #loguer(env.level+' route END OF bases() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return output
+        
+
+#  def_go_run_workflow_all***
+@app.route('/go_run_workflow_all', methods=['GET'])
+def go_run_workflow_all():
+    '''
+    Created : 2025-12-01T18:05:42.000Z
+
+    description : run the whole workflow with no break
+    '''
+    route="/go_run_workflow_all"
+    env.level+='-'
+    print('\n'+env.level,white('route go_run_workflow_all() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route go_run_workflow_all() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        with open('./sqlite_databases_code/workflows/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/workflows.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        # sqlite:///:memory: (or, sqlite://)
+        # sqlite:///relative/path/to/file.db
+        # sqlite:////absolute/path/to/file.db
+        db_name = "workflows.db"
+        table_name = db_details_dict["table_name"]
+        engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+        df = pd.read_sql_table(table_name, engine)
+        out_df = df[['index','workflow_name','step','step_name','input','output','comment']]
+        #save result to csv file
+        #out_df.to_csv(r'./result/workflows.csv')
+        df = DataFrame(out_df)
+        #print (df)
+        select_options=''
+        res = df.values.tolist()
+        element_index=2
+        sorted_list=sorted(res, key=lambda x: x[element_index])    
+        # ###############################################################
+        database="workflows"
+        print("\ndatabase : ",database)
+        table="workflows"
+        print("\ntable : ",table) 
+        result=1
+        for itemA in sorted_list:
+            print('\n',yellow(itemA[2],bold=True),yellow(itemA[3],bold=True))
+            #input('NEXT ?')            
+            step=itemA[2]
+            with open('./json_results/json_result.json','w') as file:  
+                file.write('{}')
+            where_clause=f'where step = "{step}"'
+            entry_listA=sqlite_db_select_entry(database,table,where_clause)
+            print("\nentry_listA : \n",entry_listA)
+            #row=entry_listA[0][0]
+            #workflow_name=entry_listA[0][1]
+            step=entry_listA[0][2]
+            step_name=entry_listA[0][3]         
+            step_input=entry_listA[0][4]
+            step_input_list=step_input.split(',')
+            step_output=entry_listA[0][5]
+            step_output_list=step_output.split(',')
+            execute_this_step_then_next(step_name,step_input_list,step_output,step_output_list)
+            #comment=entry_listA[0][6]        
+
+                                           
+        # ###############################################################   
+        if result==0:
+            input('STOP !')
+        message1="Completed"
+        image="../static/images/ok.png" 
+        message2="The whole workflow was Executed"
+        message3="/"
+        message4="Home"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        #loguer(env.level+' route END OF go_run_workflow_all() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        
+
+
+#  def_app_admin***
+@app.route('/app_admin', methods=['GET'])
+def app_admin():
+    '''
+    Created : 2025-12-11T07:29:07.000Z
+
+    description : Display Application Administration Page
+    '''
+    route="/app_admin"
+    env.level+='-'
+    print('\n'+env.level,white('route app_admin() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route app_admin() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:           
+        message1="Message 1 :"
+        image="../static/images/toolbox.png" 
+        message2="Message 2 :"
+        message3="/Message 3"
+        message4="Message 4 in button"
+        PAGE_DESTINATION="z_app_admin"
+        page_name="z_app_admin.html"
+        #loguer(env.level+' route END OF app_admin() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        
+
+
+#  def_db_backup***
+@app.route('/db_backup', methods=['GET'])
+def db_backup():
+    '''
+    Created : 2025-12-11T07:40:32.000Z
+
+    description : Backup every databases
+    '''
+    route="/db_backup"
+    env.level+='-'
+    print('\n'+env.level,white('route db_backup() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route db_backup() in ***app.py*** : >')
+    global client_id
+    global client_password
+    global host
+    global host_for_token
+    global profil_name
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:   
+        message1="Message 1 :"
+        image="../static/images/toolbox.png" 
+        message2="Message 2 :"
+        message3="/Message 3"
+        message4="Message 4 in button"
+        PAGE_DESTINATION="z_db_backup"
+        page_name="z_db_backup.html"
+        #loguer(env.level+' route END OF db_backup() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        
+
+
+#  def_backup_all_dbs***
+@app.route('/backup_all_dbs', methods=['GET'])
+def backup_all_dbs():
+    '''
+    Created : 2025-12-11T07:51:00.000Z
+
+    description : backup all DBs in ./DB_backups
+    '''
+    route="/backup_all_dbs"
+    env.level+='-'
+    print('\n'+env.level,white('route backup_all_dbs() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route backup_all_dbs() in ***app.py*** : >')
+    global client_id
+    global client_password
+    global host
+    global host_for_token
+    global profil_name
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:          
+        subdir='./DB_backups/'+current_date_and_time()
+        os.mkdir(subdir)  
+        DBs=["api_calls","account_keys","variables","functions","workflows","settings"]
+        for DB in DBs:
+            database = os.getcwd()+'/z_bases/'+DB+'.db'
+            database=database.replace("\\","/")
+            print('database is :',database)
+            # sqlite:///:memory: (or, sqlite://)
+            # sqlite:///relative/path/to/file.db
+            # sqlite:////absolute/path/to/file.db
+            db_name = DB+".db"
+            table_name = DB
+            engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+            df = pd.read_sql_table(table_name, engine)
+            if DB=="api_calls":
+                out_df = df[['index','name','solution','fqdn','relative_url','documentation','method','description','payload','header','body','query_params','custom_variables','authentication_profile','inputs_variables','output_variables']] 
+            elif DB=="account_keys":
+                out_df = df[['index','name','type','username','password','key','comment']]
+            elif DB=="variables":
+                out_df = df[['index','name','environment_name','value','description','comment','used_by']] 
+            elif DB=="functions":
+                out_df = df[['index','name','environment_name','description','called_function','input_variables','output_variables','comment']]       
+            elif DB=="workflows":
+                out_df = df[['index','workflow_name','step','step_name','input','output','comment']] 
+            elif DB=="settings":
+                out_df = df[['index','name','value','description','comment']]                 
+            df = DataFrame(out_df)
+            #print (df)
+            #save result to csv file
+            #file2=subdir+'/'+DB+'_B.csv'
+            #out_df.to_csv(r'./DB_backups/TEST/'+DB+'_B.csv')            
+            select_options=''
+            res = df.values.tolist()     
+            filename=subdir+'/'+DB+'.csv'
+            with open(filename,'w') as file:
+                for item in res:
+                    print('\nitem : ',yellow(item,bold=True))
+                    i=0
+                    line_out=''
+                    long=len(item)
+                    for item2 in item:                 
+                        if i!=0:
+                            if ',' in item2:
+                                item2=item2.replace('"','""')
+                                item2='"'+item2+'"'                           
+                            if i<long-1:
+                                line_out=line_out+item2+","
+                            else:
+                                line_out=line_out+item2   
+                        i+=1
+                    if line_out!='':
+                        file.write(line_out+'\n')
+        message1="DB Backup Completed"
+        image="../static/images/ok.png" 
+        message2="All current Databases had been backed up in [ ./DB_Backups ]"
+        message3="/"
+        message4="Home"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        #loguer(env.level+' route END OF backup_all_dbs() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        
+
+
+#  def_reset_demo***
+@app.route('/reset_demo', methods=['GET'])
+def reset_demo():
+    '''
+    Created : 2025-12-12T15:09:50.000Z
+
+    description : reset databases and files with demo data for Automation Lab
+    '''
+    route="/reset_demo"
+    env.level+='-'
+    print('\n'+env.level,white('route reset_demo() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route reset_demo() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        result=reset_every_databases()
+        with open('./templates/esa_list_selected_dictionary_json_result_original.json') as file:
+            text_content=file.read()       
+        with open('./templates/esa_list_selected_dictionary_json_result.json','w') as file:     
+            file.write(text_content)       
+        settings_sqlite_update_value("use_simulator","1")            
+        message1="Demo Data Restored"
+        image="../static/images/ok.png" 
+        message2="Demo Data restored, Ready For Automation Lab"
+        message3="/"
+        message4="Home"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        loguer(env.level+' route END OF reset_demo() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        
+
+
+#  def_confirm_reset_databases***
+@app.route('/confirm_reset_databases', methods=['GET'])
+def confirm_reset_databases():
+    '''
+    Created : 2025-12-12T16:46:15.000Z
+
+    description : Display a confirmation page for resetting databases
+    '''
+    route="/confirm_reset_databases"
+    env.level+='-'
+    print('\n'+env.level,white('route confirm_reset_databases() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route confirm_reset_databases() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:    
+        message1="Do You Really Want ?"
+        image="../static/images/warning.png" 
+        message2="Do you confirm this action ? it Cannot be undone !"
+        message3="/reset_databases"
+        message4="Yes I Do"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        #loguer(env.level+' route END OF confirm_reset_databases() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        
+
+
+#  def_functions_main_dashboard***
+@app.route('/functions_main_dashboard', methods=['GET'])
+def functions_main_dashboard():
+    '''
+    Created : 2025-12-14T14:04:10.000Z
+
+    description : display the function  main dashboard page
+    '''
+    route="/functions_main_dashboard"
+    env.level+='-'
+    print('\n'+env.level,white('route functions_main_dashboard() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route functions_main_dashboard() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:           
+        message1="Message 1 :"
+        image="../static/images/toolbox.png" 
+        message2="Message 2 :"
+        message3="/Message 3"
+        message4="Message 4 in button"
+        PAGE_DESTINATION="z_functions_main_dashboard"
+        page_name="z_functions_main_dashboard.html"
+        #loguer(env.level+' route END OF functions_main_dashboard() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        
+
+
+#  def_functions_list***
+@app.route('/functions_list', methods=['GET'])
+def functions_list():
+    '''
+    Created : 2025-12-14T14:12:31.000Z
+
+    description : display the function list page
+    '''
+    route="/functions_list"
+    env.level+='-'
+    print('\n'+env.level,white('route functions_list() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route functions_list() in ***app.py*** : >')
+    global client_id
+    global client_password
+    global host
+    global host_for_token
+    global profil_name
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:     
+        functions_dict={}        
+        database = os.getcwd()+'/z_bases/functions.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        db_name = "functions.db"
+        table_name = "functions"
+        engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+        df = pd.read_sql_table(table_name, engine)
+        out_df = df[['index','name','environment_name','description','called_function','input_variables','output_variables','comment']]
+        #save result to csv file
+        #out_df.to_csv(r'./result/functions.csv')
+        df = DataFrame(out_df)
+        #print (df)
+        res = df.values.tolist()
+        nb=0
+        for item in res:
+            print('\nitem : ',yellow(item,bold=True))
+            print('=====================================\n')
+            functions_dict[nb]={
+    'name':item[1],
+    'description':item[3],
+    'called_function':item[4],
+    'inputs':item[5],
+    'outputs':item[6],
+    'comment':item[7]    
+}           
+            nb+=1
+        message1="Message 1 :"
+        image="../static/images/toolbox.png" 
+        message2="Message 2 :"
+        message3="/Message 3"
+        message4="Message 4 in button"
+        PAGE_DESTINATION="z_functions_list"
+        page_name="z_functions_list.html"
+        loguer(env.level+' route END OF functions_list() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name,functions_dict=functions_dict)
+        
+
+
 
 app.config['UPLOAD_FOLDER'] = './temp'
 
@@ -18540,17 +21406,26 @@ app.config['UPLOAD_FOLDER'] = './temp'
 if __name__ == "__main__":    
     print()
     print(env.level,white('MAIN FUNCTION ( the application starts here ): >',bold=True))
-    '''
     with open('./debug/log.txt','w') as file:
         pass
-    '''
     loguer(env.level)
     loguer(env.level+' APPLICATION STARTS')
     loguer(env.level)
     print()
+    database = os.getcwd()+'/z_bases/settings.db'
+    database=database.replace("\\","/")
+    table="settings"
+    print('database is :',database)    
+    print('table is :',table)  
+    where_clause=" where name='use_simulator'" 
+    entry=read_db(database,table,where_clause)  
+    use_simulator=int(entry[0][2])
+    print('Use Demo Data : ',yellow(use_simulator,bold=True))
+    Umbrella_Investigate_Token,UMBRELLA_ENFORCEMENT_KEY,CSE_CLIENT_ID,CSE_API_KEY,CSE_AUTHORIZATION,THREATGRID_API_KEY,CTR_CLIENT_ID,CTR_API_KEY,CTR_TOKEN,UMBRELLA_TOKEN=read_demo_variables()
     host="127.0.0.1"
     with open('./port.txt') as file:    
         port=file.read()
+        
     with open('./templates/isolation_status.txt','w') as file2:
         file2.write('0')         
     open_browser_tab(host,port)

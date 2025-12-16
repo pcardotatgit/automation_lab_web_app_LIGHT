@@ -1,7 +1,7 @@
 flask
-flask_request_params
 sqlalchemy
 pandas
 crayons
 requests
 ijson
+flask_request_params

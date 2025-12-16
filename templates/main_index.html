@@ -155,6 +155,27 @@
     {% if PAGE_DESTINATION == "z_introduction"%}
     {% extends "z_introduction.html" %}
     {% endif %}
+    {% if PAGE_DESTINATION == "z_api_calls_db_add_entry_static"%}
+    {% extends "z_api_calls_db_add_entry_static.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_settings_db_add_entry_static"%}
+    {% extends "z_settings_db_add_entry_static.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_app_admin"%}
+    {% extends "z_app_admin.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_db_backup"%}
+    {% extends "z_db_backup.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_functions_main_dashboard"%}
+    {% extends "z_functions_main_dashboard.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_functions_list"%}
+    {% extends "z_functions_list.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_function_create_next"%}
+    {% extends "z_function_create_next.html" %}
+    {% endif %}
 {% else %}
     <link rel="stylesheet" href="/static/style.css" type="text/css">
     <form action="/login" method="POST">

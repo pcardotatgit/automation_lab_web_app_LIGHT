@@ -1,0 +1,11 @@
+- Workflow database : add a field in the DB for the prefix
+- title in the field
+- result of API call => result of operation
+- settings section
+    - demo data / real calls
+- inputs : add an help
+- outputs - add an help
+- database check if object name exists
+- add a run full workflow
+- search in datate not work
+- API call : add dynalically new API calls

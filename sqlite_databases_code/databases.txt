@@ -3,3 +3,4 @@ workflows
 api_calls
 variables
 functions
+settings

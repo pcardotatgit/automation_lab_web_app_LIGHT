@@ -1,0 +1,4 @@
+use_simulator,1,"1 = use demo data in database, 0 = go to real solution",
+listening_port,4000,Application_listening port - NOT uset YET - for futur use,
+secret_keys,1234567890,secret_keys to encrypt secret data we store into database,
+open_browser,1,1 = open browser on logging page at start up,NOT Used yet

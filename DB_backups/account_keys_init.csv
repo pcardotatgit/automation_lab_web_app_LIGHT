@@ -2,3 +2,4 @@ secure_endpoint_profile,basic,defg26458064a05f1faz,12345678-4f95-43d5-908d-7a7d4
 XDR_Profile,basic,,,no_key,
 No_Profile,basic,no_client_id,no_client_password,no_key,Empty profile
 Umbrella_V2_Profile,basic,,,,
+ESA_Lab_profile,basic,testapi,Solid159*,no_key,

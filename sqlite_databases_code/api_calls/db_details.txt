@@ -1,6 +1,7 @@
 {
     "columns": [
         "name",
+        "solution",
         "fqdn",
         "relative_url",
         "documentation",
@@ -16,6 +17,6 @@
         "output_variables"
     ],
     "db_name": "api_calls",
-    "description": "store API Calls",
+    "description": "store API calls profiles",
     "table_name": "api_calls"
 }

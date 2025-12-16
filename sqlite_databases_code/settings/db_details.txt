@@ -1,0 +1,11 @@
+{
+    "columns": [
+        "name",
+        "value",
+        "description",
+        "comment"
+    ],
+    "db_name": "settings",
+    "description": "store application settings",
+    "table_name": "settings"
+}

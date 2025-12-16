@@ -1,0 +1,23 @@
+{
+    "data": {
+        "encoding": "utf-8",
+        "ignorecase": 1,
+        "name": "prod_dictionary",
+        "wholewords": 0,
+        "words": [
+            [
+                "www.machin.com",
+                1
+            ],
+            [
+                "*credit",
+                2,
+                "prefix"
+            ]
+        ],
+        "words_count": {
+            "smart_identifier_count": 1,
+            "term_count": 1
+        }
+    }
+}

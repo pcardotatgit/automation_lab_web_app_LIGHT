@@ -1,0 +1,31 @@
+{
+    "data": {
+        "encoding": "utf-8",
+        "ignorecase": 1,
+        "name": "TEST-1",
+        "wholewords": 0,
+        "words": [
+            [
+                "www.machin.com",
+                1
+            ],
+            [
+                "*credit",
+                2,
+                "prefix"
+            ],
+            [
+                "mot1",
+                1
+            ],
+            [
+                "mot2",
+                1
+            ]
+        ],
+        "words_count": {
+            "smart_identifier_count": 1,
+            "term_count": 3
+        }
+    }
+}
