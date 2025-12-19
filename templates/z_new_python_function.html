@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- description : display DB entry details-->
+<!-- description-->
 <html>
 <head>
 <title>Task Automation</title>
@@ -33,87 +33,69 @@ popup.focus();
 <li><a href="javascript:popup_window('/page_info?page={{page_name}}&route={{route}}','page_info',700,600);">:</a></li>
 </ul>
 </nav>
-<center>
-<br><h2>Entry Details</h2>
-</center>
+<!-- create new feed-->
 <article id="create_new_feed" class="wrapper style4">
 <div class="container medium">
+<header>
+<h2>Add a new function in the python code</h2>
+</header>
 <div class="row">
 <div class="col-12">
-<form method="get" action="/workflows_db_add_entry_ok">
+<form method="get" action="/new_python_function_create">
 <div class="row">
-<div class="col-6 col-12-small">
-<h3>workflow_name :  </h3>
-</div>
-<div class="col-6 col-12-small">
-</h3><input type="text"  id="workflow_name" name="workflow_name" value="{{workflow_name}}" placeholder="Title" />
-</div>
-<div class="col-6 col-12-small">
-<h3>step :  </h3>
-</div>
-<div class="col-6 col-12-small">
-<select name="step">
-<option value="{{next_step}}">{{str_next_step}}</option>
-{% for file, item in steps_dict.items() %}
-<option value="{{item.title}}">{{item.title}}</option>
-{% endfor %}
-</select>
-</div>
-<div class="col-6 col-12-small">
-<h3>step prefix :  </h3>
-</div>
-<div class="col-6 col-12-small">
-</h3><input type="text"  id="step_prefix" name="step_prefix" value="" placeholder="prefix_name" />
-</div>
-<div class="col-6 col-12-small">
-<h3>step_name :  </h3>
-</div>
-<div class="col-6 col-12-small">
-<select name="step_name">
-{% for index, function in function_dict.items() %}
-<option value="{{function.title}}">{{function.title}}</option>
-{% endfor %}
-</select>
-</div>
-<div class="col-6 col-12-small">
-<h3>input :  </h3>
-</div>
-<div class="col-6 col-12-small">
-</h3><input type="text"  id="custom_input" name="custom_input" value="" placeholder="enter new custom input" />
-<select name="input">
-<option value="">None</option>
-{% for index, variable in variables_dict.items() %}
-<option value="{{variable.title}}">{{variable.title}}</option>
-{% endfor %}
-</select>
-</div>
-<div class="col-6 col-12-small">
-<h3>output :  </h3>
-</div>
-<div class="col-6 col-12-small">
-</h3><input type="text"  id="custom_output" name="custom_output" value="" placeholder="enter new custom output" />
-<select name="output">
-<option value="">None</option>
-{% for index, variable in variables_dict.items() %}
-<option value="{{variable.title}}">{{variable.title}}</option>
-{% endfor %}
-</select>
-</div>
-<div class="col-6 col-12-small">
-<h3>comment :  </h3>
-</div>
-<div class="col-6 col-12-small">
-</h3><input type="text"  id="comment" name="comment" value="" placeholder="Comment/description" />
-</div>
 <div class="col-12">
 <ul class="actions">
-<input type="hidden" name="index" value="{{index}}" />
-<input type="hidden" name="db_name" value="{{db_name}}" />
-<input type="submit" value="Add New Entry" class="button small scrolly" />
+<input type="submit" value="Create Function" class="button small scrolly" />
 </ul>
+</div>
+<div class="col-6 col-12-small">
+<h3>Python Function Name :</h3>
+</div>
+<div class="col-6 col-12-small">
+<input type="text"  id="name" name="name" value="function_name" placeholder="function name" />
+</div>
+<div class="col-6 col-12-small">
+<h3>Args to pass :</h3>
+</div>
+<div class="col-6 col-12-small">
+<input type="text"  id="args" name="args" value="()" placeholder="args to pass" />
+</div>
+<h3>Description</h3>
+<div class="col-12">
+<input type="text"  id="description" name="description" value="description" placeholder="description" />
+</div>
+<div class="col-6 col-12-small">
+<h3>Function Name in DB</h3>
+</div>
+<div class="col-6 col-12-small">
+<input type="text"  id="name_in_db" name="name_in_db" value="name_in_db" placeholder="name_in_db" />
+</div>
+<div class="col-6 col-12-small">
+<h3>input_variables</h3>
+</div>
+<div class="col-6 col-12-small">
+<input type="text"  id="input_variables" name="input_variables" value="input_variables" placeholder="input_variables" />
+</div>
+<div class="col-6 col-12-small">
+<h3>output_variables</h3>
+</div>
+<div class="col-6 col-12-small">
+<input type="text"  id="output_variables" name="output_variables" value="output_variables" placeholder="output_variables" />
+</div>
+<div class="col-6 col-12-small">
+<h3>comment</h3>
+</div>
+<div class="col-6 col-12-small">
+<input type="text"  id="comment" name="comment" value="comment" placeholder="comment" />
+</div>
+<div class="col-6 col-12-small">
+<h3>environment_name</h3>
+</div>
+<div class="col-6 col-12-small">
+<input type="text"  id="environment_name" name="environment_name" value="environment_name" placeholder="environment_name" />
+</div>
+</div>
 </form>
-</div>
-</div>
 </div>
 </div>
 </div>

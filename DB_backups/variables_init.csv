@@ -1,3 +1,4 @@
+*system*_workflow_name_dont_delete,Automation Challenge,Automation Challenge,store the current edited workflow name,DONT DELETE !,SYSTEM
 victim_hostname,Automation Challenge,,name of the Victim Machine which got the Secure Endpoint Alert,,
 GUID,Automation Challenge,,Secure Endpoint GUID of the initial infected machine,,
 CSE_Threat_Detected_event_type_ID,Automation Challenge,,ID of the Secure Endpoint Event named Threat_Detected,,

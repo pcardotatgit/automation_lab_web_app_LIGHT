@@ -1,0 +1,5 @@
+Task Automation,Step 01,ESA LAB Encode Creds <=> base64_encode_username_and_password,"Lab_ESA_username,Lab_ESA_password",ESA_Lab_JWT,
+Task Automation,Step 05,block typosquatt domains <=> ESA Lab Add Words to selected Dictionary,dictionnary_words,None,variables managed in the API call
+Task Automation,Step 04,domain list <=> Format typosquatt domains,system_name_for_dictionary_words,None,
+Task Automation,Step 02,Create Typosquatt list <=> Create_typosquatt_list,None,None,
+Task Automation,Step 03,Typosquatt domains <=> check_if_domains_exist,None,None,

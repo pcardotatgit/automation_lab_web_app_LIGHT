@@ -12,3 +12,4 @@ base64_encode_username_and_password,Automation Challenge,Base 64 Encode username
 Format typosquatt domains,Automation Challenge,Format raw list of typosquatt domain to add into ESA dictionary into valid JSON payload,format_typosquatt_domains_to_add,"name_of_variable_for_dictionary_words,list_of_domains_aa",keep the field empty or None in worfklow - the [ dictionnary_words ] will be udpated automatically,
 Create_typosquatt_list,Automation Challenge,create a typosquatt domain list from a domain name list,TBD,,,
 check_if_domains_exist,Automation Challenge,check if domains in the domain list had been registered and if yes add them into a result list,check_if_domains_exist,,,
+read_variable_from_variable_db,system,read the value of a variable in the variable database and return it,read_variable_from_variable_db,"any existing variable name for input, on single name","any existing variable name for output, on single name",

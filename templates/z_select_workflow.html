@@ -7,6 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="../static/assets/css/main.css" />
 <script>
+function get_indic_judgments() {
+var indicator_id = document.getElementById("the_feed").value;
+//window.open("/check_xdr?client_id="+client_id+"&client_password="+client_password+"&region="+region);
+window.open("/get_indic_judgments?indicator_id="+indicator_id,"_self");
+}
 function popup_window( url, id, width, height )
 {
 //extract the url parameters if any, and pass them to the called html
@@ -22,29 +27,42 @@ popup.focus();
 <body class="is-preload">
 <!-- Nav -->
 <nav id="nav">
-<li><a href="/">Back to Home</a></li>
+<li><a href="/">Back to main page</a></li>
 <li><a href="/logout">log Out</a></li>
 <li><a href="javascript:popup_window('/page_info?page={{page_name}}&route={{route}}','page_info',700,600);">:</a></li>
 </ul>
 </nav>
-<!-- Home -->
-<article id="top" class="wrapper style1">
-<div class="container">
+<!-- Incident list-->
+<article id="indic_list" class="wrapper style4">
+<div class="container medium">
+<header>
+<p>Select a Workflow</p>
+</header>
 <div class="row">
-<div class="col-4 col-5-large col-12-medium">
-<a href="/new_python_function" class="button small scrolly">Add a python function</a>
-</div>
-<div class="col-8 col-7-large col-12-medium">
-<form method='get' action="#">
+<div class="col-12">
+<form method="get" action="/select_workflow_ok">
 <div class="row">
-<ul>
-{% for index, item in functions_dict.items() %}
-<li><h4>{{item.name}}</h4>{{item.description}}<ul><li><a href="/code_edit?code=def_{{item.called_function}}.py&type=function">Called function : {{item.called_function}}()</a></li><li>Input Variables : {{item.inputs}}</li><li>Output Variables : {{item.outputs}}</li><li>Comment : {{item.comment}}</li><li><a href="/edit_route_branch?name=def_{{item.called_function}}_branch.py">Edit Route Branch</a></li><li><a href="/delete_route_branch?function={{item.name}}&python_function={{item.called_function}}">_ delete entry _</a></li></ul></li>
+<div class="col-12">
+<select id="workflow_name" name="workflow_name">
+{% for index, workflow in workflow_dict.items() %}
+<option value="{{workflow.title}}">{{workflow.title}}</option>
 {% endfor %}
+</select>
+</div>
+<div class="col-12">
+<ul class="actions">
+<li><input type="submit" value="confirm" class="button small scrolly" /></li>
 </ul>
+</div>
 </div>
 </form>
 </div>
+</div>
+<footer>
+<ul id="copyright">
+<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+</ul>
+</footer>
 </div>
 </article>
 <!-- Scripts -->

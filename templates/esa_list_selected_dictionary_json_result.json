@@ -13,11 +13,23 @@
                 "*credit",
                 2,
                 "prefix"
+            ],
+            [
+                "www.truc.com",
+                1
+            ],
+            [
+                "www.patin.com",
+                1
+            ],
+            [
+                "www.coufin.com",
+                1
             ]
         ],
         "words_count": {
             "smart_identifier_count": 1,
-            "term_count": 1
+            "term_count": 4
         }
     }
 }

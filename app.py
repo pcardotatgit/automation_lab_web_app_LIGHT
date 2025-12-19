@@ -1885,12 +1885,12 @@ def sqlite_db_delete_entry(db_name,row):
         cur.execute(sql)
         con.commit()
         print(green('OK DONE ENTRY DELETED',bold=True))
-        loguer(env.level+' def END OF sqlite_db_delete_entry() in app.py : >')    
+        #loguer(env.level+' def END OF sqlite_db_delete_entry() in app.py : >')    
         env.level=env.level[:-1]        
         return 1
     except:
         print(red('Error',bold=True))
-        loguer(env.level+' def END OF sqlite_db_delete_entry() in app.py : >')    
+        #loguer(env.level+' def END OF sqlite_db_delete_entry() in app.py : >')    
         env.level=env.level[:-1]                
         return 0
 
@@ -2615,11 +2615,12 @@ def variables_sqlite_update_value(name,value):
 #  def_update_variables_from_json_inputs***
 def update_variables_from_json_inputs(inputs):
     '''
-    MODIFIED : 2025-11-06T15:19:39.000Z
+    MODIFIED : 2025-12-18
 
     description : Update Variable from a JSON Input definition
     
-    how to call it :
+    how to call it : updated_variables_list=update_variables_from_json_inputs(json_input)
+        json_input : a valid dict ex : {"var1":"value1","var2":"value2"}
     '''
     route="/update_variables_from_json_inputs"
     env.level+='-'
@@ -2628,10 +2629,12 @@ def update_variables_from_json_inputs(inputs):
     # ===================================================================    
     json_dict=json.loads(inputs)
     print('json_dict : ',cyan(json_dict,bold=True))
+    variable_list=[]
     for item,v in json_dict.items():
         print(item)
+        variable_list.append(item)        
         if '$' in v:    
-            word=v.replace('$','')
+            word=v.replace('$','')            
             print(f'\n OK We replace this name : {word} by its value in Database\n')            
             v=replace_this_variable_by_its_value(word)
         print(v)        
@@ -2639,7 +2642,7 @@ def update_variables_from_json_inputs(inputs):
         variables_sqlite_update_value(item,v)
     # ===================================================================
     env.level=env.level[:-1]
-    return 1
+    return variable_list
     
 
 
@@ -4724,9 +4727,11 @@ def format_typosquatt_domains_to_add(var_to_update,list_of_words):
 
 
 #  def_execute_this_step_then_next***
-def execute_this_step_then_next(step_name,step_input_list,step_output,step_output_list):
+def execute_this_step_then_next(step_name,step_input_list,step_output,the_output_variable):
     '''
-    MODIFIED : 2025-12-10T12:16:16.000Z
+    THIS FUNCTION MUST BE EDITED IN ./z_branch_functions_code/execute_this_step_then_next_function_header.py
+    
+    MODIFIED : 2025-12-18
 
     description : execute step_name step and then go to next step
     
@@ -4787,7 +4792,8 @@ def execute_this_step_then_next(step_name,step_input_list,step_output,step_outpu
                 print('input variables : ',item[5])
                 print('output variables : ',item[6])
                 print('Step input variables list : ',step_input_list)
-                print('Step output variables list : ',step_output_list)  
+                print('Step output variables list : ',the_output_variable)  
+                
                 step_input_variable_list=[]
                 database="variables"
                 #database = os.getcwd()+'/z_bases/'+database+'.db'
@@ -4964,6 +4970,20 @@ def execute_this_step_then_next(step_name,step_input_list,step_output,step_outpu
                         result=1
                     else:
                         result=0 
+                elif called_function=='read_variable_from_variable_db':
+                    value=read_variable_from_variable_db(step_input_variable_list[0])
+                    if  value != "no_value":
+                        response_txt=value
+                        result=1                             
+                        with open('./json_results/json_result.json','w') as file:
+                            file.write(response_txt)             
+                        the_output_variable=the_output_variable.strip()
+                        if the_output_variable!='' and the_output_variable!='None':
+                            variables_sqlite_update_value(the_output_variable,value)                      
+                    else:
+                        with open('./json_results/json_result.json','w') as file:
+                            file.write({"Error"})    
+                        result=0
                 elif called_function=='set_observable_type_to_domain':
                     response_txt="{'status':'success'}"
                     set_observable_type_to_domain()
@@ -4972,8 +4992,8 @@ def execute_this_step_then_next(step_name,step_input_list,step_output,step_outpu
                     result=1
                 elif called_function=='update_variables_from_json_inputs':
                     print(red('xx320'))
-                    response_txt="{'status':'success'}"
-                    update_variables_from_json_inputs(step_input_variable_list[0])
+                    updated_variables_list=update_variables_from_json_inputs(step_input_variable_list[0])
+                    response_txt="{'status':'success'} - check "+json.dumps(updated_variables_list)+" variables "
                     with open('./json_results/json_result.json','w') as file:
                         file.write(response_txt)                        
                     result=1
@@ -5210,6 +5230,70 @@ def settings_sqlite_update_value(name,value):
     #loguer(env.level+' def END OF settings_sqlite_update_value() in app.py : >')    
     env.level=env.level[:-1]
     return result
+    
+
+
+#  def_sqlite_db_delete_entry_by_field***
+def sqlite_db_delete_entry_by_field(db_name,field_name,row):
+    '''
+    MODIFIED : 2025-12-16
+
+    description : delete a row from the sqllite Database base on the value of a field
+    
+    how to call it : result = sqlite_db_delete_entry_by_field(db_name,field_name,row)
+    '''
+    route="/sqlite_db_delete_entry_by_field"
+    env.level+='-'
+    print('\n'+env.level,white('def sqlite_db_delete_entry_by_field() in app.py : >\n',bold=True))
+    loguer(env.level+' def sqlite_db_delete_entry_by_field() in app.py : >')
+    # ===================================================================    
+    print()
+    print('db_name :',db_name)     
+    with open('./sqlite_databases_code/'+db_name+'/db_details.txt') as file:
+        db_details_dict=json.loads(file.read())
+    print('db_details_dict : \n',yellow(db_details_dict,bold=True)) 
+    database = os.getcwd()+'/z_bases/'+db_name+'.db'
+    database=database.replace("\\","/")
+    table=db_details_dict['table_name']
+    print('database is :',database) 
+    print('table is :',table)   
+    print('row to delete is :',row)     
+    sql=f'DELETE FROM {table} where '+field_name+' = "'+row+'"'
+    print('\nsql request :',yellow(sql,bold=True))
+    con = sqlite3.connect(database)       
+    try:
+        cur = con.cursor()
+        cur.execute(sql)
+        con.commit()
+        print(green('OK DONE ENTRY DELETED',bold=True))
+        #loguer(env.level+' def END OF sqlite_db_delete_entry_by_field() in app.py : >')    
+        env.level=env.level[:-1]        
+        return 1
+    except:
+        print(red('Error',bold=True))
+        #loguer(env.level+' def END OF sqlite_db_delete_entry_by_field() in app.py : >')    
+        env.level=env.level[:-1]                
+        return 0
+
+
+
+#  def_read_variable_from_variable_db***
+def read_variable_from_variable_db(variable):
+    '''
+    MODIFIED : 2025-12-18T14:21:30.000Z
+    description : read the value of passed variable name and return it ... to assign the an output variable
+    
+    how to call it : resultat=read_variable_from_variable_db(variable)
+    '''
+    route="/read_variable_from_variable_db"
+    env.level+='-'
+    print('\n'+env.level,white('def read_variable_from_variable_db() in app.py : >\n',bold=True))
+    loguer(env.level+' def read_variable_from_variable_db() in app.py : >')  
+    print ('variable :',yellow(variable,bold=True))
+    if variable=='':
+        variable="no_value"
+    env.level=env.level[:-1]
+    return variable
     
 
 
@@ -5684,7 +5768,6 @@ def new_function_create():
     args = request.args.get('args')       
     filename='./code_app_functions/def_'+name+'.py'
     filename2='/def_'+name+'.py'
-
     print()
     print(' filename :\n',yellow(filename,bold=True))
     print()
@@ -5746,8 +5829,6 @@ def new_function_create():
     env.level=env.level[:-1]
     return html_output   
     
-    
-
 
 # def_new_route_create***
 @app.route('/new_route_create', methods=['GET','POST'])
@@ -5911,25 +5992,38 @@ def page_info():
     #loguer(env.level+' route page_info() : >')
     # print()
     route="/page_info"
-    page=request.args.get('page')
-    route=request.args.get('route').split('?')[0]
-    # print()
-    # print('page : ',yellow(page,bold=True))
-    # print()
-    # print('route : ',yellow(route,bold=True))
-    url='/page_info?page='+page+'&route='+route
-    with open('./result/home_url.txt','w') as file:
-        file.write(url)
-    chunk=route+'.py'
-    chunk=chunk.replace('/','route_def_')
-    # print()
-    with open('./result/current_edited_imported_script.txt') as file:
-        last_edited_script=file.read()          
-    # print()
-    # print('last_edited_script : ',yellow(last_edited_script,bold=True))
-    # print()          
-    env.level=env.level[:-1]
-    return render_template('page_info.html',page=page,route=route,chunk=chunk,last_edited_script=last_edited_script)
+    if os.path.exists('./code_architecture/app_functions.txt'):
+        page=request.args.get('page')
+        route=request.args.get('route').split('?')[0]
+        # print()
+        # print('page : ',yellow(page,bold=True))
+        # print()
+        # print('route : ',yellow(route,bold=True))
+        url='/page_info?page='+page+'&route='+route
+        with open('./result/home_url.txt','w') as file:
+            file.write(url)
+        chunk=route+'.py'
+        chunk=chunk.replace('/','route_def_')
+        # print()
+        with open('./result/current_edited_imported_script.txt') as file:
+            last_edited_script=file.read()          
+        # print()
+        # print('last_edited_script : ',yellow(last_edited_script,bold=True))
+        # print()          
+        env.level=env.level[:-1]
+        return render_template('page_info.html',page=page,route=route,chunk=chunk,last_edited_script=last_edited_script)
+    else:
+        message1="Disabled"
+        image="../static/images/nok.png" 
+        message2="This feature is not enabled on this version"
+        message3="/"
+        message4="Home"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        #loguer(env.level+' route END OF new_python_function() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
     
 
 
@@ -6460,34 +6554,48 @@ read and display the content of the code snippet
 @app.route('/code_edit', methods=['GET','POST'])
 def code_edit():
     env.level+='-'
-    # print()
-    # print(env.level,white('route code_edit() : >',bold=True))
-    #loguer(env.level+' route code_edit() : >')
-    # print()
-    python_code = request.args.get('code')
-    the_type = request.args.get('type')    
-    if python_code=='route_def_.py':
-        python_code='route_def_index.py'
-    # print()
-    # print(' python_code:\n',yellow(python_code,bold=True))
-    # print()  
-    # print()
-    # print(' the_type :\n',yellow(the_type,bold=True))
-    # print() 
-    if the_type=='function':
-        filename=f'./code_app_functions/{python_code}'  
-    elif the_type=='route':
-        filename=f'./code_app_routes/{python_code}' 
+    route='/code_edit'
+    if os.path.exists('./code_architecture/app_functions.txt'): 
+        # print()
+        # print(env.level,white('route code_edit() : >',bold=True))
+        #loguer(env.level+' route code_edit() : >')
+        # print()
+        python_code = request.args.get('code')
+        the_type = request.args.get('type')    
+        if python_code=='route_def_.py':
+            python_code='route_def_index.py'
+        # print()
+        # print(' python_code:\n',yellow(python_code,bold=True))
+        # print()  
+        # print()
+        # print(' the_type :\n',yellow(the_type,bold=True))
+        # print() 
+        if the_type=='function':
+            filename=f'./code_app_functions/{python_code}'  
+        elif the_type=='route':
+            filename=f'./code_app_routes/{python_code}' 
+        else:
+            filename=f'./code_app_html_templates/{python_code}'
+        filename=filename.replace('/.','/')
+        # print()
+        # print(' filename :',yellow(filename,bold=True))
+        # print()      
+        with open(filename) as file:
+            code=file.read()
+        env.level=env.level[:-1]
+        return render_template("./code_editor.html",code=code,fichier=filename,the_type=the_type)
     else:
-        filename=f'./code_app_html_templates/{python_code}'
-    filename=filename.replace('/.','/')
-    # print()
-    # print(' filename :',yellow(filename,bold=True))
-    # print()      
-    with open(filename) as file:
-        code=file.read()
-    env.level=env.level[:-1]
-    return render_template("./code_editor.html",code=code,fichier=filename,the_type=the_type)
+        message1="Disabled"
+        image="../static/images/nok.png" 
+        message2="This feature is not enabled on this version"
+        message3="/"
+        message4="Home"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        #loguer(env.level+' route END OF new_python_function() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)       
 
 
 
@@ -9554,6 +9662,7 @@ def bases():
 '''            
         menu='''
                     <li><a href="/">Back to main page</a></li>
+                    <li><a href="/backup_all_dbs">Backup All Databases</a></li>
                     <li><a href="/confirm_reset_databases">Reset Databases</a></li>
                     <li><a href="/logout">log Out</a></li>
                     <li><a href="javascript:popup_window('/page_info?page=route_def_bases.py&route='''+route+'''','page_info',700,600);">:</a></li>
@@ -11116,26 +11225,34 @@ def codegen():
     env.level+='-'
     print('\n'+env.level,white('route codegen() in ***app.py*** : >\n',bold=True))
     loguer(env.level+' route codegen() in ***app.py*** : >')
-    global client_id
-    global client_password
-    global host
-    global host_for_token
-    global profil_name
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
-        # ===================================================================       
-        message1="Message 1 :"
-        image="../static/images/toolbox.png" 
-        message2="Message 2 :"
-        message3="/Message 3"
-        message4="Message 4 in button"
-        PAGE_DESTINATION="z_codegen"
-        page_name="z_codegen.html"
-        loguer(env.level+' route END OF codegen() in ***app.py*** : >')
-        # ===================================================================
-        env.level=env.level[:-1]
-        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        if os.path.exists('./code_architecture/app_functions.txt'):
+            # ===================================================================       
+            message1="Message 1 :"
+            image="../static/images/toolbox.png" 
+            message2="Message 2 :"
+            message3="/Message 3"
+            message4="Message 4 in button"
+            PAGE_DESTINATION="z_codegen"
+            page_name="z_codegen.html"
+            loguer(env.level+' route END OF codegen() in ***app.py*** : >')
+            # ===================================================================
+            env.level=env.level[:-1]
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        else:
+            message1="Disabled"
+            image="../static/images/nok.png" 
+            message2="This feature is not enabled on this version"
+            message3="/"
+            message4="Home"
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"
+            #loguer(env.level+' route END OF new_python_function() in ***app.py*** : >')
+            # ===================================================================
+            env.level=env.level[:-1]
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
         
 
 
@@ -14361,6 +14478,7 @@ def product_api_call():
 @app.route('/workflows_dashboard', methods=['GET'])
 def workflows_dashboard():
     '''
+    version 20251218
     Flask Route for the workflows_dashboard Database dashoard
     '''
     route="/workflows_dashboard"
@@ -14454,7 +14572,7 @@ def workflows_dashboard():
                         <div class="col-4 col-6-medium col-12-small">
                             <article class="box style2">
                                 <a href="/workflows_solution" class="image featured"><img src="../static/images/database0.png" alt="" /></a>
-                                <h3><a href="/workflows_solution">Install Solution</a></h3>
+                                <h3><a href="/select_workflow_ok?workflow_name=Automation Challenge Solution">Install Solution</a></h3>
                                 <p>Install Workflow solution</p>
                             </article>
                         </div>                           
@@ -15040,6 +15158,17 @@ def workflows_db_delete_entry():
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
+        # read current edited workflow name
+        database = os.getcwd()+'/z_bases/variables.db'
+        database=database.replace("\\","/")
+        table="variables"
+        print('database is :',database)    
+        print('table is :',table)  
+        where_clause=" where name='*system*_workflow_name_dont_delete'"     
+        entry=read_db(database,table,where_clause)
+        print('entry :\n',type(entry))
+        current_workflow_name=entry[0][3] 
+        # ###############################""
         row=request.args.get("row")
         print("\nrow : ",row)        
         # GET variable from calling web page
@@ -15074,11 +15203,12 @@ def workflows_db_delete_entry():
         res = df.values.tolist()
         step_dict={}
         for item in res:
-            print(item)    
-            step_dict[item[2]]={
-                'title':item[2],
-                'description':item[3]
-            }         
+            if workflow_name==item[1]:        
+                print(item)    
+                step_dict[item[2]]={
+                    'title':item[2],
+                    'description':item[3]
+                }         
         print('step_dict : ' ,yellow(step_dict,bold=True))
         # sort detection by steps
         sorted_dict = {}
@@ -15115,6 +15245,7 @@ def workflows_db_delete_entry():
 @app.route('/workflows_db_add_entry', methods=['GET'])
 def workflows_db_add_entry():
     '''
+    version : 2025-12-17
     Flask Route for the workflows_db_add_entry Database Update an entry
     '''
     route="/workflows_db_add_entry"
@@ -15123,7 +15254,18 @@ def workflows_db_add_entry():
     loguer(env.level+' route workflows_db_add_entry() in ***app.py*** : >')
     if not session.get('logged_in'):
         return render_template('login.html')
-    else:        
+    else:    
+        # read current edited workflow name
+        database = os.getcwd()+'/z_bases/variables.db'
+        database=database.replace("\\","/")
+        table="variables"
+        print('database is :',database)    
+        print('table is :',table)  
+        where_clause=" where name='*system*_workflow_name_dont_delete'"     
+        entry=read_db(database,table,where_clause)
+        print('entry :\n',type(entry))
+        workflow_name=entry[0][3]  
+        # OKAY then read workflow DB    
         db_name = "workflows.db"
         column_list=['workflow_name','step','step_name','input','output','comment']
         print('\ncolumn_list :',cyan(column_list,bold=True))
@@ -15142,12 +15284,13 @@ def workflows_db_add_entry():
         steps_dict={}
         nb_step=0
         for item in res:
-            print(item)    
-            steps_dict[item[2]]={
-                'title':item[2],
-                'index':item[0]
-            }  
-            nb_step+=1
+            if workflow_name==item[1]:        
+                print(item)    
+                steps_dict[item[2]]={
+                    'title':item[2],
+                    'index':item[0]
+                }  
+                nb_step+=1
         print('steps_dict : ' ,yellow(steps_dict,bold=True))
         # sort detection by steps
         sorted_dict = {}
@@ -15258,7 +15401,7 @@ def workflows_db_add_entry():
         loguer(env.level+' route END OF example_name() in ***app.py*** : >')
         # ===================================================================
         env.level=env.level[:-1]
-        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,page_name=page_name,column_list=column_list,index=index,db_name=db_name,steps_dict=sorted_dict,function_dict=function_dict,variables_dict=sorted_variables_dict,str_next_step=str_next_step,next_step=next_step)
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,page_name=page_name,column_list=column_list,index=index,db_name=db_name,steps_dict=sorted_dict,function_dict=function_dict,variables_dict=sorted_variables_dict,str_next_step=str_next_step,next_step=next_step,workflow_name=workflow_name)
  
 
 
@@ -15276,6 +15419,17 @@ def workflows_db_add_entry_ok():
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
+        # read current edited workflow name
+        database = os.getcwd()+'/z_bases/variables.db'
+        database=database.replace("\\","/")
+        table="variables"
+        print('database is :',database)    
+        print('table is :',table)  
+        where_clause=" where name='*system*_workflow_name_dont_delete'"     
+        entry=read_db(database,table,where_clause)
+        print('entry :\n',type(entry))
+        current_workflow_name=entry[0][3]  
+        # ###################
         workflow_name=request.args.get("workflow_name")
         print("\nworkflow_name: ",workflow_name)
         step=request.args.get("step")
@@ -15306,6 +15460,21 @@ def workflows_db_add_entry_ok():
             insert_in_position=int(insert_in_position)
             result=renumber_steps(insert_in_position)
         print("\nstep: ",step)
+        
+        if workflow_name!=current_workflow_name and step=="Step 01":
+            # new workflow
+            database="variables.db"
+            table="variables"
+            print('database is :',database) 
+            print(cyan(f'\n new value : {workflow_name} for variable : *system*_workflow_name_dont_delete \n',bold=True))
+            #print('\n value = ',red(value,bold=True))   
+            with sqlite3.connect('./z_bases/'+database) as conn:
+                cursor=conn.cursor()
+                sql_request = f"UPDATE 'variables' SET value = '{workflow_name}' where name = '*system*_workflow_name_dont_delete'"      
+                print('sql_request :',cyan(sql_request,bold=True))
+                cursor.execute(sql_request)
+
+            
         step_prefix=request.args.get('step_prefix')
         print('\nstep_prefix : ',step_prefix)        
         step_name=request.args.get('step_name')
@@ -15368,11 +15537,14 @@ def workflows_db_add_entry_ok():
             res = df.values.tolist()
             step_dict={}
             for item in res:
-                print(item)    
-                step_dict[item[2]]={
-                    'title':item[2],
-                    'description':item[3]
-                }         
+                if workflow_name==item[1]:
+                    print(item)    
+                    step_dict[item[2]]={
+                        'title':item[2],
+                        'description':item[3]
+                    }            
+                    print(item)    
+        
             print('step_dict : ' ,yellow(step_dict,bold=True))
             # sort detection by steps
             sorted_dict = {}
@@ -16410,7 +16582,7 @@ def variables_db_duplicate_entry():
 @app.route('/workflows', methods=['GET'])
 def workflows():
     '''
-    Created : 2025-10-29T16:28:37.000Z
+    Created : 2025-12-17
 
     description : display workflow creation dashboard
     '''
@@ -16426,6 +16598,17 @@ def workflows():
     if not session.get('logged_in'):
         return render_template('login.html')
     else:     
+        # read current edited workflow name
+        database = os.getcwd()+'/z_bases/variables.db'
+        database=database.replace("\\","/")
+        table="variables"
+        print('database is :',database)    
+        print('table is :',table)  
+        where_clause=" where name='*system*_workflow_name_dont_delete'"     
+        entry=read_db(database,table,where_clause)
+        print('entry :\n',type(entry))
+        workflow_name=entry[0][3]  
+        # OKAY then read workflow DB
         keyword='' # select every entries in DB
         with open('./sqlite_databases_code/workflows/db_details.txt') as file:
             db_details_dict=json.loads(file.read())
@@ -16449,11 +16632,12 @@ def workflows():
         res = df.values.tolist()
         step_dict={}
         for item in res:
-            print(item)    
-            step_dict[item[2]]={
-                'title':item[2],
-                'description':item[3]
-            }         
+            if workflow_name==item[1]:
+                print(item)    
+                step_dict[item[2]]={
+                    'title':item[2],
+                    'description':item[3]
+                }         
         print('step_dict : ' ,yellow(step_dict,bold=True))
         # sort detection by steps
         sorted_dict = {}
@@ -16492,7 +16676,7 @@ def workflows():
 @app.route('/workflows_db_read_custom', methods=['GET'])
 def workflows_db_read_custom():
     '''
-    Created : 2025-11-30
+    Created : 2025-12-30
 
     description : Display the workflow read DB custom formular
     '''
@@ -16503,6 +16687,17 @@ def workflows_db_read_custom():
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
+        # read current edited workflow name
+        database = os.getcwd()+'/z_bases/variables.db'
+        database=database.replace("\\","/")
+        table="variables"
+        print('database is :',database)    
+        print('table is :',table)  
+        where_clause=" where name='*system*_workflow_name_dont_delete'"     
+        entry=read_db(database,table,where_clause)
+        print('entry :\n',type(entry))
+        workflow_name=entry[0][3]  
+        # ##########################
         keyword=request.args.get("keyword")
         if keyword==None:
             keyword=''  
@@ -16531,25 +16726,26 @@ def workflows_db_read_custom():
         sorted_list=sorted(res, key=lambda x: x[element_index])
         keyword=keyword.lower()            
         for item in sorted_list:
-            #print('\nitem : ',yellow(item,bold=True))
-            if keyword:
-                ii=0
-                found=0
-                for item2 in item:                    
-                    if ii!=0:
-                        item2=item2.lower()                   
-                        if keyword in item2:
-                            found=1
-                            print('\n=======================')                         
-                            print(yellow("YES FOUND",bold=True))
-                            print('\nitem2 : ',green(item2,bold=True))
-                            #print('\nkeyword: ',">"+keyword+"<")
-                            print('\n=======================')  
-                    ii+=1
-                if found:
-                        select_options=select_options+'<option value="'+str(item[2])+'">'+item[2]+'</option>' 
-            else:
-                select_options=select_options+'<option value="'+str(item[2])+'">'+item[2]+'</option>'
+            if workflow_name==item[1]:
+                #print('\nitem : ',yellow(item,bold=True))
+                if keyword:
+                    ii=0
+                    found=0
+                    for item2 in item:                    
+                        if ii!=0:
+                            item2=item2.lower()                   
+                            if keyword in item2:
+                                found=1
+                                print('\n=======================')                         
+                                print(yellow("YES FOUND",bold=True))
+                                print('\nitem2 : ',green(item2,bold=True))
+                                #print('\nkeyword: ',">"+keyword+"<")
+                                print('\n=======================')  
+                        ii+=1
+                    if found:
+                            select_options=select_options+'<option value="'+str(item[2])+'">'+item[2]+'</option>' 
+                else:
+                    select_options=select_options+'<option value="'+str(item[2])+'">'+item[2]+'</option>'
         print('=========================================')
         columns="workflow_name,step,step_name,input,output,comment"
         print('DONE')
@@ -16581,6 +16777,7 @@ def workflows_db_read_custom():
                 
                     <li><a href="/">Back to main page</a></li>
                     <li><a href="/workflows_dashboard">Back to Database Page</a></li>
+                    <li><a href="/select_workflow">Select Workflow</a></li>
                     <li><a href="/logout">log Out</a></li>
                     <li><a href="javascript:popup_window('/page_info?page=route_def_workflows_db_read.py&route=/workflows_db_read','page_info',700,600);">:</a></li>
         
@@ -16589,7 +16786,7 @@ def workflows_db_read_custom():
             <article id="indic_list" class="wrapper style4">
                 <div class="container medium">
                     <header>
-                        <h2>Database Content</h2>
+                        <h2>Workflow DB : '''+workflow_name+'''</h2>
                         <p>Select a Row</p>
                         <p>Or refine Search by keyword (in any columns)</p>
                     </header>
@@ -16735,14 +16932,20 @@ def workflows_step_details():
     env.level+='-'
     print('\n'+env.level,white('route workflows_step_details() in ***app.py*** : >\n',bold=True))
     loguer(env.level+' route workflows_step_details() in ***app.py*** : >')
-    global client_id
-    global client_password
-    global host
-    global host_for_token
-    global profil_name
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
+        # read current edited workflow name
+        database = os.getcwd()+'/z_bases/variables.db'
+        database=database.replace("\\","/")
+        table="variables"
+        print('database is :',database)    
+        print('table is :',table)  
+        where_clause=" where name='*system*_workflow_name_dont_delete'"     
+        entry=read_db(database,table,where_clause)
+        print('entry :\n',type(entry))
+        current_workflow_name=entry[0][3]  
+        # ######################
         # GET variable from calling web page
         step=request.args.get("step")
         step0=step
@@ -16753,7 +16956,7 @@ def workflows_step_details():
         print("\ndatabase : ",database)
         table="workflows"
         print("\ntable : ",table)
-        where_clause=f'where step = "{step}"'
+        where_clause=f'where workflow_name = "{current_workflow_name}" and step = "{step}"'
         entry_list=sqlite_db_select_entry(database,table,where_clause)
         print("\nentry_list : \n",entry_list)
         row=entry_list[0][0]
@@ -16792,10 +16995,11 @@ def workflows_step_details():
         res = df.values.tolist()
         function_dict={}
         for item in res:
-            print(item)    
-            function_dict[item[1]]={
-                'title':item[1],
-            }     
+            if workflow_name==item[1]:        
+                print(item)    
+                function_dict[item[1]]={
+                    'title':item[1],
+                }     
         # functions
         # Functions
         db_name = "functions.db"
@@ -16887,7 +17091,7 @@ def workflows_step_details():
         # ######################################
         PAGE_DESTINATION="z_db_display_entry_details_workflows"
         page_name="z_db_display_entry_details_workflows.html"
-        loguer(env.level+' route END OF db_row_details_workflows() in ***app.py*** : >')
+        #loguer(env.level+' route END OF db_row_details_workflows() in ***app.py*** : >')
         # ===================================================================
         env.level=env.level[:-1]
         return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,row=row,page_name=page_name,db_name=database,workflow_name=workflow_name,step=step0,step_prefix=step_prefix,step_name=step_name,sorted_step_dict=sorted_dict,input=input,output=output,comment=comment,function_dict=function_dict,variables_dict=sorted_variables_dict)
@@ -16933,7 +17137,7 @@ def run_workflow():
 @app.route('/go_run_workflow', methods=['GET'])
 def go_run_workflow():
     '''
-    Created : 2025-10-31T14:00:17.000Z
+    Created : 2025-12-17
 
     description : go to step execution formular
     '''
@@ -16941,14 +17145,20 @@ def go_run_workflow():
     env.level+='-'
     print('\n'+env.level,white('route go_run_workflow() in ***app.py*** : >\n',bold=True))
     loguer(env.level+' route go_run_workflow() in ***app.py*** : >')
-    global client_id
-    global client_password
-    global host
-    global host_for_token
-    global profil_name
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
+        # read current edited workflow name
+        database = os.getcwd()+'/z_bases/variables.db'
+        database=database.replace("\\","/")
+        table="variables"
+        print('database is :',database)    
+        print('table is :',table)  
+        where_clause=" where name='*system*_workflow_name_dont_delete'"     
+        entry=read_db(database,table,where_clause)
+        print('entry :\n',type(entry))
+        workflow_name=entry[0][3]  
+        # ###########################
         with open('./result/step.txt') as file:
             step=file.read()
         print("\nRead step  : ",step)            
@@ -16980,7 +17190,7 @@ def go_run_workflow():
         print("\ndatabase : ",database)
         table="workflows"
         print("\ntable : ",table)
-        where_clause=f'where step = "{step}"'
+        where_clause=f'where workflow_name = "{workflow_name}" and step = "{step}"'
         entry_list=sqlite_db_select_entry(database,table,where_clause)
         print("\nentry_list : \n",entry_list)        
         if entry_list!=[]:
@@ -17021,7 +17231,9 @@ def go_run_workflow():
 @app.route('/execute_this_step', methods=['GET'])
 def execute_this_step():
     '''
-    Created : 2025-12-07
+    Created : 2025-12-17
+    
+    This route must be edited in ./z_branch_functions_code header and footer
     '''
     route="/execute_this_step"
     env.level+='-'
@@ -17029,7 +17241,18 @@ def execute_this_step():
     loguer(env.level+' route execute_this_step() in ***app.py*** : >')
     if not session.get('logged_in'):
         return render_template('login.html')
-    else:          
+    else:       
+        # read current edited workflow name
+        database = os.getcwd()+'/z_bases/variables.db'
+        database=database.replace("\\","/")
+        table="variables"
+        print('database is :',database)    
+        print('table is :',table)  
+        where_clause=" where name='*system*_workflow_name_dont_delete'"     
+        entry=read_db(database,table,where_clause)
+        print('entry :\n',type(entry))
+        current_workflow_name=entry[0][3] 
+        # ###############################""      
         global use_simulator
         with open('./json_results/json_result.json','w') as file:  
             file.write('{}')
@@ -17063,7 +17286,7 @@ def execute_this_step():
         print("\ndatabase : ",database)
         table="workflows"
         print("\ntable : ",table)
-        where_clause=f'where step = "{step}"'
+        where_clause=f'where workflow_name = "{current_workflow_name}" and step = "{step}"'
         entry_list=sqlite_db_select_entry(database,table,where_clause)
         print("\nentry_list : \n",entry_list)
         row=entry_list[0][0]
@@ -17077,7 +17300,9 @@ def execute_this_step():
             input
         '''
         step_output=entry_list[0][5]
-        step_output_list=step_output.split(',')
+        #step_output_list=step_output.split(',')
+        step_output_list=''
+        step_output_list=step_output
         comment=entry_list[0][6]
         # ############################################
         # search for API calls
@@ -17134,7 +17359,8 @@ def execute_this_step():
                         print('function input variables : ',item[5])
                         print('function output variables : ',item[6])
                         print('Step input variables list ( preempt to function input variables ) : ',step_input_list)
-                        print('Step output variables list ( preempt to function ouput variables ): ',step_output_list)  
+                        the_output_variable=step_output_list
+                        print('Step output variables list ( preempt to function ouput variables ): ',the_output_variable)  
                         step_input_variable_list=[]
                         database="variables"
                         #database = os.getcwd()+'/z_bases/'+database+'.db'
@@ -17346,6 +17572,22 @@ def execute_this_step():
                                     file.write(str_next_step)                               
                             else:
                                 result=0 
+                        elif called_function=='read_variable_from_variable_db':
+                            value=read_variable_from_variable_db(step_input_variable_list[0])
+                            if  value != "no_value":
+                                response_txt=value
+                                result=1                             
+                                with open('./json_results/json_result.json','w') as file:
+                                    file.write(response_txt)             
+                                with open('./result/step.txt','w') as file:
+                                    file.write(str_next_step)         
+                                the_output_variable=the_output_variable.strip()
+                                if the_output_variable!='' and the_output_variable!='None':
+                                    variables_sqlite_update_value(the_output_variable,value)                      
+                            else:
+                                with open('./json_results/json_result.json','w') as file:
+                                    file.write({"Error"})    
+                                result=0
                         elif called_function=='set_observable_type_to_domain':
                             response_txt="{'status':'success'}"
                             set_observable_type_to_domain()
@@ -17356,8 +17598,8 @@ def execute_this_step():
                                 file.write(str_next_step)     
                         elif called_function=='update_variables_from_json_inputs':
                             print(red('xx320'))
-                            response_txt="{'status':'success'}"
-                            update_variables_from_json_inputs(step_input_variable_list[0])
+                            updated_variables_list=update_variables_from_json_inputs(step_input_variable_list[0])
+                            response_txt="{'status':'success'} - check "+json.dumps(updated_variables_list)+" variables "
                             with open('./json_results/json_result.json','w') as file:
                                 file.write(response_txt)                        
                             result=1
@@ -18200,7 +18442,7 @@ def functions_db_add_entry_ok():
             cur = con.cursor()
             cur.execute(sql_add,sqlite_data)
             con.commit()
-            print(green('OK DONE ENTRY DELETED',bold=True))
+            print(green('OK DONE ENTRY CREATED',bold=True))
             image="../static/images/ok.png" 
             message1="Function Added"
             message2="Entry was added to DB"
@@ -18890,6 +19132,19 @@ def workflows_solution():
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
+        # #################  Update current selected workflow
+        database="variables.db"
+        table="variables"
+        print('database is :',database) 
+        workflow_name="Automation Challenge"
+        print(cyan(f'\n new value : {workflow_name} for variable : *system*_workflow_name_dont_delete \n',bold=True))
+        #print('\n value = ',red(value,bold=True))   
+        with sqlite3.connect('./z_bases/'+database) as conn:
+            cursor=conn.cursor()
+            sql_request = f"UPDATE 'variables' SET value = '{workflow_name}' where name = '*system*_workflow_name_dont_delete'"      
+            print('sql_request :',cyan(sql_request,bold=True))
+            cursor.execute(sql_request)    
+        # ##################
         action_type = 'replace'
         with open('./sqlite_databases_code/workflows/db_details.txt') as file:
             db_details_dict=json.loads(file.read())
@@ -21019,7 +21274,7 @@ def product_dashboard():
 @app.route('/go_run_workflow_all', methods=['GET'])
 def go_run_workflow_all():
     '''
-    Created : 2025-12-01T18:05:42.000Z
+    Created : 2025-12-18
 
     description : run the whole workflow with no break
     '''
@@ -21030,6 +21285,18 @@ def go_run_workflow_all():
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
+        # read current edited workflow name
+        database = os.getcwd()+'/z_bases/variables.db'
+        database=database.replace("\\","/")
+        table="variables"
+        print('database is :',database)    
+        print('table is :',table)  
+        where_clause=" where name='*system*_workflow_name_dont_delete'"     
+        entry=read_db(database,table,where_clause)
+        print('entry :\n',type(entry))
+        current_workflow_name=entry[0][3] 
+        print('\ncurrent_workflow_name',yellow(current_workflow_name,bold=True))
+        # ###############################""
         with open('./sqlite_databases_code/workflows/db_details.txt') as file:
             db_details_dict=json.loads(file.read())
         print('db_details_dict : \n',yellow(db_details_dict,bold=True))
@@ -21059,26 +21326,25 @@ def go_run_workflow_all():
         print("\ntable : ",table) 
         result=1
         for itemA in sorted_list:
-            print('\n',yellow(itemA[2],bold=True),yellow(itemA[3],bold=True))
-            #input('NEXT ?')            
-            step=itemA[2]
-            with open('./json_results/json_result.json','w') as file:  
-                file.write('{}')
-            where_clause=f'where step = "{step}"'
-            entry_listA=sqlite_db_select_entry(database,table,where_clause)
-            print("\nentry_listA : \n",entry_listA)
-            #row=entry_listA[0][0]
-            #workflow_name=entry_listA[0][1]
-            step=entry_listA[0][2]
-            step_name=entry_listA[0][3]         
-            step_input=entry_listA[0][4]
-            step_input_list=step_input.split(',')
-            step_output=entry_listA[0][5]
-            step_output_list=step_output.split(',')
-            execute_this_step_then_next(step_name,step_input_list,step_output,step_output_list)
-            #comment=entry_listA[0][6]        
-
-                                           
+            if itemA[1]==current_workflow_name:
+                print('\n',yellow(itemA[2],bold=True),yellow(itemA[3],bold=True))
+                #input('NEXT ?')            
+                step=itemA[2]
+                with open('./json_results/json_result.json','w') as file:  
+                    file.write('{}')
+                where_clause=f'where workflow_name = "{current_workflow_name}" and step = "{step}"'
+                entry_listA=sqlite_db_select_entry(database,table,where_clause)
+                print("\nentry_listA : \n",entry_listA)
+                #row=entry_listA[0][0]
+                #workflow_name=entry_listA[0][1]
+                step=entry_listA[0][2]
+                step_name=entry_listA[0][3]         
+                step_input=entry_listA[0][4]
+                step_input_list=step_input.split(',')
+                step_output=entry_listA[0][5]
+                #step_output_list=step_output.split(',')
+                execute_this_step_then_next(step_name,step_input_list,step_output,step_output)
+            #comment=entry_listA[0][6]                                                  
         # ###############################################################   
         if result==0:
             input('STOP !')
@@ -21343,22 +21609,16 @@ def functions_main_dashboard():
 def functions_list():
     '''
     Created : 2025-12-14T14:12:31.000Z
-
     description : display the function list page
     '''
     route="/functions_list"
     env.level+='-'
     print('\n'+env.level,white('route functions_list() in ***app.py*** : >\n',bold=True))
     loguer(env.level+' route functions_list() in ***app.py*** : >')
-    global client_id
-    global client_password
-    global host
-    global host_for_token
-    global profil_name
     if not session.get('logged_in'):
         return render_template('login.html')
     else:     
-        functions_dict={}        
+        functions_dict={}
         database = os.getcwd()+'/z_bases/functions.db'
         database=database.replace("\\","/")
         print('database is :',database)
@@ -21383,19 +21643,688 @@ def functions_list():
     'inputs':item[5],
     'outputs':item[6],
     'comment':item[7]    
-}           
+            }
             nb+=1
         message1="Message 1 :"
-        image="../static/images/toolbox.png" 
+        image="../static/images/toolbox.png"
         message2="Message 2 :"
         message3="/Message 3"
         message4="Message 4 in button"
         PAGE_DESTINATION="z_functions_list"
         page_name="z_functions_list.html"
-        loguer(env.level+' route END OF functions_list() in ***app.py*** : >')
+        #loguer(env.level+' route END OF functions_list() in ***app.py*** : >')
         # ===================================================================
         env.level=env.level[:-1]
         return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name,functions_dict=functions_dict)
+        
+
+
+#  def_new_python_function***
+@app.route('/new_python_function', methods=['GET'])
+def new_python_function():
+    '''
+    Created : 2025-12-17
+
+    description : Add New python function web formular
+    '''
+    route="/new_python_function"
+    env.level+='-'
+    print('\n'+env.level,white('route new_python_function() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route new_python_function() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:    
+        if os.path.exists('./code_architecture/app_functions.txt'):
+            message1="Message 1 :"
+            image="../static/images/toolbox.png" 
+            message2="Message 2 :"
+            message3="/Message 3"
+            message4="Message 4 in button"
+            PAGE_DESTINATION="z_new_python_function"
+            page_name="z_new_python_function.html"
+            #loguer(env.level+' route END OF new_python_function() in ***app.py*** : >')
+            # ===================================================================
+            env.level=env.level[:-1]
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)         
+        else:
+            message1="Disabled"
+            image="../static/images/nok.png" 
+            message2="This feature is not enabled on this version"
+            message3="/"
+            message4="Home"
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"
+            #loguer(env.level+' route END OF new_python_function() in ***app.py*** : >')
+            # ===================================================================
+            env.level=env.level[:-1]
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)   
+        
+
+
+#  def_new_python_function_create***
+@app.route('/new_python_function_create', methods=['GET'])
+def new_python_function_create():
+    '''
+    Created : 2025-12-16T14:40:38.000Z
+
+    description : create the ne python function from the web formular
+    '''
+    route="/new_python_function_create"
+    env.level+='-'
+    print('\n'+env.level,white('route new_python_function_create() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route new_python_function_create() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        name = request.args.get('name')
+        name=name.replace('-','_')
+        name=name.replace(' ','_') 
+        python_function_name=name
+        description = request.args.get('description')
+        args = request.args.get('args')       
+        filename='./code_app_functions/def_'+name+'.py'
+        filename2='/def_'+name+'.py'
+
+        print()
+        print(' filename :\n',yellow(filename,bold=True))
+        print()
+        print()
+        print(' filename2 :\n',yellow(filename2,bold=True))
+        print()
+        print(' description :\n',yellow(description,bold=True))
+        print()
+        print(magenta('--> CALL  A SUB FUNCTION :',bold=True))
+        # check if file already exits
+        with open('./code_architecture/app_functions.txt') as file:
+            text_content=file.read()
+        print(' text_content :\n',yellow(text_content,bold=True))
+        with open('./code_architecture/app_routes.txt') as file:
+            text_content2=file.read()
+        print(' text_content :\n',yellow(text_content,bold=True))    
+        print()          
+        mot=filename2.replace('/','')
+        print(' mot :\n',yellow(mot,bold=True))
+        print()    
+        if mot in text_content or mot in text_content2:
+            print(filename+' already exists ! Choose another name')
+            message1="Already Exist"
+            image="../static/images/nok.png" 
+            message2="this function already exist"
+            message3="/new_python_function"
+            message4="Create a new function"
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"
+            # ===================================================================
+            env.level=env.level[:-1]
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)       
+        else:
+            print(yellow(f'     {filename} does NOT exists. Let s create it',bold=True))
+            with open('./code_templates/function_template.py') as file:
+                text_content=file.read()
+            text_content=text_content.replace('example_name',name)
+            version='MODIFIED : '+current_date_and_time_for_json_data()+'\n\n    description : '
+            description=version+description
+            text_content=text_content.replace('***description***',description) 
+            text_content=text_content.replace('***app.py***','app.py')        
+            text_content=text_content.replace('(args)',args)         
+            with open(filename,"w") as fichier:
+                fichier.write(text_content)     
+            with open('./code_architecture/app_functions.txt',"a+") as fichier:
+                filename2=filename2.replace('/','')
+                fichier.write(filename2+'\n')  
+            with open('./result/home_url.txt') as file:
+                home_url=file.read()    
+            line_out='''elif called_function==\''''+python_function_name+'''\':
+    guid='''+python_function_name+'''(step_input_variable_list[0],step_input_variable_list[1])
+    if "xxxx" not in guid:
+        if guid=="no_hostname":
+            response_txt="[hostname] variable is empty"
+            result=0                                
+        else:
+            response_txt=guid
+            result=variables_sqlite_update_value(step_output,guid)
+            result=1
+        with open('./json_results/json_result.json','w') as file:
+            file.write(response_txt)             
+        with open('./result/step.txt','w') as file:
+            file.write(str_next_step)    
+        # here under update output variable if we have one
+        the_output_variable=the_output_variable.strip()
+        if the_output_variable!='' and the_output_variable!='None':
+            variables_sqlite_update_value(the_output_variable,value)               
+    else:
+        with open('./json_results/json_result.json','w') as file:
+            file.write({"Error"})    
+        result=0
+'''                
+            with open('./z_branch_functions_code/def_'+python_function_name+'_branch.py',"w") as fichier: 
+                fichier.write(line_out)
+                            
+        with open('./result/current_edited_script.txt',"w") as file:
+            file.write(filename2)     
+
+        name=request.args.get("name_in_db")
+        print("\nname: ",name)
+        environment_name=request.args.get("environment_name")
+        print("\nenvironment_name: ",environment_name)
+        #description=request.args.get("description")
+        print("\ndescription: ",description)
+        called_function=python_function_name
+        print("\ncalled_function: ",called_function)
+        input_variables=request.args.get("input_variables")
+        print("\ninput_variables: ",input_variables)
+        output_variables=request.args.get("output_variables")
+        print("\noutput_variables: ",output_variables)
+        comment=request.args.get("comment")
+        print("\ncomment: ",comment)
+
+        db_name="functions"
+        print('db_name :',db_name)     
+        with open('./sqlite_databases_code/'+db_name+'/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True)) 
+        database = os.getcwd()+'/z_bases/'+db_name+'.db'
+        database=database.replace("\\","/")
+        table=db_details_dict['table_name']
+        print('database is :',database) 
+        print('table is :',table)          
+        # Get last index value in SQLITE DB
+        new_index=sqlite_db_get_last_index(db_name)+1        
+        print('new_index is :',new_index)  
+        sqlite_data=(new_index,name,environment_name,description,called_function,input_variables,output_variables,comment)
+        sql_add=f"INSERT OR IGNORE into {table} (`index`,name,environment_name,description,called_function,input_variables,output_variables,comment) VALUES (?,?,?,?,?,?,?,?)"
+        print('sqlite_data :',sqlite_data)     
+        print('sql_add :',sql_add)          
+        con = sqlite3.connect(database)       
+        try:
+            cur = con.cursor()
+            cur.execute(sql_add,sqlite_data)
+            con.commit()
+            print(green('OK DONE ENTRY CREATED',bold=True))
+            image="../static/images/ok.png" 
+            message1="Done - Restart is Needed"
+            message2="function python code was created, Function was added to DB and route branc snippet was created"
+            message3=f"/functions_db_read?keyword="+name
+            message4=f"Edit function in DB"    
+            message5="/code_edit?code=def_"+python_function_name+".py&type=function"
+            message6="/edit_route_branch?name=def_"+python_function_name+"_branch.py"            
+            PAGE_DESTINATION="z_function_create_next"
+            page_name="z_function_create_next.html"            
+            #loguer(env.level+' route END OF machin_db_add_entry_ok() in ***app.py*** : >')    
+            env.level=env.level[:-1]        
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,message5=message5,message6=message6,image=image,page_name=page_name) 
+        except:
+            print(red('Error',bold=True))
+            image="../static/images/nok.png" 
+            message1="Error"
+            message2="An error occured with functio DB"
+            message3=f"/{db_name}_dashboard"
+            message4=f"{db_name}_dasbhoard"        
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"            
+            #loguer(env.level+' route END OF machin_db_add_entry_ok() in ***app.py*** : >')    
+            env.level=env.level[:-1]        
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+            
+        env.level=env.level[:-1]
+        return html_output 
+
+#  def_edit_route_branch***
+@app.route('/edit_route_branch', methods=['GET'])
+def edit_route_branch():
+    '''
+    Created : 2025-12-16T16:40:44.000Z
+
+    description : edit a route branch for the execute this step function
+    '''
+    route="/edit_route_branch"
+    env.level+='-'
+    print('\n'+env.level,white('route edit_route_branch() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route edit_route_branch() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:      
+        if os.path.exists('./code_architecture/app_functions.txt'):    
+            name=request.args.get("name")
+            with open('./z_branch_functions_code/'+name) as file:
+                message1=file.read()
+            PAGE_DESTINATION="z_edit_route_branch"
+            page_name="z_edit_route_branch.html"
+            #loguer(env.level+' route END OF edit_route_branch() in ***app.py*** : >')
+            # ===================================================================
+            env.level=env.level[:-1]
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,name=name,page_name=page_name)
+        else:
+            message1="Disabled"
+            image="../static/images/nok.png" 
+            message2="This feature is not enabled on this version"
+            message3="/"
+            message4="Home"
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"
+            #loguer(env.level+' route END OF new_python_function() in ***app.py*** : >')
+            # ===================================================================
+            env.level=env.level[:-1]
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)        
+
+
+#  def_edit_route_branch_save***
+@app.route('/edit_route_branch_save', methods=['GET'])
+def edit_route_branch_save():
+    '''
+    Created : 2025-12-16T17:07:40.000Z
+
+    description : save modification on selected route branch
+    '''
+    route="/edit_route_branch_save"
+    env.level+='-'
+    print('\n'+env.level,white('route edit_route_branch_save() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route edit_route_branch_save() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        # ===================================================================       
+        # GET variable from calling web page
+        name=request.args.get('name')
+        print("\nname: ",name)        
+        code=request.args.get('code')
+        print("\ncode: ",code)
+        lines=code.split('\n')
+        code=''
+        for line in lines:
+            code=code+line
+        with open('./z_branch_functions_code/'+name,'w') as file:
+            file.write(code)          
+        message1="Saved - Restart is Needed"
+        image="../static/images/ok.png" 
+        message2='code updated as ./z_branch_functions_code/'+name+'_branch.py'
+        message3="/"
+        message4="Home"
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        #loguer(env.level+' route END OF edit_route_branch_save() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        
+
+
+#  def_delete_route_branch***
+@app.route('/delete_route_branch', methods=['GET'])
+def delete_route_branch():
+    '''
+    Created : 2025-12-16T17:30:02.000Z
+
+    description : delete selected route branch and function
+    '''
+    route="/delete_route_branch"
+    env.level+='-'
+    print('\n'+env.level,white('route delete_route_branch() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route delete_route_branch() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:   
+        # ===================================================================       
+        if os.path.exists('./code_architecture/app_functions.txt'):        
+            function=request.args.get('function')
+            print('\nfunction : ',function)      
+            python_function=request.args.get('python_function')
+            print('\npython_function : ',python_function)                  
+            message1="Do Really Want ?"
+            image="../static/images/warning.png" 
+            message2="Do you really want to do this. Cannot be undone"
+            message3="/delete_route_branch_ok?function="+function+"&python_function="+python_function
+            message4="Yes I do"
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"
+            #loguer(env.level+' route END OF delete_route_branch() in ***app.py*** : >')
+            # ===================================================================
+            env.level=env.level[:-1]
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        else:
+            message1="Disabled"
+            image="../static/images/nok.png" 
+            message2="This feature is not enabled on this version"
+            message3="/"
+            message4="Home"
+            PAGE_DESTINATION="operation_done"
+            page_name="operation_done.html"
+            #loguer(env.level+' route END OF new_python_function() in ***app.py*** : >')
+            # ===================================================================
+            env.level=env.level[:-1]
+            return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)         
+        
+
+
+#  def_delete_route_branch_ok***
+@app.route('/delete_route_branch_ok', methods=['GET'])
+def delete_route_branch_ok():
+    '''
+    Created : 2025-12-16T17:39:05.000Z
+
+    description : Ok delete the selected route branch and attached functions - we got confirmation
+    '''
+    route="/delete_route_branch_ok"
+    env.level+='-'
+    print('\n'+env.level,white('route delete_route_branch_ok() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route delete_route_branch_ok() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        function=request.args.get('function')
+        print('\nfunction : ',function)      
+        python_function=request.args.get('python_function')
+        print('\npython_function : ',python_function)    
+        scriptdir='./code_app_functions/'
+        print('\nscriptdir : ',scriptdir)
+        
+        filename=scriptdir+'def_'+python_function+'.py'       
+        print('\nfilename path : ',filename)  
+        print()    
+        if os.path.exists(filename):
+            print(' ok delete',filename)
+            os.remove(filename)     
+
+        filename='./z_branch_functions_code/def_'+python_function+'_branch.py'       
+        print('\nfilename path : ',filename)  
+        print()    
+        if os.path.exists(filename):
+            print(' ok delete',filename)
+            os.remove(filename)
+
+        filename='def_'+python_function+'.py'        
+        print('filename : ',filename)           
+        function_file='./code_architecture/app_functions.txt'   
+        print('\nupdate ./code_architecture/app_functions.txt')
+        with open(function_file) as file:
+            text_content=file.read()        
+        text_content=text_content.replace(filename,'')    
+        text_content=text_content.replace('\n\n','\n')
+        with open(function_file,'w') as file:      
+            file.write(text_content)
+        print('\ndelete function in function database')      
+        result=sqlite_db_delete_entry_by_field('functions','name',function)
+        # Prepare the resulting Next Web Page
+        result=1
+        if result==1:        
+            image="../static/images/ok.png" 
+            message1="Done - Restart Needed"
+            message2="Function and route branch delete"
+            message3="/stop"
+            message4="Stop App"                    
+        else:
+            image="../static/images/nok.png" 
+            message1="Error"
+            message2="Something wrong happened"
+            message3="/"
+            message4="Home"            
+        PAGE_DESTINATION="operation_done"
+        page_name="operation_done.html"
+        #loguer(env.level+' route END OF delete_route_branch_ok() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name)
+        
+
+
+#  def_select_workflow***
+@app.route('/select_workflow', methods=['GET'])
+def select_workflow():
+    '''
+    Created : 2025-12-17T15:33:06.000Z
+
+    description : display workflow list for selection
+    '''
+    route="/select_workflow"
+    env.level+='-'
+    print('\n'+env.level,white('route select_workflow() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route select_workflow() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        keyword='' # select every entries in DB
+        with open('./sqlite_databases_code/workflows/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/workflows.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        # sqlite:///:memory: (or, sqlite://)
+        # sqlite:///relative/path/to/file.db
+        # sqlite:////absolute/path/to/file.db
+        db_name = "workflows.db"
+        table_name = db_details_dict["table_name"]
+        engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+        df = pd.read_sql_table(table_name, engine)
+        out_df = df[['index','workflow_name','step','step_name','input','output','comment']]
+        #save result to csv file
+        out_df.to_csv(r'./result/workflows.csv')
+        df = DataFrame(out_df)
+        #print (df)
+        select_options=''
+        res = df.values.tolist()
+        workflow_dict={}
+        workflow_name_list=[]
+        for item in res:
+            print(red(item))
+            if item[1] not in workflow_name_list:
+                print(item)    
+                workflow_dict[item[1]]={
+                    'title':item[1],
+                }       
+                workflow_name_list.append(item[1])
+        print('\nworkflow_dict : ' ,yellow(workflow_dict,bold=True))
+        # sort 
+        sorted_dict = {}
+        workflow_list=[]
+        for item,value in workflow_dict.items():
+            print('item:\n',yellow(item,bold=True))   
+            print('value:\n',yellow(value,bold=True))
+            workflow_list.append([value['title'],item])
+        sorted_workflow_list = sorted(workflow_list, key=operator.itemgetter(0),reverse=False)     
+        print()
+        print('sorted workflow_list:\n',cyan(sorted_workflow_list,bold=True))   
+        print()     
+        for workflow in sorted_workflow_list:
+            for item,valeur in workflow_dict.items():
+                if item==workflow[1] and valeur['title']== workflow[0]:
+                    sorted_dict[item] = workflow_dict[item]
+                    break  
+        # ###################################
+        message1="Message 1 :"
+        image="../static/images/toolbox.png" 
+        message2="Message 2 :"
+        message3="/Message 3"
+        message4="Message 4 in button"
+        PAGE_DESTINATION="z_select_workflow"
+        page_name="z_select_workflow.html"
+        #loguer(env.level+' route END OF select_workflow() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,message1=message1,message2=message2,message3=message3,message4=message4,image=image,page_name=page_name,workflow_dict=workflow_dict)
+        
+
+
+#  def_new_workflow***
+@app.route('/new_workflow', methods=['GET'])
+def new_workflow():
+    '''
+    Created : 2025-12-17T16:13:59.000Z
+
+    description : create a new workflow
+    '''
+    route="/new_workflow"
+    env.level+='-'
+    print('\n'+env.level,white('route new_workflow() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route new_workflow() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        workflow_name="Enter_New_Workflow_name_here"  
+        # #################  Update current selected workflow
+        database="variables.db"
+        table="variables"
+        print('database is :',database) 
+        print(cyan(f'\n new value : {workflow_name} for variable : *system*_workflow_name_dont_delete \n',bold=True))
+        #print('\n value = ',red(value,bold=True))   
+        with sqlite3.connect('./z_bases/'+database) as conn:
+            cursor=conn.cursor()
+            sql_request = f"UPDATE 'variables' SET value = '{workflow_name}' where name = '*system*_workflow_name_dont_delete'"      
+            print('sql_request :',cyan(sql_request,bold=True))
+            cursor.execute(sql_request)    
+        # ##################        
+        # OKAY then read workflow DB
+        keyword='' # select every entries in DB
+        with open('./sqlite_databases_code/workflows/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/workflows.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        # sqlite:///:memory: (or, sqlite://)
+        # sqlite:///relative/path/to/file.db
+        # sqlite:////absolute/path/to/file.db
+        db_name = "workflows.db"
+        table_name = db_details_dict["table_name"]
+        engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+        df = pd.read_sql_table(table_name, engine)
+        out_df = df[['index','workflow_name','step','step_name','input','output','comment']]
+        #save result to csv file
+        #out_df.to_csv(r'./result/workflows.csv')
+        df = DataFrame(out_df)
+        #print (df)
+        select_options=''
+        res = df.values.tolist()
+        step_dict={}
+        for item in res:
+            if workflow_name==item[1]:
+                print(item)    
+                step_dict[item[2]]={
+                    'title':item[2],
+                    'description':item[3]
+                }         
+        print('step_dict : ' ,yellow(step_dict,bold=True))
+        # sort detection by steps
+        sorted_dict = {}
+        step_list=[]
+        for item,value in step_dict.items():
+            print('item:\n',yellow(item,bold=True))   
+            print('value:\n',yellow(value,bold=True))
+            step_list.append([value['title'],item])
+        sorted_step_list = sorted(step_list, key=operator.itemgetter(0),reverse=False)     
+        print()
+        print('sorted step_list:\n',cyan(sorted_step_list,bold=True))   
+        print()     
+        for step in sorted_step_list:
+            for item,valeur in step_dict.items():
+                if item==step[1] and valeur['title']== step[0]:
+                    sorted_dict[item] = step_dict[item]
+                    break    
+        
+        print('=========================================')
+        columns="workflow_name,step,step_name,input,output,comment"    
+        message1="Message 1 :"
+        image="../static/images/toolbox.png" 
+        message2="Message 2 :"
+        message3="/Message 3"
+        message4="Message 4 in button"
+        PAGE_DESTINATION="z_workflows"
+        page_name="z_workflows.html"
+        loguer(env.level+' route END OF workflows() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,page_name=page_name,step_dict=sorted_dict)
+
+#  def_select_workflow_ok***
+@app.route('/select_workflow_ok', methods=['GET'])
+def select_workflow_ok():
+    '''
+    Created : 2025-12-17T17:45:45.000Z
+
+    description : select workflow and display steps
+    '''
+    route="/select_workflow_ok"
+    env.level+='-'
+    print('\n'+env.level,white('route select_workflow_ok() in ***app.py*** : >\n',bold=True))
+    loguer(env.level+' route select_workflow_ok() in ***app.py*** : >')
+    if not session.get('logged_in'):
+        return render_template('login.html')
+    else:
+        workflow_name=request.args.get('workflow_name')  
+        print('workflow_name :',workflow_name) 
+        # #################  Update current selected workflow
+        database="variables.db"
+        table="variables"
+        print('database is :',database) 
+        print(cyan(f'\n new value : {workflow_name} for variable : *system*_workflow_name_dont_delete \n',bold=True))
+        #print('\n value = ',red(value,bold=True))   
+        with sqlite3.connect('./z_bases/'+database) as conn:
+            cursor=conn.cursor()
+            sql_request = f"UPDATE 'variables' SET value = '{workflow_name}' where name = '*system*_workflow_name_dont_delete'"      
+            print('sql_request :',cyan(sql_request,bold=True))
+            cursor.execute(sql_request)    
+        # ##################        
+        # OKAY then read workflow DB
+        keyword='' # select every entries in DB
+        with open('./sqlite_databases_code/workflows/db_details.txt') as file:
+            db_details_dict=json.loads(file.read())
+        print('db_details_dict : \n',yellow(db_details_dict,bold=True))
+        database = os.getcwd()+'/z_bases/workflows.db'
+        database=database.replace("\\","/")
+        print('database is :',database)
+        # sqlite:///:memory: (or, sqlite://)
+        # sqlite:///relative/path/to/file.db
+        # sqlite:////absolute/path/to/file.db
+        db_name = "workflows.db"
+        table_name = db_details_dict["table_name"]
+        engine = sqlalchemy.create_engine("sqlite:///z_bases/%s" % db_name, execution_options={"sqlite_raw_colnames": True})
+        df = pd.read_sql_table(table_name, engine)
+        out_df = df[['index','workflow_name','step','step_name','input','output','comment']]
+        #save result to csv file
+        #out_df.to_csv(r'./result/workflows.csv')
+        df = DataFrame(out_df)
+        #print (df)
+        select_options=''
+        res = df.values.tolist()
+        step_dict={}
+        for item in res:
+            if workflow_name==item[1]:
+                print(item)    
+                step_dict[item[2]]={
+                    'title':item[2],
+                    'description':item[3]
+                }         
+        print('step_dict : ' ,yellow(step_dict,bold=True))
+        # sort detection by steps
+        sorted_dict = {}
+        step_list=[]
+        for item,value in step_dict.items():
+            print('item:\n',yellow(item,bold=True))   
+            print('value:\n',yellow(value,bold=True))
+            step_list.append([value['title'],item])
+        sorted_step_list = sorted(step_list, key=operator.itemgetter(0),reverse=False)     
+        print()
+        print('sorted step_list:\n',cyan(sorted_step_list,bold=True))   
+        print()     
+        for step in sorted_step_list:
+            for item,valeur in step_dict.items():
+                if item==step[1] and valeur['title']== step[0]:
+                    sorted_dict[item] = step_dict[item]
+                    break    
+        
+        print('=========================================')
+        columns="workflow_name,step,step_name,input,output,comment"    
+        message1="Message 1 :"
+        image="../static/images/toolbox.png" 
+        message2="Message 2 :"
+        message3="/Message 3"
+        message4="Message 4 in button"
+        PAGE_DESTINATION="z_workflows"
+        page_name="z_workflows.html"
+        loguer(env.level+' route END OF workflows() in ***app.py*** : >')
+        # ===================================================================
+        env.level=env.level[:-1]
+        return render_template('main_index.html',route=route,USERNAME=session['user'],PAGE_DESTINATION=PAGE_DESTINATION,page_name=page_name,step_dict=sorted_dict)
         
 
 

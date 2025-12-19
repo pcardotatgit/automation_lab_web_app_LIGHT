@@ -22,29 +22,38 @@ popup.focus();
 <body class="is-preload">
 <!-- Nav -->
 <nav id="nav">
-<li><a href="/">Back to Home</a></li>
+<li><a href="/">Back to main page</a></li>
 <li><a href="/logout">log Out</a></li>
 <li><a href="javascript:popup_window('/page_info?page={{page_name}}&route={{route}}','page_info',700,600);">:</a></li>
 </ul>
 </nav>
-<!-- Home -->
-<article id="top" class="wrapper style1">
-<div class="container">
+<!-- Observables-->
+<article id="observables" class="wrapper style4">
+<div class="container medium">
+<header>
+<p>Be very rigorous with indentation !!</p>
+</header>
 <div class="row">
-<div class="col-4 col-5-large col-12-medium">
-<a href="/new_python_function" class="button small scrolly">Add a python function</a>
+<div class="col-12">
+<form method='get' action="/edit_route_branch_save">
+<div class="row">
+<div class="col-12">
+<textarea id="code" name="code" rows="5" cols="33">{{message1}}</textarea>
 </div>
-<div class="col-8 col-7-large col-12-medium">
-<form method='get' action="#">
-<div class="row">
-<ul>
-{% for index, item in functions_dict.items() %}
-<li><h4>{{item.name}}</h4>{{item.description}}<ul><li><a href="/code_edit?code=def_{{item.called_function}}.py&type=function">Called function : {{item.called_function}}()</a></li><li>Input Variables : {{item.inputs}}</li><li>Output Variables : {{item.outputs}}</li><li>Comment : {{item.comment}}</li><li><a href="/edit_route_branch?name=def_{{item.called_function}}_branch.py">Edit Route Branch</a></li><li><a href="/delete_route_branch?function={{item.name}}&python_function={{item.called_function}}">_ delete entry _</a></li></ul></li>
-{% endfor %}
+<div class="col-12">
+<ul class="actions">
+<input type="hidden" value="{{name}}" name="name" />
+<li><input type="submit" value="Save" class="button small scrolly" /></li>
 </ul>
+</div>
 </div>
 </form>
 </div>
+</div>
+<footer>
+<ul id="copyright">
+</ul>
+</footer>
 </div>
 </article>
 <!-- Scripts -->

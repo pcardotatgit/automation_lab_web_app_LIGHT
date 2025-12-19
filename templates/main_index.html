@@ -176,6 +176,15 @@
     {% if PAGE_DESTINATION == "z_function_create_next"%}
     {% extends "z_function_create_next.html" %}
     {% endif %}
+    {% if PAGE_DESTINATION == "z_new_python_function"%}
+    {% extends "z_new_python_function.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_edit_route_branch"%}
+    {% extends "z_edit_route_branch.html" %}
+    {% endif %}
+    {% if PAGE_DESTINATION == "z_select_workflow"%}
+    {% extends "z_select_workflow.html" %}
+    {% endif %}
 {% else %}
     <link rel="stylesheet" href="/static/style.css" type="text/css">
     <form action="/login" method="POST">
